@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "empty_traveller_stone",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.SANDSTONE#2"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.SANDSTONE#2"
+      },
+      {
+        "value": "Items.ENDER_EYE"
+      },
+      {
+        "value": "Blocks.SANDSTONE#2"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.SANDSTONE#2"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EmptyTravellerStone"
+    },
+    "name": "empty_traveller_stone_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Dunes",
+      "type": "dimension",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dunes",
+      "metadata": {
+        "ep": false
+      }
+    },
+    {
+      "name": "EmptyTravellerStone",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "empty_traveller_stone"
+    },
+    {
+      "name": "EmptyTravellerStoneRecipe",
+      "type": "recipe",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "empty_traveller_stone_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "PortalIgnition",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "portal_ignition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TempDuneTransporter",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "temp_dune_transporter",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.cobr.empty_traveller_stone": "Empty Traveller Stone",
+      "item.cobr.dunes": "Dunes Portal Igniter"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Recipes",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "cobr",
+    "modName": "Civilisations of Baedoor",
+    "version": "v0.a1",
+    "description": "Wanderers of our world... new mysteries have arised, giving birth to new dimensional entrances. Some forces try to conquer the lands of Overworld.. or maybe they already succeed? Find yourself inside fight of strange civilisations that appeared in this place.",
+    "author": "Toma400",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.cobr",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100236710
+}
