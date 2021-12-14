@@ -62,29 +62,95 @@
       }
     },
     {
-      "name": "TempDuneTransporter",
+      "name": "TravellerStoneTransition",
       "type": "procedure",
-      "sortid": 5,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "temp_dune_transporter",
+      "registry_name": "traveller_stone_transition",
       "metadata": {
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
+    },
+    {
+      "name": "DuneTravellerStone",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_traveller_stone"
+    },
+    {
+      "name": "CivilisationsofBaedoor",
+      "type": "tab",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "civilisationsof_baedoor"
+    },
+    {
+      "name": "PermafrostTravellerStone",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "permafrost_traveller_stone"
+    },
+    {
+      "name": "RainforestIslandsTravellerStone",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rainforest_islands_traveller_stone"
+    },
+    {
+      "name": "EvergreenDepthsTravellerStone",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "evergreen_depths_traveller_stone"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "itemGroup.tabcivilisationsof_baedoor": "Civilisations of Baedoor",
+      "block.cobr.permafrost_traveller_stone": "Permafrost Traveller Stone",
+      "block.cobr.evergreen_depths_traveller_stone": "Evergreen Depths Traveller Stone",
+      "block.cobr.dune_traveller_stone": "Dune Traveller Stone",
       "block.cobr.empty_traveller_stone": "Empty Traveller Stone",
-      "item.cobr.dunes": "Dunes Portal Igniter"
+      "item.cobr.dunes": "Dunes Portal Igniter",
+      "block.cobr.rainforest_islands_traveller_stone": "Rainforest Islands Traveller Stone"
     }
   },
   "foldersRoot": {

@@ -12,16 +12,14 @@ import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.ToolType;
 
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.NonNullList;
-import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
-import net.minecraft.util.ActionResultType;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.LockableLootTileEntity;
@@ -39,32 +37,32 @@ import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.cobr.procedures.TravellerStoneTransitionProcedure;
+import net.mcreator.cobr.procedures.PortalIgnitionProcedure;
 import net.mcreator.cobr.itemgroup.CivilisationsofBaedoorItemGroup;
 import net.mcreator.cobr.CobrModElements;
 
 import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
+import java.util.Random;
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
 import java.util.Collections;
 
 @CobrModElements.ModElement.Tag
-public class EmptyTravellerStoneBlock extends CobrModElements.ModElement {
-	@ObjectHolder("cobr:empty_traveller_stone")
+public class PermafrostTravellerStoneBlock extends CobrModElements.ModElement {
+	@ObjectHolder("cobr:permafrost_traveller_stone")
 	public static final Block block = null;
-	@ObjectHolder("cobr:empty_traveller_stone")
+	@ObjectHolder("cobr:permafrost_traveller_stone")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
-	public EmptyTravellerStoneBlock(CobrModElements instance) {
-		super(instance, 2);
+	public PermafrostTravellerStoneBlock(CobrModElements instance) {
+		super(instance, 9);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 
@@ -78,7 +76,7 @@ public class EmptyTravellerStoneBlock extends CobrModElements.ModElement {
 		@SubscribeEvent
 		public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
 			event.getRegistry()
-					.register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("empty_traveller_stone"));
+					.register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("permafrost_traveller_stone"));
 		}
 	}
 
@@ -86,7 +84,7 @@ public class EmptyTravellerStoneBlock extends CobrModElements.ModElement {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(0.8f, 0.8f).setLightLevel(s -> 0)
 					.harvestLevel(1).harvestTool(ToolType.PICKAXE).setRequiresTool());
-			setRegistryName("empty_traveller_stone");
+			setRegistryName("permafrost_traveller_stone");
 		}
 
 		@Override
@@ -103,26 +101,29 @@ public class EmptyTravellerStoneBlock extends CobrModElements.ModElement {
 		}
 
 		@Override
-		public ActionResultType onBlockActivated(BlockState blockstate, World world, BlockPos pos, PlayerEntity entity, Hand hand,
-				BlockRayTraceResult hit) {
-			super.onBlockActivated(blockstate, world, pos, entity, hand, hit);
+		public void onBlockAdded(BlockState blockstate, World world, BlockPos pos, BlockState oldState, boolean moving) {
+			super.onBlockAdded(blockstate, world, pos, oldState, moving);
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			double hitX = hit.getHitVec().x;
-			double hitY = hit.getHitVec().y;
-			double hitZ = hit.getHitVec().z;
-			Direction direction = hit.getFace();
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 20);
+		}
+
+		@Override
+		public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
+			super.tick(blockstate, world, pos, random);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				TravellerStoneTransitionProcedure.executeProcedure($_dependencies);
+				PortalIgnitionProcedure.executeProcedure($_dependencies);
 			}
-			return ActionResultType.SUCCESS;
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 20);
 		}
 
 		@Override
@@ -229,7 +230,7 @@ public class EmptyTravellerStoneBlock extends CobrModElements.ModElement {
 
 		@Override
 		public ITextComponent getDefaultName() {
-			return new StringTextComponent("empty_traveller_stone");
+			return new StringTextComponent("permafrost_traveller_stone");
 		}
 
 		@Override
@@ -244,7 +245,7 @@ public class EmptyTravellerStoneBlock extends CobrModElements.ModElement {
 
 		@Override
 		public ITextComponent getDisplayName() {
-			return new StringTextComponent("Empty Traveller Stone");
+			return new StringTextComponent("Permafrost Traveller Stone");
 		}
 
 		@Override

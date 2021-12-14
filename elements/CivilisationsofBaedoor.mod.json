@@ -1,0 +1,11 @@
+{
+  "_fv": 24,
+  "_type": "tab",
+  "definition": {
+    "name": "Civilisations of Baedoor",
+    "icon": {
+      "value": "CUSTOM:DuneTravellerStone"
+    },
+    "showSearch": false
+  }
+}

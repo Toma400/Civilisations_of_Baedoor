@@ -11,15 +11,6 @@
       },
       {
         "value": "mutated_desert"
-      },
-      {
-        "value": "end_barrens"
-      },
-      {
-        "value": "end_highlands"
-      },
-      {
-        "value": "end_midlands"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -28,10 +19,6 @@
     },
     "fluidBlock": {
       "value": "Blocks.WATER"
-    },
-    "airColor": {
-      "value": -6055586,
-      "falpha": 0.0
     },
     "canRespawnHere": true,
     "hasFog": false,

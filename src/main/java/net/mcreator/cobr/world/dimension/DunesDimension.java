@@ -51,7 +51,7 @@ public class DunesDimension extends CobrModElements.ModElement {
 		DimensionRenderInfo customEffect = new DimensionRenderInfo(Float.NaN, true, DimensionRenderInfo.FogType.NONE, false, false) {
 			@Override
 			public Vector3d func_230494_a_(Vector3d color, float sunHeight) {
-				return new Vector3d(0.639215686275, 0.6, 0.36862745098);
+				return color;
 			}
 
 			@Override

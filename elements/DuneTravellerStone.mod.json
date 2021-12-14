@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Empty Traveller Stone",
+    "name": "Dune Traveller Stone",
     "specialInfo": [],
     "hardness": 0.8,
     "resistance": 0.8,
@@ -121,8 +121,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "TravellerStoneTransition"
+    "onTickUpdate": {
+      "name": "PortalIgnition"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

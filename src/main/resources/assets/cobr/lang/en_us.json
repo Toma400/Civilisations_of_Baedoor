@@ -1,4 +1,9 @@
 {
+  "itemGroup.tabcivilisationsof_baedoor": "Civilisations of Baedoor",
+  "block.cobr.permafrost_traveller_stone": "Permafrost Traveller Stone",
+  "block.cobr.evergreen_depths_traveller_stone": "Evergreen Depths Traveller Stone",
+  "block.cobr.dune_traveller_stone": "Dune Traveller Stone",
   "block.cobr.empty_traveller_stone": "Empty Traveller Stone",
-  "item.cobr.dunes": "Dunes Portal Igniter"
+  "item.cobr.dunes": "Dunes Portal Igniter",
+  "block.cobr.rainforest_islands_traveller_stone": "Rainforest Islands Traveller Stone"
 }

@@ -4,10 +4,10 @@
   "definition": {
     "texture": "empty_traveller_stone",
     "textureTop": "empty_traveller_stone",
-    "textureLeft": "empty_traveller_stone",
-    "textureFront": "empty_traveller_stone",
-    "textureRight": "empty_traveller_stone",
-    "textureBack": "empty_traveller_stone",
+    "textureLeft": "rainforest_islands_traveller_stone",
+    "textureFront": "rainforest_islands_traveller_stone",
+    "textureRight": "rainforest_islands_traveller_stone",
+    "textureBack": "rainforest_islands_traveller_stone",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Empty Traveller Stone",
+    "name": "Rainforest Islands Traveller Stone",
     "specialInfo": [],
     "hardness": 0.8,
     "resistance": 0.8,
@@ -121,8 +121,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "TravellerStoneTransition"
+    "onTickUpdate": {
+      "name": "PortalIgnition"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
