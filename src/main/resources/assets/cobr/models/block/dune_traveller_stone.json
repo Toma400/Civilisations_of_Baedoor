@@ -3,10 +3,10 @@
   "textures": {
     "down": "cobr:blocks/empty_traveller_stone",
     "up": "cobr:blocks/empty_traveller_stone",
-    "north": "cobr:blocks/empty_traveller_stone",
-    "east": "cobr:blocks/empty_traveller_stone",
-    "south": "cobr:blocks/empty_traveller_stone",
-    "west": "cobr:blocks/empty_traveller_stone",
+    "north": "cobr:blocks/dune_traveller_stone",
+    "east": "cobr:blocks/dune_traveller_stone",
+    "south": "cobr:blocks/dune_traveller_stone",
+    "west": "cobr:blocks/dune_traveller_stone",
     "particle": "cobr:blocks/empty_traveller_stone"
   }
 }

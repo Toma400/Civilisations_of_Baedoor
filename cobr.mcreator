@@ -228,6 +228,40 @@
       "ids": {},
       "registry_name": "dunes_igniter_recipe",
       "path": "~/Recipes"
+    },
+    {
+      "name": "ShortTravelTravellerStone",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "short_travel_traveller_stone",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Portals"
     }
   ],
   "variable_elements": [],

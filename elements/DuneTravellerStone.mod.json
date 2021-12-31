@@ -4,10 +4,10 @@
   "definition": {
     "texture": "empty_traveller_stone",
     "textureTop": "empty_traveller_stone",
-    "textureLeft": "empty_traveller_stone",
-    "textureFront": "empty_traveller_stone",
-    "textureRight": "empty_traveller_stone",
-    "textureBack": "empty_traveller_stone",
+    "textureLeft": "dune_traveller_stone",
+    "textureFront": "dune_traveller_stone",
+    "textureRight": "dune_traveller_stone",
+    "textureBack": "dune_traveller_stone",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -121,6 +121,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "ShortTravelTravellerStone"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [],
