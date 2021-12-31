@@ -1,9 +1,14 @@
 {
+  "biome.cobr.dry_lands": "Dry Lands",
+  "block.cobr.dune_traveller_stone": "Dune Traveller Stone",
+  "block.cobr.rainforest_islands_traveller_stone": "Rainforest Islands Traveller Stone",
   "itemGroup.tabcivilisationsof_baedoor": "Civilisations of Baedoor",
   "block.cobr.permafrost_traveller_stone": "Permafrost Traveller Stone",
   "block.cobr.evergreen_depths_traveller_stone": "Evergreen Depths Traveller Stone",
-  "block.cobr.dune_traveller_stone": "Dune Traveller Stone",
+  "entity.cobr.desert_lizard": "Desert Lizard",
+  "item.cobr.desert_lizard_spawn_egg": "Desert Lizard Spawn Egg",
   "block.cobr.empty_traveller_stone": "Empty Traveller Stone",
-  "item.cobr.dunes": "Dunes Portal Igniter",
-  "block.cobr.rainforest_islands_traveller_stone": "Rainforest Islands Traveller Stone"
+  "item.cobr.spawn_entity_oasis_spawn_egg": "[Spawn Entity] Oasis Spawn Egg",
+  "item.cobr.dunes": "Scroll of the Dunes",
+  "entity.cobr.spawn_entity_oasis": "[Spawn Entity] Oasis"
 }

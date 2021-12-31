@@ -4,13 +4,7 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "desert"
-      },
-      {
-        "value": "desert_hills"
-      },
-      {
-        "value": "mutated_desert"
+        "value": "CUSTOM:DryLands"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -28,21 +22,24 @@
     "hasSkyLight": true,
     "imitateOverworldBehaviour": false,
     "portalFrame": {
-      "value": ""
+      "value": "CUSTOM:DuneTravellerStone"
     },
     "portalParticles": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "ENCHANTMENT_TABLE"
     },
     "portalLuminance": 0,
     "portalSound": {
-      "value": "block.portal.ambient"
+      "value": ""
     },
-    "igniterName": "Dunes Portal Igniter",
+    "igniterName": "Scroll of the Dunes",
     "igniterTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:CivilisationsofBaedoor"
     },
-    "texture": "",
-    "portalTexture": "",
-    "enablePortal": false
+    "texture": "dune_igniter",
+    "portalTexture": "portal_block",
+    "enablePortal": true,
+    "whenPortaTriggerlUsed": {
+      "name": "PortalIgnition"
+    }
   }
 }

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "cobr:block/dunes_portal_ew"
+    },
+    "axis=x": {
+      "model": "cobr:block/dunes_portal_ns"
+    }
+  }
+}

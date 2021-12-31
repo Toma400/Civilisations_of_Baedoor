@@ -10,7 +10,7 @@
       "ids": {},
       "registry_name": "dunes",
       "metadata": {
-        "ep": false
+        "ep": true
       }
     },
     {
@@ -20,7 +20,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "empty_traveller_stone"
+      "registry_name": "empty_traveller_stone",
+      "path": "~/Portals"
     },
     {
       "name": "EmptyTravellerStoneRecipe",
@@ -31,35 +32,6 @@
       "ids": {},
       "registry_name": "empty_traveller_stone_recipe",
       "path": "~/Recipes"
-    },
-    {
-      "name": "PortalIgnition",
-      "type": "procedure",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "portal_ignition",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
     },
     {
       "name": "TravellerStoneTransition",
@@ -92,7 +64,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Portals"
     },
     {
       "name": "DuneTravellerStone",
@@ -101,7 +74,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dune_traveller_stone"
+      "registry_name": "dune_traveller_stone",
+      "path": "~/Portals"
     },
     {
       "name": "CivilisationsofBaedoor",
@@ -119,7 +93,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "permafrost_traveller_stone"
+      "registry_name": "permafrost_traveller_stone",
+      "path": "~/Portals"
     },
     {
       "name": "RainforestIslandsTravellerStone",
@@ -128,7 +103,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "rainforest_islands_traveller_stone"
+      "registry_name": "rainforest_islands_traveller_stone",
+      "path": "~/Portals"
     },
     {
       "name": "EvergreenDepthsTravellerStone",
@@ -137,20 +113,139 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "evergreen_depths_traveller_stone"
+      "registry_name": "evergreen_depths_traveller_stone",
+      "path": "~/Portals"
+    },
+    {
+      "name": "DryLands",
+      "type": "biome",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dry_lands"
+    },
+    {
+      "name": "DesertLizard",
+      "type": "livingentity",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "desert_lizard"
+    },
+    {
+      "name": "PortalIgnition",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "portal_ignition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Portals"
+    },
+    {
+      "name": "SpawnEntityOasis",
+      "type": "livingentity",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawn_entity_oasis"
+    },
+    {
+      "name": "OasisSmall",
+      "type": "structure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "oasis_small"
+    },
+    {
+      "name": "SpawnEntitiesUse",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawn_entities_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DunesIgniterRecipe",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dunes_igniter_recipe",
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "biome.cobr.dry_lands": "Dry Lands",
+      "block.cobr.dune_traveller_stone": "Dune Traveller Stone",
+      "block.cobr.rainforest_islands_traveller_stone": "Rainforest Islands Traveller Stone",
       "itemGroup.tabcivilisationsof_baedoor": "Civilisations of Baedoor",
       "block.cobr.permafrost_traveller_stone": "Permafrost Traveller Stone",
       "block.cobr.evergreen_depths_traveller_stone": "Evergreen Depths Traveller Stone",
-      "block.cobr.dune_traveller_stone": "Dune Traveller Stone",
+      "entity.cobr.desert_lizard": "Desert Lizard",
+      "item.cobr.desert_lizard_spawn_egg": "Desert Lizard Spawn Egg",
       "block.cobr.empty_traveller_stone": "Empty Traveller Stone",
-      "item.cobr.dunes": "Dunes Portal Igniter",
-      "block.cobr.rainforest_islands_traveller_stone": "Rainforest Islands Traveller Stone"
+      "item.cobr.spawn_entity_oasis_spawn_egg": "[Spawn Entity] Oasis Spawn Egg",
+      "item.cobr.dunes": "Scroll of the Dunes",
+      "entity.cobr.spawn_entity_oasis": "[Spawn Entity] Oasis"
     }
   },
   "foldersRoot": {
@@ -158,6 +253,10 @@
     "children": [
       {
         "name": "Recipes",
+        "children": []
+      },
+      {
+        "name": "Portals",
         "children": []
       }
     ]

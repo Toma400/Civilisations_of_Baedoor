@@ -1,0 +1,19 @@
+{
+  "group": "dunes_igniter",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:nether_star"
+    },
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "tag": "minecraft:sand"
+    }
+  ],
+  "result": {
+    "item": "cobr:dunes",
+    "count": 1
+  }
+}
