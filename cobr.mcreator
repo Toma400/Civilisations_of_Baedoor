@@ -262,6 +262,15 @@
         ]
       },
       "path": "~/Portals"
+    },
+    {
+      "name": "EoticLakes",
+      "type": "biome",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_lakes"
     }
   ],
   "variable_elements": [],
@@ -269,6 +278,7 @@
   "language_map": {
     "en_us": {
       "biome.cobr.dry_lands": "Dry Lands",
+      "biome.cobr.eotic_lakes": "Eotic Lakes",
       "block.cobr.dune_traveller_stone": "Dune Traveller Stone",
       "block.cobr.rainforest_islands_traveller_stone": "Rainforest Islands Traveller Stone",
       "itemGroup.tabcivilisationsof_baedoor": "Civilisations of Baedoor",
@@ -298,7 +308,7 @@
   "workspaceSettings": {
     "modid": "cobr",
     "modName": "Civilisations of Baedoor",
-    "version": "v0.a1",
+    "version": "v0.a2",
     "description": "Wanderers of our world... new mysteries have arised, giving birth to new dimensional entrances. Some forces try to conquer the lands of Overworld.. or maybe they already succeed? Find yourself inside fight of strange civilisations that appeared in this place.",
     "author": "Toma400",
     "websiteURL": "https://mcreator.net",

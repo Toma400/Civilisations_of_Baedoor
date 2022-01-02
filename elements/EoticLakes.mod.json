@@ -2,7 +2,7 @@
   "_fv": 24,
   "_type": "biome",
   "definition": {
-    "name": "Dry Lands",
+    "name": "Eotic Lakes",
     "groundBlock": {
       "value": "Blocks.SAND#0"
     },
@@ -10,7 +10,11 @@
       "value": "Blocks.SANDSTONE#0"
     },
     "grassColor": {
-      "value": -10651563,
+      "value": -10387365,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -10781824,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -35,42 +39,42 @@
     "parent": {
       "value": "No parent"
     },
-    "rainingPossibility": 0.0,
-    "temperature": 2.0,
-    "baseHeight": 0.2,
-    "heightVariation": 0.1,
+    "rainingPossibility": 0.5,
+    "temperature": 1.8,
+    "baseHeight": 0.15,
+    "heightVariation": 0.05,
     "biomeType": "DESERT",
     "spawnBiome": false,
-    "biomeWeight": 70,
+    "biomeWeight": 5,
     "biomeDictionaryTypes": [],
-    "grassPerChunk": 0,
+    "grassPerChunk": 4,
     "seagrassPerChunk": 0,
-    "flowersPerChunk": 0,
+    "flowersPerChunk": 4,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
     "sandPatchesPerChunk": 0,
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
-    "cactiPerChunk": 1,
+    "cactiPerChunk": 0,
     "treesPerChunk": 1,
     "vanillaTreeType": "Default",
-    "treeType": 1,
-    "minHeight": 3,
+    "treeType": 0,
+    "minHeight": 7,
     "maxWaterDepth": 0,
     "treeStem": {
-      "value": "Blocks.CACTUS"
+      "value": ""
     },
     "treeBranch": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
     "treeVines": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
     "treeFruits": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
     "spawnStronghold": false,
-    "spawnMineshaft": true,
+    "spawnMineshaft": false,
     "spawnPillagerOutpost": false,
     "villageType": "none",
     "spawnWoodlandMansion": false,
@@ -83,18 +87,9 @@
     "defaultFeatures": [
       "Caves",
       "Ores",
-      "DesertFeatures"
+      "DeadBushes",
+      "Lakes"
     ],
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "EntityRabbit"
-        },
-        "minGroup": 2,
-        "maxGroup": 4,
-        "weight": 100,
-        "spawnType": "creature"
-      }
-    ]
+    "spawnEntries": []
   }
 }
