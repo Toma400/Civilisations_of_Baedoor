@@ -271,12 +271,149 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "eotic_lakes"
+    },
+    {
+      "name": "EoticBambooStem",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_bamboo_stem"
+    },
+    {
+      "name": "EoticBambooGrowing",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_bamboo_growing"
+    },
+    {
+      "name": "EoticBamboo",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_bamboo"
+    },
+    {
+      "name": "EoticBambooGrowth",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_bamboo_growth",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EoticBambooVerticalBreaking",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_bamboo_vertical_breaking",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Shrinkage",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shrinkage",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EoticBambooPlantage",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_bamboo_plantage",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.cobr.eotic_bamboo_stem": "Eotic Bamboo",
+      "item.cobr.eotic_bamboo": "Eotic Bamboo",
       "biome.cobr.dry_lands": "Dry Lands",
       "biome.cobr.eotic_lakes": "Eotic Lakes",
       "block.cobr.dune_traveller_stone": "Dune Traveller Stone",
@@ -286,6 +423,7 @@
       "block.cobr.evergreen_depths_traveller_stone": "Evergreen Depths Traveller Stone",
       "entity.cobr.desert_lizard": "Desert Lizard",
       "item.cobr.desert_lizard_spawn_egg": "Desert Lizard Spawn Egg",
+      "block.cobr.eotic_bamboo_growing": "Eotic Bamboo",
       "block.cobr.empty_traveller_stone": "Empty Traveller Stone",
       "item.cobr.spawn_entity_oasis_spawn_egg": "[Spawn Entity] Oasis Spawn Egg",
       "item.cobr.dunes": "Scroll of the Dunes",

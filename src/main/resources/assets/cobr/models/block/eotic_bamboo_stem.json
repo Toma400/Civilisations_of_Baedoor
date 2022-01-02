@@ -1,0 +1,8 @@
+{
+  "parent": "cobr:custom/eotic_bamboo_stem",
+  "textures": {
+    "all": "cobr:blocks/eotic_bamboo",
+    "particle": "cobr:blocks/eotic_bamboo",
+    "0": "cobr:blocks/eotic_bamboo"
+  }
+}

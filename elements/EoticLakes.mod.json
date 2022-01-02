@@ -58,20 +58,20 @@
     "cactiPerChunk": 0,
     "treesPerChunk": 1,
     "vanillaTreeType": "Default",
-    "treeType": 0,
-    "minHeight": 7,
+    "treeType": 1,
+    "minHeight": 1,
     "maxWaterDepth": 0,
     "treeStem": {
-      "value": ""
+      "value": "CUSTOM:EoticBambooGrowing"
     },
     "treeBranch": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "treeVines": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "treeFruits": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,
