@@ -1,0 +1,16 @@
+{
+  "group": "sand_dust",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:eotic_bamboo"
+    }
+  },
+  "result": {
+    "item": "wobr:sand_dust",
+    "count": 2
+  }
+}

@@ -406,6 +406,26 @@
           }
         ]
       }
+    },
+    {
+      "name": "SandDustObtaining",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "sand_dust_obtaining",
+      "path": "~/Compatibility Recipes/Wastelands of Baedoor"
+    },
+    {
+      "name": "SandDustObtaining2",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "sand_dust_obtaining_2",
+      "path": "~/Compatibility Recipes/Wastelands of Baedoor"
     }
   ],
   "variable_elements": [],
@@ -440,6 +460,15 @@
       {
         "name": "Portals",
         "children": []
+      },
+      {
+        "name": "Compatibility Recipes",
+        "children": [
+          {
+            "name": "Wastelands of Baedoor",
+            "children": []
+          }
+        ]
       }
     ]
   },

@@ -5,6 +5,9 @@
     "biomesInDimension": [
       {
         "value": "CUSTOM:DryLands"
+      },
+      {
+        "value": "CUSTOM:EoticLakes"
       }
     ],
     "worldGenType": "Normal world gen",
