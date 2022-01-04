@@ -1,13 +1,14 @@
 modLoader="javafml"
 loaderVersion="[36,)"
-license="Academic Free License v3.0"
+license="All Rights Reserved"
 
 [[mods]]
 modId="cobr"
 version="v0.a2"
 displayName="Civilisations of Baedoor"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
+credits="Toma400, DylanVHS, Poltergeist, Lyof, RiftJaw"
+displayURL="https://mcreator.net/forum/76024/civilisations-baedoor-structures-npcs-and-civilisations-mod"
+logoFile="logo.png"
 authors="Toma400"
 description='''
 Wanderers of our world... new mysteries have arised, giving birth to new dimensional entrances. Some forces try to conquer the lands of Overworld.. or maybe they already succeed? Find yourself inside fight of strange civilisations that appeared in this place.

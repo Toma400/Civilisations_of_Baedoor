@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cobr:blocks/esrah_planks",
+    "up": "cobr:blocks/esrah_planks",
+    "north": "cobr:blocks/esrah_planks",
+    "east": "cobr:blocks/esrah_planks",
+    "south": "cobr:blocks/esrah_planks",
+    "west": "cobr:blocks/esrah_planks",
+    "particle": "cobr:blocks/esrah_planks"
+  }
+}

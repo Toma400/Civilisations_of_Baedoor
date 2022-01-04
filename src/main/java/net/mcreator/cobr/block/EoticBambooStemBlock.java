@@ -43,7 +43,7 @@ public class EoticBambooStemBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:eotic_bamboo_stem")
 	public static final Block block = null;
 	public EoticBambooStemBlock(CobrModElements instance) {
-		super(instance, 22);
+		super(instance, 21);
 	}
 
 	@Override

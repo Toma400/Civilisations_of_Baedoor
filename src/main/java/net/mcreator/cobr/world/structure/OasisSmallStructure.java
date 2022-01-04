@@ -49,7 +49,7 @@ public class OasisSmallStructure {
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
-					if ((random.nextInt(1000000) + 1) <= 5000) {
+					if ((random.nextInt(1000000) + 1) <= 500) {
 						int count = random.nextInt(1) + 1;
 						for (int a = 0; a < count; a++) {
 							int i = ci + random.nextInt(16);
@@ -63,12 +63,11 @@ public class OasisSmallStructure {
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
 							Template template = world.getWorld().getStructureTemplateManager()
-									.getTemplateDefaulted(new ResourceLocation("cobr", "spawn_entity_oasis_small"));
+									.getTemplateDefaulted(new ResourceLocation("cobr", "oasis_small"));
 							if (template == null)
 								return false;
-							template.func_237144_a_(world, spawnTo,
-									new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
-											.addProcessor(BlockIgnoreStructureProcessor.STRUCTURE_BLOCK).setChunk(null).setIgnoreEntities(false),
+							template.func_237144_a_(world, spawnTo, new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
+									.addProcessor(BlockIgnoreStructureProcessor.AIR_AND_STRUCTURE_BLOCK).setChunk(null).setIgnoreEntities(false),
 									random);
 						}
 					}

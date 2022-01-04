@@ -64,7 +64,7 @@ public class DuneTravellerStoneBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:dune_traveller_stone")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public DuneTravellerStoneBlock(CobrModElements instance) {
-		super(instance, 7);
+		super(instance, 3);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 

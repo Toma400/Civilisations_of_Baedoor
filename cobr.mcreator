@@ -4,7 +4,7 @@
     {
       "name": "Dunes",
       "type": "dimension",
-      "sortid": 1,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -26,7 +26,7 @@
     {
       "name": "EmptyTravellerStoneRecipe",
       "type": "recipe",
-      "sortid": 3,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -36,7 +36,7 @@
     {
       "name": "TravellerStoneTransition",
       "type": "procedure",
-      "sortid": 6,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -70,7 +70,7 @@
     {
       "name": "DuneTravellerStone",
       "type": "block",
-      "sortid": 7,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -80,7 +80,7 @@
     {
       "name": "CivilisationsofBaedoor",
       "type": "tab",
-      "sortid": 8,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -89,7 +89,7 @@
     {
       "name": "PermafrostTravellerStone",
       "type": "block",
-      "sortid": 9,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -99,7 +99,7 @@
     {
       "name": "RainforestIslandsTravellerStone",
       "type": "block",
-      "sortid": 10,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -109,7 +109,7 @@
     {
       "name": "EvergreenDepthsTravellerStone",
       "type": "block",
-      "sortid": 11,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -119,7 +119,7 @@
     {
       "name": "DryLands",
       "type": "biome",
-      "sortid": 12,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -128,7 +128,7 @@
     {
       "name": "DesertLizard",
       "type": "livingentity",
-      "sortid": 13,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -275,7 +275,7 @@
     {
       "name": "EoticBambooStem",
       "type": "block",
-      "sortid": 22,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -284,7 +284,7 @@
     {
       "name": "EoticBambooGrowing",
       "type": "block",
-      "sortid": 23,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -293,7 +293,7 @@
     {
       "name": "EoticBamboo",
       "type": "item",
-      "sortid": 24,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -302,7 +302,7 @@
     {
       "name": "EoticBambooGrowth",
       "type": "procedure",
-      "sortid": 24,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -331,7 +331,7 @@
     {
       "name": "EoticBambooVerticalBreaking",
       "type": "procedure",
-      "sortid": 26,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -360,7 +360,7 @@
     {
       "name": "Shrinkage",
       "type": "procedure",
-      "sortid": 27,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -377,7 +377,7 @@
     {
       "name": "EoticBambooPlantage",
       "type": "procedure",
-      "sortid": 28,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -410,7 +410,7 @@
     {
       "name": "SandDustObtaining",
       "type": "recipe",
-      "sortid": 29,
+      "sortid": 27,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -420,12 +420,59 @@
     {
       "name": "SandDustObtaining2",
       "type": "recipe",
-      "sortid": 30,
+      "sortid": 28,
       "compiles": true,
       "locked_code": true,
       "ids": {},
       "registry_name": "sand_dust_obtaining_2",
       "path": "~/Compatibility Recipes/Wastelands of Baedoor"
+    },
+    {
+      "name": "EsrahLog",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "esrah_log"
+    },
+    {
+      "name": "Logs",
+      "type": "tag",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "logs",
+      "path": "~/Common Tags"
+    },
+    {
+      "name": "EsrahPlanks",
+      "type": "block",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "esrah_planks"
+    },
+    {
+      "name": "EsrahPlanksRecipe",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "esrah_planks_recipe"
+    },
+    {
+      "name": "Planks",
+      "type": "tag",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "planks",
+      "path": "~/Common Tags"
     }
   ],
   "variable_elements": [],
@@ -438,6 +485,7 @@
       "biome.cobr.eotic_lakes": "Eotic Lakes",
       "block.cobr.dune_traveller_stone": "Dune Traveller Stone",
       "block.cobr.rainforest_islands_traveller_stone": "Rainforest Islands Traveller Stone",
+      "block.cobr.esrah_planks": "Esrah Planks",
       "itemGroup.tabcivilisationsof_baedoor": "Civilisations of Baedoor",
       "block.cobr.permafrost_traveller_stone": "Permafrost Traveller Stone",
       "block.cobr.evergreen_depths_traveller_stone": "Evergreen Depths Traveller Stone",
@@ -447,6 +495,7 @@
       "block.cobr.empty_traveller_stone": "Empty Traveller Stone",
       "item.cobr.spawn_entity_oasis_spawn_egg": "[Spawn Entity] Oasis Spawn Egg",
       "item.cobr.dunes": "Scroll of the Dunes",
+      "block.cobr.esrah_log": "Esrah Log",
       "entity.cobr.spawn_entity_oasis": "[Spawn Entity] Oasis"
     }
   },
@@ -469,6 +518,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Common Tags",
+        "children": []
       }
     ]
   },
@@ -478,16 +531,17 @@
     "version": "v0.a2",
     "description": "Wanderers of our world... new mysteries have arised, giving birth to new dimensional entrances. Some forces try to conquer the lands of Overworld.. or maybe they already succeed? Find yourself inside fight of strange civilisations that appeared in this place.",
     "author": "Toma400",
-    "websiteURL": "https://mcreator.net",
-    "license": "Academic Free License v3.0",
+    "websiteURL": "https://mcreator.net/forum/76024/civilisations-baedoor-structures-npcs-and-civilisations-mod",
+    "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "cob_logo",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "credits": "Toma400, DylanVHS, Poltergeist, Lyof, RiftJaw",
     "modElementsPackage": "net.mcreator.cobr",
     "lockBaseModFiles": false
   },
