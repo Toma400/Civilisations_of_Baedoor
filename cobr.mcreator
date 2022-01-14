@@ -473,6 +473,188 @@
       "ids": {},
       "registry_name": "planks",
       "path": "~/Common Tags"
+    },
+    {
+      "name": "EoticBambooSpawnCondition",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_bamboo_spawn_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BambooTypePlant",
+      "type": "tag",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bamboo_type_plant",
+      "path": "~/Utility Tags"
+    },
+    {
+      "name": "PlantBreaking",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "plant_breaking",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LizardMeat",
+      "type": "food",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lizard_meat"
+    },
+    {
+      "name": "WeakMeat",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "weak_meat",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CookedLizardMeat",
+      "type": "food",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cooked_lizard_meat"
+    },
+    {
+      "name": "CookedLizardMeatRecipe",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cooked_lizard_meat_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CookedLizardMeatSmokerRecipe",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cooked_lizard_meat_smoker_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CookedLizardMeatCampfireRecipe",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cooked_lizard_meat_campfire_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "HardenedSand",
+      "type": "block",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hardened_sand"
+    },
+    {
+      "name": "HardenedSandRecipe",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hardened_sand_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "HardenedSandUnrecipe",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hardened_sand_unrecipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DesertLizardLootTable",
+      "type": "loottable",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "desert_lizard_loot_table"
+    },
+    {
+      "name": "PatchouliBookRecipe",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "patchouli_book_recipe",
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -484,6 +666,7 @@
       "biome.cobr.dry_lands": "Dry Lands",
       "biome.cobr.eotic_lakes": "Eotic Lakes",
       "block.cobr.dune_traveller_stone": "Dune Traveller Stone",
+      "item.cobr.cooked_lizard_meat": "Cooked Lizard Meat",
       "block.cobr.rainforest_islands_traveller_stone": "Rainforest Islands Traveller Stone",
       "block.cobr.esrah_planks": "Esrah Planks",
       "itemGroup.tabcivilisationsof_baedoor": "Civilisations of Baedoor",
@@ -496,7 +679,9 @@
       "item.cobr.spawn_entity_oasis_spawn_egg": "[Spawn Entity] Oasis Spawn Egg",
       "item.cobr.dunes": "Scroll of the Dunes",
       "block.cobr.esrah_log": "Esrah Log",
-      "entity.cobr.spawn_entity_oasis": "[Spawn Entity] Oasis"
+      "item.cobr.lizard_meat": "Raw Lizard Meat",
+      "entity.cobr.spawn_entity_oasis": "[Spawn Entity] Oasis",
+      "block.cobr.hardened_sand": "Hardened Sand"
     }
   },
   "foldersRoot": {
@@ -521,6 +706,10 @@
       },
       {
         "name": "Common Tags",
+        "children": []
+      },
+      {
+        "name": "Utility Tags",
         "children": []
       }
     ]

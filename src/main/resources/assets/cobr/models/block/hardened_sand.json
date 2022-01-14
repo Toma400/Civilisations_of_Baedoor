@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cobr:blocks/hardened_sand",
+    "up": "cobr:blocks/hardened_sand",
+    "north": "cobr:blocks/hardened_sand",
+    "east": "cobr:blocks/hardened_sand",
+    "south": "cobr:blocks/hardened_sand",
+    "west": "cobr:blocks/hardened_sand",
+    "particle": "cobr:blocks/hardened_sand"
+  }
+}

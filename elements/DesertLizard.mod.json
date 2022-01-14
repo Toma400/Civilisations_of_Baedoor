@@ -77,7 +77,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "Items.RABBIT"
+      "value": "CUSTOM:LizardMeat"
     },
     "livingSound": {
       "value": ""

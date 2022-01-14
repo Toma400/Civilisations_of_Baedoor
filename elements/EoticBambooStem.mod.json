@@ -37,7 +37,7 @@
     "hardness": 0.1,
     "resistance": 0.1,
     "hasGravity": false,
-    "isWaterloggable": false,
+    "isWaterloggable": true,
     "creativeTab": {
       "value": "No creative tab entry"
     },
@@ -121,21 +121,28 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onDestroyedByPlayer": {
-      "name": "EoticBambooVerticalBreaking"
-    },
-    "onDestroyedByExplosion": {
-      "name": "EoticBambooVerticalBreaking"
-    },
     "onStartToDestroy": {
       "name": "EoticBambooVerticalBreaking"
     },
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
-    "blocksToReplace": [],
-    "frequencyPerChunks": 10,
+    "spawnWorldTypes": [
+      "CUSTOM:Dunes"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:EoticLakes"
+      }
+    ],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.WATER"
+      }
+    ],
+    "frequencyPerChunks": 32,
     "frequencyOnChunk": 16,
-    "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "minGenerateHeight": 50,
+    "maxGenerateHeight": 128,
+    "generateCondition": {
+      "name": "EoticBambooSpawnCondition"
+    }
   }
 }

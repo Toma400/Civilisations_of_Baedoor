@@ -23,7 +23,6 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.pathfinding.SwimmerPathNavigator;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.passive.RabbitEntity;
@@ -45,6 +44,7 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.material.Material;
 
 import net.mcreator.cobr.itemgroup.CivilisationsofBaedoorItemGroup;
+import net.mcreator.cobr.item.LizardMeatItem;
 import net.mcreator.cobr.entity.renderer.DesertLizardRenderer;
 import net.mcreator.cobr.CobrModElements;
 
@@ -169,7 +169,7 @@ public class DesertLizardEntity extends CobrModElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(Items.RABBIT));
+			this.entityDropItem(new ItemStack(LizardMeatItem.block));
 		}
 
 		@Override

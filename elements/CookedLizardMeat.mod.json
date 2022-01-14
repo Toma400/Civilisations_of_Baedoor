@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "cooked_lizard_meat",
+    "customModelName": "Normal",
+    "name": "Cooked Lizard Meat",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:CivilisationsofBaedoor"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 3,
+    "saturation": 0.1,
+    "eatingSpeed": 24,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": true,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}

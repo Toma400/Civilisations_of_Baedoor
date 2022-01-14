@@ -1,0 +1,16 @@
+{
+  "group": "sand",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:hardened_sand"
+    }
+  },
+  "result": {
+    "item": "minecraft:sand",
+    "count": 2
+  }
+}

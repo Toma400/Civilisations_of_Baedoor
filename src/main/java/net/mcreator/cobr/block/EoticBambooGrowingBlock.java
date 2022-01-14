@@ -18,7 +18,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
-import net.minecraft.world.Explosion;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.vector.Vector3d;
@@ -45,7 +44,6 @@ import net.minecraft.inventory.container.ChestContainer;
 import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.inventory.ISidedInventory;
-import net.minecraft.fluid.FluidState;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -146,39 +144,6 @@ public class EoticBambooGrowingBlock extends CobrModElements.ModElement {
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				EoticBambooGrowthProcedure.executeProcedure($_dependencies);
-			}
-		}
-
-		@Override
-		public boolean removedByPlayer(BlockState blockstate, World world, BlockPos pos, PlayerEntity entity, boolean willHarvest, FluidState fluid) {
-			boolean retval = super.removedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				EoticBambooVerticalBreakingProcedure.executeProcedure($_dependencies);
-			}
-			return retval;
-		}
-
-		@Override
-		public void onExplosionDestroy(World world, BlockPos pos, Explosion e) {
-			super.onExplosionDestroy(world, pos, e);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				EoticBambooVerticalBreakingProcedure.executeProcedure($_dependencies);
 			}
 		}
 

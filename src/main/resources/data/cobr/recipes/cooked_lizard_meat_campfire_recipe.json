@@ -1,0 +1,12 @@
+{
+  "group": "cooked_lizard_meat",
+  "type": "minecraft:campfire_cooking",
+  "experience": 1,
+  "cookingtime": 150,
+  "ingredient": {
+    "item": "cobr:lizard_meat"
+  },
+  "result": {
+    "item": "cobr:cooked_lizard_meat"
+  }
+}

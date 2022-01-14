@@ -124,12 +124,6 @@
     "onTickUpdate": {
       "name": "EoticBambooGrowth"
     },
-    "onDestroyedByPlayer": {
-      "name": "EoticBambooVerticalBreaking"
-    },
-    "onDestroyedByExplosion": {
-      "name": "EoticBambooVerticalBreaking"
-    },
     "onStartToDestroy": {
       "name": "EoticBambooVerticalBreaking"
     },

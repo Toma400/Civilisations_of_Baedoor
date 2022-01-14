@@ -7,7 +7,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 
-import net.minecraft.world.gen.trunkplacer.StraightTrunkPlacer;
 import net.minecraft.world.gen.treedecorator.TrunkVineTreeDecorator;
 import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
 import net.minecraft.world.gen.treedecorator.LeaveVineTreeDecorator;
@@ -16,14 +15,8 @@ import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraft.world.gen.placement.NoiseDependant;
-import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
-import net.minecraft.world.gen.foliageplacer.BlobFoliagePlacer;
-import net.minecraft.world.gen.feature.TwoLayerFeature;
 import net.minecraft.world.gen.feature.Features;
-import net.minecraft.world.gen.feature.FeatureSpread;
 import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
-import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
@@ -39,14 +32,11 @@ import net.minecraft.state.BooleanProperty;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.cobr.block.EoticBambooGrowingBlock;
 import net.mcreator.cobr.CobrModElements;
 
 import java.util.Set;
 import java.util.Random;
 import java.util.List;
-
-import com.google.common.collect.ImmutableList;
 
 @CobrModElements.ModElement.Tag
 public class EoticLakesBiome extends CobrModElements.ModElement {
@@ -64,17 +54,6 @@ public class EoticLakesBiome extends CobrModElements.ModElement {
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.SAND.getDefaultState(),
 								Blocks.SANDSTONE.getDefaultState(), Blocks.SANDSTONE.getDefaultState())));
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
-						.withConfiguration(
-								(new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(EoticBambooGrowingBlock.block.getDefaultState()),
-										new SimpleBlockStateProvider(Blocks.AIR.getDefaultState()),
-										new BlobFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 3),
-										new StraightTrunkPlacer(1, 2, 0), new TwoLayerFeature(1, 0, 1)))
-												.setDecorators(ImmutableList.of(CustomLeaveVineTreeDecorator.instance,
-														CustomTrunkVineTreeDecorator.instance, new CustomCocoaTreeDecorator()))
-												.setMaxWaterDepth(0).build())
-						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(1, 0.1F, 1))));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.RANDOM_PATCH.withConfiguration(Features.Configs.GRASS_PATCH_CONFIG).withPlacement(Features.Placements.PATCH_PLACEMENT)
 								.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8D, 5, 4))));
@@ -88,7 +67,7 @@ public class EoticLakesBiome extends CobrModElements.ModElement {
 				DefaultBiomeFeatures.withLavaAndWaterLakes(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.DESERT).depth(0.15f).scale(0.05f)
-						.temperature(1.8f).downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
+						.temperature(1.800368f).downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
 				event.getRegistry().register(biome.setRegistryName("cobr:eotic_lakes"));
 			}

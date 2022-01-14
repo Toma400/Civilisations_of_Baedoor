@@ -1,0 +1,29 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "raw_lizard_meat",
+    "customModelName": "Normal",
+    "name": "Raw Lizard Meat",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:CivilisationsofBaedoor"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 1,
+    "saturation": 0.1,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": true,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "WeakMeat"
+    }
+  }
+}

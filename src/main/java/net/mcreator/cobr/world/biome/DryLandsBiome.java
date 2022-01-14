@@ -87,8 +87,8 @@ public class DryLandsBiome extends CobrModElements.ModElement {
 				DefaultBiomeFeatures.withDesertWells(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				mobSpawnInfo.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(EntityType.RABBIT, 100, 2, 4));
-				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.DESERT).depth(0.2f).scale(0.1f).temperature(2f)
-						.downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
+				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.DESERT).depth(0.2f).scale(0.1f)
+						.temperature(1.900456f).downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
 				event.getRegistry().register(biome.setRegistryName("cobr:dry_lands"));
 			}

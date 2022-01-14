@@ -40,7 +40,7 @@
       "value": "No parent"
     },
     "rainingPossibility": 0.5,
-    "temperature": 1.8,
+    "temperature": 1.800368,
     "baseHeight": 0.15,
     "heightVariation": 0.05,
     "biomeType": "DESERT",
@@ -56,9 +56,9 @@
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 1,
+    "treesPerChunk": 0,
     "vanillaTreeType": "Default",
-    "treeType": 1,
+    "treeType": 0,
     "minHeight": 1,
     "maxWaterDepth": 0,
     "treeStem": {

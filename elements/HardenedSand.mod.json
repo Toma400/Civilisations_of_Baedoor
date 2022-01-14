@@ -2,20 +2,19 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "esrah_planks",
-    "textureTop": "esrah_planks",
-    "textureLeft": "esrah_planks",
-    "textureFront": "esrah_planks",
-    "textureRight": "esrah_planks",
-    "textureBack": "esrah_planks",
-    "renderType": 11,
-    "customModelName": "Single texture",
+    "texture": "hardened_sand",
+    "textureTop": "hardened_sand",
+    "textureLeft": "hardened_sand",
+    "textureFront": "hardened_sand",
+    "textureRight": "hardened_sand",
+    "textureBack": "hardened_sand",
+    "renderType": 10,
+    "customModelName": "Normal",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
-    "blockBase": "Slab",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -33,16 +32,16 @@
         "subtract": false
       }
     ],
-    "name": "Esrah Planks",
+    "name": "Hardened Sand",
     "specialInfo": [],
     "hardness": 2.0,
-    "resistance": 3.0,
+    "resistance": 1.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:CivilisationsofBaedoor"
     },
-    "destroyTool": "axe",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
@@ -53,7 +52,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "WOOD"
+      "value": "SAND"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -68,7 +67,7 @@
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 20,
+    "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
@@ -78,7 +77,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "WOOD"
+      "value": "STONE"
     },
     "breakSound": {
       "value": ""

@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:EoticBambooStem"
+      },
+      {
+        "value": "CUSTOM:EoticBambooGrowing"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "bamboo_type_plant",
+    "namespace": "cobr"
+  }
+}

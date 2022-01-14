@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Campfire cooking",
+    "xpReward": 1.0,
+    "cookingTime": 150,
+    "recipeRetstackSize": 1,
+    "group": "cooked_lizard_meat",
+    "recipeShapeless": false,
+    "campfireCookingInputStack": {
+      "value": "CUSTOM:LizardMeat"
+    },
+    "campfireCookingReturnStack": {
+      "value": "CUSTOM:CookedLizardMeat"
+    },
+    "name": "cooked_lizard_meat_campfire_recipe",
+    "namespace": "mod"
+  }
+}
