@@ -939,6 +939,46 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "spawn_entity_bamboo"
+    },
+    {
+      "name": "DesertMobsConditioning",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "desert_mobs_conditioning",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DesertMobsSpawnable",
+      "type": "tag",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "desert_mobs_spawnable",
+      "path": "~/Utility Tags"
     }
   ],
   "variable_elements": [],
@@ -950,8 +990,8 @@
       "advancements.acrossthe_dunes.descr": "You entered the portal to the neverending desert... let\u0027s the dry wind be felt in your lungs, wanderer.",
       "block.cobr.rainforest_islands_traveller_stone": "Rainforest Islands Traveller Stone",
       "advancements.the_crusade_began.title": "The Crusade Began",
-      "entity.cobr.desert_lizard": "Desert Lizard",
       "block.cobr.evergreen_depths_traveller_stone": "Evergreen Depths Traveller Stone",
+      "entity.cobr.desert_lizard": "Desert Lizard",
       "block.cobr.eotic_bamboo_growing": "Eotic Bamboo",
       "item.cobr.desert_lizard_spawn_egg": "Desert Lizard Spawn Egg",
       "advancements.acrossthe_dunes.title": "Across the Dunes",
