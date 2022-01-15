@@ -9,7 +9,7 @@
     "group": "cooked_lizard_meat",
     "recipeShapeless": false,
     "smokingInputStack": {
-      "value": "CUSTOM:LizardMeat"
+      "value": "CUSTOM:RawLizardMeat"
     },
     "smokingReturnStack": {
       "value": "CUSTOM:CookedLizardMeat"

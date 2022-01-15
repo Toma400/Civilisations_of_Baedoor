@@ -12,6 +12,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.gen.feature.template.RuleTest;
 import net.minecraft.world.gen.feature.template.IRuleTestType;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
@@ -56,7 +57,9 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.cobr.procedures.EoticBambooVerticalBreakingProcedure;
+import net.mcreator.cobr.procedures.EoticBambooVerticalBreakingDownProcedure;
 import net.mcreator.cobr.procedures.EoticBambooSpawnConditionProcedure;
+import net.mcreator.cobr.procedures.EoticBambooGrowthProcedure;
 import net.mcreator.cobr.item.EoticBambooItem;
 import net.mcreator.cobr.CobrModElements;
 
@@ -73,7 +76,7 @@ public class EoticBambooStemBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:eotic_bamboo_stem")
 	public static final Block block = null;
 	public EoticBambooStemBlock(CobrModElements instance) {
-		super(instance, 21);
+		super(instance, 27);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -153,6 +156,41 @@ public class EoticBambooStemBlock extends CobrModElements.ModElement {
 		}
 
 		@Override
+		public void neighborChanged(BlockState blockstate, World world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+			super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			if (world.getRedstonePowerFromNeighbors(new BlockPos(x, y, z)) > 0) {
+			} else {
+			}
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EoticBambooVerticalBreakingDownProcedure.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
+		public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
+			super.tick(blockstate, world, pos, random);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EoticBambooGrowthProcedure.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
 		public void onBlockClicked(BlockState blockstate, World world, BlockPos pos, PlayerEntity entity) {
 			super.onBlockClicked(blockstate, world, pos, entity);
 			int x = pos.getX();
@@ -207,7 +245,7 @@ public class EoticBambooStemBlock extends CobrModElements.ModElement {
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 16)).range(128)
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 16)).range(150)
 					.square().func_242731_b(32);
 			event.getRegistry().register(feature.setRegistryName("eotic_bamboo_stem"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("cobr:eotic_bamboo_stem"), configuredFeature);

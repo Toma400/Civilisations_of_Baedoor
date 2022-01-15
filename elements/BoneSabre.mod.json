@@ -1,0 +1,37 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "bone_sabre",
+    "customModelName": "Normal",
+    "name": "Bone Sabre",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:CivilisationsofBaedoor"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 2.4,
+    "enchantability": 14,
+    "damageVsEntity": 4.0,
+    "usageCount": 140,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.BONE"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "BoneWeaponsSlownessEffect"
+    },
+    "onItemInUseTick": {
+      "name": "SabreRegistry"
+    }
+  }
+}

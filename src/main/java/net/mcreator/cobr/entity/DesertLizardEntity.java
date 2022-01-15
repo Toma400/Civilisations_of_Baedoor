@@ -23,7 +23,6 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.pathfinding.SwimmerPathNavigator;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.passive.RabbitEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
@@ -44,7 +43,6 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.material.Material;
 
 import net.mcreator.cobr.itemgroup.CivilisationsofBaedoorItemGroup;
-import net.mcreator.cobr.item.LizardMeatItem;
 import net.mcreator.cobr.entity.renderer.DesertLizardRenderer;
 import net.mcreator.cobr.CobrModElements;
 
@@ -54,7 +52,7 @@ public class DesertLizardEntity extends CobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.8f)).build("desert_lizard").setRegistryName("desert_lizard");
 	public DesertLizardEntity(CobrModElements instance) {
-		super(instance, 9);
+		super(instance, 15);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new DesertLizardRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
@@ -165,11 +163,6 @@ public class DesertLizardEntity extends CobrModElements.ModElement {
 		@Override
 		public boolean canDespawn(double distanceToClosestPlayer) {
 			return false;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(LizardMeatItem.block));
 		}
 
 		@Override

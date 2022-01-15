@@ -26,7 +26,7 @@ public class HardenedSandBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:hardened_sand")
 	public static final Block block = null;
 	public HardenedSandBlock(CobrModElements instance) {
-		super(instance, 40);
+		super(instance, 1);
 	}
 
 	@Override

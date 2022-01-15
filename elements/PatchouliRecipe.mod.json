@@ -19,13 +19,13 @@
         "value": ""
       },
       {
-        "value": ""
+        "value": "CUSTOM:EmptyTravellerStone"
       },
       {
         "value": "Items.BOOK"
       },
       {
-        "value": "CUSTOM:EmptyTravellerStone"
+        "value": ""
       },
       {
         "value": ""
@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:EvergreenDepthsTravellerStone"
+      "value": "Items.BOOK"
     },
-    "name": "patchouli_book_recipe",
+    "name": "patchouli_recipe",
     "namespace": "mod"
   }
 }

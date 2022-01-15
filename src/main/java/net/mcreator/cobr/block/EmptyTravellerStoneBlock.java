@@ -64,7 +64,7 @@ public class EmptyTravellerStoneBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:empty_traveller_stone")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public EmptyTravellerStoneBlock(CobrModElements instance) {
-		super(instance, 2);
+		super(instance, 4);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 

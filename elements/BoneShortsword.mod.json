@@ -1,0 +1,34 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "bone_shortsword",
+    "customModelName": "Normal",
+    "name": "Bone Shortsword",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:CivilisationsofBaedoor"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.5,
+    "enchantability": 14,
+    "damageVsEntity": 4.0,
+    "usageCount": 240,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.BONE"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "BoneWeaponsSlownessEffect"
+    }
+  }
+}

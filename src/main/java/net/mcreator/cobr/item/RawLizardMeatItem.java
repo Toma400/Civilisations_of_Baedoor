@@ -19,11 +19,11 @@ import java.util.Map;
 import java.util.HashMap;
 
 @CobrModElements.ModElement.Tag
-public class LizardMeatItem extends CobrModElements.ModElement {
-	@ObjectHolder("cobr:lizard_meat")
+public class RawLizardMeatItem extends CobrModElements.ModElement {
+	@ObjectHolder("cobr:raw_lizard_meat")
 	public static final Item block = null;
-	public LizardMeatItem(CobrModElements instance) {
-		super(instance, 35);
+	public RawLizardMeatItem(CobrModElements instance) {
+		super(instance, 11);
 	}
 
 	@Override
@@ -34,7 +34,7 @@ public class LizardMeatItem extends CobrModElements.ModElement {
 		public FoodItemCustom() {
 			super(new Item.Properties().group(CivilisationsofBaedoorItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON)
 					.food((new Food.Builder()).hunger(1).saturation(0.1f).meat().build()));
-			setRegistryName("lizard_meat");
+			setRegistryName("raw_lizard_meat");
 		}
 
 		@Override

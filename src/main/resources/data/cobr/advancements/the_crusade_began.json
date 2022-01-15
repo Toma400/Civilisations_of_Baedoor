@@ -1,0 +1,41 @@
+{
+  "display": {
+    "background": "cobr:textures/esrah_log.png",
+    "icon": {
+      "item": "cobr:dune_traveller_stone"
+    },
+    "title": {
+      "translate": "advancements.the_crusade_began.title"
+    },
+    "description": {
+      "translate": "advancements.the_crusade_began.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_crusade_began": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "cobr:empty_traveller_stone_recipe",
+      "cobr:dunes_igniter_recipe",
+      "cobr:sand_dust_obtaining",
+      "cobr:sand_dust_obtaining_2",
+      "cobr:esrah_planks_recipe",
+      "cobr:cooked_lizard_meat_recipe",
+      "cobr:cooked_lizard_meat_smoker_recipe",
+      "cobr:cooked_lizard_meat_campfire_recipe",
+      "cobr:hardened_sand_recipe",
+      "minecraft:hardened_sand_unrecipe",
+      "cobr:hardened_sand_into_glass_recipe",
+      "cobr:bone_shortsword_recipe",
+      "cobr:bone_sabre_recipe"
+    ]
+  }
+}

@@ -8,8 +8,11 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
+import net.minecraftforge.common.ForgeMod;
 
 import net.minecraft.world.World;
+import net.minecraft.world.IWorldReader;
+import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
@@ -44,7 +47,7 @@ public class SpawnEntityOasisEntity extends CobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
 			.size(0.6f, 1.8f)).build("spawn_entity_oasis").setRegistryName("spawn_entity_oasis");
 	public SpawnEntityOasisEntity(CobrModElements instance) {
-		super(instance, 15);
+		super(instance, 21);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new SpawnEntityOasisRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}
@@ -67,6 +70,7 @@ public class SpawnEntityOasisEntity extends CobrModElements.ModElement {
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 50);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 0);
 			ammma = ammma.createMutableAttribute(Attributes.FLYING_SPEED, 0);
+			ammma = ammma.createMutableAttribute(ForgeMod.SWIM_SPEED.get(), 0);
 			event.put(entity, ammma.create());
 		}
 	}
@@ -162,6 +166,21 @@ public class SpawnEntityOasisEntity extends CobrModElements.ModElement {
 				$_dependencies.put("world", world);
 				SpawnEntitiesUseProcedure.executeProcedure($_dependencies);
 			}
+		}
+
+		@Override
+		public boolean canBreatheUnderwater() {
+			return true;
+		}
+
+		@Override
+		public boolean isNotColliding(IWorldReader worldreader) {
+			return worldreader.checkNoEntityCollision(this, VoxelShapes.create(this.getBoundingBox()));
+		}
+
+		@Override
+		public boolean isPushedByWater() {
+			return false;
 		}
 
 		@Override

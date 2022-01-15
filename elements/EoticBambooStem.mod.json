@@ -2,7 +2,7 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "eotic_bamboo",
+    "texture": "eotic_bamboo_stem",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -121,6 +121,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onNeighbourBlockChanges": {
+      "name": "EoticBambooVerticalBreakingDown"
+    },
+    "onTickUpdate": {
+      "name": "EoticBambooGrowth"
+    },
     "onStartToDestroy": {
       "name": "EoticBambooVerticalBreaking"
     },
@@ -139,8 +145,8 @@
     ],
     "frequencyPerChunks": 32,
     "frequencyOnChunk": 16,
-    "minGenerateHeight": 50,
-    "maxGenerateHeight": 128,
+    "minGenerateHeight": 30,
+    "maxGenerateHeight": 150,
     "generateCondition": {
       "name": "EoticBambooSpawnCondition"
     }

@@ -1,0 +1,30 @@
+{
+  "group": "bone_sabre",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    "34 ",
+    "67 "
+  ],
+  "key": {
+    "2": {
+      "item": "minecraft:bone"
+    },
+    "3": {
+      "item": "wobr:cracked_bone"
+    },
+    "4": {
+      "item": "minecraft:bone"
+    },
+    "6": {
+      "item": "minecraft:bone"
+    },
+    "7": {
+      "item": "wobr:cracked_bone"
+    }
+  },
+  "result": {
+    "item": "cobr:bone_sabre",
+    "count": 1
+  }
+}

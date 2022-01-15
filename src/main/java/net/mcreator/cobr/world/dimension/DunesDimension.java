@@ -75,7 +75,7 @@ public class DunesDimension extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:dunes_portal")
 	public static final CustomPortalBlock portal = null;
 	public DunesDimension(CobrModElements instance) {
-		super(instance, 7);
+		super(instance, 9);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new POIRegisterHandler());
 	}
 

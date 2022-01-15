@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "cobr:block/portal_block"
+    }
+  }
+}

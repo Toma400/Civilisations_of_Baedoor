@@ -96,6 +96,9 @@ public class EoticBambooGrowthProcedure {
 						if (world instanceof World)
 							((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
 					}
+					if (world instanceof World)
+						((World) world).notifyNeighborsOfStateChange(new BlockPos((int) x, (int) y, (int) z),
+								((World) world).getBlockState(new BlockPos((int) x, (int) y, (int) z)).getBlock());
 				} else if ((((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == EoticBambooStemBlock.block)
 						|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == EoticBambooGrowingBlock.block))) {
 					{

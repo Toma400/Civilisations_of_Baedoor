@@ -54,6 +54,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.cobr.procedures.EoticBambooVerticalBreakingProcedure;
+import net.mcreator.cobr.procedures.EoticBambooVerticalBreakingDownProcedure;
 import net.mcreator.cobr.procedures.EoticBambooGrowthProcedure;
 import net.mcreator.cobr.item.EoticBambooItem;
 import net.mcreator.cobr.CobrModElements;
@@ -74,7 +75,7 @@ public class EoticBambooGrowingBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:eotic_bamboo_growing")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public EoticBambooGrowingBlock(CobrModElements instance) {
-		super(instance, 22);
+		super(instance, 28);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 
@@ -129,6 +130,25 @@ public class EoticBambooGrowingBlock extends CobrModElements.ModElement {
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(EoticBambooItem.block));
+		}
+
+		@Override
+		public void neighborChanged(BlockState blockstate, World world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+			super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			if (world.getRedstonePowerFromNeighbors(new BlockPos(x, y, z)) > 0) {
+			} else {
+			}
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EoticBambooVerticalBreakingDownProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

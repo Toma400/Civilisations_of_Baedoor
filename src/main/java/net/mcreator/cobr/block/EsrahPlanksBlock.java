@@ -7,14 +7,12 @@ import net.minecraftforge.common.ToolType;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
-import net.minecraft.state.properties.SlabType;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.SlabBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -29,7 +27,7 @@ public class EsrahPlanksBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:esrah_planks")
 	public static final Block block = null;
 	public EsrahPlanksBlock(CobrModElements instance) {
-		super(instance, 30);
+		super(instance, 3);
 	}
 
 	@Override
@@ -38,7 +36,7 @@ public class EsrahPlanksBlock extends CobrModElements.ModElement {
 		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(CivilisationsofBaedoorItemGroup.tab))
 				.setRegistryName(block.getRegistryName()));
 	}
-	public static class CustomBlock extends SlabBlock {
+	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).setLightLevel(s -> 0).harvestLevel(0)
 					.harvestTool(ToolType.AXE).setRequiresTool());
@@ -60,7 +58,7 @@ public class EsrahPlanksBlock extends CobrModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, state.get(TYPE) == SlabType.DOUBLE ? 2 : 1));
+			return Collections.singletonList(new ItemStack(this, 1));
 		}
 	}
 }

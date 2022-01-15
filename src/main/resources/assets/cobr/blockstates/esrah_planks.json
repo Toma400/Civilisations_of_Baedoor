@@ -1,13 +1,7 @@
 {
   "variants": {
-    "type=bottom": {
+    "": {
       "model": "cobr:block/esrah_planks"
-    },
-    "type=top": {
-      "model": "cobr:block/esrah_planks_top"
-    },
-    "type=double": {
-      "model": "cobr:block/esrah_planks_full"
     }
   }
 }

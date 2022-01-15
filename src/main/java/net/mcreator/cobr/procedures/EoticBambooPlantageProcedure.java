@@ -1,14 +1,17 @@
 package net.mcreator.cobr.procedures;
 
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.cobr.item.EoticBambooItem;
-import net.mcreator.cobr.block.EoticBambooGrowingBlock;
+import net.mcreator.cobr.block.EoticBambooStemBlock;
 import net.mcreator.cobr.CobrMod;
 
 import java.util.Map;
@@ -45,12 +48,13 @@ public class EoticBambooPlantageProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getMaterial() == net.minecraft.block.material.Material.SAND)
+		if (((BlockTags.getCollection().getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
+				.contains((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock()))
 				&& ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z)))
 						.getMaterial() == net.minecraft.block.material.Material.AIR))) {
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) (y + 1), (int) z);
-				BlockState _bs = EoticBambooGrowingBlock.block.getDefaultState();
+				BlockState _bs = EoticBambooStemBlock.block.getDefaultState();
 				world.setBlockState(_bp, _bs, 3);
 			}
 			if (entity instanceof PlayerEntity) {
@@ -58,6 +62,23 @@ public class EoticBambooPlantageProcedure {
 				((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
 						((PlayerEntity) entity).container.func_234641_j_());
 			}
+		} else if (((BlockTags.getCollection().getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
+				.contains((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock()))
+				&& ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z)))
+						.getMaterial() == net.minecraft.block.material.Material.WATER))) {
+			{
+				BlockPos _bp = new BlockPos((int) x, (int) (y + 1), (int) z);
+				BlockState _bs = EoticBambooStemBlock.block.getDefaultState();
+				world.setBlockState(_bp, _bs, 3);
+			}
+			if (entity instanceof PlayerEntity) {
+				ItemStack _stktoremove = new ItemStack(EoticBambooItem.block);
+				((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+						((PlayerEntity) entity).container.func_234641_j_());
+			}
+			if (world instanceof World)
+				((World) world).notifyNeighborsOfStateChange(new BlockPos((int) x, (int) (y + 1), (int) z),
+						((World) world).getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z)).getBlock());
 		}
 	}
 }

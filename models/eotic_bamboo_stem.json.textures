@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "eotic_bamboo"
+        "0": "eotic_bamboo_stem"
       },
       "name": "default"
     }

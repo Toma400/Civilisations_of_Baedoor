@@ -2,8 +2,8 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "empty_traveller_stone",
-    "textureTop": "empty_traveller_stone",
+    "texture": "sandstone_top",
+    "textureTop": "sandstone_top",
     "textureLeft": "permafrost_traveller_stone",
     "textureFront": "permafrost_traveller_stone",
     "textureRight": "permafrost_traveller_stone",

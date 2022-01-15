@@ -1,8 +1,7 @@
 {
-  "parent": "block/slab",
+  "parent": "block/cube_all",
   "textures": {
-    "bottom": "cobr:blocks/esrah_planks",
-    "top": "cobr:blocks/esrah_planks",
-    "side": "cobr:blocks/esrah_planks"
+    "all": "cobr:blocks/esrah_planks",
+    "particle": "cobr:blocks/esrah_planks"
   }
 }

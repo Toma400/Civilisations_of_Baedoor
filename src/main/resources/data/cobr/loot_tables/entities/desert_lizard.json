@@ -7,14 +7,38 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "cobr:lizard_meat",
-          "weight": 1,
+          "name": "cobr:raw_lizard_meat",
+          "weight": 100,
           "functions": [
             {
               "function": "set_count",
               "count": {
                 "min": 1,
                 "max": 2
+              }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rabbit",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
               }
             },
             {

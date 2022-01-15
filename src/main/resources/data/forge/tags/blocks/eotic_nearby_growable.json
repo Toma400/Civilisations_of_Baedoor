@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "cobr:hardened_sand",
+    "minecraft:sand",
+    "minecraft:sandstone"
+  ]
+}

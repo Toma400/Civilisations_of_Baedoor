@@ -1,0 +1,32 @@
+{
+  "_fv": 24,
+  "_type": "structure",
+  "definition": {
+    "structure": "eotic_bamboo_height1",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 1000000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 15,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": -1,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "CUSTOM:Dunes"
+    ],
+    "restrictionBlocks": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:EoticLakes"
+      }
+    ],
+    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK",
+    "generateCondition": {
+      "name": "EoticBambooSpawnCondition"
+    },
+    "onStructureGenerated": {
+      "name": "EoticBambooAdditionalSpawning"
+    }
+  }
+}

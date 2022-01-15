@@ -2,8 +2,8 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "empty_traveller_stone",
-    "textureTop": "empty_traveller_stone",
+    "texture": "sandstone_top",
+    "textureTop": "sandstone_top",
     "textureLeft": "rainforest_islands_traveller_stone",
     "textureFront": "rainforest_islands_traveller_stone",
     "textureRight": "rainforest_islands_traveller_stone",

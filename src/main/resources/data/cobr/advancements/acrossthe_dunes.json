@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "cobr:dune_traveller_stone"
+    },
+    "title": {
+      "translate": "advancements.acrossthe_dunes.title"
+    },
+    "description": {
+      "translate": "advancements.acrossthe_dunes.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "acrossthe_dunes": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "cobr:the_crusade_began"
+}

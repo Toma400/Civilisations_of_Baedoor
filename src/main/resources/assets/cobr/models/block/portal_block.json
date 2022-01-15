@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cobr:blocks/portal_block",
+    "up": "cobr:blocks/portal_block",
+    "north": "cobr:blocks/portal_block",
+    "east": "cobr:blocks/portal_block",
+    "south": "cobr:blocks/portal_block",
+    "west": "cobr:blocks/portal_block",
+    "particle": "cobr:blocks/portal_block"
+  }
+}

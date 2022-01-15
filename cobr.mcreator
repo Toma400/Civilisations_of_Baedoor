@@ -4,7 +4,7 @@
     {
       "name": "Dunes",
       "type": "dimension",
-      "sortid": 7,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -16,7 +16,7 @@
     {
       "name": "EmptyTravellerStone",
       "type": "block",
-      "sortid": 2,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -26,7 +26,7 @@
     {
       "name": "EmptyTravellerStoneRecipe",
       "type": "recipe",
-      "sortid": 10,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -36,7 +36,7 @@
     {
       "name": "TravellerStoneTransition",
       "type": "procedure",
-      "sortid": 11,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -70,7 +70,7 @@
     {
       "name": "DuneTravellerStone",
       "type": "block",
-      "sortid": 3,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -80,7 +80,7 @@
     {
       "name": "CivilisationsofBaedoor",
       "type": "tab",
-      "sortid": 12,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -89,7 +89,7 @@
     {
       "name": "PermafrostTravellerStone",
       "type": "block",
-      "sortid": 4,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -99,7 +99,7 @@
     {
       "name": "RainforestIslandsTravellerStone",
       "type": "block",
-      "sortid": 5,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -109,7 +109,7 @@
     {
       "name": "EvergreenDepthsTravellerStone",
       "type": "block",
-      "sortid": 6,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -119,7 +119,7 @@
     {
       "name": "DryLands",
       "type": "biome",
-      "sortid": 13,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -128,7 +128,7 @@
     {
       "name": "DesertLizard",
       "type": "livingentity",
-      "sortid": 9,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -137,7 +137,7 @@
     {
       "name": "PortalIgnition",
       "type": "procedure",
-      "sortid": 14,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -171,7 +171,7 @@
     {
       "name": "SpawnEntityOasis",
       "type": "livingentity",
-      "sortid": 15,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -180,16 +180,17 @@
     {
       "name": "OasisSmall",
       "type": "structure",
-      "sortid": 16,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "oasis_small"
+      "registry_name": "oasis_small",
+      "path": "~/Structures/Dunes/Landscape"
     },
     {
       "name": "SpawnEntitiesUse",
       "type": "procedure",
-      "sortid": 17,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -222,7 +223,7 @@
     {
       "name": "DunesIgniterRecipe",
       "type": "recipe",
-      "sortid": 18,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -232,7 +233,7 @@
     {
       "name": "ShortTravelTravellerStone",
       "type": "procedure",
-      "sortid": 19,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -266,7 +267,7 @@
     {
       "name": "EoticLakes",
       "type": "biome",
-      "sortid": 20,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -275,25 +276,27 @@
     {
       "name": "EoticBambooStem",
       "type": "block",
-      "sortid": 21,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "eotic_bamboo_stem"
+      "registry_name": "eotic_bamboo_stem",
+      "path": "~/Blocks - Plants"
     },
     {
       "name": "EoticBambooGrowing",
       "type": "block",
-      "sortid": 22,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "eotic_bamboo_growing"
+      "registry_name": "eotic_bamboo_growing",
+      "path": "~/Blocks - Plants"
     },
     {
       "name": "EoticBamboo",
       "type": "item",
-      "sortid": 8,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -302,7 +305,7 @@
     {
       "name": "EoticBambooGrowth",
       "type": "procedure",
-      "sortid": 23,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -326,12 +329,13 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Pds - Plants"
     },
     {
       "name": "EoticBambooVerticalBreaking",
       "type": "procedure",
-      "sortid": 24,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -355,12 +359,13 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Pds - Plants"
     },
     {
       "name": "Shrinkage",
       "type": "procedure",
-      "sortid": 25,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -377,7 +382,7 @@
     {
       "name": "EoticBambooPlantage",
       "type": "procedure",
-      "sortid": 26,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -405,12 +410,13 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Pds - Plants"
     },
     {
       "name": "SandDustObtaining",
       "type": "recipe",
-      "sortid": 27,
+      "sortid": 33,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -420,7 +426,7 @@
     {
       "name": "SandDustObtaining2",
       "type": "recipe",
-      "sortid": 28,
+      "sortid": 34,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -430,7 +436,7 @@
     {
       "name": "EsrahLog",
       "type": "block",
-      "sortid": 1,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -439,7 +445,7 @@
     {
       "name": "Logs",
       "type": "tag",
-      "sortid": 29,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -449,7 +455,7 @@
     {
       "name": "EsrahPlanks",
       "type": "block",
-      "sortid": 30,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -458,16 +464,17 @@
     {
       "name": "EsrahPlanksRecipe",
       "type": "recipe",
-      "sortid": 31,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "esrah_planks_recipe"
+      "registry_name": "esrah_planks_recipe",
+      "path": "~/Recipes"
     },
     {
       "name": "Planks",
       "type": "tag",
-      "sortid": 32,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -477,7 +484,7 @@
     {
       "name": "EoticBambooSpawnCondition",
       "type": "procedure",
-      "sortid": 33,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -502,12 +509,13 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Pds - Plants"
     },
     {
       "name": "BambooTypePlant",
       "type": "tag",
-      "sortid": 34,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -517,7 +525,7 @@
     {
       "name": "PlantBreaking",
       "type": "procedure",
-      "sortid": 34,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -541,21 +549,13 @@
             "type": "world"
           }
         ]
-      }
-    },
-    {
-      "name": "LizardMeat",
-      "type": "food",
-      "sortid": 35,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "lizard_meat"
+      },
+      "path": "~/Pds - Plants"
     },
     {
       "name": "WeakMeat",
       "type": "procedure",
-      "sortid": 35,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -572,7 +572,7 @@
     {
       "name": "CookedLizardMeat",
       "type": "food",
-      "sortid": 36,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -581,7 +581,7 @@
     {
       "name": "CookedLizardMeatRecipe",
       "type": "recipe",
-      "sortid": 37,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -591,7 +591,7 @@
     {
       "name": "CookedLizardMeatSmokerRecipe",
       "type": "recipe",
-      "sortid": 38,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -601,7 +601,7 @@
     {
       "name": "CookedLizardMeatCampfireRecipe",
       "type": "recipe",
-      "sortid": 39,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -611,7 +611,7 @@
     {
       "name": "HardenedSand",
       "type": "block",
-      "sortid": 40,
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -620,7 +620,7 @@
     {
       "name": "HardenedSandRecipe",
       "type": "recipe",
-      "sortid": 41,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -630,7 +630,7 @@
     {
       "name": "HardenedSandUnrecipe",
       "type": "recipe",
-      "sortid": 42,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -640,21 +640,305 @@
     {
       "name": "DesertLizardLootTable",
       "type": "loottable",
-      "sortid": 43,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "desert_lizard_loot_table"
     },
     {
-      "name": "PatchouliBookRecipe",
+      "name": "HardenedSandIntoGlassRecipe",
       "type": "recipe",
-      "sortid": 44,
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hardened_sand_into_glass_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "RawLizardMeat",
+      "type": "food",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_lizard_meat"
+    },
+    {
+      "name": "BoneWeaponsSlownessEffect",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bone_weapons_slowness_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SabreRegistry",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sabre_registry",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WobrSabre",
+      "type": "tag",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wobr_sabre",
+      "path": "~/Compatibility Tags"
+    },
+    {
+      "name": "BoneShortsword",
+      "type": "tool",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bone_shortsword"
+    },
+    {
+      "name": "BoneSabre",
+      "type": "tool",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bone_sabre"
+    },
+    {
+      "name": "BoneShortswordRecipe",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bone_shortsword_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "BoneSabreRecipe",
+      "type": "recipe",
+      "sortid": 53,
       "compiles": true,
       "locked_code": true,
       "ids": {},
-      "registry_name": "patchouli_book_recipe",
+      "registry_name": "bone_sabre_recipe",
+      "path": "~/Compatibility Recipes/Wastelands of Baedoor"
+    },
+    {
+      "name": "TheCrusadeBegan",
+      "type": "achievement",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "the_crusade_began"
+    },
+    {
+      "name": "EoticNearbyGrowable",
+      "type": "tag",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_nearby_growable",
+      "path": "~/Utility Tags"
+    },
+    {
+      "name": "PreConfigManager",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pre_config_manager",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "PatchouliRecipe",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "patchouli_recipe",
       "path": "~/Recipes"
+    },
+    {
+      "name": "AcrosstheDunes",
+      "type": "achievement",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "acrossthe_dunes"
+    },
+    {
+      "name": "PortalBlock",
+      "type": "block",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "portal_block"
+    },
+    {
+      "name": "EoticBambooVerticalBreakingDown",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_bamboo_vertical_breaking_down",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Pds - Plants"
+    },
+    {
+      "name": "RockSmallSandstone",
+      "type": "structure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rock_small_sandstone",
+      "path": "~/Structures/Dunes/Landscape"
+    },
+    {
+      "name": "EoticBamboo1",
+      "type": "structure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_bamboo_1",
+      "path": "~/Structures/Dunes/Plants"
+    },
+    {
+      "name": "EoticBamboo2",
+      "type": "structure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_bamboo_2",
+      "path": "~/Structures/Dunes/Plants"
+    },
+    {
+      "name": "EoticBamboo3",
+      "type": "structure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_bamboo_3",
+      "path": "~/Structures/Dunes/Plants"
+    },
+    {
+      "name": "TravellingAchievements",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "travelling_achievements",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EoticBambooAdditionalSpawning",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_bamboo_additional_spawning",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Pds - Plants"
+    },
+    {
+      "name": "SpawnEntityBamboo",
+      "type": "livingentity",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawn_entity_bamboo"
     }
   ],
   "variable_elements": [],
@@ -662,24 +946,33 @@
   "language_map": {
     "en_us": {
       "block.cobr.eotic_bamboo_stem": "Eotic Bamboo",
+      "block.cobr.dune_traveller_stone": "Dune Traveller Stone",
+      "advancements.acrossthe_dunes.descr": "You entered the portal to the neverending desert... let\u0027s the dry wind be felt in your lungs, wanderer.",
+      "block.cobr.rainforest_islands_traveller_stone": "Rainforest Islands Traveller Stone",
+      "advancements.the_crusade_began.title": "The Crusade Began",
+      "entity.cobr.desert_lizard": "Desert Lizard",
+      "block.cobr.evergreen_depths_traveller_stone": "Evergreen Depths Traveller Stone",
+      "block.cobr.eotic_bamboo_growing": "Eotic Bamboo",
+      "item.cobr.desert_lizard_spawn_egg": "Desert Lizard Spawn Egg",
+      "advancements.acrossthe_dunes.title": "Across the Dunes",
+      "advancements.the_crusade_began.descr": "You entered the time of civilisations. Use traveller stone with the book to get guide.",
+      "item.cobr.spawn_entity_bamboo_spawn_egg": "[Spawn Entity] Bamboo Spawn Egg",
+      "item.cobr.dunes": "Scroll of the Dunes",
+      "block.cobr.esrah_log": "Esrah Log",
       "item.cobr.eotic_bamboo": "Eotic Bamboo",
       "biome.cobr.dry_lands": "Dry Lands",
       "biome.cobr.eotic_lakes": "Eotic Lakes",
-      "block.cobr.dune_traveller_stone": "Dune Traveller Stone",
+      "item.cobr.raw_lizard_meat": "Raw Lizard Meat",
+      "entity.cobr.spawn_entity_bamboo": "[Spawn Entity] Bamboo",
       "item.cobr.cooked_lizard_meat": "Cooked Lizard Meat",
-      "block.cobr.rainforest_islands_traveller_stone": "Rainforest Islands Traveller Stone",
+      "item.cobr.bone_shortsword": "Bone Shortsword",
       "block.cobr.esrah_planks": "Esrah Planks",
-      "itemGroup.tabcivilisationsof_baedoor": "Civilisations of Baedoor",
+      "item.cobr.bone_sabre": "Bone Sabre",
       "block.cobr.permafrost_traveller_stone": "Permafrost Traveller Stone",
-      "block.cobr.evergreen_depths_traveller_stone": "Evergreen Depths Traveller Stone",
-      "entity.cobr.desert_lizard": "Desert Lizard",
-      "item.cobr.desert_lizard_spawn_egg": "Desert Lizard Spawn Egg",
-      "block.cobr.eotic_bamboo_growing": "Eotic Bamboo",
+      "itemGroup.tabcivilisationsof_baedoor": "Civilisations of Baedoor",
+      "block.cobr.portal_block": "Portal Block",
       "block.cobr.empty_traveller_stone": "Empty Traveller Stone",
       "item.cobr.spawn_entity_oasis_spawn_egg": "[Spawn Entity] Oasis Spawn Egg",
-      "item.cobr.dunes": "Scroll of the Dunes",
-      "block.cobr.esrah_log": "Esrah Log",
-      "item.cobr.lizard_meat": "Raw Lizard Meat",
       "entity.cobr.spawn_entity_oasis": "[Spawn Entity] Oasis",
       "block.cobr.hardened_sand": "Hardened Sand"
     }
@@ -710,6 +1003,36 @@
       },
       {
         "name": "Utility Tags",
+        "children": []
+      },
+      {
+        "name": "Compatibility Tags",
+        "children": []
+      },
+      {
+        "name": "Structures",
+        "children": [
+          {
+            "name": "Dunes",
+            "children": [
+              {
+                "name": "Landscape",
+                "children": []
+              },
+              {
+                "name": "Plants",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pds - Plants",
+        "children": []
+      },
+      {
+        "name": "Blocks - Plants",
         "children": []
       }
     ]

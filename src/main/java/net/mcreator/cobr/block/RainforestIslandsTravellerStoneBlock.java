@@ -57,7 +57,7 @@ public class RainforestIslandsTravellerStoneBlock extends CobrModElements.ModEle
 	@ObjectHolder("cobr:rainforest_islands_traveller_stone")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public RainforestIslandsTravellerStoneBlock(CobrModElements instance) {
-		super(instance, 5);
+		super(instance, 7);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 
