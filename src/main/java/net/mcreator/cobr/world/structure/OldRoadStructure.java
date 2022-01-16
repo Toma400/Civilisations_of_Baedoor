@@ -28,14 +28,10 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.Mirror;
 
-import net.mcreator.cobr.procedures.EoticBambooSpawnConditionProcedure;
-
 import java.util.Random;
 
-import com.google.common.collect.ImmutableMap;
-
 @Mod.EventBusSubscriber
-public class EoticBamboo3Structure {
+public class OldRoadStructure {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -53,23 +49,21 @@ public class EoticBamboo3Structure {
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
-					if ((random.nextInt(1000000) + 1) <= 1000000) {
-						int count = random.nextInt(15) + 1;
+					if ((random.nextInt(1000000) + 1) <= 1000) {
+						int count = random.nextInt(1) + 1;
 						for (int a = 0; a < count; a++) {
 							int i = ci + random.nextInt(16);
 							int k = ck + random.nextInt(16);
-							int j = world.getHeight(Heightmap.Type.OCEAN_FLOOR_WG, i, k);
+							int j = world.getHeight(Heightmap.Type.WORLD_SURFACE_WG, i, k);
 							j -= 1;
 							Rotation rotation = Rotation.values()[random.nextInt(3)];
 							Mirror mirror = Mirror.values()[random.nextInt(2)];
-							BlockPos spawnTo = new BlockPos(i + 0, j + -2, k + 0);
+							BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 0);
 							int x = spawnTo.getX();
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
-							if (!EoticBambooSpawnConditionProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
-								continue;
 							Template template = world.getWorld().getStructureTemplateManager()
-									.getTemplateDefaulted(new ResourceLocation("cobr", "eotic_bamboo_height3"));
+									.getTemplateDefaulted(new ResourceLocation("cobr", "old_road_post"));
 							if (template == null)
 								return false;
 							template.func_237144_a_(world, spawnTo, new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
@@ -82,17 +76,12 @@ public class EoticBamboo3Structure {
 			};
 			configuredFeature = feature.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG)
 					.withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG));
-			event.getRegistry().register(feature.setRegistryName("eotic_bamboo_3"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("cobr:eotic_bamboo_3"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("old_road"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("cobr:old_road"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
 	public static void addFeatureToBiomes(BiomeLoadingEvent event) {
-		boolean biomeCriteria = false;
-		if (new ResourceLocation("cobr:eotic_lakes").equals(event.getName()))
-			biomeCriteria = true;
-		if (!biomeCriteria)
-			return;
 		event.getGeneration().getFeatures(GenerationStage.Decoration.SURFACE_STRUCTURES).add(() -> configuredFeature);
 	}
 }

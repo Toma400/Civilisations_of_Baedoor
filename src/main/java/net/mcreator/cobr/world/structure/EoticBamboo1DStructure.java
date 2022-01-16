@@ -29,13 +29,16 @@ import net.minecraft.util.RegistryKey;
 import net.minecraft.util.Mirror;
 
 import net.mcreator.cobr.procedures.EoticBambooSpawnConditionProcedure;
+import net.mcreator.cobr.procedures.EoticBambooAdditionalSpawningProcedure;
 
 import java.util.Random;
+import java.util.Map;
+import java.util.HashMap;
 
 import com.google.common.collect.ImmutableMap;
 
 @Mod.EventBusSubscriber
-public class EoticBamboo3Structure {
+public class EoticBamboo1DStructure {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -69,12 +72,20 @@ public class EoticBamboo3Structure {
 							if (!EoticBambooSpawnConditionProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
 								continue;
 							Template template = world.getWorld().getStructureTemplateManager()
-									.getTemplateDefaulted(new ResourceLocation("cobr", "eotic_bamboo_height3"));
+									.getTemplateDefaulted(new ResourceLocation("cobr", "eotic_bamboo_height1"));
 							if (template == null)
 								return false;
 							template.func_237144_a_(world, spawnTo, new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
 									.addProcessor(BlockIgnoreStructureProcessor.AIR_AND_STRUCTURE_BLOCK).setChunk(null).setIgnoreEntities(false),
 									random);
+							{
+								Map<String, Object> $_dependencies = new HashMap<>();
+								$_dependencies.put("x", x);
+								$_dependencies.put("y", y);
+								$_dependencies.put("z", z);
+								$_dependencies.put("world", world);
+								EoticBambooAdditionalSpawningProcedure.executeProcedure($_dependencies);
+							}
 						}
 					}
 					return true;
@@ -82,8 +93,8 @@ public class EoticBamboo3Structure {
 			};
 			configuredFeature = feature.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG)
 					.withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG));
-			event.getRegistry().register(feature.setRegistryName("eotic_bamboo_3"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("cobr:eotic_bamboo_3"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("eotic_bamboo_1_d"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("cobr:eotic_bamboo_1_d"), configuredFeature);
 		}
 	}
 	@SubscribeEvent

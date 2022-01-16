@@ -42,16 +42,22 @@ public class EoticBambooAdditionalSpawningProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() instanceof FlowingFluidBlock) && (((BlockTags
-				.getCollection().getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
-				.contains((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock()))
-				|| (BlockTags.getCollection().getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
-						.contains((world.getBlockState(new BlockPos((int) (x + 2), (int) y, (int) z))).getBlock())))
-				|| ((BlockTags.getCollection().getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
-						.contains((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z - 1)))).getBlock()))
+		if (((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() instanceof FlowingFluidBlock)
+				&& (((world.getBlockState(new BlockPos((int) (x + 1), (int) (y + 1), (int) z))).getBlock() instanceof FlowingFluidBlock)
+						&& ((world.getBlockState(new BlockPos((int) (x + 1), (int) (y + 1), (int) z)))
+								.getMaterial() == net.minecraft.block.material.Material.AIR)))
+				&& (((BlockTags.getCollection()
+						.getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
+						.contains((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock()))
 						|| (BlockTags.getCollection()
 								.getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
-								.contains((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z + 1)))).getBlock())))))) {
+								.contains((world.getBlockState(new BlockPos((int) (x + 2), (int) y, (int) z))).getBlock())))
+						|| ((BlockTags.getCollection()
+								.getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
+								.contains((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z - 1)))).getBlock()))
+								|| (BlockTags.getCollection()
+										.getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
+										.contains((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z + 1)))).getBlock())))))) {
 			if (world instanceof ServerWorld) {
 				Template template = ((ServerWorld) world).getStructureTemplateManager()
 						.getTemplateDefaulted(new ResourceLocation("cobr", "eotic_bamboo_height3"));
@@ -62,16 +68,22 @@ public class EoticBambooAdditionalSpawningProcedure {
 				}
 			}
 		}
-		if ((((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() instanceof FlowingFluidBlock) && (((BlockTags
-				.getCollection().getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
-				.contains((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock()))
-				|| (BlockTags.getCollection().getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
-						.contains((world.getBlockState(new BlockPos((int) (x - 2), (int) y, (int) z))).getBlock())))
-				|| ((BlockTags.getCollection().getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
-						.contains((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z - 1)))).getBlock()))
+		if (((((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() instanceof FlowingFluidBlock)
+				&& (((world.getBlockState(new BlockPos((int) (x - 1), (int) (y + 1), (int) z))).getBlock() instanceof FlowingFluidBlock)
+						&& ((world.getBlockState(new BlockPos((int) (x - 1), (int) (y + 1), (int) z)))
+								.getMaterial() == net.minecraft.block.material.Material.AIR)))
+				&& (((BlockTags.getCollection()
+						.getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
+						.contains((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock()))
 						|| (BlockTags.getCollection()
 								.getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
-								.contains((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z + 1)))).getBlock())))))) {
+								.contains((world.getBlockState(new BlockPos((int) (x - 2), (int) y, (int) z))).getBlock())))
+						|| ((BlockTags.getCollection()
+								.getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
+								.contains((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z - 1)))).getBlock()))
+								|| (BlockTags.getCollection()
+										.getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
+										.contains((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z + 1)))).getBlock())))))) {
 			if (world instanceof ServerWorld) {
 				Template template = ((ServerWorld) world).getStructureTemplateManager()
 						.getTemplateDefaulted(new ResourceLocation("cobr", "eotic_bamboo_height3"));
@@ -82,16 +94,22 @@ public class EoticBambooAdditionalSpawningProcedure {
 				}
 			}
 		}
-		if ((((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() instanceof FlowingFluidBlock) && (((BlockTags
-				.getCollection().getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
-				.contains((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z + 1)))).getBlock()))
-				|| (BlockTags.getCollection().getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
-						.contains((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z + 1)))).getBlock())))
-				|| ((BlockTags.getCollection().getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
-						.contains((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock()))
+		if (((((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() instanceof FlowingFluidBlock)
+				&& (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) (z + 1)))).getBlock() instanceof FlowingFluidBlock)
+						&& ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) (z + 1))))
+								.getMaterial() == net.minecraft.block.material.Material.AIR)))
+				&& (((BlockTags.getCollection()
+						.getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
+						.contains((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z + 1)))).getBlock()))
 						|| (BlockTags.getCollection()
 								.getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
-								.contains((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 2)))).getBlock())))))) {
+								.contains((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z + 1)))).getBlock())))
+						|| ((BlockTags.getCollection()
+								.getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
+								.contains((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock()))
+								|| (BlockTags.getCollection()
+										.getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
+										.contains((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 2)))).getBlock())))))) {
 			if (world instanceof ServerWorld) {
 				Template template = ((ServerWorld) world).getStructureTemplateManager()
 						.getTemplateDefaulted(new ResourceLocation("cobr", "eotic_bamboo_height3"));
@@ -102,16 +120,22 @@ public class EoticBambooAdditionalSpawningProcedure {
 				}
 			}
 		}
-		if ((((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() instanceof FlowingFluidBlock) && (((BlockTags
-				.getCollection().getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
-				.contains((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z - 1)))).getBlock()))
-				|| (BlockTags.getCollection().getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
-						.contains((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z - 1)))).getBlock())))
-				|| ((BlockTags.getCollection().getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
-						.contains((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock()))
+		if (((((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() instanceof FlowingFluidBlock)
+				&& (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) (z - 1)))).getBlock() instanceof FlowingFluidBlock)
+						&& ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) (z - 1))))
+								.getMaterial() == net.minecraft.block.material.Material.AIR)))
+				&& (((BlockTags.getCollection()
+						.getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
+						.contains((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z - 1)))).getBlock()))
 						|| (BlockTags.getCollection()
 								.getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
-								.contains((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 2)))).getBlock())))))) {
+								.contains((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z - 1)))).getBlock())))
+						|| ((BlockTags.getCollection()
+								.getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
+								.contains((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock()))
+								|| (BlockTags.getCollection()
+										.getTagByID(new ResourceLocation(("forge:eotic_nearby_growable").toLowerCase(java.util.Locale.ENGLISH)))
+										.contains((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 2)))).getBlock())))))) {
 			if (world instanceof ServerWorld) {
 				Template template = ((ServerWorld) world).getStructureTemplateManager()
 						.getTemplateDefaulted(new ResourceLocation("cobr", "eotic_bamboo_height3"));
@@ -122,5 +146,8 @@ public class EoticBambooAdditionalSpawningProcedure {
 				}
 			}
 		}
+		if (world instanceof World)
+			((World) world).notifyNeighborsOfStateChange(new BlockPos((int) x, (int) y, (int) z),
+					((World) world).getBlockState(new BlockPos((int) x, (int) y, (int) z)).getBlock());
 	}
 }

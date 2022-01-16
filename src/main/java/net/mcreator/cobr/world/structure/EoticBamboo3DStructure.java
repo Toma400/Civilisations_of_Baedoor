@@ -35,7 +35,7 @@ import java.util.Random;
 import com.google.common.collect.ImmutableMap;
 
 @Mod.EventBusSubscriber
-public class EoticBamboo3Structure {
+public class EoticBamboo3DStructure {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -82,8 +82,8 @@ public class EoticBamboo3Structure {
 			};
 			configuredFeature = feature.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG)
 					.withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG));
-			event.getRegistry().register(feature.setRegistryName("eotic_bamboo_3"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("cobr:eotic_bamboo_3"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("eotic_bamboo_3_d"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("cobr:eotic_bamboo_3_d"), configuredFeature);
 		}
 	}
 	@SubscribeEvent

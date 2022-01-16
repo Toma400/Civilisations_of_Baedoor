@@ -6,7 +6,7 @@
       "type": "dimension",
       "sortid": 9,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "dunes",
       "metadata": {
@@ -979,6 +979,94 @@
       "ids": {},
       "registry_name": "desert_mobs_spawnable",
       "path": "~/Utility Tags"
+    },
+    {
+      "name": "DesertAnimalsMobcap",
+      "type": "tag",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "desert_animals_mobcap",
+      "path": "~/Utility Tags"
+    },
+    {
+      "name": "InfoonWorkflow",
+      "type": "code",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "infoon_workflow"
+    },
+    {
+      "name": "OldRoad",
+      "type": "structure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "old_road",
+      "path": "~/Structures/Dunes/Landscape"
+    },
+    {
+      "name": "RoadConstructor",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "road_constructor",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EoticBamboo1D",
+      "type": "structure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_bamboo_1_d",
+      "path": "~/Structures/Dunes/Plants"
+    },
+    {
+      "name": "EoticBamboo2D",
+      "type": "structure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_bamboo_2_d",
+      "path": "~/Structures/Dunes/Plants"
+    },
+    {
+      "name": "EoticBamboo3D",
+      "type": "structure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_bamboo_3_d",
+      "path": "~/Structures/Dunes/Plants"
     }
   ],
   "variable_elements": [],
