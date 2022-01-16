@@ -17,6 +17,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
@@ -28,11 +29,11 @@ import java.util.List;
 import java.util.Collections;
 
 @CobrModElements.ModElement.Tag
-public class EsrahPlanksBlock extends CobrModElements.ModElement {
-	@ObjectHolder("cobr:esrah_planks")
+public class EsrahStairsBlock extends CobrModElements.ModElement {
+	@ObjectHolder("cobr:esrah_stairs")
 	public static final Block block = null;
-	public EsrahPlanksBlock(CobrModElements instance) {
-		super(instance, 3);
+	public EsrahStairsBlock(CobrModElements instance) {
+		super(instance, 79);
 	}
 
 	@Override
@@ -47,11 +48,13 @@ public class EsrahPlanksBlock extends CobrModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
-	public static class CustomBlock extends Block {
+	public static class CustomBlock extends StairsBlock {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).setLightLevel(s -> 0).harvestLevel(0)
-					.harvestTool(ToolType.AXE).setRequiresTool().notSolid().setOpaque((bs, br, bp) -> false));
-			setRegistryName("esrah_planks");
+			super(() -> new Block(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).setLightLevel(s -> 0)
+					.harvestLevel(0).harvestTool(ToolType.AXE).setRequiresTool().notSolid().setOpaque((bs, br, bp) -> false)).getDefaultState(),
+					Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).setLightLevel(s -> 0).harvestLevel(0)
+							.harvestTool(ToolType.AXE).setRequiresTool().notSolid().setOpaque((bs, br, bp) -> false));
+			setRegistryName("esrah_stairs");
 		}
 
 		@Override

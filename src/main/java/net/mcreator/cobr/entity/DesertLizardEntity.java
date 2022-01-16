@@ -24,7 +24,6 @@ import net.minecraft.pathfinding.SwimmerPathNavigator;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.Item;
-import net.minecraft.entity.passive.RabbitEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
@@ -70,7 +69,7 @@ public class DesertLizardEntity extends CobrModElements.ModElement {
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;
-		if (new ResourceLocation("cobr:dry_lands").equals(event.getName()))
+		if (new ResourceLocation("cobr:eotic_lakes").equals(event.getName()))
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
@@ -155,7 +154,7 @@ public class DesertLizardEntity extends CobrModElements.ModElement {
 			super.registerGoals();
 			this.targetSelector.addGoal(1, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
 			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, RabbitEntity.class, false, false));
+			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, DesertLizardEntity.CustomEntity.class, false, false));
 			this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, true));
 			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(6, new SwimGoal(this));

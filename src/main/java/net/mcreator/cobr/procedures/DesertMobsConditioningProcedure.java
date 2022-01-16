@@ -57,7 +57,7 @@ public class DesertMobsConditioningProcedure {
 					}.compareDistOf(x, y, z)).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
 				if ((EntityTypeTags.getCollection()
-						.getTagByID(new ResourceLocation(("cobr:desert_animals_mobcap").toLowerCase(java.util.Locale.ENGLISH)))
+						.getTagByID(new ResourceLocation(("forge:desert_animals_mobcap").toLowerCase(java.util.Locale.ENGLISH)))
 						.contains(entityiterator.getType()))) {
 					is_mobcap_reached = (double) (is_mobcap_reached + 1);
 				}

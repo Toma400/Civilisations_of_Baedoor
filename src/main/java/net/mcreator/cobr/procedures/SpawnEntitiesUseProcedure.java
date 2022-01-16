@@ -19,7 +19,6 @@ import net.mcreator.cobr.CobrMod;
 
 import java.util.function.Function;
 import java.util.Map;
-import java.util.HashMap;
 import java.util.Comparator;
 
 public class SpawnEntitiesUseProcedure {
@@ -67,13 +66,14 @@ public class SpawnEntitiesUseProcedure {
 			if ((entity instanceof SpawnEntityOasisEntity.CustomEntity)) {
 				if (!entity.world.isRemote())
 					entity.remove();
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					RoadConstructorProcedure.executeProcedure($_dependencies);
+				if (world instanceof ServerWorld) {
+					Template template = ((ServerWorld) world).getStructureTemplateManager()
+							.getTemplateDefaulted(new ResourceLocation("cobr", "oasis_small"));
+					if (template != null) {
+						template.func_237144_a_((ServerWorld) world, new BlockPos((int) x, (int) y, (int) z),
+								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false),
+								((World) world).rand);
+					}
 				}
 			} else if ((entity instanceof SpawnEntityBambooEntity.CustomEntity)) {
 				if (!entity.world.isRemote())

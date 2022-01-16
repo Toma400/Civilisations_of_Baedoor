@@ -6,7 +6,7 @@
       "type": "dimension",
       "sortid": 9,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {},
       "registry_name": "dunes",
       "metadata": {
@@ -440,7 +440,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "esrah_log"
+      "registry_name": "esrah_log",
+      "path": "~/Blocks - Plants"
     },
     {
       "name": "Logs",
@@ -459,7 +460,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "esrah_planks"
+      "registry_name": "esrah_planks",
+      "path": "~/Blocks - Plants"
     },
     {
       "name": "EsrahPlanksRecipe",
@@ -981,16 +983,6 @@
       "path": "~/Utility Tags"
     },
     {
-      "name": "DesertAnimalsMobcap",
-      "type": "tag",
-      "sortid": 70,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "desert_animals_mobcap",
-      "path": "~/Utility Tags"
-    },
-    {
       "name": "InfoonWorkflow",
       "type": "code",
       "sortid": 71,
@@ -1008,35 +1000,6 @@
       "ids": {},
       "registry_name": "old_road",
       "path": "~/Structures/Dunes/Landscape"
-    },
-    {
-      "name": "RoadConstructor",
-      "type": "procedure",
-      "sortid": 73,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "road_constructor",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
     },
     {
       "name": "EoticBamboo1D",
@@ -1067,6 +1030,95 @@
       "ids": {},
       "registry_name": "eotic_bamboo_3_d",
       "path": "~/Structures/Dunes/Plants"
+    },
+    {
+      "name": "DesertAnimalsMobcap",
+      "type": "tag",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "desert_animals_mobcap",
+      "path": "~/Utility Tags"
+    },
+    {
+      "name": "EsrahSlab",
+      "type": "block",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "esrah_slab",
+      "path": "~/Blocks - Plants"
+    },
+    {
+      "name": "EsrahStairs",
+      "type": "block",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "esrah_stairs",
+      "path": "~/Blocks - Plants"
+    },
+    {
+      "name": "EsrahFence",
+      "type": "block",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "esrah_fence",
+      "path": "~/Blocks - Plants"
+    },
+    {
+      "name": "TempOasisEsrah",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "temp_oasis_esrah",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SandPillar",
+      "type": "structure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sand_pillar",
+      "path": "~/Structures/Dunes/Landscape"
+    },
+    {
+      "name": "OldRoadCrossing",
+      "type": "structure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "old_road_crossing",
+      "path": "~/Structures/Dunes/Landscape"
     }
   ],
   "variable_elements": [],
@@ -1075,16 +1127,19 @@
     "en_us": {
       "block.cobr.eotic_bamboo_stem": "Eotic Bamboo",
       "block.cobr.dune_traveller_stone": "Dune Traveller Stone",
+      "block.cobr.esrah_slab": "Esrah Slab",
+      "block.cobr.esrah_stairs": "Esrah Stairs",
       "advancements.acrossthe_dunes.descr": "You entered the portal to the neverending desert... let\u0027s the dry wind be felt in your lungs, wanderer.",
       "block.cobr.rainforest_islands_traveller_stone": "Rainforest Islands Traveller Stone",
       "advancements.the_crusade_began.title": "The Crusade Began",
-      "block.cobr.evergreen_depths_traveller_stone": "Evergreen Depths Traveller Stone",
       "entity.cobr.desert_lizard": "Desert Lizard",
+      "block.cobr.evergreen_depths_traveller_stone": "Evergreen Depths Traveller Stone",
       "block.cobr.eotic_bamboo_growing": "Eotic Bamboo",
       "item.cobr.desert_lizard_spawn_egg": "Desert Lizard Spawn Egg",
       "advancements.acrossthe_dunes.title": "Across the Dunes",
       "advancements.the_crusade_began.descr": "You entered the time of civilisations. Use traveller stone with the book to get guide.",
       "item.cobr.spawn_entity_bamboo_spawn_egg": "[Spawn Entity] Bamboo Spawn Egg",
+      "block.cobr.esrah_fence": "Esrah Fence",
       "item.cobr.dunes": "Scroll of the Dunes",
       "block.cobr.esrah_log": "Esrah Log",
       "item.cobr.eotic_bamboo": "Eotic Bamboo",

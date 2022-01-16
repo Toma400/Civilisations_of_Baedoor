@@ -2,7 +2,7 @@
   "_fv": 24,
   "_type": "structure",
   "definition": {
-    "structure": "spawn_entity_oasis_small",
+    "structure": "old_road_crossing",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First block",
     "spawnProbability": 500,
@@ -16,11 +16,7 @@
       "CUSTOM:Dunes"
     ],
     "restrictionBlocks": [],
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:DryLands"
-      }
-    ],
+    "restrictionBiomes": [],
     "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
   }
 }

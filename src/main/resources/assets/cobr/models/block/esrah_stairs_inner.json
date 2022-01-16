@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "cobr:blocks/esrah_planks",
+    "top": "cobr:blocks/esrah_planks",
+    "side": "cobr:blocks/esrah_planks"
+  }
+}

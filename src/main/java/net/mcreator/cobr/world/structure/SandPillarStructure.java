@@ -31,7 +31,7 @@ import net.minecraft.util.Mirror;
 import java.util.Random;
 
 @Mod.EventBusSubscriber
-public class OasisSmallStructure {
+public class SandPillarStructure {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -49,12 +49,12 @@ public class OasisSmallStructure {
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
-					if ((random.nextInt(1000000) + 1) <= 500) {
+					if ((random.nextInt(1000000) + 1) <= 4000) {
 						int count = random.nextInt(1) + 1;
 						for (int a = 0; a < count; a++) {
 							int i = ci + random.nextInt(16);
 							int k = ck + random.nextInt(16);
-							int j = world.getHeight(Heightmap.Type.WORLD_SURFACE_WG, i, k);
+							int j = world.getHeight(Heightmap.Type.OCEAN_FLOOR_WG, i, k);
 							j -= 1;
 							Rotation rotation = Rotation.values()[random.nextInt(3)];
 							Mirror mirror = Mirror.values()[random.nextInt(2)];
@@ -63,7 +63,7 @@ public class OasisSmallStructure {
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
 							Template template = world.getWorld().getStructureTemplateManager()
-									.getTemplateDefaulted(new ResourceLocation("cobr", "spawn_entity_oasis_small"));
+									.getTemplateDefaulted(new ResourceLocation("cobr", "sand_pillar"));
 							if (template == null)
 								return false;
 							template.func_237144_a_(world, spawnTo, new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
@@ -76,8 +76,8 @@ public class OasisSmallStructure {
 			};
 			configuredFeature = feature.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG)
 					.withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG));
-			event.getRegistry().register(feature.setRegistryName("oasis_small"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("cobr:oasis_small"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("sand_pillar"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("cobr:sand_pillar"), configuredFeature);
 		}
 	}
 	@SubscribeEvent

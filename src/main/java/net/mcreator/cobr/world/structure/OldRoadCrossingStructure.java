@@ -31,7 +31,7 @@ import net.minecraft.util.Mirror;
 import java.util.Random;
 
 @Mod.EventBusSubscriber
-public class OasisSmallStructure {
+public class OldRoadCrossingStructure {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -63,7 +63,7 @@ public class OasisSmallStructure {
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
 							Template template = world.getWorld().getStructureTemplateManager()
-									.getTemplateDefaulted(new ResourceLocation("cobr", "spawn_entity_oasis_small"));
+									.getTemplateDefaulted(new ResourceLocation("cobr", "old_road_crossing"));
 							if (template == null)
 								return false;
 							template.func_237144_a_(world, spawnTo, new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
@@ -76,17 +76,12 @@ public class OasisSmallStructure {
 			};
 			configuredFeature = feature.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG)
 					.withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG));
-			event.getRegistry().register(feature.setRegistryName("oasis_small"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("cobr:oasis_small"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("old_road_crossing"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("cobr:old_road_crossing"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
 	public static void addFeatureToBiomes(BiomeLoadingEvent event) {
-		boolean biomeCriteria = false;
-		if (new ResourceLocation("cobr:dry_lands").equals(event.getName()))
-			biomeCriteria = true;
-		if (!biomeCriteria)
-			return;
 		event.getGeneration().getFeatures(GenerationStage.Decoration.SURFACE_STRUCTURES).add(() -> configuredFeature);
 	}
 }

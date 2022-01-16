@@ -18,6 +18,8 @@ import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
+import net.minecraft.block.FenceGateBlock;
+import net.minecraft.block.FenceBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -28,11 +30,11 @@ import java.util.List;
 import java.util.Collections;
 
 @CobrModElements.ModElement.Tag
-public class EsrahPlanksBlock extends CobrModElements.ModElement {
-	@ObjectHolder("cobr:esrah_planks")
+public class EsrahFenceBlock extends CobrModElements.ModElement {
+	@ObjectHolder("cobr:esrah_fence")
 	public static final Block block = null;
-	public EsrahPlanksBlock(CobrModElements instance) {
-		super(instance, 3);
+	public EsrahFenceBlock(CobrModElements instance) {
+		super(instance, 80);
 	}
 
 	@Override
@@ -47,21 +49,23 @@ public class EsrahPlanksBlock extends CobrModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
-	public static class CustomBlock extends Block {
+	public static class CustomBlock extends FenceBlock {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).setLightLevel(s -> 0).harvestLevel(0)
 					.harvestTool(ToolType.AXE).setRequiresTool().notSolid().setOpaque((bs, br, bp) -> false));
-			setRegistryName("esrah_planks");
+			setRegistryName("esrah_fence");
 		}
 
 		@Override
-		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
-			return 15;
+		public boolean canConnect(BlockState state, boolean checkattach, Direction face) {
+			boolean flag = state.getBlock() instanceof FenceBlock && state.getMaterial() == this.material;
+			boolean flag1 = state.getBlock() instanceof FenceGateBlock && FenceGateBlock.isParallel(state, face);
+			return !cannotAttach(state.getBlock()) && checkattach || flag || flag1;
 		}
 
 		@Override
 		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
-			return 20;
+			return 5;
 		}
 
 		@Override

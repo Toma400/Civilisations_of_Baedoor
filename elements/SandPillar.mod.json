@@ -2,10 +2,10 @@
   "_fv": 24,
   "_type": "structure",
   "definition": {
-    "structure": "spawn_entity_oasis_small",
+    "structure": "sand_pillar",
     "randomlyRotateStructure": true,
-    "surfaceDetectionType": "First block",
-    "spawnProbability": 500,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 4000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",

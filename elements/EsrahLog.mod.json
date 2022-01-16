@@ -10,7 +10,7 @@
     "textureBack": "esrah_log",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 0,
+    "rotationMode": 5,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
