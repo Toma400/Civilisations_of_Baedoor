@@ -1312,16 +1312,6 @@
       "path": "~/Recipes"
     },
     {
-      "name": "BambooBlockRecipe",
-      "type": "recipe",
-      "sortid": 103,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bamboo_block_recipe",
-      "path": "~/Recipes"
-    },
-    {
       "name": "EoticBambooSlab",
       "type": "block",
       "sortid": 104,
@@ -1347,6 +1337,56 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "eotic_bamboo_mat"
+    },
+    {
+      "name": "EoticBambooBlockRecipe",
+      "type": "recipe",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_bamboo_block_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "EoticBambooSlabRecipe",
+      "type": "recipe",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_bamboo_slab_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "EoticBambooStairsRecipe",
+      "type": "recipe",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_bamboo_stairs_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "EoticBambooMatRecipe",
+      "type": "recipe",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_bamboo_mat_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "WOBIntegrationBlock",
+      "type": "block",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wob_integration_block",
+      "path": "~/Patchouli Use Only"
     }
   ],
   "variable_elements": [],
@@ -1390,6 +1430,7 @@
       "item.cobr.bone_shortsword": "Bone Shortsword",
       "block.cobr.esrah_planks": "Esrah Planks",
       "item.cobr.bone_sabre": "Bone Sabre",
+      "block.cobr.wob_integration_block": "WOB Integration Block",
       "block.cobr.eotic_bamboo_slab": "Eotic Bamboo Slab",
       "block.cobr.permafrost_traveller_stone": "Permafrost Traveller Stone",
       "itemGroup.tabcivilisationsof_baedoor": "Civilisations of Baedoor",
@@ -1465,6 +1506,10 @@
       },
       {
         "name": "Possibly Placeholders",
+        "children": []
+      },
+      {
+        "name": "Patchouli Use Only",
         "children": []
       }
     ]

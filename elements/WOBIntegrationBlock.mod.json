@@ -2,14 +2,14 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "eotic_bamboo_tiles",
-    "textureTop": "eotic_bamboo_tiles",
-    "textureLeft": "eotic_bamboo_tiles",
-    "textureFront": "eotic_bamboo_tiles",
-    "textureRight": "eotic_bamboo_tiles",
-    "textureBack": "eotic_bamboo_tiles",
-    "renderType": 2,
-    "customModelName": "carpet_eotic_bamboo:default",
+    "texture": "dune_portal",
+    "textureTop": "dune_portal",
+    "textureLeft": "dune_portal",
+    "textureFront": "dune_portal",
+    "textureRight": "dune_portal",
+    "textureBack": "dune_portal",
+    "renderType": 10,
+    "customModelName": "Normal",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -17,31 +17,31 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
-    "disableOffset": true,
+    "disableOffset": false,
     "boundingBoxes": [
       {
         "mx": 0.0,
         "my": 0.0,
         "mz": 0.0,
         "Mx": 16.0,
-        "My": 1.0,
+        "My": 16.0,
         "Mz": 16.0,
         "subtract": false
       }
     ],
-    "name": "Eotic Bamboo Mat",
+    "name": "WOB Integration Block",
     "specialInfo": [],
-    "hardness": 0.3,
-    "resistance": 0.3,
+    "hardness": 0.0,
+    "resistance": 0.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:CivilisationsofBaedoor"
+      "value": "No creative tab entry"
     },
-    "destroyTool": "axe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
@@ -50,9 +50,9 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 0,
+    "lightOpacity": 15,
     "material": {
-      "value": "BAMBOO"
+      "value": "IRON"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -67,7 +67,7 @@
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 20,
+    "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
@@ -77,7 +77,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "BAMBOO"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""
@@ -95,8 +95,8 @@
       "value": ""
     },
     "luminance": 0,
-    "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "unbreakable": true,
+    "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"

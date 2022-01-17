@@ -6,8 +6,8 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "recipeRetstackSize": 1,
-    "group": "patchouli_book",
-    "recipeShapeless": true,
+    "group": "eotic_bamboo_mat",
+    "recipeShapeless": false,
     "recipeSlots": [
       {
         "value": ""
@@ -19,12 +19,6 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:EmptyTravellerStone"
-      },
-      {
-        "value": "Items.BOOK"
-      },
-      {
         "value": ""
       },
       {
@@ -35,12 +29,18 @@
       },
       {
         "value": ""
+      },
+      {
+        "value": "CUSTOM:EoticBambooBlock"
+      },
+      {
+        "value": "CUSTOM:EoticBambooBlock"
       }
     ],
     "recipeReturnStack": {
-      "value": "Items.BOOK"
+      "value": "CUSTOM:EoticBambooMat"
     },
-    "name": "patchouli_recipe",
+    "name": "eotic_bamboo_mat_recipe",
     "namespace": "mod"
   }
 }

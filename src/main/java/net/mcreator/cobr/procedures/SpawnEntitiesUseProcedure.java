@@ -70,7 +70,7 @@ public class SpawnEntitiesUseProcedure {
 					Template template = ((ServerWorld) world).getStructureTemplateManager()
 							.getTemplateDefaulted(new ResourceLocation("cobr", "oasis_small"));
 					if (template != null) {
-						template.func_237144_a_((ServerWorld) world, new BlockPos((int) x, (int) y, (int) z),
+						template.func_237144_a_((ServerWorld) world, new BlockPos((int) x, (int) (y - 1), (int) z),
 								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false),
 								((World) world).rand);
 					}

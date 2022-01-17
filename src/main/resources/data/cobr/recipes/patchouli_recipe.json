@@ -1,17 +1,14 @@
 {
   "group": "patchouli_book",
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "01"
-  ],
-  "key": {
-    "0": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "cobr:empty_traveller_stone"
     },
-    "1": {
+    {
       "item": "minecraft:book"
     }
-  },
+  ],
   "result": {
     "item": "patchouli:guide_book",
     "count": 1,

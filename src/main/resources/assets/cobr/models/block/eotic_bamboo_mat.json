@@ -3,6 +3,6 @@
   "textures": {
     "all": "cobr:blocks/eotic_bamboo_tiles",
     "particle": "cobr:blocks/eotic_bamboo_tiles",
-    "0": "cobr:blocks/carpet_template"
+    "0": "cobr:blocks/carpet_eotic_bamboo"
   }
 }

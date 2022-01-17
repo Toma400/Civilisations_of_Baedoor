@@ -5,9 +5,9 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 1,
-    "group": "patchouli_book",
-    "recipeShapeless": true,
+    "recipeRetstackSize": 6,
+    "group": "eotic_bamboo_slab",
+    "recipeShapeless": false,
     "recipeSlots": [
       {
         "value": ""
@@ -19,12 +19,6 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:EmptyTravellerStone"
-      },
-      {
-        "value": "Items.BOOK"
-      },
-      {
         "value": ""
       },
       {
@@ -34,13 +28,19 @@
         "value": ""
       },
       {
-        "value": ""
+        "value": "CUSTOM:EoticBambooBlock"
+      },
+      {
+        "value": "CUSTOM:EoticBambooBlock"
+      },
+      {
+        "value": "CUSTOM:EoticBambooBlock"
       }
     ],
     "recipeReturnStack": {
-      "value": "Items.BOOK"
+      "value": "CUSTOM:EoticBambooSlab"
     },
-    "name": "patchouli_recipe",
+    "name": "eotic_bamboo_slab_recipe",
     "namespace": "mod"
   }
 }

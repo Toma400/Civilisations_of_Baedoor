@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cobr:blocks/dune_portal",
+    "up": "cobr:blocks/dune_portal",
+    "north": "cobr:blocks/dune_portal",
+    "east": "cobr:blocks/dune_portal",
+    "south": "cobr:blocks/dune_portal",
+    "west": "cobr:blocks/dune_portal",
+    "particle": "cobr:blocks/dune_portal"
+  }
+}

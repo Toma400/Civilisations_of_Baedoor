@@ -1,0 +1,33 @@
+{
+  "group": "eotic_bamboo_stairs",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:eotic_bamboo_block"
+    },
+    "3": {
+      "item": "cobr:eotic_bamboo_block"
+    },
+    "4": {
+      "item": "cobr:eotic_bamboo_block"
+    },
+    "6": {
+      "item": "cobr:eotic_bamboo_block"
+    },
+    "7": {
+      "item": "cobr:eotic_bamboo_block"
+    },
+    "8": {
+      "item": "cobr:eotic_bamboo_block"
+    }
+  },
+  "result": {
+    "item": "cobr:eotic_bamboo_stairs",
+    "count": 4
+  }
+}
