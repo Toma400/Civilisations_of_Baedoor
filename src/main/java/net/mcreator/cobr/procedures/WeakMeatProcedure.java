@@ -17,7 +17,7 @@ public class WeakMeatProcedure {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if ((15 >= (Math.random() * 100))) {
+		if ((20 >= (Math.random() * 100))) {
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.HUNGER, (int) 60, (int) 1));
 		}

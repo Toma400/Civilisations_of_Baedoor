@@ -63,8 +63,9 @@ public class DesertMobsConditioningProcedure {
 				}
 			}
 		}
-		return ((BlockTags.getCollection().getTagByID(new ResourceLocation(("forge:desert_mobs_spawnable").toLowerCase(java.util.Locale.ENGLISH)))
+		return (((BlockTags.getCollection().getTagByID(new ResourceLocation(("forge:desert_mobs_spawnable").toLowerCase(java.util.Locale.ENGLISH)))
 				.contains((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock()))
+				&& ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getMaterial() == net.minecraft.block.material.Material.AIR))
 				&& (((world instanceof World ? (((World) world).getDimensionKey()) : World.OVERWORLD) == (RegistryKey
 						.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("cobr:dunes")))) && (is_mobcap_reached <= 1)));
 	}
