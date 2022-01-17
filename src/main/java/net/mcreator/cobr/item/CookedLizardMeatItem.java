@@ -17,7 +17,7 @@ public class CookedLizardMeatItem extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:cooked_lizard_meat")
 	public static final Item block = null;
 	public CookedLizardMeatItem(CobrModElements instance) {
-		super(instance, 10);
+		super(instance, 13);
 	}
 
 	@Override

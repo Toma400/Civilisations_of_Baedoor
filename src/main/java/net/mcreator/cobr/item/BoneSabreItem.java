@@ -31,7 +31,7 @@ public class BoneSabreItem extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:bone_sabre")
 	public static final Item block = null;
 	public BoneSabreItem(CobrModElements instance) {
-		super(instance, 14);
+		super(instance, 17);
 	}
 
 	@Override

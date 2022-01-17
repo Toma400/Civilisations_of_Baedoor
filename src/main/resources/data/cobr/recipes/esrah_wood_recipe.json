@@ -1,0 +1,26 @@
+{
+  "group": "esrah_wood",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:esrah_log"
+    },
+    "1": {
+      "item": "cobr:esrah_log"
+    },
+    "2": {
+      "item": "cobr:esrah_log"
+    },
+    "3": {
+      "item": "cobr:esrah_log"
+    }
+  },
+  "result": {
+    "item": "cobr:esrah_wood",
+    "count": 3
+  }
+}

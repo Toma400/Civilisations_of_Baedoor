@@ -25,7 +25,7 @@ public class PortalBlockBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:portal_block")
 	public static final Block block = null;
 	public PortalBlockBlock(CobrModElements instance) {
-		super(instance, 59);
+		super(instance, 62);
 	}
 
 	@Override

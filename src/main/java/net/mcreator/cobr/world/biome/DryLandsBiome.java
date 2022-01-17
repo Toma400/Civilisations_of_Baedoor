@@ -55,7 +55,7 @@ import com.google.common.collect.ImmutableList;
 public class DryLandsBiome extends CobrModElements.ModElement {
 	public static Biome biome;
 	public DryLandsBiome(CobrModElements instance) {
-		super(instance, 19);
+		super(instance, 22);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

@@ -23,7 +23,7 @@ public class RawLizardMeatItem extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:raw_lizard_meat")
 	public static final Item block = null;
 	public RawLizardMeatItem(CobrModElements instance) {
-		super(instance, 11);
+		super(instance, 14);
 	}
 
 	@Override

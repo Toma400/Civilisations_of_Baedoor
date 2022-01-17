@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cobr:blocks/stripped_esrah_log",
+    "up": "cobr:blocks/stripped_esrah_log",
+    "north": "cobr:blocks/stripped_esrah_log",
+    "east": "cobr:blocks/stripped_esrah_log",
+    "south": "cobr:blocks/stripped_esrah_log",
+    "west": "cobr:blocks/stripped_esrah_log",
+    "particle": "cobr:blocks/stripped_esrah_log"
+  }
+}
