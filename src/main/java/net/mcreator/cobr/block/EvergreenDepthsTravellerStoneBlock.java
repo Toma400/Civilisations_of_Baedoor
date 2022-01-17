@@ -57,7 +57,7 @@ public class EvergreenDepthsTravellerStoneBlock extends CobrModElements.ModEleme
 	@ObjectHolder("cobr:evergreen_depths_traveller_stone")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public EvergreenDepthsTravellerStoneBlock(CobrModElements instance) {
-		super(instance, 11);
+		super(instance, 21);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 

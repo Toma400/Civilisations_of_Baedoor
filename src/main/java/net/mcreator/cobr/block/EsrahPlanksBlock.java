@@ -32,7 +32,7 @@ public class EsrahPlanksBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:esrah_planks")
 	public static final Block block = null;
 	public EsrahPlanksBlock(CobrModElements instance) {
-		super(instance, 3);
+		super(instance, 6);
 	}
 
 	@Override

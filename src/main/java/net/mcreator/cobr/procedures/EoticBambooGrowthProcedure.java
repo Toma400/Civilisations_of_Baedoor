@@ -5,9 +5,9 @@ import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.state.Property;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.cobr.block.EoticBambooTipBlock;
 import net.mcreator.cobr.block.EoticBambooStemBlock;
 import net.mcreator.cobr.block.EoticBambooGrowingBlock;
 import net.mcreator.cobr.CobrMod;
@@ -135,7 +135,7 @@ public class EoticBambooGrowthProcedure {
 			} else {
 				{
 					BlockPos _bp = new BlockPos((int) x, (int) (y + 1), (int) z);
-					BlockState _bs = Blocks.REDSTONE_TORCH.getDefaultState();
+					BlockState _bs = EoticBambooTipBlock.block.getDefaultState();
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 						Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());

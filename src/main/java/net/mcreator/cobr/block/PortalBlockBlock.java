@@ -25,7 +25,7 @@ public class PortalBlockBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:portal_block")
 	public static final Block block = null;
 	public PortalBlockBlock(CobrModElements instance) {
-		super(instance, 62);
+		super(instance, 74);
 	}
 
 	@Override
@@ -35,7 +35,7 @@ public class PortalBlockBlock extends CobrModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.IRON).sound(SoundType.SNOW).hardnessAndResistance(0f, 0f).setLightLevel(s -> 0)
+			super(Block.Properties.create(Material.GLASS).sound(SoundType.GLASS).hardnessAndResistance(0f, 0f).setLightLevel(s -> 0)
 					.doesNotBlockMovement());
 			setRegistryName("portal_block");
 		}

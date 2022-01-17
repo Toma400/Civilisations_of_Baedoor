@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "cobr:blocks/bamboo_tip_placeholder",
+    "particle": "cobr:blocks/bamboo_tip_placeholder"
+  }
+}

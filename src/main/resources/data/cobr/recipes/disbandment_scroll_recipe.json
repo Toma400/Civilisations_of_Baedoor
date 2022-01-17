@@ -1,0 +1,16 @@
+{
+  "group": "disbandment_scroll",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:feather"
+    }
+  ],
+  "result": {
+    "item": "cobr:disbandment_scroll",
+    "count": 1
+  }
+}

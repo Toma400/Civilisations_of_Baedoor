@@ -35,7 +35,23 @@
       "minecraft:hardened_sand_unrecipe",
       "cobr:hardened_sand_into_glass_recipe",
       "cobr:bone_shortsword_recipe",
-      "cobr:bone_sabre_recipe"
+      "cobr:bone_sabre_recipe",
+      "cobr:patchouli_recipe",
+      "cobr:esrah_planks_recipe_2",
+      "cobr:esrah_slab_recipe",
+      "cobr:esrah_stairs_recipe",
+      "cobr:esrah_fence_recipe",
+      "cobr:esrah_fence_gate_recipe",
+      "cobr:esrah_wood_recipe",
+      "cobr:stripped_esrah_wood_recipe",
+      "cobr:civilisation_table_recipe",
+      "cobr:pack_of_eotic_bamboo_recipe",
+      "cobr:eotic_bamboo",
+      "cobr:eotic_bamboo_block_recipe",
+      "cobr:eotic_bamboo_slab_recipe",
+      "cobr:eotic_bamboo_stairs_recipe",
+      "cobr:eotic_bamboo_mat_recipe",
+      "cobr:disbandment_scroll_recipe"
     ]
   }
 }

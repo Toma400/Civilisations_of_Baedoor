@@ -53,7 +53,7 @@ public class DesertLizardEntity extends CobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.8f)).build("desert_lizard").setRegistryName("desert_lizard");
 	public DesertLizardEntity(CobrModElements instance) {
-		super(instance, 18);
+		super(instance, 30);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new DesertLizardRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

@@ -1,0 +1,11 @@
+{
+  "_fv": 24,
+  "_type": "command",
+  "definition": {
+    "commandName": "cobrDisbandmentScroll_Info",
+    "permissionLevel": "No requirement",
+    "onCommandExecuted": {
+      "name": "DisbandmentScrollInfoRequired"
+    }
+  }
+}

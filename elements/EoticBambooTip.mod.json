@@ -2,14 +2,14 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "portal_block",
-    "textureTop": "portal_block",
-    "textureLeft": "portal_block",
-    "textureFront": "portal_block",
-    "textureRight": "portal_block",
-    "textureBack": "portal_block",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "texture": "bamboo_tip_placeholder",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 12,
+    "customModelName": "Cross model",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -17,7 +17,7 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -32,16 +32,16 @@
         "subtract": false
       }
     ],
-    "name": "Portal Block",
+    "name": "Eotic Bamboo Tip",
     "specialInfo": [],
-    "hardness": 0.0,
-    "resistance": 0.0,
+    "hardness": 0.1,
+    "resistance": 0.1,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:CivilisationsofBaedoor"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "hoe",
     "customDrop": {
       "value": ""
     },
@@ -52,11 +52,11 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "GLASS"
+      "value": "PLANTS"
     },
     "tickRate": 10,
     "tickRandomly": false,
-    "isReplaceable": true,
+    "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {
       "fixedValue": 15.0
@@ -67,17 +67,17 @@
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 0,
+    "flammability": 20,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
-    "isNotColidable": true,
+    "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GLASS"
+      "value": "PLANT"
     },
     "breakSound": {
       "value": ""

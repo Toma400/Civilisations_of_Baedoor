@@ -17,7 +17,6 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.StairsBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
@@ -29,11 +28,11 @@ import java.util.List;
 import java.util.Collections;
 
 @CobrModElements.ModElement.Tag
-public class EsrahStairsBlock extends CobrModElements.ModElement {
-	@ObjectHolder("cobr:esrah_stairs")
+public class EoticBambooTipBlock extends CobrModElements.ModElement {
+	@ObjectHolder("cobr:eotic_bamboo_tip")
 	public static final Block block = null;
-	public EsrahStairsBlock(CobrModElements instance) {
-		super(instance, 7);
+	public EoticBambooTipBlock(CobrModElements instance) {
+		super(instance, 27);
 	}
 
 	@Override
@@ -48,18 +47,21 @@ public class EsrahStairsBlock extends CobrModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
-	public static class CustomBlock extends StairsBlock {
+	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(() -> new Block(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).setLightLevel(s -> 0)
-					.harvestLevel(0).harvestTool(ToolType.AXE).setRequiresTool().notSolid().setOpaque((bs, br, bp) -> false)).getDefaultState(),
-					Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).setLightLevel(s -> 0).harvestLevel(0)
-							.harvestTool(ToolType.AXE).setRequiresTool().notSolid().setOpaque((bs, br, bp) -> false));
-			setRegistryName("esrah_stairs");
+			super(Block.Properties.create(Material.PLANTS).sound(SoundType.PLANT).hardnessAndResistance(0.1f, 0.1f).setLightLevel(s -> 0)
+					.harvestLevel(0).harvestTool(ToolType.HOE).setRequiresTool().notSolid().setOpaque((bs, br, bp) -> false));
+			setRegistryName("eotic_bamboo_tip");
+		}
+
+		@Override
+		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
+			return true;
 		}
 
 		@Override
 		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
-			return 15;
+			return 0;
 		}
 
 		@Override

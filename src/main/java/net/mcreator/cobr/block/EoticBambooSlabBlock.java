@@ -34,7 +34,7 @@ public class EoticBambooSlabBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:eotic_bamboo_slab")
 	public static final Block block = null;
 	public EoticBambooSlabBlock(CobrModElements instance) {
-		super(instance, 104);
+		super(instance, 13);
 	}
 
 	@Override
