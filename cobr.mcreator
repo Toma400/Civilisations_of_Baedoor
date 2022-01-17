@@ -1280,7 +1280,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "packof_eotic_bamboo"
+      "registry_name": "pack_of_eotic_bamboo"
     },
     {
       "name": "EoticBambooBlock",
@@ -1420,11 +1420,11 @@
       "item.cobr.eotic_bamboo": "Eotic Bamboo",
       "biome.cobr.dry_lands": "Dry Lands",
       "biome.cobr.eotic_lakes": "Eotic Lakes",
-      "block.cobr.packof_eotic_bamboo": "Pack of Eotic Bamboo",
       "item.cobr.raw_lizard_meat": "Raw Lizard Meat",
       "entity.cobr.spawn_entity_bamboo": "[Spawn Entity] Bamboo",
       "block.cobr.civilisation_table": "Civilisation Table",
       "item.cobr.cooked_lizard_meat": "Cooked Lizard Meat",
+      "block.cobr.pack_of_eotic_bamboo": "Pack of Eotic Bamboo",
       "advancements.empire_foundation_set_in_wood.title": "Empire Foundation Set In... Wood",
       "block.cobr.eotic_bamboo_mat": "Eotic Bamboo Mat",
       "item.cobr.bone_shortsword": "Bone Shortsword",

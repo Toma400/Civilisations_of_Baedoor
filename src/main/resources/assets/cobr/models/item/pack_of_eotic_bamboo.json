@@ -1,5 +1,5 @@
 {
-  "parent": "cobr:block/packof_eotic_bamboo",
+  "parent": "cobr:block/pack_of_eotic_bamboo",
   "display": {
     "thirdperson": {
       "rotation": [

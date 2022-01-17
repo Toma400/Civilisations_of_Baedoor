@@ -24,7 +24,7 @@ import java.util.Collections;
 
 @CobrModElements.ModElement.Tag
 public class PackofEoticBambooBlock extends CobrModElements.ModElement {
-	@ObjectHolder("cobr:packof_eotic_bamboo")
+	@ObjectHolder("cobr:pack_of_eotic_bamboo")
 	public static final Block block = null;
 	public PackofEoticBambooBlock(CobrModElements instance) {
 		super(instance, 99);
@@ -40,7 +40,7 @@ public class PackofEoticBambooBlock extends CobrModElements.ModElement {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.BAMBOO).sound(SoundType.BAMBOO).hardnessAndResistance(0.5f, 0.5f).setLightLevel(s -> 0)
 					.harvestLevel(0).harvestTool(ToolType.AXE).setRequiresTool());
-			setRegistryName("packof_eotic_bamboo");
+			setRegistryName("pack_of_eotic_bamboo");
 		}
 
 		@Override
