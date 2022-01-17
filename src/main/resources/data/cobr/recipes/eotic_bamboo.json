@@ -1,0 +1,16 @@
+{
+  "group": "eotic_bamboo",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:packof_eotic_bamboo"
+    }
+  },
+  "result": {
+    "item": "cobr:eotic_bamboo",
+    "count": 1
+  }
+}

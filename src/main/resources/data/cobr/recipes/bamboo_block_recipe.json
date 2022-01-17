@@ -1,0 +1,26 @@
+{
+  "group": "bamboo_block",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:eotic_bamboo"
+    },
+    "1": {
+      "item": "cobr:eotic_bamboo"
+    },
+    "2": {
+      "item": "cobr:eotic_bamboo"
+    },
+    "3": {
+      "item": "cobr:eotic_bamboo"
+    }
+  },
+  "result": {
+    "item": "cobr:eotic_bamboo_block",
+    "count": 1
+  }
+}

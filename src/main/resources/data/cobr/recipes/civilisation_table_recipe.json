@@ -1,0 +1,33 @@
+{
+  "group": "civilisation_table",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    "45"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:empty_traveller_stone"
+    },
+    "1": {
+      "item": "cobr:empty_traveller_stone"
+    },
+    "2": {
+      "tag": "minecraft:planks"
+    },
+    "3": {
+      "tag": "minecraft:planks"
+    },
+    "4": {
+      "tag": "minecraft:planks"
+    },
+    "5": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "cobr:civilisation_table",
+    "count": 1
+  }
+}

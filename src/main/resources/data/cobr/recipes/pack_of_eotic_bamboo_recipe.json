@@ -1,0 +1,42 @@
+{
+  "group": "pack_of_eotic_bamboo",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:eotic_bamboo"
+    },
+    "1": {
+      "item": "cobr:eotic_bamboo"
+    },
+    "2": {
+      "item": "cobr:eotic_bamboo"
+    },
+    "3": {
+      "item": "cobr:eotic_bamboo"
+    },
+    "4": {
+      "item": "cobr:eotic_bamboo"
+    },
+    "5": {
+      "item": "cobr:eotic_bamboo"
+    },
+    "6": {
+      "item": "cobr:eotic_bamboo"
+    },
+    "7": {
+      "item": "cobr:eotic_bamboo"
+    },
+    "8": {
+      "item": "cobr:eotic_bamboo"
+    }
+  },
+  "result": {
+    "item": "cobr:packof_eotic_bamboo",
+    "count": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "cobr:blocks/eotic_bamboo_tiles",
+    "top": "cobr:blocks/eotic_bamboo_tiles",
+    "side": "cobr:blocks/eotic_bamboo_tiles"
+  }
+}

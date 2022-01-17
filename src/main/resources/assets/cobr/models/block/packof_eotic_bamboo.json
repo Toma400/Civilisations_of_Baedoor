@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cobr:blocks/pack_of_eotic_bamboo_top",
+    "up": "cobr:blocks/pack_of_eotic_bamboo_top",
+    "north": "cobr:blocks/pack_of_eotic_bamboo_side",
+    "east": "cobr:blocks/pack_of_eotic_bamboo_side",
+    "south": "cobr:blocks/pack_of_eotic_bamboo_side",
+    "west": "cobr:blocks/pack_of_eotic_bamboo_side",
+    "particle": "cobr:blocks/pack_of_eotic_bamboo_top"
+  }
+}

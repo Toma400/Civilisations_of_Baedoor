@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "carpet_eotic_bamboo"
+      },
+      "name": "default"
+    }
+  }
+}

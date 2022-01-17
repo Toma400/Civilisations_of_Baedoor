@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cobr:blocks/eotic_bamboo_tiles",
+    "up": "cobr:blocks/eotic_bamboo_tiles",
+    "north": "cobr:blocks/eotic_bamboo_tiles",
+    "east": "cobr:blocks/eotic_bamboo_tiles",
+    "south": "cobr:blocks/eotic_bamboo_tiles",
+    "west": "cobr:blocks/eotic_bamboo_tiles",
+    "particle": "cobr:blocks/eotic_bamboo_tiles"
+  }
+}
