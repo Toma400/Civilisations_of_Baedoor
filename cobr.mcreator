@@ -1413,7 +1413,8 @@
             "type": "itemstack"
           }
         ]
-      }
+      },
+      "path": "~/Pds - Hiring"
     },
     {
       "name": "DisbandmentScroll",
@@ -1439,7 +1440,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Pds - Hiring"
     },
     {
       "name": "DisbandmentScrollInfoRequired",
@@ -1456,7 +1458,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Pds - Hiring"
     },
     {
       "name": "DisbandmentScrollInfo",
@@ -1476,9 +1479,189 @@
       "ids": {},
       "registry_name": "disbandment_scroll_recipe",
       "path": "~/Recipes"
+    },
+    {
+      "name": "CobrHireables",
+      "type": "tag",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cobr_hireables"
+    },
+    {
+      "name": "CobrEmeraldHiring",
+      "type": "tag",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cobr_emerald_hiring"
+    },
+    {
+      "name": "CobrDiamondHiring",
+      "type": "tag",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cobr_diamond_hiring"
+    },
+    {
+      "name": "HiringSystem",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hiring_system",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Pds - Hiring"
+    },
+    {
+      "name": "HiringCost",
+      "type": "procedure",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hiring_cost",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Pds - Hiring/File Dependent"
+    },
+    {
+      "name": "DisbandmentCost",
+      "type": "procedure",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "disbandment_cost",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Pds - Hiring/File Dependent"
+    },
+    {
+      "name": "MonthlyCostCounter",
+      "type": "procedure",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "monthly_cost_counter",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Pds - Hiring"
+    },
+    {
+      "name": "HiringCostPayout",
+      "type": "procedure",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hiring_cost_payout",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Pds - Hiring"
+    },
+    {
+      "name": "PlayerDataImport",
+      "type": "procedure",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "player_data_import",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Pds - Hiring/File Dependent"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "monthly_cost",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "is_data_ext_stored",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "month_counter",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "civilisation_table_storage",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
@@ -1490,12 +1673,12 @@
       "block.cobr.rainforest_islands_traveller_stone": "Rainforest Islands Traveller Stone",
       "advancements.the_crusade_began.title": "The Crusade Began",
       "block.cobr.esrah_fence_gate": "Esrah Fence Gate",
-      "block.cobr.stripped_esrah_wood": "Stripped Esrah Wood",
-      "block.cobr.evergreen_depths_traveller_stone": "Evergreen Depths Traveller Stone",
       "entity.cobr.desert_lizard": "Desert Lizard",
-      "item.cobr.desert_lizard_spawn_egg": "Desert Lizard Spawn Egg",
-      "block.cobr.eotic_bamboo_growing": "Eotic Bamboo",
+      "block.cobr.evergreen_depths_traveller_stone": "Evergreen Depths Traveller Stone",
+      "block.cobr.stripped_esrah_wood": "Stripped Esrah Wood",
       "block.cobr.stripped_esrah_log": "Stripped Esrah Log",
+      "block.cobr.eotic_bamboo_growing": "Eotic Bamboo",
+      "item.cobr.desert_lizard_spawn_egg": "Desert Lizard Spawn Egg",
       "advancements.the_crusade_began.descr": "You entered the time of civilisations. Use traveller stone with the book to get guide.",
       "block.cobr.eotic_bamboo_stairs": "Eotic Bamboo Stairs",
       "item.cobr.dunes": "Scroll of the Dunes",
@@ -1514,8 +1697,8 @@
       "block.cobr.eotic_bamboo_slab": "Eotic Bamboo Slab",
       "block.cobr.permafrost_traveller_stone": "Permafrost Traveller Stone",
       "item.cobr.spawn_entity_oasis_spawn_egg": "[Spawn Entity] Oasis Spawn Egg",
-      "block.cobr.hardened_sand": "Hardened Sand",
       "item.cobr.disbandment_scroll": "Disbandment Scroll",
+      "block.cobr.hardened_sand": "Hardened Sand",
       "advancements.acrossthe_dunes.descr": "You entered the portal to the neverending desert... let\u0027s the dry wind be felt in your lungs, wanderer.",
       "advancements.empire_foundation_set_in_wood.descr": "Take first step in creation of your Empire by creating civilisation table.",
       "block.cobr.eotic_bamboo_tip": "Eotic Bamboo Tip",
@@ -1602,6 +1785,15 @@
       {
         "name": "Patchouli Use Only",
         "children": []
+      },
+      {
+        "name": "Pds - Hiring",
+        "children": [
+          {
+            "name": "File Dependent",
+            "children": []
+          }
+        ]
       }
     ]
   },

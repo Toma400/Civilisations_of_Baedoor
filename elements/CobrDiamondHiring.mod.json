@@ -1,0 +1,13 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "cobr_diamond_hiring",
+    "namespace": "forge"
+  }
+}
