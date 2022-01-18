@@ -71,6 +71,7 @@ public class CobrModVariables {
 			nbt.putBoolean("is_data_ext_stored", instance.is_data_ext_stored);
 			nbt.putDouble("month_counter", instance.month_counter);
 			nbt.putDouble("civilisation_table_storage", instance.civilisation_table_storage);
+			nbt.putString("empire_name", instance.empire_name);
 			return nbt;
 		}
 
@@ -81,6 +82,7 @@ public class CobrModVariables {
 			instance.is_data_ext_stored = nbt.getBoolean("is_data_ext_stored");
 			instance.month_counter = nbt.getDouble("month_counter");
 			instance.civilisation_table_storage = nbt.getDouble("civilisation_table_storage");
+			instance.empire_name = nbt.getString("empire_name");
 		}
 	}
 
@@ -89,6 +91,7 @@ public class CobrModVariables {
 		public boolean is_data_ext_stored = false;
 		public double month_counter = 1.0;
 		public double civilisation_table_storage = 0;
+		public String empire_name = "\"\"";
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
 				CobrMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) entity), new PlayerVariablesSyncMessage(this));
@@ -124,6 +127,7 @@ public class CobrModVariables {
 		clone.is_data_ext_stored = original.is_data_ext_stored;
 		clone.month_counter = original.month_counter;
 		clone.civilisation_table_storage = original.civilisation_table_storage;
+		clone.empire_name = original.empire_name;
 		if (!event.isWasDeath()) {
 		}
 	}
@@ -152,6 +156,7 @@ public class CobrModVariables {
 					variables.is_data_ext_stored = message.data.is_data_ext_stored;
 					variables.month_counter = message.data.month_counter;
 					variables.civilisation_table_storage = message.data.civilisation_table_storage;
+					variables.empire_name = message.data.empire_name;
 				}
 			});
 			context.setPacketHandled(true);

@@ -1414,7 +1414,7 @@
           }
         ]
       },
-      "path": "~/Pds - Hiring"
+      "path": "~/Hiring Mechanics/Pds - Hiring"
     },
     {
       "name": "DisbandmentScroll",
@@ -1441,7 +1441,7 @@
           }
         ]
       },
-      "path": "~/Pds - Hiring"
+      "path": "~/Hiring Mechanics/Pds - Hiring"
     },
     {
       "name": "DisbandmentScrollInfoRequired",
@@ -1459,7 +1459,7 @@
           }
         ]
       },
-      "path": "~/Pds - Hiring"
+      "path": "~/Hiring Mechanics/Pds - Hiring"
     },
     {
       "name": "DisbandmentScrollInfo",
@@ -1487,7 +1487,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "cobr_hireables"
+      "registry_name": "cobr_hireables",
+      "path": "~/Hiring Mechanics"
     },
     {
       "name": "CobrEmeraldHiring",
@@ -1496,7 +1497,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "cobr_emerald_hiring"
+      "registry_name": "cobr_emerald_hiring",
+      "path": "~/Hiring Mechanics"
     },
     {
       "name": "CobrDiamondHiring",
@@ -1505,7 +1507,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "cobr_diamond_hiring"
+      "registry_name": "cobr_diamond_hiring",
+      "path": "~/Hiring Mechanics"
     },
     {
       "name": "HiringSystem",
@@ -1516,18 +1519,9 @@
       "ids": {},
       "registry_name": "hiring_system",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
-      "path": "~/Pds - Hiring"
+      "path": "~/Hiring Mechanics/Pds - Hiring"
     },
     {
       "name": "HiringCost",
@@ -1549,7 +1543,7 @@
           }
         ]
       },
-      "path": "~/Pds - Hiring/File Dependent"
+      "path": "~/Hiring Mechanics/Pds - Hiring/File Dependent"
     },
     {
       "name": "DisbandmentCost",
@@ -1560,18 +1554,9 @@
       "ids": {},
       "registry_name": "disbandment_cost",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
-      "path": "~/Pds - Hiring/File Dependent"
+      "path": "~/Hiring Mechanics/Pds - Hiring/File Dependent"
     },
     {
       "name": "MonthlyCostCounter",
@@ -1582,18 +1567,9 @@
       "ids": {},
       "registry_name": "monthly_cost_counter",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
-      "path": "~/Pds - Hiring"
+      "path": "~/Hiring Mechanics/Pds - Hiring"
     },
     {
       "name": "HiringCostPayout",
@@ -1615,7 +1591,7 @@
           }
         ]
       },
-      "path": "~/Pds - Hiring"
+      "path": "~/Hiring Mechanics/Pds - Hiring"
     },
     {
       "name": "PlayerDataImport",
@@ -1626,14 +1602,53 @@
       "ids": {},
       "registry_name": "player_data_import",
       "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Hiring Mechanics/Pds - Hiring/File Dependent"
+    },
+    {
+      "name": "EmpireInfoGet",
+      "type": "procedure",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "empire_info_get",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Empire - File Dependent"
+    },
+    {
+      "name": "EmpireStatus",
+      "type": "command",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "empire_status"
+    },
+    {
+      "name": "DeathDisbandmentCost",
+      "type": "procedure",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "death_disbandment_cost",
+      "metadata": {
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
           }
         ]
       },
-      "path": "~/Pds - Hiring/File Dependent"
+      "path": "~/Hiring Mechanics/Pds - Hiring/File Dependent"
     }
   ],
   "variable_elements": [
@@ -1660,6 +1675,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "empire_name",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
     }
   ],
   "sound_elements": [],
@@ -1787,13 +1808,22 @@
         "children": []
       },
       {
-        "name": "Pds - Hiring",
+        "name": "Hiring Mechanics",
         "children": [
           {
-            "name": "File Dependent",
-            "children": []
+            "name": "Pds - Hiring",
+            "children": [
+              {
+                "name": "File Dependent",
+                "children": []
+              }
+            ]
           }
         ]
+      },
+      {
+        "name": "Empire - File Dependent",
+        "children": []
       }
     ]
   },

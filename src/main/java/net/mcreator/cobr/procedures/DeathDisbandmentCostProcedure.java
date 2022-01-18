@@ -21,22 +21,22 @@ import com.google.gson.JsonObject;
 import com.google.gson.GsonBuilder;
 import com.google.gson.Gson;
 
-public class HiringCostProcedure {
+public class DeathDisbandmentCostProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				CobrMod.LOGGER.warn("Failed to load dependency entity for procedure HiringCost!");
+				CobrMod.LOGGER.warn("Failed to load dependency entity for procedure DeathDisbandmentCost!");
 			return;
 		}
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
-				CobrMod.LOGGER.warn("Failed to load dependency sourceentity for procedure HiringCost!");
+				CobrMod.LOGGER.warn("Failed to load dependency sourceentity for procedure DeathDisbandmentCost!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		File player_data = new File("");
-		double hire_cost = 0;
+		double disband_value = 0;
 		player_data = new File(((FMLPaths.GAMEDIR.get().toString()) + "" + ("/cobr_data/")),
 				File.separator + ((sourceentity.getUniqueID().toString()) + "" + (".json")));
 		if (!player_data.exists()) {
@@ -70,14 +70,14 @@ public class HiringCostProcedure {
 		}
 		if ((EntityTypeTags.getCollection().getTagByID(new ResourceLocation(("forge:cobr_emerald_hiring").toLowerCase(java.util.Locale.ENGLISH)))
 				.contains(entity.getType()))) {
-			hire_cost = (double) 5;
+			disband_value = (double) 5;
 		} else if ((EntityTypeTags.getCollection()
 				.getTagByID(new ResourceLocation(("forge:cobr_diamond_hiring").toLowerCase(java.util.Locale.ENGLISH))).contains(entity.getType()))) {
-			hire_cost = (double) 15;
+			disband_value = (double) 15;
 		}
 		{
 			double _setval = (double) (((sourceentity.getCapability(CobrModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new CobrModVariables.PlayerVariables())).monthly_cost) + hire_cost);
+					.orElse(new CobrModVariables.PlayerVariables())).monthly_cost) - disband_value);
 			sourceentity.getCapability(CobrModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.monthly_cost = _setval;
 				capability.syncPlayerVariables(sourceentity);
