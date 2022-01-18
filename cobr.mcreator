@@ -1395,7 +1395,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "eotic_bamboo_tip"
+      "registry_name": "eotic_bamboo_tip",
+      "path": "~/Blocks - Plants"
     },
     {
       "name": "DisbandmentSigned",
