@@ -24,6 +24,7 @@ import net.minecraft.pathfinding.SwimmerPathNavigator;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.Item;
+import net.minecraft.entity.passive.RabbitEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
@@ -90,12 +91,12 @@ public class DesertLizardEntity extends CobrModElements.ModElement {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
-			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.2);
+			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.3);
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 8);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 2);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);
 			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.5);
-			ammma = ammma.createMutableAttribute(ForgeMod.SWIM_SPEED.get(), 0.2);
+			ammma = ammma.createMutableAttribute(ForgeMod.SWIM_SPEED.get(), 0.3);
 			event.put(entity, ammma.create());
 		}
 	}
@@ -152,10 +153,10 @@ public class DesertLizardEntity extends CobrModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.targetSelector.addGoal(1, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
-			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, DesertLizardEntity.CustomEntity.class, false, false));
-			this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, true));
+			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, RabbitEntity.class, true, false));
+			this.targetSelector.addGoal(2, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
+			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.5));
+			this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 0.9, true));
 			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(6, new SwimGoal(this));
 		}

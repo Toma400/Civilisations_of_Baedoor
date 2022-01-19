@@ -1603,7 +1603,28 @@
       "ids": {},
       "registry_name": "player_data_import",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/Hiring Mechanics/Pds - Hiring/File Dependent"
     },
@@ -1719,6 +1740,28 @@
       "ids": {},
       "registry_name": "eotic_bamboo_recipe_2",
       "path": "~/Recipes"
+    },
+    {
+      "name": "Fences",
+      "type": "tag",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fences",
+      "path": "~/Common Tags"
+    },
+    {
+      "name": "ConfigManager",
+      "type": "procedure",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "config_manager",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [
@@ -1750,6 +1793,12 @@
       "name": "empire_name",
       "type": "string",
       "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "referral_map_name",
+      "type": "string",
+      "scope": "map",
       "value": "\"\""
     }
   ],
