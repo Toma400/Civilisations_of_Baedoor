@@ -1,0 +1,33 @@
+{
+  "group": "esrah_door",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    "45"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:esrah_planks"
+    },
+    "1": {
+      "item": "cobr:esrah_planks"
+    },
+    "2": {
+      "item": "cobr:esrah_planks"
+    },
+    "3": {
+      "item": "cobr:esrah_planks"
+    },
+    "4": {
+      "item": "cobr:esrah_planks"
+    },
+    "5": {
+      "item": "cobr:esrah_planks"
+    }
+  },
+  "result": {
+    "item": "cobr:esrah_door",
+    "count": 3
+  }
+}

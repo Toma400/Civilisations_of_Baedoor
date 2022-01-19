@@ -1603,28 +1603,7 @@
       "ids": {},
       "registry_name": "player_data_import",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Hiring Mechanics/Pds - Hiring/File Dependent"
     },
@@ -1637,12 +1616,7 @@
       "ids": {},
       "registry_name": "empire_info_get",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Empire - File Dependent"
     },
@@ -1676,6 +1650,75 @@
         ]
       },
       "path": "~/Hiring Mechanics/Pds - Hiring/File Dependent"
+    },
+    {
+      "name": "EoticBambooLamp",
+      "type": "block",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_bamboo_lamp"
+    },
+    {
+      "name": "EsrahTrapdoor",
+      "type": "block",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "esrah_trapdoor",
+      "path": "~/Blocks - Plants"
+    },
+    {
+      "name": "EsrahDoor",
+      "type": "block",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "esrah_door",
+      "path": "~/Blocks - Plants"
+    },
+    {
+      "name": "EsrahTrapdoorRecipe",
+      "type": "recipe",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "esrah_trapdoor_recipe",
+      "path": "~/Recipes/Wood Recipes"
+    },
+    {
+      "name": "EsrahDoorRecipe",
+      "type": "recipe",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "esrah_door_recipe",
+      "path": "~/Recipes/Wood Recipes"
+    },
+    {
+      "name": "EoticBambooLampRecipe",
+      "type": "recipe",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_bamboo_lamp_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "EoticBambooRecipe2",
+      "type": "recipe",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eotic_bamboo_recipe_2",
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [
@@ -1714,6 +1757,7 @@
   "language_map": {
     "en_us": {
       "block.cobr.eotic_bamboo_stem": "Eotic Bamboo",
+      "block.cobr.esrah_door": "Esrah Door",
       "block.cobr.dune_traveller_stone": "Dune Traveller Stone",
       "block.cobr.esrah_slab": "Esrah Slab",
       "block.cobr.esrah_stairs": "Esrah Stairs",
@@ -1727,6 +1771,7 @@
       "item.cobr.desert_lizard_spawn_egg": "Desert Lizard Spawn Egg",
       "block.cobr.eotic_bamboo_growing": "Eotic Bamboo",
       "block.cobr.stripped_esrah_log": "Stripped Esrah Log",
+      "block.cobr.eotic_bamboo_lamp": "Eotic Bamboo Block",
       "advancements.the_crusade_began.descr": "You entered the time of civilisations. Use traveller stone with the book to get guide.",
       "block.cobr.eotic_bamboo_stairs": "Eotic Bamboo Stairs",
       "item.cobr.dunes": "Scroll of the Dunes",
@@ -1744,6 +1789,7 @@
       "block.cobr.wob_integration_block": "WOB Integration Block",
       "block.cobr.eotic_bamboo_slab": "Eotic Bamboo Slab",
       "block.cobr.permafrost_traveller_stone": "Permafrost Traveller Stone",
+      "block.cobr.esrah_trapdoor": "Esrah Trapdoor",
       "item.cobr.spawn_entity_oasis_spawn_egg": "[Spawn Entity] Oasis Spawn Egg",
       "block.cobr.hardened_sand": "Hardened Sand",
       "item.cobr.disbandment_scroll": "Disbandment Scroll",

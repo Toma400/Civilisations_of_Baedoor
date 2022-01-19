@@ -1,0 +1,19 @@
+{
+  "group": "eotic_bamboo_lamp",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "cobr:eotic_bamboo_block"
+    },
+    {
+      "item": "cobr:eotic_bamboo_block"
+    }
+  ],
+  "result": {
+    "item": "cobr:eotic_bamboo_lamp",
+    "count": 1
+  }
+}

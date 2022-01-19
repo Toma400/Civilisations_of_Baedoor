@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "eotic_bamboo_lamp",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:EoticBamboo"
+      },
+      {
+        "value": "CUSTOM:EoticBamboo"
+      },
+      {
+        "value": "CUSTOM:EoticBamboo"
+      },
+      {
+        "value": "CUSTOM:EoticBamboo"
+      },
+      {
+        "value": "Blocks.LANTERN"
+      },
+      {
+        "value": "CUSTOM:EoticBamboo"
+      },
+      {
+        "value": "CUSTOM:EoticBamboo"
+      },
+      {
+        "value": "CUSTOM:EoticBamboo"
+      },
+      {
+        "value": "CUSTOM:EoticBamboo"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EoticBambooLamp"
+    },
+    "name": "eotic_bamboo_lamp_recipe",
+    "namespace": "mod"
+  }
+}

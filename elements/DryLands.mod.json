@@ -52,7 +52,7 @@
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 1,
-    "treesPerChunk": 1,
+    "treesPerChunk": 0,
     "vanillaTreeType": "Default",
     "treeType": 1,
     "minHeight": 3,

@@ -21,11 +21,12 @@
  * 
  * [LIST OF PROCEDURES THAT ARE DEPENDENT ON FILE MANAGER]
  * This is important due to changes for FM made on 2021.3, and for any further changes throughout MCR use.
- * 
+ * ____________________________
+ * HIRING | EMPIRE MANAGEMENT:
  * - PlayerDataImport [creating & importing Empire costs + targets]
+ * 		- MonthlyCostCounter [dependent; makes each player count their month and activates payout on the end of it]
  * - EmpireInfoGet [in-game checking system for Empire stats]
  * 
- * - MonthlyCostCounter
  * - HiringSystem
  * - Hiring-related triggers:
  * 		- HiringCost

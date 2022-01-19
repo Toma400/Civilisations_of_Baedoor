@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 3,
+    "group": "esrah_door",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:EsrahPlanks"
+      },
+      {
+        "value": "CUSTOM:EsrahPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:EsrahPlanks"
+      },
+      {
+        "value": "CUSTOM:EsrahPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:EsrahPlanks"
+      },
+      {
+        "value": "CUSTOM:EsrahPlanks"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EsrahDoor"
+    },
+    "name": "esrah_door_recipe",
+    "namespace": "mod"
+  }
+}

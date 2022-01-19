@@ -19,11 +19,11 @@
     },
     "canRespawnHere": true,
     "hasFog": false,
-    "isDark": false,
+    "isDark": true,
     "doesWaterVaporize": false,
     "sleepResult": "ALLOW",
     "hasSkyLight": true,
-    "imitateOverworldBehaviour": false,
+    "imitateOverworldBehaviour": true,
     "portalFrame": {
       "value": "CUSTOM:DuneTravellerStone"
     },

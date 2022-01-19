@@ -1,5 +1,7 @@
 package net.mcreator.cobr.procedures;
 
+import net.minecraftforge.fml.loading.FMLPaths;
+import net.minecraftforge.fml.loading.FMLConfig;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
@@ -26,5 +28,6 @@ public class PreConfigManagerProcedure {
 		}
 	}
 	public static void executeProcedure(Map<String, Object> dependencies) {
+		System.out.println(FMLPaths.GAMEDIR.get().resolve(FMLConfig.defaultConfigPath()).toString());
 	}
 }
