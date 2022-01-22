@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "cobr:blocks/eotic_bamboo_tiles",
-    "up": "cobr:blocks/eotic_bamboo_tiles",
-    "north": "cobr:blocks/eotic_bamboo_tiles",
-    "east": "cobr:blocks/eotic_bamboo_tiles",
-    "south": "cobr:blocks/eotic_bamboo_tiles",
-    "west": "cobr:blocks/eotic_bamboo_tiles",
-    "particle": "cobr:blocks/eotic_bamboo_tiles"
+    "down": "cobr:blocks/eotic_bamboo_lamp",
+    "up": "cobr:blocks/eotic_bamboo_lamp",
+    "north": "cobr:blocks/eotic_bamboo_lamp",
+    "east": "cobr:blocks/eotic_bamboo_lamp",
+    "south": "cobr:blocks/eotic_bamboo_lamp",
+    "west": "cobr:blocks/eotic_bamboo_lamp",
+    "particle": "cobr:blocks/eotic_bamboo_lamp"
   }
 }

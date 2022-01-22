@@ -1,7 +1,7 @@
 {
   "parent": "block/door_top",
   "textures": {
-    "bottom": "cobr:blocks/esrah_planks",
-    "top": "cobr:blocks/esrah_planks"
+    "bottom": "cobr:blocks/esrah_door_bottom",
+    "top": "cobr:blocks/esrah_door_top"
   }
 }

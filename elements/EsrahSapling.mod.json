@@ -14,7 +14,7 @@
     "staticPlantGenerationType": "Flower",
     "suspiciousStewEffect": "SPEED",
     "suspiciousStewDuration": 5,
-    "growapableSpawnType": "Plains",
+    "growapableSpawnType": "Cave",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
     "customBoundingBox": true,
@@ -37,7 +37,7 @@
     },
     "hardness": 0.0,
     "resistance": 0.0,
-    "luminance": 0,
+    "luminance": 2,
     "unbreakable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
@@ -66,7 +66,7 @@
     "forceTicking": false,
     "emissiveRendering": false,
     "hasTileEntity": false,
-    "isReplaceable": false,
+    "isReplaceable": true,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
@@ -77,10 +77,20 @@
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [],
+    "canBePlacedOn": [
+      {
+        "value": "CUSTOM:HardenedSand"
+      }
+    ],
+    "placingCondition": {
+      "name": "TreeHeightCheck5h"
+    },
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "patchSize": 64
+    "patchSize": 64,
+    "onTickUpdate": {
+      "name": "Bonemealing"
+    }
   }
 }
