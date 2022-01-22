@@ -17,7 +17,7 @@
   },
   "criteria": {
     "the_crusade_began": {
-      "trigger": "minecraft:tick"
+      "trigger": "minecraft:impossible"
     }
   },
   "rewards": {
@@ -51,7 +51,11 @@
       "cobr:eotic_bamboo_slab_recipe",
       "cobr:eotic_bamboo_stairs_recipe",
       "cobr:eotic_bamboo_mat_recipe",
-      "cobr:disbandment_scroll_recipe"
+      "cobr:disbandment_scroll_recipe",
+      "cobr:esrah_trapdoor_recipe",
+      "cobr:esrah_door_recipe",
+      "cobr:eotic_bamboo_lamp_recipe",
+      "cobr:eotic_bamboo_recipe_2"
     ]
   }
 }

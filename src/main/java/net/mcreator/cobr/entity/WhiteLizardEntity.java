@@ -24,7 +24,6 @@ import net.minecraft.pathfinding.SwimmerPathNavigator;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.Item;
-import net.minecraft.entity.passive.RabbitEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
@@ -43,19 +42,19 @@ import net.minecraft.entity.CreatureAttribute;
 
 import net.mcreator.cobr.procedures.DesertMobsConditioningProcedure;
 import net.mcreator.cobr.itemgroup.CivilisationsofBaedoorItemGroup;
-import net.mcreator.cobr.entity.renderer.DesertLizardRenderer;
+import net.mcreator.cobr.entity.renderer.WhiteLizardRenderer;
 import net.mcreator.cobr.CobrModElements;
 
 import com.google.common.collect.ImmutableMap;
 
 @CobrModElements.ModElement.Tag
-public class DesertLizardEntity extends CobrModElements.ModElement {
+public class WhiteLizardEntity extends CobrModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.AMBIENT)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
-			.size(0.6f, 1.8f)).build("desert_lizard").setRegistryName("desert_lizard");
-	public DesertLizardEntity(CobrModElements instance) {
-		super(instance, 30);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new DesertLizardRenderer.ModelRegisterHandler());
+			.size(0.6f, 1.8f)).build("white_lizard").setRegistryName("white_lizard");
+	public WhiteLizardEntity(CobrModElements instance) {
+		super(instance, 35);
+		FMLJavaModLoadingContext.get().getModEventBus().register(new WhiteLizardRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
 	}
@@ -64,7 +63,7 @@ public class DesertLizardEntity extends CobrModElements.ModElement {
 	public void initElements() {
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -8092587, -3817294, new Item.Properties().group(CivilisationsofBaedoorItemGroup.tab))
-				.setRegistryName("desert_lizard_spawn_egg"));
+				.setRegistryName("white_lizard_spawn_egg"));
 	}
 
 	@SubscribeEvent
@@ -153,7 +152,7 @@ public class DesertLizardEntity extends CobrModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, RabbitEntity.class, true, false));
+			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, SpawnEntityBambooEntity.CustomEntity.class, true, false));
 			this.targetSelector.addGoal(2, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
 			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.5));
 			this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 0.9, true));

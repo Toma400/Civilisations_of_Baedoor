@@ -39,7 +39,7 @@
             "item": {
               "value": "Items.RABBIT"
             },
-            "weight": 10,
+            "weight": 5,
             "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -51,7 +51,7 @@
         ]
       }
     ],
-    "name": "entities/desert_lizard",
+    "name": "entities/white_lizard",
     "namespace": "mod"
   }
 }

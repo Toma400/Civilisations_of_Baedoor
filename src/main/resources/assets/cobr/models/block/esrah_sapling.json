@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "cobr:blocks/esrah_sapling",
+    "particle": "cobr:blocks/esrah_sapling"
+  }
+}

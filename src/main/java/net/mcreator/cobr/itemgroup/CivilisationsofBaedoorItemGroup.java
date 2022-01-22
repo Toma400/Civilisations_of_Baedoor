@@ -13,7 +13,7 @@ import net.mcreator.cobr.CobrModElements;
 @CobrModElements.ModElement.Tag
 public class CivilisationsofBaedoorItemGroup extends CobrModElements.ModElement {
 	public CivilisationsofBaedoorItemGroup(CobrModElements instance) {
-		super(instance, 33);
+		super(instance, 38);
 	}
 
 	@Override

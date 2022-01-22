@@ -34,7 +34,7 @@ public class DisbandmentScrollItem extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:disbandment_scroll")
 	public static final Item block = null;
 	public DisbandmentScrollItem(CobrModElements instance) {
-		super(instance, 23);
+		super(instance, 27);
 	}
 
 	@Override

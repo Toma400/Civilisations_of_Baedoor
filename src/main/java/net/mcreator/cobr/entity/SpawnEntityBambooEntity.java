@@ -47,7 +47,7 @@ public class SpawnEntityBambooEntity extends CobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
 			.size(0.6f, 1.8f)).build("spawn_entity_bamboo").setRegistryName("spawn_entity_bamboo");
 	public SpawnEntityBambooEntity(CobrModElements instance) {
-		super(instance, 82);
+		super(instance, 86);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new SpawnEntityBambooRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}

@@ -42,7 +42,11 @@
       "EoticBambooSlabRecipe",
       "EoticBambooStairsRecipe",
       "EoticBambooMatRecipe",
-      "DisbandmentScrollRecipe"
+      "DisbandmentScrollRecipe",
+      "EsrahTrapdoorRecipe",
+      "EsrahDoorRecipe",
+      "EoticBambooLampRecipe",
+      "EoticBambooRecipe2"
     ],
     "rewardFunction": "No function",
     "rewardXP": 0,
@@ -50,6 +54,6 @@
     "parent": {
       "value": "No parent: root"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"tick\" x=\"31\" y=\"49\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"44\" y=\"63\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }
 }

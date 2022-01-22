@@ -24,7 +24,7 @@ public class WOBIntegrationBlockBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:wob_integration_block")
 	public static final Block block = null;
 	public WOBIntegrationBlockBlock(CobrModElements instance) {
-		super(instance, 110);
+		super(instance, 114);
 	}
 
 	@Override

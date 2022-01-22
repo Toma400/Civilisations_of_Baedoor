@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cobr:blocks/esrah_leaves",
+    "up": "cobr:blocks/esrah_leaves",
+    "north": "cobr:blocks/esrah_leaves",
+    "east": "cobr:blocks/esrah_leaves",
+    "south": "cobr:blocks/esrah_leaves",
+    "west": "cobr:blocks/esrah_leaves",
+    "particle": "cobr:blocks/esrah_leaves"
+  }
+}

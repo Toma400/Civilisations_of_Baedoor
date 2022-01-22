@@ -13,18 +13,18 @@ import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
-import net.mcreator.cobr.entity.DesertLizardEntity;
+import net.mcreator.cobr.entity.WhiteLizardEntity;
 
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
 @OnlyIn(Dist.CLIENT)
-public class DesertLizardRenderer {
+public class WhiteLizardRenderer {
 	public static class ModelRegisterHandler {
 		@SubscribeEvent
 		@OnlyIn(Dist.CLIENT)
 		public void registerModels(ModelRegistryEvent event) {
-			RenderingRegistry.registerEntityRenderingHandler(DesertLizardEntity.entity, renderManager -> {
+			RenderingRegistry.registerEntityRenderingHandler(WhiteLizardEntity.entity, renderManager -> {
 				return new MobRenderer(renderManager, new Modelhorncrowanlizard(), 0.5f) {
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {

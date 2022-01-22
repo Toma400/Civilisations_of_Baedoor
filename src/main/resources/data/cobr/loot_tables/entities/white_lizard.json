@@ -32,7 +32,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:rabbit",
-          "weight": 10,
+          "weight": 5,
           "functions": [
             {
               "function": "set_count",

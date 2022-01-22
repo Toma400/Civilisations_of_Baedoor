@@ -48,7 +48,6 @@ public class EmpireStatusCommand {
 		});
 		{
 			Map<String, Object> $_dependencies = new HashMap<>();
-			$_dependencies.put("entity", entity);
 			EmpireInfoGetProcedure.executeProcedure($_dependencies);
 		}
 		return 0;

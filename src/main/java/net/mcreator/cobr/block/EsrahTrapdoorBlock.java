@@ -28,7 +28,7 @@ public class EsrahTrapdoorBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:esrah_trapdoor")
 	public static final Block block = null;
 	public EsrahTrapdoorBlock(CobrModElements instance) {
-		super(instance, 126);
+		super(instance, 11);
 	}
 
 	@Override
