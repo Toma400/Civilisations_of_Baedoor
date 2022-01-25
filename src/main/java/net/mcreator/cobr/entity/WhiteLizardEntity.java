@@ -109,7 +109,6 @@ public class WhiteLizardEntity extends CobrModElements.ModElement {
 			super(type, world);
 			experienceValue = 2;
 			setNoAI(false);
-			enablePersistence();
 			this.moveController = new MovementController(this) {
 				@Override
 				public void tick() {
@@ -163,11 +162,6 @@ public class WhiteLizardEntity extends CobrModElements.ModElement {
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
-		}
-
-		@Override
-		public boolean canDespawn(double distanceToClosestPlayer) {
-			return false;
 		}
 
 		@Override

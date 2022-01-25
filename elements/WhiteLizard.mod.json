@@ -110,7 +110,7 @@
     },
     "rangedItemType": "Default item",
     "spawnThisMob": true,
-    "doesDespawnWhenIdle": false,
+    "doesDespawnWhenIdle": true,
     "spawningCondition": {
       "name": "DesertMobsConditioning"
     },
