@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cobr:blocks/technical_empty",
+    "up": "cobr:blocks/technical_empty",
+    "north": "cobr:blocks/technical_empty",
+    "east": "cobr:blocks/technical_empty",
+    "south": "cobr:blocks/technical_empty",
+    "west": "cobr:blocks/technical_empty",
+    "particle": "cobr:blocks/technical_empty"
+  }
+}

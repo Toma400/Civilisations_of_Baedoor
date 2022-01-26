@@ -1,0 +1,12 @@
+{
+  "_fv": 24,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "Overworld Impact",
+    "description": "Decides whether structures spawn in both dimensions and overworld, or only in dimensions. Set to \"true\" to fully feel Baedoor invasion over Minecraft world.",
+    "category": "SPAWNING",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 0
+  }
+}

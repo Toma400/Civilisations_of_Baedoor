@@ -105,6 +105,7 @@ public class CobrModVariables {
 	public static class MapVariables extends WorldSavedData {
 		public static final String DATA_NAME = "cobr_mapvars";
 		public String referral_map_name = "\"\"";
+		public boolean CFG_Overworld_Impact = false;
 		public MapVariables() {
 			super(DATA_NAME);
 		}
@@ -116,11 +117,13 @@ public class CobrModVariables {
 		@Override
 		public void read(CompoundNBT nbt) {
 			referral_map_name = nbt.getString("referral_map_name");
+			CFG_Overworld_Impact = nbt.getBoolean("CFG_Overworld_Impact");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
 			nbt.putString("referral_map_name", referral_map_name);
+			nbt.putBoolean("CFG_Overworld_Impact", CFG_Overworld_Impact);
 			return nbt;
 		}
 
