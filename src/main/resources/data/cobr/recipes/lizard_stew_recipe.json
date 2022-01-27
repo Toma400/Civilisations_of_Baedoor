@@ -1,0 +1,25 @@
+{
+  "group": "lizard_stew",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "cobr:cooked_lizard_meat"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "cobr:lizard_stew",
+    "count": 1
+  }
+}

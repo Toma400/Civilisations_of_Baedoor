@@ -2078,6 +2078,45 @@
       "ids": {},
       "registry_name": "avoider_killable",
       "path": "~/Compatibility Tags"
+    },
+    {
+      "name": "LizardStew",
+      "type": "food",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lizard_stew"
+    },
+    {
+      "name": "LizardStewRecipe",
+      "type": "recipe",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lizard_stew_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "LizardStewFDRecipe",
+      "type": "recipe",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "lizard_stew_fd_recipe",
+      "path": "~/Compatibility Recipes/Farmers Delight"
+    },
+    {
+      "name": "LizardStewIngredient",
+      "type": "tag",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "lizard_stew_ingredient",
+      "path": "~/Compatibility Tags"
     }
   ],
   "variable_elements": [
@@ -2182,6 +2221,7 @@
       "item.cobr.raw_lizard_meat": "Raw Lizard Meat",
       "block.cobr.civilisation_table": "Civilisation Table",
       "item.cobr.bone_sabre": "Bone Sabre",
+      "item.cobr.lizard_stew": "Lizard Stew",
       "itemGroup.tabcivilisationsof_baedoor": "Civilisations of Baedoor",
       "block.cobr.portal_block": "Portal Block",
       "block.cobr.empty_traveller_stone": "Empty Traveller Stone",
@@ -2210,6 +2250,10 @@
         "children": [
           {
             "name": "Wastelands of Baedoor",
+            "children": []
+          },
+          {
+            "name": "Farmers Delight",
             "children": []
           }
         ]

@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "lizard_stew",
+    "customModelName": "Normal",
+    "name": "Lizard Stew",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:CivilisationsofBaedoor"
+    },
+    "stackSize": 16,
+    "nutritionalValue": 10,
+    "saturation": 0.6,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": "Items.BOWL"
+    },
+    "forDogs": true,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}

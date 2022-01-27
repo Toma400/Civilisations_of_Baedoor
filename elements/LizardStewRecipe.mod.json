@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "lizard_stew",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.BROWN_MUSHROOM"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.CARROT"
+      },
+      {
+        "value": "CUSTOM:CookedLizardMeat"
+      },
+      {
+        "value": "Blocks.BROWN_MUSHROOM"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.BOWL"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LizardStew"
+    },
+    "name": "lizard_stew_recipe",
+    "namespace": "mod"
+  }
+}

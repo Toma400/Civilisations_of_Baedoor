@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Items.CARROT"
+      },
+      {
+        "value": "Items.POTATO"
+      },
+      {
+        "value": "Blocks.YELLOW_FLOWER"
+      },
+      {
+        "value": "Blocks.BROWN_MUSHROOM"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "lizard_stew_ingredient",
+    "namespace": "mod"
+  }
+}
