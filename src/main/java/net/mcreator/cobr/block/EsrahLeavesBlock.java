@@ -44,7 +44,7 @@ public class EsrahLeavesBlock extends CobrModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(0.2f, 0.2f).setLightLevel(s -> 2)
+			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(0.2f, 0.2f).setLightLevel(s -> 3)
 					.harvestLevel(0).harvestTool(ToolType.HOE).setRequiresTool().notSolid().setOpaque((bs, br, bp) -> false));
 			setRegistryName("esrah_leaves");
 		}

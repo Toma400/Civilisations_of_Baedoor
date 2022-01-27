@@ -1,0 +1,13 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "avoider_killable",
+    "namespace": "forge"
+  }
+}

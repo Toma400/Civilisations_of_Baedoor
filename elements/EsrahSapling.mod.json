@@ -14,7 +14,7 @@
     "staticPlantGenerationType": "Flower",
     "suspiciousStewEffect": "SPEED",
     "suspiciousStewDuration": 5,
-    "growapableSpawnType": "Cave",
+    "growapableSpawnType": "Plains",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
     "customBoundingBox": true,
@@ -77,20 +77,10 @@
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [
-      {
-        "value": "CUSTOM:HardenedSand"
-      }
-    ],
-    "placingCondition": {
-      "name": "TreeHeightCheck5h"
-    },
+    "canBePlacedOn": [],
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "patchSize": 64,
-    "onTickUpdate": {
-      "name": "Bonemealing"
-    }
+    "patchSize": 64
   }
 }

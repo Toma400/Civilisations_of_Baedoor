@@ -20,11 +20,11 @@ import java.util.List;
 import java.util.Collections;
 
 @CobrModElements.ModElement.Tag
-public class WOBIntegrationBlockBlock extends CobrModElements.ModElement {
-	@ObjectHolder("cobr:wob_integration_block")
+public class ColourfulBlockBlock extends CobrModElements.ModElement {
+	@ObjectHolder("cobr:colourful_block")
 	public static final Block block = null;
-	public WOBIntegrationBlockBlock(CobrModElements instance) {
-		super(instance, 114);
+	public ColourfulBlockBlock(CobrModElements instance) {
+		super(instance, 153);
 	}
 
 	@Override
@@ -35,7 +35,7 @@ public class WOBIntegrationBlockBlock extends CobrModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(-1, 3600000).setLightLevel(s -> 0));
-			setRegistryName("wob_integration_block");
+			setRegistryName("colourful_block");
 		}
 
 		@Override

@@ -1362,16 +1362,6 @@
       "path": "~/Recipes"
     },
     {
-      "name": "WOBIntegrationBlock",
-      "type": "block",
-      "sortid": 114,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "wob_integration_block",
-      "path": "~/Patchouli Use Only"
-    },
-    {
       "name": "EoticBambooTip",
       "type": "block",
       "sortid": 31,
@@ -1784,7 +1774,28 @@
       "ids": {},
       "registry_name": "bonemealing",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/Pds - Plants"
     },
@@ -1984,6 +1995,89 @@
       "ids": {},
       "registry_name": "mercenary_camp_terten",
       "path": "~/Structures/Dunes/Minor Builds"
+    },
+    {
+      "name": "DuneSand",
+      "type": "block",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sand"
+    },
+    {
+      "name": "DuneSandRecipe",
+      "type": "recipe",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sand_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "LeavesDrops",
+      "type": "procedure",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leaves_drops",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Pds - Plants"
+    },
+    {
+      "name": "ColourfulBlock",
+      "type": "block",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "colourful_block",
+      "path": "~/Patchouli Use Only"
+    },
+    {
+      "name": "CompatWob",
+      "type": "item",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "compat_wob",
+      "path": "~/Patchouli Use Only"
+    },
+    {
+      "name": "AvoiderKillable",
+      "type": "tag",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "avoider_killable",
+      "path": "~/Compatibility Tags"
     }
   ],
   "variable_elements": [
@@ -2035,20 +2129,22 @@
     "en_us": {
       "block.cobr.eotic_bamboo_stem": "Eotic Bamboo",
       "block.cobr.esrah_door": "Esrah Door",
+      "block.cobr.dune_sand": "Dune Sand",
       "block.cobr.dune_traveller_stone": "Dune Traveller Stone",
       "gamerule.overworldImpact.description": "Decides whether structures spawn in both dimensions and overworld, or only in dimensions. Set to \"true\" to fully feel Baedoor invasion over Minecraft world.",
       "block.cobr.esrah_slab": "Esrah Slab",
       "block.cobr.esrah_stairs": "Esrah Stairs",
       "block.cobr.esrah_wood": "Esrah Wood",
+      "block.cobr.colourful_block": "WOB Integration Block",
       "item.cobr.terten_civil_spawn_egg": "Terten Civil Spawn Egg",
       "block.cobr.rainforest_islands_traveller_stone": "Rainforest Islands Traveller Stone",
       "advancements.the_crusade_began.title": "The Crusade Began",
       "block.cobr.esrah_fence_gate": "Esrah Fence Gate",
-      "block.cobr.stripped_esrah_wood": "Stripped Esrah Wood",
       "block.cobr.evergreen_depths_traveller_stone": "Evergreen Depths Traveller Stone",
-      "block.cobr.eotic_bamboo_growing": "Eotic Bamboo",
-      "block.cobr.stripped_esrah_log": "Stripped Esrah Log",
+      "block.cobr.stripped_esrah_wood": "Stripped Esrah Wood",
       "block.cobr.eotic_bamboo_lamp": "Eotic Bamboo Block",
+      "block.cobr.stripped_esrah_log": "Stripped Esrah Log",
+      "block.cobr.eotic_bamboo_growing": "Eotic Bamboo",
       "advancements.the_crusade_began.descr": "You entered the time of civilisations. Use traveller stone with the book to get guide.",
       "block.cobr.eotic_bamboo_stairs": "Eotic Bamboo Stairs",
       "item.cobr.dunes": "Scroll of the Dunes",
@@ -2064,9 +2160,9 @@
       "block.cobr.eotic_bamboo_mat": "Eotic Bamboo Mat",
       "item.cobr.bone_shortsword": "Bone Shortsword",
       "block.cobr.esrah_planks": "Esrah Planks",
-      "block.cobr.wob_integration_block": "WOB Integration Block",
       "block.cobr.eotic_bamboo_slab": "Eotic Bamboo Slab",
       "block.cobr.permafrost_traveller_stone": "Permafrost Traveller Stone",
+      "item.cobr.compat_wob": "Compat Wob",
       "block.cobr.esrah_trapdoor": "Esrah Trapdoor",
       "item.cobr.spawn_entity_oasis_spawn_egg": "[Spawn Entity] Oasis Spawn Egg",
       "item.cobr.white_lizard_spawn_egg": "White Lizard Spawn Egg",

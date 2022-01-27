@@ -16,7 +16,7 @@
             "item": {
               "value": "CUSTOM:EsrahSapling"
             },
-            "weight": 5,
+            "weight": 100,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,

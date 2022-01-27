@@ -37,7 +37,7 @@ import net.mcreator.cobr.CobrModElements;
 public class TertenCivilEntity extends CobrModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
-			.size(0.6f, 2.1f)).build("terten_civil").setRegistryName("terten_civil");
+			.size(0.6f, 2.5f)).build("terten_civil").setRegistryName("terten_civil");
 	public TertenCivilEntity(CobrModElements instance) {
 		super(instance, 146);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TertenCivilRenderer.ModelRegisterHandler());

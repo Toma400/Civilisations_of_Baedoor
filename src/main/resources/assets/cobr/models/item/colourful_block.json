@@ -1,5 +1,5 @@
 {
-  "parent": "cobr:block/wob_integration_block",
+  "parent": "cobr:block/colourful_block",
   "display": {
     "thirdperson": {
       "rotation": [

@@ -7,7 +7,7 @@
         {
           "type": "minecraft:item",
           "name": "cobr:esrah_sapling",
-          "weight": 5,
+          "weight": 100,
           "conditions": [
             {
               "condition": "minecraft:inverted",

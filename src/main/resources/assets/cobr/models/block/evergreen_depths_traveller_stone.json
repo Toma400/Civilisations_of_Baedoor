@@ -3,10 +3,10 @@
   "textures": {
     "down": "cobr:blocks/sandstone_top",
     "up": "cobr:blocks/sandstone_top",
-    "north": "cobr:blocks/empty_traveller_stone",
-    "east": "cobr:blocks/empty_traveller_stone",
-    "south": "cobr:blocks/empty_traveller_stone",
-    "west": "cobr:blocks/empty_traveller_stone",
+    "north": "cobr:blocks/evergreen_traveller_stone",
+    "east": "cobr:blocks/evergreen_traveller_stone",
+    "south": "cobr:blocks/evergreen_traveller_stone",
+    "west": "cobr:blocks/evergreen_traveller_stone",
     "particle": "cobr:blocks/sandstone_top"
   }
 }
