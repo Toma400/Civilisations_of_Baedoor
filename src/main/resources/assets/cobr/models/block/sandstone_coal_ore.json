@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cobr:blocks/sandstone_top",
+    "up": "cobr:blocks/sandstone_top",
+    "north": "cobr:blocks/sandstone_coal_ore",
+    "east": "cobr:blocks/sandstone_coal_ore",
+    "south": "cobr:blocks/sandstone_coal_ore",
+    "west": "cobr:blocks/sandstone_coal_ore",
+    "particle": "cobr:blocks/sandstone_top"
+  }
+}

@@ -3,7 +3,7 @@
   "_type": "block",
   "definition": {
     "texture": "dune_sand",
-    "textureTop": "dune_sand_lighter",
+    "textureTop": "dune_sand",
     "textureLeft": "dune_sand",
     "textureFront": "dune_sand",
     "textureRight": "dune_sand",
@@ -55,7 +55,7 @@
       "value": "SAND"
     },
     "tickRate": 10,
-    "tickRandomly": false,
+    "tickRandomly": true,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {
@@ -121,6 +121,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "WettingtheSand"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [],

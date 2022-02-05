@@ -1,0 +1,16 @@
+{
+  "group": "dune_sand",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:hardened_dune_sand"
+    }
+  },
+  "result": {
+    "item": "cobr:dune_sand",
+    "count": 2
+  }
+}

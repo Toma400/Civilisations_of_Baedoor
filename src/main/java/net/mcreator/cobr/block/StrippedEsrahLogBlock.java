@@ -32,7 +32,7 @@ public class StrippedEsrahLogBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:stripped_esrah_log")
 	public static final Block block = null;
 	public StrippedEsrahLogBlock(CobrModElements instance) {
-		super(instance, 4);
+		super(instance, 20);
 	}
 
 	@Override

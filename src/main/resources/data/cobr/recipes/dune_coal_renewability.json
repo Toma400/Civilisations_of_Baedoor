@@ -1,0 +1,16 @@
+{
+  "group": "dune_coal",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "minecraft:coal"
+    },
+    {
+      "item": "wobr:nether_soul_essence"
+    }
+  ],
+  "result": {
+    "item": "cobr:dune_coal",
+    "count": 1
+  }
+}

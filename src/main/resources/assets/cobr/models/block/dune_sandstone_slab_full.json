@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "cobr:blocks/dune_sand",
+    "top": "cobr:blocks/dune_sand",
+    "side": "cobr:blocks/dune_sandstone_double"
+  }
+}

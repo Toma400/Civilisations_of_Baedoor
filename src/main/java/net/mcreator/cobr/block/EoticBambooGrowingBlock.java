@@ -75,7 +75,7 @@ public class EoticBambooGrowingBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:eotic_bamboo_growing")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public EoticBambooGrowingBlock(CobrModElements instance) {
-		super(instance, 48);
+		super(instance, 67);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 

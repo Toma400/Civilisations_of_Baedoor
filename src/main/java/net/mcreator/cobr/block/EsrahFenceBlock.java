@@ -34,7 +34,7 @@ public class EsrahFenceBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:esrah_fence")
 	public static final Block block = null;
 	public EsrahFenceBlock(CobrModElements instance) {
-		super(instance, 9);
+		super(instance, 25);
 	}
 
 	@Override

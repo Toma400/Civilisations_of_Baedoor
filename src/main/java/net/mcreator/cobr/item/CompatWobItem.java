@@ -15,7 +15,7 @@ public class CompatWobItem extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:compat_wob")
 	public static final Item block = null;
 	public CompatWobItem(CobrModElements instance) {
-		super(instance, 154);
+		super(instance, 170);
 	}
 
 	@Override

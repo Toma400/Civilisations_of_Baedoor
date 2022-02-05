@@ -45,7 +45,7 @@ import java.util.List;
 public class DryLandsBiome extends CobrModElements.ModElement {
 	public static Biome biome;
 	public DryLandsBiome(CobrModElements instance) {
-		super(instance, 39);
+		super(instance, 58);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

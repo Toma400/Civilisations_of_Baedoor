@@ -39,7 +39,7 @@ public class TertenCivilEntity extends CobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 2.5f)).build("terten_civil").setRegistryName("terten_civil");
 	public TertenCivilEntity(CobrModElements instance) {
-		super(instance, 146);
+		super(instance, 54);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TertenCivilRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}

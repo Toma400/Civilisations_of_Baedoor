@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "cobr:blocks/dune_sandstone_bricks",
+    "particle": "cobr:blocks/dune_sandstone_bricks"
+  }
+}

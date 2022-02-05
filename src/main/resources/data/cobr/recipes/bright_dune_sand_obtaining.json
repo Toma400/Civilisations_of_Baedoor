@@ -1,0 +1,19 @@
+{
+  "group": "bright_dune_sand",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:dune_sand"
+    },
+    "1": {
+      "item": "wobr:glistering_ash"
+    }
+  },
+  "result": {
+    "item": "cobr:bright_dune_sand",
+    "count": 1
+  }
+}

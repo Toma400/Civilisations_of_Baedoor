@@ -2,7 +2,7 @@
   "parent": "block/cube",
   "textures": {
     "down": "cobr:blocks/dune_sand",
-    "up": "cobr:blocks/dune_sand_lighter",
+    "up": "cobr:blocks/dune_sand",
     "north": "cobr:blocks/dune_sand",
     "east": "cobr:blocks/dune_sand",
     "south": "cobr:blocks/dune_sand",

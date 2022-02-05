@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:HardenedSand"
+      },
+      {
+        "value": "CUSTOM:HardenedDuneSand"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "smeltable_hardened_sand",
+    "namespace": "mod"
+  }
+}

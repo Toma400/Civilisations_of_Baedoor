@@ -32,7 +32,7 @@ public class EsrahLogBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:esrah_log")
 	public static final Block block = null;
 	public EsrahLogBlock(CobrModElements instance) {
-		super(instance, 2);
+		super(instance, 18);
 	}
 
 	@Override

@@ -46,7 +46,7 @@ public class SpawnBlockMercenaryCampTertenBlock extends CobrModElements.ModEleme
 	@ObjectHolder("cobr:spawn_block_mercenary_camp_terten")
 	public static final Block block = null;
 	public SpawnBlockMercenaryCampTertenBlock(CobrModElements instance) {
-		super(instance, 147);
+		super(instance, 164);
 	}
 
 	@Override
@@ -130,6 +130,10 @@ public class SpawnBlockMercenaryCampTertenBlock extends CobrModElements.ModEleme
 			int z = pos.getZ();
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
 				SpawnBlockMercenaryCampProcedure.executeProcedure($_dependencies);
 			}
 		}

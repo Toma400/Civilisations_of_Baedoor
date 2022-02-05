@@ -1,0 +1,26 @@
+{
+  "group": "dune_sandstone_bricks",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:dune_sandstone"
+    },
+    "1": {
+      "item": "cobr:dune_sandstone"
+    },
+    "2": {
+      "item": "cobr:dune_sandstone"
+    },
+    "3": {
+      "item": "cobr:dune_sandstone"
+    }
+  },
+  "result": {
+    "item": "cobr:dune_sandstone_bricks",
+    "count": 4
+  }
+}

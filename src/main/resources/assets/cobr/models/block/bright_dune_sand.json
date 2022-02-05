@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cobr:blocks/bright_dune_sand",
+    "up": "cobr:blocks/bright_dune_sand",
+    "north": "cobr:blocks/bright_dune_sand",
+    "east": "cobr:blocks/bright_dune_sand",
+    "south": "cobr:blocks/bright_dune_sand",
+    "west": "cobr:blocks/bright_dune_sand",
+    "particle": "cobr:blocks/bright_dune_sand"
+  }
+}

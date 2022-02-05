@@ -4,7 +4,7 @@
     {
       "name": "Dunes",
       "type": "dimension",
-      "sortid": 26,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -16,7 +16,7 @@
     {
       "name": "EmptyTravellerStone",
       "type": "block",
-      "sortid": 21,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -26,7 +26,7 @@
     {
       "name": "EmptyTravellerStoneRecipe",
       "type": "recipe",
-      "sortid": 36,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -36,7 +36,7 @@
     {
       "name": "TravellerStoneTransition",
       "type": "procedure",
-      "sortid": 37,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -70,7 +70,7 @@
     {
       "name": "DuneTravellerStone",
       "type": "block",
-      "sortid": 22,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -80,7 +80,7 @@
     {
       "name": "CivilisationsofBaedoor",
       "type": "tab",
-      "sortid": 38,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -89,7 +89,7 @@
     {
       "name": "PermafrostTravellerStone",
       "type": "block",
-      "sortid": 23,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -99,7 +99,7 @@
     {
       "name": "RainforestIslandsTravellerStone",
       "type": "block",
-      "sortid": 24,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -109,7 +109,7 @@
     {
       "name": "EvergreenDepthsTravellerStone",
       "type": "block",
-      "sortid": 25,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -119,7 +119,7 @@
     {
       "name": "DryLands",
       "type": "biome",
-      "sortid": 39,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -128,7 +128,7 @@
     {
       "name": "PortalIgnition",
       "type": "procedure",
-      "sortid": 40,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -162,7 +162,7 @@
     {
       "name": "SpawnEntityOasis",
       "type": "livingentity",
-      "sortid": 41,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -171,7 +171,7 @@
     {
       "name": "OasisSmall",
       "type": "structure",
-      "sortid": 42,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -181,7 +181,7 @@
     {
       "name": "SpawnEntitiesUse",
       "type": "procedure",
-      "sortid": 43,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -214,7 +214,7 @@
     {
       "name": "DunesIgniterRecipe",
       "type": "recipe",
-      "sortid": 44,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -224,7 +224,7 @@
     {
       "name": "ShortTravelTravellerStone",
       "type": "procedure",
-      "sortid": 45,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -258,7 +258,7 @@
     {
       "name": "EoticLakes",
       "type": "biome",
-      "sortid": 46,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -267,27 +267,27 @@
     {
       "name": "EoticBambooStem",
       "type": "block",
-      "sortid": 47,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "eotic_bamboo_stem",
-      "path": "~/Blocks - Plants"
+      "path": "~/Blocks/Plants"
     },
     {
       "name": "EoticBambooGrowing",
       "type": "block",
-      "sortid": 48,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "eotic_bamboo_growing",
-      "path": "~/Blocks - Plants"
+      "path": "~/Blocks/Plants"
     },
     {
       "name": "EoticBamboo",
       "type": "item",
-      "sortid": 30,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -296,7 +296,7 @@
     {
       "name": "EoticBambooGrowth",
       "type": "procedure",
-      "sortid": 49,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -326,7 +326,7 @@
     {
       "name": "EoticBambooVerticalBreaking",
       "type": "procedure",
-      "sortid": 50,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -356,7 +356,7 @@
     {
       "name": "Shrinkage",
       "type": "procedure",
-      "sortid": 51,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -373,7 +373,7 @@
     {
       "name": "EoticBambooPlantage",
       "type": "procedure",
-      "sortid": 52,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -407,7 +407,7 @@
     {
       "name": "SandDustObtaining",
       "type": "recipe",
-      "sortid": 53,
+      "sortid": 72,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -417,7 +417,7 @@
     {
       "name": "SandDustObtaining2",
       "type": "recipe",
-      "sortid": 54,
+      "sortid": 73,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -427,17 +427,17 @@
     {
       "name": "EsrahLog",
       "type": "block",
-      "sortid": 2,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "esrah_log",
-      "path": "~/Blocks - Plants"
+      "path": "~/Blocks/Woods"
     },
     {
       "name": "Logs",
       "type": "tag",
-      "sortid": 55,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -447,17 +447,17 @@
     {
       "name": "EsrahPlanks",
       "type": "block",
-      "sortid": 6,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "esrah_planks",
-      "path": "~/Blocks - Plants"
+      "path": "~/Blocks/Woods"
     },
     {
       "name": "EsrahPlanksRecipe",
       "type": "recipe",
-      "sortid": 56,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -467,7 +467,7 @@
     {
       "name": "Planks",
       "type": "tag",
-      "sortid": 57,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -477,7 +477,7 @@
     {
       "name": "EoticBambooSpawnCondition",
       "type": "procedure",
-      "sortid": 58,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -508,7 +508,7 @@
     {
       "name": "BambooTypePlant",
       "type": "tag",
-      "sortid": 59,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -518,7 +518,7 @@
     {
       "name": "PlantBreaking",
       "type": "procedure",
-      "sortid": 60,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -548,7 +548,7 @@
     {
       "name": "WeakMeat",
       "type": "procedure",
-      "sortid": 61,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -565,16 +565,17 @@
     {
       "name": "CookedLizardMeat",
       "type": "food",
-      "sortid": 28,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "cooked_lizard_meat"
+      "registry_name": "cooked_lizard_meat",
+      "path": "~/Foods"
     },
     {
       "name": "CookedLizardMeatRecipe",
       "type": "recipe",
-      "sortid": 62,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -584,7 +585,7 @@
     {
       "name": "CookedLizardMeatSmokerRecipe",
       "type": "recipe",
-      "sortid": 63,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -594,7 +595,7 @@
     {
       "name": "CookedLizardMeatCampfireRecipe",
       "type": "recipe",
-      "sortid": 64,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -613,27 +614,27 @@
     {
       "name": "HardenedSandRecipe",
       "type": "recipe",
-      "sortid": 65,
+      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "hardened_sand_recipe",
-      "path": "~/Recipes"
+      "path": "~/Recipes/Sand Recipes"
     },
     {
       "name": "HardenedSandUnrecipe",
       "type": "recipe",
-      "sortid": 66,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "hardened_sand_unrecipe",
-      "path": "~/Recipes"
+      "path": "~/Recipes/Sand Recipes"
     },
     {
       "name": "HardenedSandIntoGlassRecipe",
       "type": "recipe",
-      "sortid": 67,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -643,16 +644,17 @@
     {
       "name": "RawLizardMeat",
       "type": "food",
-      "sortid": 29,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "raw_lizard_meat"
+      "registry_name": "raw_lizard_meat",
+      "path": "~/Foods"
     },
     {
       "name": "BoneWeaponsSlownessEffect",
       "type": "procedure",
-      "sortid": 68,
+      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -669,7 +671,7 @@
     {
       "name": "SabreRegistry",
       "type": "procedure",
-      "sortid": 69,
+      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -690,7 +692,7 @@
     {
       "name": "WobrSabre",
       "type": "tag",
-      "sortid": 70,
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -700,7 +702,7 @@
     {
       "name": "BoneShortsword",
       "type": "tool",
-      "sortid": 33,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -709,7 +711,7 @@
     {
       "name": "BoneSabre",
       "type": "tool",
-      "sortid": 34,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -718,7 +720,7 @@
     {
       "name": "BoneShortswordRecipe",
       "type": "recipe",
-      "sortid": 71,
+      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -728,7 +730,7 @@
     {
       "name": "BoneSabreRecipe",
       "type": "recipe",
-      "sortid": 72,
+      "sortid": 91,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -738,7 +740,7 @@
     {
       "name": "TheCrusadeBegan",
       "type": "achievement",
-      "sortid": 73,
+      "sortid": 92,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -747,7 +749,7 @@
     {
       "name": "EoticNearbyGrowable",
       "type": "tag",
-      "sortid": 74,
+      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -757,7 +759,7 @@
     {
       "name": "PreConfigManager",
       "type": "procedure",
-      "sortid": 75,
+      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -769,7 +771,7 @@
     {
       "name": "PatchouliRecipe",
       "type": "recipe",
-      "sortid": 76,
+      "sortid": 95,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -779,7 +781,7 @@
     {
       "name": "AcrosstheDunes",
       "type": "achievement",
-      "sortid": 77,
+      "sortid": 96,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -788,7 +790,7 @@
     {
       "name": "PortalBlock",
       "type": "block",
-      "sortid": 78,
+      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -797,7 +799,7 @@
     {
       "name": "EoticBambooVerticalBreakingDown",
       "type": "procedure",
-      "sortid": 79,
+      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -827,7 +829,7 @@
     {
       "name": "RockSmallSandstone",
       "type": "structure",
-      "sortid": 80,
+      "sortid": 99,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -837,7 +839,7 @@
     {
       "name": "EoticBamboo1",
       "type": "structure",
-      "sortid": 81,
+      "sortid": 100,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -847,7 +849,7 @@
     {
       "name": "EoticBamboo2",
       "type": "structure",
-      "sortid": 82,
+      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -857,7 +859,7 @@
     {
       "name": "EoticBamboo3",
       "type": "structure",
-      "sortid": 83,
+      "sortid": 102,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -867,7 +869,7 @@
     {
       "name": "TravellingAchievements",
       "type": "procedure",
-      "sortid": 84,
+      "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -888,7 +890,7 @@
     {
       "name": "EoticBambooAdditionalSpawning",
       "type": "procedure",
-      "sortid": 85,
+      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -918,7 +920,7 @@
     {
       "name": "SpawnEntityBamboo",
       "type": "livingentity",
-      "sortid": 86,
+      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -928,7 +930,7 @@
     {
       "name": "DesertMobsConditioning",
       "type": "procedure",
-      "sortid": 87,
+      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -958,7 +960,7 @@
     {
       "name": "DesertMobsSpawnable",
       "type": "tag",
-      "sortid": 88,
+      "sortid": 107,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -968,7 +970,7 @@
     {
       "name": "InfoonWorkflow",
       "type": "code",
-      "sortid": 89,
+      "sortid": 108,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -977,7 +979,7 @@
     {
       "name": "OldRoad",
       "type": "structure",
-      "sortid": 90,
+      "sortid": 109,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -987,7 +989,7 @@
     {
       "name": "EoticBamboo1D",
       "type": "structure",
-      "sortid": 91,
+      "sortid": 110,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -997,7 +999,7 @@
     {
       "name": "EoticBamboo2D",
       "type": "structure",
-      "sortid": 92,
+      "sortid": 111,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1007,7 +1009,7 @@
     {
       "name": "EoticBamboo3D",
       "type": "structure",
-      "sortid": 93,
+      "sortid": 112,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1017,7 +1019,7 @@
     {
       "name": "DesertAnimalsMobcap",
       "type": "tag",
-      "sortid": 94,
+      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1027,37 +1029,37 @@
     {
       "name": "EsrahSlab",
       "type": "block",
-      "sortid": 8,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "esrah_slab",
-      "path": "~/Blocks - Plants"
+      "path": "~/Blocks/Woods"
     },
     {
       "name": "EsrahStairs",
       "type": "block",
-      "sortid": 7,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "esrah_stairs",
-      "path": "~/Blocks - Plants"
+      "path": "~/Blocks/Woods"
     },
     {
       "name": "EsrahFence",
       "type": "block",
-      "sortid": 9,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "esrah_fence",
-      "path": "~/Blocks - Plants"
+      "path": "~/Blocks/Woods"
     },
     {
       "name": "SandPillar",
       "type": "structure",
-      "sortid": 95,
+      "sortid": 114,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1067,7 +1069,7 @@
     {
       "name": "OldRoadCrossing",
       "type": "structure",
-      "sortid": 96,
+      "sortid": 115,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1077,17 +1079,17 @@
     {
       "name": "StrippedEsrahLog",
       "type": "block",
-      "sortid": 4,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "stripped_esrah_log",
-      "path": "~/Blocks - Plants"
+      "path": "~/Blocks/Woods"
     },
     {
       "name": "Strippage",
       "type": "procedure",
-      "sortid": 97,
+      "sortid": 116,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1121,7 +1123,7 @@
     {
       "name": "EsrahPlanksRecipe2",
       "type": "recipe",
-      "sortid": 98,
+      "sortid": 117,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1131,7 +1133,7 @@
     {
       "name": "EsrahSlabRecipe",
       "type": "recipe",
-      "sortid": 99,
+      "sortid": 118,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1141,7 +1143,7 @@
     {
       "name": "EsrahStairsRecipe",
       "type": "recipe",
-      "sortid": 100,
+      "sortid": 119,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1151,17 +1153,17 @@
     {
       "name": "EsrahFenceGate",
       "type": "block",
-      "sortid": 10,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "esrah_fence_gate",
-      "path": "~/Blocks - Plants"
+      "path": "~/Blocks/Woods"
     },
     {
       "name": "EsrahFenceRecipe",
       "type": "recipe",
-      "sortid": 101,
+      "sortid": 120,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1171,7 +1173,7 @@
     {
       "name": "EsrahFenceGateRecipe",
       "type": "recipe",
-      "sortid": 102,
+      "sortid": 121,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1181,7 +1183,7 @@
     {
       "name": "WoodenSlabs",
       "type": "tag",
-      "sortid": 103,
+      "sortid": 122,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1191,27 +1193,27 @@
     {
       "name": "EsrahWood",
       "type": "block",
-      "sortid": 3,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "esrah_wood",
-      "path": "~/Blocks - Plants"
+      "path": "~/Blocks/Woods"
     },
     {
       "name": "StrippedEsrahWood",
       "type": "block",
-      "sortid": 5,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "stripped_esrah_wood",
-      "path": "~/Blocks - Plants"
+      "path": "~/Blocks/Woods"
     },
     {
       "name": "EsrahWoodRecipe",
       "type": "recipe",
-      "sortid": 104,
+      "sortid": 123,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1221,7 +1223,7 @@
     {
       "name": "StrippedEsrahWoodRecipe",
       "type": "recipe",
-      "sortid": 105,
+      "sortid": 124,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1231,7 +1233,7 @@
     {
       "name": "CivilisationTable",
       "type": "block",
-      "sortid": 20,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1240,7 +1242,7 @@
     {
       "name": "CivilisationTableRecipe",
       "type": "recipe",
-      "sortid": 106,
+      "sortid": 125,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1250,7 +1252,7 @@
     {
       "name": "EmpireFoundationSetInWood",
       "type": "achievement",
-      "sortid": 107,
+      "sortid": 126,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1259,25 +1261,27 @@
     {
       "name": "PackofEoticBamboo",
       "type": "block",
-      "sortid": 18,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pack_of_eotic_bamboo"
+      "registry_name": "pack_of_eotic_bamboo",
+      "path": "~/Blocks/Eotic Bamboo"
     },
     {
       "name": "EoticBambooBlock",
       "type": "block",
-      "sortid": 13,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "eotic_bamboo_block"
+      "registry_name": "eotic_bamboo_block",
+      "path": "~/Blocks/Eotic Bamboo"
     },
     {
       "name": "PackofEoticBambooRecipe",
       "type": "recipe",
-      "sortid": 108,
+      "sortid": 127,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1287,7 +1291,7 @@
     {
       "name": "PackofEoticBambooUnRecipe",
       "type": "recipe",
-      "sortid": 109,
+      "sortid": 128,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1297,34 +1301,37 @@
     {
       "name": "EoticBambooSlab",
       "type": "block",
-      "sortid": 16,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "eotic_bamboo_slab"
+      "registry_name": "eotic_bamboo_slab",
+      "path": "~/Blocks/Eotic Bamboo"
     },
     {
       "name": "EoticBambooStairs",
       "type": "block",
-      "sortid": 15,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "eotic_bamboo_stairs"
+      "registry_name": "eotic_bamboo_stairs",
+      "path": "~/Blocks/Eotic Bamboo"
     },
     {
       "name": "EoticBambooMat",
       "type": "block",
-      "sortid": 17,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "eotic_bamboo_mat"
+      "registry_name": "eotic_bamboo_mat",
+      "path": "~/Blocks/Eotic Bamboo"
     },
     {
       "name": "EoticBambooBlockRecipe",
       "type": "recipe",
-      "sortid": 110,
+      "sortid": 129,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1334,7 +1341,7 @@
     {
       "name": "EoticBambooSlabRecipe",
       "type": "recipe",
-      "sortid": 111,
+      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1344,7 +1351,7 @@
     {
       "name": "EoticBambooStairsRecipe",
       "type": "recipe",
-      "sortid": 112,
+      "sortid": 131,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1354,7 +1361,7 @@
     {
       "name": "EoticBambooMatRecipe",
       "type": "recipe",
-      "sortid": 113,
+      "sortid": 132,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1364,17 +1371,17 @@
     {
       "name": "EoticBambooTip",
       "type": "block",
-      "sortid": 31,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "eotic_bamboo_tip",
-      "path": "~/Blocks - Plants"
+      "path": "~/Blocks/Woods"
     },
     {
       "name": "DisbandmentSigned",
       "type": "procedure",
-      "sortid": 115,
+      "sortid": 133,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1393,7 +1400,7 @@
     {
       "name": "DisbandmentScroll",
       "type": "item",
-      "sortid": 27,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1402,7 +1409,7 @@
     {
       "name": "DisbandmentSignage",
       "type": "procedure",
-      "sortid": 116,
+      "sortid": 134,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1420,7 +1427,7 @@
     {
       "name": "DisbandmentScrollInfoRequired",
       "type": "procedure",
-      "sortid": 117,
+      "sortid": 135,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1438,7 +1445,7 @@
     {
       "name": "DisbandmentScrollInfo",
       "type": "command",
-      "sortid": 118,
+      "sortid": 136,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1447,7 +1454,7 @@
     {
       "name": "DisbandmentScrollRecipe",
       "type": "recipe",
-      "sortid": 119,
+      "sortid": 137,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1457,7 +1464,7 @@
     {
       "name": "CobrHireables",
       "type": "tag",
-      "sortid": 120,
+      "sortid": 138,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1467,7 +1474,7 @@
     {
       "name": "CobrEmeraldHiring",
       "type": "tag",
-      "sortid": 121,
+      "sortid": 139,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1477,7 +1484,7 @@
     {
       "name": "CobrDiamondHiring",
       "type": "tag",
-      "sortid": 122,
+      "sortid": 140,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1487,7 +1494,7 @@
     {
       "name": "HiringSystem",
       "type": "procedure",
-      "sortid": 123,
+      "sortid": 141,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1500,7 +1507,7 @@
     {
       "name": "HiringCost",
       "type": "procedure",
-      "sortid": 124,
+      "sortid": 142,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1522,7 +1529,7 @@
     {
       "name": "DisbandmentCost",
       "type": "procedure",
-      "sortid": 125,
+      "sortid": 143,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1535,7 +1542,7 @@
     {
       "name": "MonthlyCostCounter",
       "type": "procedure",
-      "sortid": 126,
+      "sortid": 144,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1548,7 +1555,7 @@
     {
       "name": "HiringCostPayout",
       "type": "procedure",
-      "sortid": 127,
+      "sortid": 145,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1570,7 +1577,7 @@
     {
       "name": "PlayerDataImport",
       "type": "procedure",
-      "sortid": 128,
+      "sortid": 146,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1604,7 +1611,7 @@
     {
       "name": "EmpireInfoGet",
       "type": "procedure",
-      "sortid": 129,
+      "sortid": 147,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1617,7 +1624,7 @@
     {
       "name": "EmpireStatus",
       "type": "command",
-      "sortid": 130,
+      "sortid": 148,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1626,7 +1633,7 @@
     {
       "name": "DeathDisbandmentCost",
       "type": "procedure",
-      "sortid": 131,
+      "sortid": 149,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1648,36 +1655,37 @@
     {
       "name": "EoticBambooLamp",
       "type": "block",
-      "sortid": 14,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "eotic_bamboo_lamp"
+      "registry_name": "eotic_bamboo_lamp",
+      "path": "~/Blocks/Eotic Bamboo"
     },
     {
       "name": "EsrahTrapdoor",
       "type": "block",
-      "sortid": 11,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "esrah_trapdoor",
-      "path": "~/Blocks - Plants"
+      "path": "~/Blocks/Woods"
     },
     {
       "name": "EsrahDoor",
       "type": "block",
-      "sortid": 12,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "esrah_door",
-      "path": "~/Blocks - Plants"
+      "path": "~/Blocks/Woods"
     },
     {
       "name": "EsrahTrapdoorRecipe",
       "type": "recipe",
-      "sortid": 132,
+      "sortid": 150,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1687,7 +1695,7 @@
     {
       "name": "EsrahDoorRecipe",
       "type": "recipe",
-      "sortid": 133,
+      "sortid": 151,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1697,7 +1705,7 @@
     {
       "name": "EoticBambooLampRecipe",
       "type": "recipe",
-      "sortid": 134,
+      "sortid": 152,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1705,19 +1713,9 @@
       "path": "~/Recipes"
     },
     {
-      "name": "EoticBambooRecipe2",
-      "type": "recipe",
-      "sortid": 135,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "eotic_bamboo_recipe_2",
-      "path": "~/Recipes"
-    },
-    {
       "name": "Fences",
       "type": "tag",
-      "sortid": 136,
+      "sortid": 153,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1727,7 +1725,7 @@
     {
       "name": "ConfigManager",
       "type": "procedure",
-      "sortid": 137,
+      "sortid": 154,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1739,27 +1737,27 @@
     {
       "name": "EsrahLeaves",
       "type": "block",
-      "sortid": 19,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "esrah_leaves",
-      "path": "~/Blocks - Plants"
+      "path": "~/Blocks/Woods"
     },
     {
       "name": "EsrahSapling",
       "type": "plant",
-      "sortid": 32,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "esrah_sapling",
-      "path": "~/Blocks - Plants"
+      "path": "~/Blocks/Woods"
     },
     {
       "name": "EsrahLeavesLootTable",
       "type": "loottable",
-      "sortid": 138,
+      "sortid": 155,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1768,13 +1766,17 @@
     {
       "name": "Bonemealing",
       "type": "procedure",
-      "sortid": 139,
+      "sortid": 156,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "bonemealing",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "itemstack",
             "type": "itemstack"
@@ -1802,7 +1804,7 @@
     {
       "name": "TreeHeightCheck5h",
       "type": "procedure",
-      "sortid": 140,
+      "sortid": 157,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1833,7 +1835,7 @@
     {
       "name": "TreeHeightCheck7h",
       "type": "procedure",
-      "sortid": 141,
+      "sortid": 158,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1864,7 +1866,7 @@
     {
       "name": "WhiteLizard",
       "type": "livingentity",
-      "sortid": 35,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1873,7 +1875,7 @@
     {
       "name": "TreeLeaves",
       "type": "tag",
-      "sortid": 142,
+      "sortid": 159,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1883,7 +1885,7 @@
     {
       "name": "WhiteLizardLootTable",
       "type": "loottable",
-      "sortid": 143,
+      "sortid": 160,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1892,7 +1894,7 @@
     {
       "name": "SimpleAdvancements",
       "type": "procedure",
-      "sortid": 144,
+      "sortid": 161,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1913,7 +1915,7 @@
     {
       "name": "Sleep",
       "type": "procedure",
-      "sortid": 145,
+      "sortid": 162,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1930,7 +1932,7 @@
     {
       "name": "TertenCivil",
       "type": "livingentity",
-      "sortid": 146,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1939,7 +1941,7 @@
     {
       "name": "SpawnBlockMercenaryCamp",
       "type": "procedure",
-      "sortid": 147,
+      "sortid": 163,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1968,7 +1970,7 @@
     {
       "name": "SpawnBlockMercenaryCampTerten",
       "type": "block",
-      "sortid": 147,
+      "sortid": 164,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1977,7 +1979,7 @@
     {
       "name": "OverworldImpact",
       "type": "gamerule",
-      "sortid": 148,
+      "sortid": 165,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1989,7 +1991,7 @@
     {
       "name": "MercenaryCampTerten",
       "type": "structure",
-      "sortid": 149,
+      "sortid": 166,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1999,26 +2001,27 @@
     {
       "name": "DuneSand",
       "type": "block",
-      "sortid": 150,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dune_sand"
+      "registry_name": "dune_sand",
+      "path": "~/Blocks/Dune Sand"
     },
     {
       "name": "DuneSandRecipe",
       "type": "recipe",
-      "sortid": 151,
+      "sortid": 167,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "dune_sand_recipe",
-      "path": "~/Recipes"
+      "path": "~/Recipes/Sand Recipes"
     },
     {
       "name": "LeavesDrops",
       "type": "procedure",
-      "sortid": 152,
+      "sortid": 168,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2052,7 +2055,7 @@
     {
       "name": "ColourfulBlock",
       "type": "block",
-      "sortid": 153,
+      "sortid": 169,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2062,7 +2065,7 @@
     {
       "name": "CompatWob",
       "type": "item",
-      "sortid": 154,
+      "sortid": 170,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2072,7 +2075,7 @@
     {
       "name": "AvoiderKillable",
       "type": "tag",
-      "sortid": 155,
+      "sortid": 171,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2082,16 +2085,17 @@
     {
       "name": "LizardStew",
       "type": "food",
-      "sortid": 156,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lizard_stew"
+      "registry_name": "lizard_stew",
+      "path": "~/Foods"
     },
     {
       "name": "LizardStewRecipe",
       "type": "recipe",
-      "sortid": 157,
+      "sortid": 172,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2101,7 +2105,7 @@
     {
       "name": "LizardStewFDRecipe",
       "type": "recipe",
-      "sortid": 158,
+      "sortid": 173,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -2111,12 +2115,586 @@
     {
       "name": "LizardStewIngredient",
       "type": "tag",
-      "sortid": 159,
+      "sortid": 174,
       "compiles": true,
       "locked_code": true,
       "ids": {},
       "registry_name": "lizard_stew_ingredient",
       "path": "~/Compatibility Tags"
+    },
+    {
+      "name": "BlockUpdater",
+      "type": "procedure",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_updater",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DuneCoal",
+      "type": "item",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_coal"
+    },
+    {
+      "name": "DuneCoalFuel",
+      "type": "fuel",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_coal_fuel"
+    },
+    {
+      "name": "Coals",
+      "type": "tag",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coals",
+      "path": "~/Common Tags"
+    },
+    {
+      "name": "DuneCoalRenewability",
+      "type": "recipe",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "dune_coal_renewability",
+      "path": "~/Compatibility Recipes/Wastelands of Baedoor"
+    },
+    {
+      "name": "BrightDuneSand",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bright_dune_sand",
+      "path": "~/Blocks/Dune Sand"
+    },
+    {
+      "name": "WetDuneSand",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wet_dune_sand",
+      "path": "~/Blocks/Dune Sand"
+    },
+    {
+      "name": "WettingtheSand",
+      "type": "procedure",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wettingthe_sand",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BrightDuneSandObtaining",
+      "type": "recipe",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "bright_dune_sand_obtaining",
+      "path": "~/Compatibility Recipes/Wastelands of Baedoor"
+    },
+    {
+      "name": "DuneSandstone",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone",
+      "path": "~/Blocks/Dune Sand"
+    },
+    {
+      "name": "DuneSandstoneRecipe",
+      "type": "recipe",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_recipe",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "DuneSandstoneBricks",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_bricks",
+      "path": "~/Blocks/Dune Sand"
+    },
+    {
+      "name": "DuneSandstoneBricksRecipe",
+      "type": "recipe",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_bricks_recipe",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "DuneSandstoneBricksRecipeStonecutter",
+      "type": "recipe",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_bricks_recipe_stonecutter",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "HardenedDuneSand",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hardened_dune_sand",
+      "path": "~/Blocks/Dune Sand"
+    },
+    {
+      "name": "HardenedDuneSandRecipe",
+      "type": "recipe",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hardened_dune_sand_recipe",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "HardenedDuneSandUnrecipe",
+      "type": "recipe",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hardened_dune_sand_unrecipe",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "DuneSandstoneCoalOre",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_coal_ore",
+      "path": "~/Blocks/Dune Sand"
+    },
+    {
+      "name": "DuneSandstoneIronOre",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_iron_ore",
+      "path": "~/Blocks/Dune Sand"
+    },
+    {
+      "name": "DuneSandstoneCoalOreUnrecipe",
+      "type": "recipe",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_coal_ore_unrecipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DuneSandstoneCoalOreUnrecipe2",
+      "type": "recipe",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_coal_ore_unrecipe_2",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DuneSandstoneIronOreUnrecipe",
+      "type": "recipe",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_iron_ore_unrecipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DuneSandstoneIronOreUnrecipe2",
+      "type": "recipe",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_iron_ore_unrecipe_2",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SandstoneCoalOre",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandstone_coal_ore"
+    },
+    {
+      "name": "SandstoneIronOre",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandstone_iron_ore"
+    },
+    {
+      "name": "SandstoneCoalOreUnrecipe",
+      "type": "recipe",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandstone_coal_ore_unrecipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SandstoneCoalOreUnrecipe2",
+      "type": "recipe",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandstone_coal_ore_unrecipe_2",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SandstoneIronOreUnrecipe",
+      "type": "recipe",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandstone_iron_ore_unrecipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SandstoneIronOreUnrecipe2",
+      "type": "recipe",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandstone_iron_ore_unrecipe_2",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DuneSandstoneSlab",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_slab",
+      "path": "~/Blocks/Dune Sand"
+    },
+    {
+      "name": "DuneSandstoneStairs",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_stairs",
+      "path": "~/Blocks/Dune Sand"
+    },
+    {
+      "name": "DuneSandstoneBrickSlab",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_brick_slab",
+      "path": "~/Blocks/Dune Sand"
+    },
+    {
+      "name": "DuneSandstoneBrickStairs",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_brick_stairs",
+      "path": "~/Blocks/Dune Sand"
+    },
+    {
+      "name": "DuneSandstoneSlabRecipe",
+      "type": "recipe",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_slab_recipe",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "DuneSandstoneStairsRecipe",
+      "type": "recipe",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_stairs_recipe",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "DuneSandstoneSlabRecipeStonecutter",
+      "type": "recipe",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_slab_recipe_stonecutter",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "DuneSandstoneStairsRecipeStonecutter",
+      "type": "recipe",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_stairs_recipe_stonecutter",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "DuneSandstoneBrickSlabRecipe",
+      "type": "recipe",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_brick_slab_recipe",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "DuneSandstoneBrickStairsRecipe",
+      "type": "recipe",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_brick_stairs_recipe",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "DuneSandstoneBrickSlabRecipeStonecutter",
+      "type": "recipe",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_brick_slab_recipe_stonecutter",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "DuneSandstoneBrickStairsRecipeStonecutter",
+      "type": "recipe",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_brick_stairs_recipe_stonecutter",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "DuneSandstoneBrickSlabRecipeStonecutterS1",
+      "type": "recipe",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_brick_slab_recipe_stonecutter_s_1",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "DuneSandstoneBrickStairsRecipeStonecutterS1",
+      "type": "recipe",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_brick_stairs_recipe_stonecutter_s_1",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "SandBlocks",
+      "type": "tag",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sand_blocks",
+      "path": "~/Common Tags"
+    },
+    {
+      "name": "SandItems",
+      "type": "tag",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sand_items",
+      "path": "~/Common Tags"
+    },
+    {
+      "name": "DuneSandstoneWall",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_wall",
+      "path": "~/Blocks/Dune Sand"
+    },
+    {
+      "name": "DuneSandstoneBrickWall",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_brick_wall",
+      "path": "~/Blocks/Dune Sand"
+    },
+    {
+      "name": "DuneSandstoneWallRecipe",
+      "type": "recipe",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_wall_recipe",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "DuneSandstoneBrickWallRecipe",
+      "type": "recipe",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_brick_wall_recipe",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "DuneSandstoneWallRecipeStonecutter",
+      "type": "recipe",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_wall_recipe_stonecutter",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "DuneSandstoneBrickWallRecipeStonecutter",
+      "type": "recipe",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_brick_wall_recipe_stonecutter",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "DuneSandstoneBrickWallRecipeStonecutterS1",
+      "type": "recipe",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_brick_wall_recipe_stonecutter_s_1",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "BrightDuneSandRecipe",
+      "type": "recipe",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bright_dune_sand_recipe",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "SmeltableHardenedSand",
+      "type": "tag",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smeltable_hardened_sand",
+      "path": "~/Utility Tags"
     }
   ],
   "variable_elements": [
@@ -2167,25 +2745,31 @@
   "language_map": {
     "en_us": {
       "block.cobr.eotic_bamboo_stem": "Eotic Bamboo",
-      "block.cobr.dune_sand": "Dune Sand",
       "block.cobr.esrah_door": "Esrah Door",
+      "block.cobr.dune_sand": "Dune Sand",
       "block.cobr.dune_traveller_stone": "Dune Traveller Stone",
       "gamerule.overworldImpact.description": "Decides whether structures spawn in both dimensions and overworld, or only in dimensions. Set to \"true\" to fully feel Baedoor invasion over Minecraft world.",
       "block.cobr.esrah_slab": "Esrah Slab",
       "block.cobr.esrah_stairs": "Esrah Stairs",
       "block.cobr.esrah_wood": "Esrah Wood",
       "block.cobr.colourful_block": "WOB Integration Block",
+      "item.cobr.dune_coal": "Dune Coal",
+      "block.cobr.dune_sandstone": "Dune Sandstone",
       "item.cobr.terten_civil_spawn_egg": "Terten Civil Spawn Egg",
       "block.cobr.rainforest_islands_traveller_stone": "Rainforest Islands Traveller Stone",
       "advancements.the_crusade_began.title": "The Crusade Began",
+      "block.cobr.wet_dune_sand": "Wet Dune Sand",
       "block.cobr.esrah_fence_gate": "Esrah Fence Gate",
       "block.cobr.stripped_esrah_wood": "Stripped Esrah Wood",
       "block.cobr.evergreen_depths_traveller_stone": "Evergreen Depths Traveller Stone",
-      "block.cobr.eotic_bamboo_growing": "Eotic Bamboo",
-      "block.cobr.stripped_esrah_log": "Stripped Esrah Log",
       "block.cobr.eotic_bamboo_lamp": "Eotic Bamboo Block",
+      "block.cobr.stripped_esrah_log": "Stripped Esrah Log",
+      "block.cobr.eotic_bamboo_growing": "Eotic Bamboo",
+      "block.cobr.dune_sandstone_brick_stairs": "Dune Sandstone Brick Stairs",
       "advancements.the_crusade_began.descr": "You entered the time of civilisations. Use traveller stone with the book to get guide.",
+      "block.cobr.bright_dune_sand": "Bright Dune Sand",
       "block.cobr.eotic_bamboo_stairs": "Eotic Bamboo Stairs",
+      "block.cobr.dune_sandstone_coal_ore": "Dune Sandstone Coal Ore",
       "item.cobr.dunes": "Scroll of the Dunes",
       "block.cobr.esrah_log": "Esrah Log",
       "block.cobr.eotic_bamboo_block": "Eotic Bamboo Block",
@@ -2202,17 +2786,25 @@
       "block.cobr.eotic_bamboo_slab": "Eotic Bamboo Slab",
       "block.cobr.permafrost_traveller_stone": "Permafrost Traveller Stone",
       "item.cobr.compat_wob": "Compat Wob",
+      "block.cobr.dune_sandstone_slab": "Dune Sandstone Slab",
       "block.cobr.esrah_trapdoor": "Esrah Trapdoor",
       "item.cobr.spawn_entity_oasis_spawn_egg": "[Spawn Entity] Oasis Spawn Egg",
+      "block.cobr.sandstone_coal_ore": "Sandstone Coal Ore",
       "item.cobr.white_lizard_spawn_egg": "White Lizard Spawn Egg",
       "block.cobr.hardened_sand": "Hardened Sand",
       "item.cobr.disbandment_scroll": "Disbandment Scroll",
+      "block.cobr.dune_sandstone_brick_slab": "Dune Sandstone Brick Slab",
+      "block.cobr.dune_sandstone_wall": "Dune Sandstone Wall",
+      "block.cobr.dune_sandstone_brick_wall": "Dune Sandstone Brick Wall",
       "advancements.acrossthe_dunes.descr": "You entered the portal to the neverending desert... let\u0027s the dry wind be felt in your lungs, wanderer.",
       "gamerule.overworldImpact": "Overworld Impact",
+      "block.cobr.dune_sandstone_iron_ore": "Dune Sandstone Iron Ore",
       "advancements.empire_foundation_set_in_wood.descr": "Take first step in creation of your Empire by creating civilisation table.",
       "block.cobr.eotic_bamboo_tip": "Eotic Bamboo Tip",
       "advancements.acrossthe_dunes.title": "Across the Dunes",
       "item.cobr.spawn_entity_bamboo_spawn_egg": "[Spawn Entity] Bamboo Spawn Egg",
+      "block.cobr.sandstone_iron_ore": "Sandstone Iron Ore",
+      "block.cobr.hardened_dune_sand": "Hardened Dune Sand",
       "entity.cobr.white_lizard": "White Lizard",
       "block.cobr.esrah_fence": "Esrah Fence",
       "biome.cobr.eotic_lakes": "Eotic Lakes",
@@ -2222,8 +2814,10 @@
       "block.cobr.civilisation_table": "Civilisation Table",
       "item.cobr.bone_sabre": "Bone Sabre",
       "item.cobr.lizard_stew": "Lizard Stew",
+      "block.cobr.dune_sandstone_stairs": "Dune Sandstone Stairs",
       "itemGroup.tabcivilisationsof_baedoor": "Civilisations of Baedoor",
       "block.cobr.portal_block": "Portal Block",
+      "block.cobr.dune_sandstone_bricks": "Dune Sandstone Bricks",
       "block.cobr.empty_traveller_stone": "Empty Traveller Stone",
       "entity.cobr.terten_civil": "Terten Civil",
       "entity.cobr.spawn_entity_oasis": "[Spawn Entity] Oasis"
@@ -2237,6 +2831,10 @@
         "children": [
           {
             "name": "Wood Recipes",
+            "children": []
+          },
+          {
+            "name": "Sand Recipes",
             "children": []
           }
         ]
@@ -2297,10 +2895,6 @@
         "children": []
       },
       {
-        "name": "Blocks - Plants",
-        "children": []
-      },
-      {
         "name": "Possibly Placeholders",
         "children": []
       },
@@ -2325,6 +2919,31 @@
       {
         "name": "Empire - File Dependent",
         "children": []
+      },
+      {
+        "name": "Foods",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": [
+          {
+            "name": "Eotic Bamboo",
+            "children": []
+          },
+          {
+            "name": "Dune Sand",
+            "children": []
+          },
+          {
+            "name": "Plants",
+            "children": []
+          },
+          {
+            "name": "Woods",
+            "children": []
+          }
+        ]
       }
     ]
   },

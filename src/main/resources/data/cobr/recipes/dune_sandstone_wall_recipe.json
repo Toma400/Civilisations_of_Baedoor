@@ -1,0 +1,32 @@
+{
+  "group": "dune_sandstone_wall",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:dune_sandstone"
+    },
+    "1": {
+      "item": "cobr:dune_sandstone"
+    },
+    "2": {
+      "item": "cobr:dune_sandstone"
+    },
+    "3": {
+      "item": "cobr:dune_sandstone"
+    },
+    "4": {
+      "item": "cobr:dune_sandstone"
+    },
+    "5": {
+      "item": "cobr:dune_sandstone"
+    }
+  },
+  "result": {
+    "item": "cobr:dune_sandstone_wall",
+    "count": 6
+  }
+}

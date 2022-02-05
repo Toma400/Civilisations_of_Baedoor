@@ -18,6 +18,7 @@ import net.minecraft.util.Mirror;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
 
 import net.mcreator.cobr.block.EsrahSaplingBlock;
 import net.mcreator.cobr.CobrMod;
@@ -51,6 +52,11 @@ public class BonemealingProcedure {
 		}
 	}
 	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				CobrMod.LOGGER.warn("Failed to load dependency entity for procedure Bonemealing!");
+			return;
+		}
 		if (dependencies.get("itemstack") == null) {
 			if (!dependencies.containsKey("itemstack"))
 				CobrMod.LOGGER.warn("Failed to load dependency itemstack for procedure Bonemealing!");
@@ -76,6 +82,7 @@ public class BonemealingProcedure {
 				CobrMod.LOGGER.warn("Failed to load dependency world for procedure Bonemealing!");
 			return;
 		}
+		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
@@ -123,6 +130,14 @@ public class BonemealingProcedure {
 							}
 						}
 					}
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("entity", entity);
+						$_dependencies.put("x", x);
+						$_dependencies.put("y", y);
+						$_dependencies.put("z", z);
+						BlockUpdaterProcedure.executeProcedure($_dependencies);
+					}
 				} else if (TreeHeightCheck5hProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 					if (world instanceof ServerWorld) {
 						Template template = ((ServerWorld) world).getStructureTemplateManager()
@@ -132,6 +147,14 @@ public class BonemealingProcedure {
 									new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false),
 									((World) world).rand);
 						}
+					}
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("entity", entity);
+						$_dependencies.put("x", x);
+						$_dependencies.put("y", y);
+						$_dependencies.put("z", z);
+						BlockUpdaterProcedure.executeProcedure($_dependencies);
 					}
 				} else {
 					System.out.println("No air above sapling! (at least 5 blocks needed)");

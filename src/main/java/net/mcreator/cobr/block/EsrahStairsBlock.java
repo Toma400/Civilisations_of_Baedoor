@@ -33,7 +33,7 @@ public class EsrahStairsBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:esrah_stairs")
 	public static final Block block = null;
 	public EsrahStairsBlock(CobrModElements instance) {
-		super(instance, 7);
+		super(instance, 23);
 	}
 
 	@Override
@@ -55,11 +55,6 @@ public class EsrahStairsBlock extends CobrModElements.ModElement {
 					Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).setLightLevel(s -> 0).harvestLevel(0)
 							.harvestTool(ToolType.AXE).setRequiresTool().notSolid().setOpaque((bs, br, bp) -> false));
 			setRegistryName("esrah_stairs");
-		}
-
-		@Override
-		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
-			return 15;
 		}
 
 		@Override

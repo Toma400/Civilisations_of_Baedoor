@@ -9,7 +9,7 @@
     "group": "glass",
     "recipeShapeless": false,
     "smeltingInputStack": {
-      "value": "CUSTOM:HardenedSand"
+      "value": "TAG:cobr:smeltable_hardened_sand"
     },
     "smeltingReturnStack": {
       "value": "Blocks.GLASS"

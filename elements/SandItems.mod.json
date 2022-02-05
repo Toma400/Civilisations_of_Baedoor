@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:DuneSand"
+      },
+      {
+        "value": "CUSTOM:BrightDuneSand"
+      },
+      {
+        "value": "CUSTOM:WetDuneSand"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "sand",
+    "namespace": "forge"
+  }
+}

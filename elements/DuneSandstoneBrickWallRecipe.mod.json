@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 6,
+    "group": "dune_sandstone_brick_wall",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DuneSandstoneBricks"
+      },
+      {
+        "value": "CUSTOM:DuneSandstoneBricks"
+      },
+      {
+        "value": "CUSTOM:DuneSandstoneBricks"
+      },
+      {
+        "value": "CUSTOM:DuneSandstoneBricks"
+      },
+      {
+        "value": "CUSTOM:DuneSandstoneBricks"
+      },
+      {
+        "value": "CUSTOM:DuneSandstoneBricks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DuneSandstoneBrickWall"
+    },
+    "name": "dune_sandstone_brick_wall_recipe",
+    "namespace": "mod"
+  }
+}

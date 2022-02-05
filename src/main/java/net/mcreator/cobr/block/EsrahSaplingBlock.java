@@ -39,7 +39,7 @@ public class EsrahSaplingBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:esrah_sapling")
 	public static final Block block = null;
 	public EsrahSaplingBlock(CobrModElements instance) {
-		super(instance, 32);
+		super(instance, 46);
 	}
 
 	@Override

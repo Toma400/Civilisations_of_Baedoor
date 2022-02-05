@@ -1,0 +1,9 @@
+{
+  "group": "dune_sandstone_wall",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "cobr:dune_sandstone"
+  },
+  "result": "cobr:dune_sandstone_wall"
+}

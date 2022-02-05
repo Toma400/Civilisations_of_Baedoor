@@ -6,8 +6,8 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "recipeRetstackSize": 1,
-    "group": "eotic_bamboo_lamp",
-    "recipeShapeless": true,
+    "group": "bright_dune_sand",
+    "recipeShapeless": false,
     "recipeSlots": [
       {
         "value": ""
@@ -22,7 +22,10 @@
         "value": ""
       },
       {
-        "value": "Blocks.LANTERN"
+        "value": "CUSTOM:DuneSand"
+      },
+      {
+        "value": "Items.GLOWSTONE_DUST"
       },
       {
         "value": ""
@@ -31,16 +34,13 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:EoticBambooBlock"
-      },
-      {
-        "value": "CUSTOM:EoticBambooBlock"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:EoticBambooLamp"
+      "value": "CUSTOM:BrightDuneSand"
     },
-    "name": "eotic_bamboo_recipe_2",
+    "name": "bright_dune_sand_obtaining",
     "namespace": "mod"
   }
 }

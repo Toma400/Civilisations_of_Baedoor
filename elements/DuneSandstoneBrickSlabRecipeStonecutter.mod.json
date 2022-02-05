@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 2,
+    "group": "dune_sandstone_brick_slab",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:DuneSandstoneBricks"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:DuneSandstoneBrickSlab"
+    },
+    "name": "dune_sandstone_brick_slab_recipe_stonecutter",
+    "namespace": "mod"
+  }
+}
