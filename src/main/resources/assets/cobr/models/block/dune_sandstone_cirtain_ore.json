@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cobr:blocks/dune_sandstone_bottom",
+    "up": "cobr:blocks/dune_sandstone_top",
+    "north": "cobr:blocks/dune_sandstone_cirtain_ore",
+    "east": "cobr:blocks/dune_sandstone_cirtain_ore",
+    "south": "cobr:blocks/dune_sandstone_cirtain_ore",
+    "west": "cobr:blocks/dune_sandstone_cirtain_ore",
+    "particle": "cobr:blocks/dune_sandstone_bottom"
+  }
+}

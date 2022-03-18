@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_bottom_rh",
+  "textures": {
+    "bottom": "cobr:blocks/lais_flowery_door_bottom",
+    "top": "cobr:blocks/lais_door_flowery_top"
+  }
+}

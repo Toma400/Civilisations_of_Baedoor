@@ -1,0 +1,16 @@
+{
+  "group": "dune_coal",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:dune_coal_block"
+    }
+  },
+  "result": {
+    "item": "cobr:dune_coal",
+    "count": 9
+  }
+}

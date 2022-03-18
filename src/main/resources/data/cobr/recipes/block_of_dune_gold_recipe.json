@@ -1,0 +1,42 @@
+{
+  "group": "block_of_dune_gold",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:dune_gold_ingot"
+    },
+    "1": {
+      "item": "cobr:dune_gold_ingot"
+    },
+    "2": {
+      "item": "cobr:dune_gold_ingot"
+    },
+    "3": {
+      "item": "cobr:dune_gold_ingot"
+    },
+    "4": {
+      "item": "cobr:dune_gold_ingot"
+    },
+    "5": {
+      "item": "cobr:dune_gold_ingot"
+    },
+    "6": {
+      "item": "cobr:dune_gold_ingot"
+    },
+    "7": {
+      "item": "cobr:dune_gold_ingot"
+    },
+    "8": {
+      "item": "cobr:dune_gold_ingot"
+    }
+  },
+  "result": {
+    "item": "cobr:block_of_dune_gold",
+    "count": 1
+  }
+}

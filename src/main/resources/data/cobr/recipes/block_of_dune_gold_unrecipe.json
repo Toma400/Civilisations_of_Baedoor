@@ -1,0 +1,16 @@
+{
+  "group": "dune_gold",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:block_of_dune_gold"
+    }
+  },
+  "result": {
+    "item": "cobr:dune_gold_ingot",
+    "count": 9
+  }
+}

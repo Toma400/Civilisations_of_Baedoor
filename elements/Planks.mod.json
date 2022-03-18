@@ -6,6 +6,9 @@
     "items": [
       {
         "value": "CUSTOM:EsrahPlanks"
+      },
+      {
+        "value": "CUSTOM:LaisPlanks"
       }
     ],
     "blocks": [],

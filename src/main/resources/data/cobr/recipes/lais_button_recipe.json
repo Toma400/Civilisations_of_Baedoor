@@ -1,0 +1,16 @@
+{
+  "group": "lais_button",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:lais_planks"
+    }
+  },
+  "result": {
+    "item": "cobr:lais_button",
+    "count": 1
+  }
+}

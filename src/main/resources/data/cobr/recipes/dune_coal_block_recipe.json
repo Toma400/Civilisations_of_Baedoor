@@ -1,0 +1,42 @@
+{
+  "group": "dune_coal_block",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:dune_coal"
+    },
+    "1": {
+      "item": "cobr:dune_coal"
+    },
+    "2": {
+      "item": "cobr:dune_coal"
+    },
+    "3": {
+      "item": "cobr:dune_coal"
+    },
+    "4": {
+      "item": "cobr:dune_coal"
+    },
+    "5": {
+      "item": "cobr:dune_coal"
+    },
+    "6": {
+      "item": "cobr:dune_coal"
+    },
+    "7": {
+      "item": "cobr:dune_coal"
+    },
+    "8": {
+      "item": "cobr:dune_coal"
+    }
+  },
+  "result": {
+    "item": "cobr:dune_coal_block",
+    "count": 1
+  }
+}

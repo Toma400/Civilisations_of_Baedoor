@@ -2,7 +2,7 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "sandstone_top",
+    "texture": "sandstone_bottom",
     "textureTop": "sandstone_top",
     "textureLeft": "sandstone_coal_ore",
     "textureFront": "sandstone_coal_ore",
@@ -124,15 +124,22 @@
     "spawnWorldTypes": [
       "CUSTOM:Dunes"
     ],
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:DryLands"
+      },
+      {
+        "value": "CUSTOM:EoticLakes"
+      }
+    ],
     "blocksToReplace": [
       {
         "value": "Blocks.SANDSTONE#0"
       }
     ],
-    "frequencyPerChunks": 9,
+    "frequencyPerChunks": 20,
     "frequencyOnChunk": 10,
     "minGenerateHeight": 2,
-    "maxGenerateHeight": 90
+    "maxGenerateHeight": 80
   }
 }

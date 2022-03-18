@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "cobr:blocks/lais_planks",
+    "top": "cobr:blocks/lais_planks",
+    "side": "cobr:blocks/lais_planks"
+  }
+}

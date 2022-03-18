@@ -1,0 +1,9 @@
+{
+  "group": "chiseled_dune_sandstone",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "cobr:dune_sandstone_bricks"
+  },
+  "result": "cobr:chiseled_dune_sandstone_bricks"
+}

@@ -7,6 +7,12 @@
     "blocks": [
       {
         "value": "CUSTOM:EsrahLeaves"
+      },
+      {
+        "value": "CUSTOM:LaisLeaves"
+      },
+      {
+        "value": "CUSTOM:BloomingLaisLeaves"
       }
     ],
     "functions": [],

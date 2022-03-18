@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "cobr:block/esrah_pressure_plate"
+    },
+    "powered=true": {
+      "model": "cobr:block/esrah_pressure_plate_down"
+    }
+  }
+}

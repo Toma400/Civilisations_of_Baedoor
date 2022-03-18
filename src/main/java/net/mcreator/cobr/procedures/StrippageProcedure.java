@@ -1,11 +1,16 @@
 package net.mcreator.cobr.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Hand;
 import net.minecraft.state.Property;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.AxeItem;
@@ -14,8 +19,12 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.cobr.block.StrippedLaisWoodBlock;
+import net.mcreator.cobr.block.StrippedLaisLogBlock;
 import net.mcreator.cobr.block.StrippedEsrahWoodBlock;
 import net.mcreator.cobr.block.StrippedEsrahLogBlock;
+import net.mcreator.cobr.block.LaisWoodBlock;
+import net.mcreator.cobr.block.LaisLogBlock;
 import net.mcreator.cobr.block.EsrahWoodBlock;
 import net.mcreator.cobr.block.EsrahLogBlock;
 import net.mcreator.cobr.CobrMod;
@@ -104,6 +113,18 @@ public class StrippageProcedure {
 						_ist.setDamage(0);
 					}
 				}
+				if (entity instanceof LivingEntity) {
+					((LivingEntity) entity).swing(Hand.MAIN_HAND, true);
+				}
+				if (world instanceof World && !world.isRemote()) {
+					((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")),
+							SoundCategory.BLOCKS, (float) 1, (float) 1);
+				} else {
+					((World) world).playSound(x, y, z,
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")),
+							SoundCategory.BLOCKS, (float) 1, (float) 1, false);
+				}
 			}
 			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == EsrahWoodBlock.block)) {
 				{
@@ -126,6 +147,88 @@ public class StrippageProcedure {
 						_ist.shrink(1);
 						_ist.setDamage(0);
 					}
+				}
+				if (entity instanceof LivingEntity) {
+					((LivingEntity) entity).swing(Hand.MAIN_HAND, true);
+				}
+				if (world instanceof World && !world.isRemote()) {
+					((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")),
+							SoundCategory.BLOCKS, (float) 1, (float) 1);
+				} else {
+					((World) world).playSound(x, y, z,
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")),
+							SoundCategory.BLOCKS, (float) 1, (float) 1, false);
+				}
+			}
+			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == LaisLogBlock.block)) {
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockState _bs = StrippedLaisLogBlock.block.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.get(_property) != null)
+							try {
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlockState(_bp, _bs, 3);
+				}
+				{
+					ItemStack _ist = ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY);
+					if (_ist.attemptDamageItem((int) 1, new Random(), null)) {
+						_ist.shrink(1);
+						_ist.setDamage(0);
+					}
+				}
+				if (entity instanceof LivingEntity) {
+					((LivingEntity) entity).swing(Hand.MAIN_HAND, true);
+				}
+				if (world instanceof World && !world.isRemote()) {
+					((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")),
+							SoundCategory.BLOCKS, (float) 1, (float) 1);
+				} else {
+					((World) world).playSound(x, y, z,
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")),
+							SoundCategory.BLOCKS, (float) 1, (float) 1, false);
+				}
+			}
+			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == LaisWoodBlock.block)) {
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockState _bs = StrippedLaisWoodBlock.block.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.get(_property) != null)
+							try {
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlockState(_bp, _bs, 3);
+				}
+				{
+					ItemStack _ist = ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY);
+					if (_ist.attemptDamageItem((int) 1, new Random(), null)) {
+						_ist.shrink(1);
+						_ist.setDamage(0);
+					}
+				}
+				if (entity instanceof LivingEntity) {
+					((LivingEntity) entity).swing(Hand.MAIN_HAND, true);
+				}
+				if (world instanceof World && !world.isRemote()) {
+					((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")),
+							SoundCategory.BLOCKS, (float) 1, (float) 1);
+				} else {
+					((World) world).playSound(x, y, z,
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")),
+							SoundCategory.BLOCKS, (float) 1, (float) 1, false);
 				}
 			}
 		}

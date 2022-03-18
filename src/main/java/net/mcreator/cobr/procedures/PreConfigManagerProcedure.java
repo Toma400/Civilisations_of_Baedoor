@@ -28,6 +28,6 @@ public class PreConfigManagerProcedure {
 		}
 	}
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		System.out.println(FMLPaths.GAMEDIR.get().resolve(FMLConfig.defaultConfigPath()).toString());
+		System.out.println((("Name of the map is: ") + "" + (FMLPaths.GAMEDIR.get().resolve(FMLConfig.defaultConfigPath()).toString()) + "" + ("!")));
 	}
 }

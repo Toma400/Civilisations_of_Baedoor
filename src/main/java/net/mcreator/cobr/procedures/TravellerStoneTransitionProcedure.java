@@ -1,27 +1,18 @@
 package net.mcreator.cobr.procedures;
 
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.RegistryKey;
 import net.minecraft.state.Property;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.network.play.server.SPlayerAbilitiesPacket;
-import net.minecraft.network.play.server.SPlaySoundEventPacket;
-import net.minecraft.network.play.server.SPlayEntityEffectPacket;
-import net.minecraft.network.play.server.SChangeGameStatePacket;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.cobr.block.RainforestIslandsTravellerStoneBlock;
 import net.mcreator.cobr.block.PermafrostTravellerStoneBlock;
+import net.mcreator.cobr.block.EvergreenDepthsTravellerStoneBlock;
 import net.mcreator.cobr.block.DuneTravellerStoneBlock;
 import net.mcreator.cobr.CobrMod;
 
@@ -110,48 +101,22 @@ public class TravellerStoneTransitionProcedure {
 				world.setBlockState(_bp, _bs, 3);
 			}
 		}
-		if (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == Items.TOTEM_OF_UNDYING)
-				&& ((world instanceof World ? (((World) world).getDimensionKey()) : World.OVERWORLD) == (World.OVERWORLD)))) {
+		if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == Blocks.VINE
+				.asItem())) {
 			(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).shrink((int) 1);
 			{
-				Entity _ent = entity;
-				if (!_ent.world.isRemote && _ent instanceof ServerPlayerEntity) {
-					RegistryKey<World> destinationType = RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("cobr:dunes"));
-					ServerWorld nextWorld = _ent.getServer().getWorld(destinationType);
-					if (nextWorld != null) {
-						((ServerPlayerEntity) _ent).connection.sendPacket(new SChangeGameStatePacket(SChangeGameStatePacket.field_241768_e_, 0));
-						((ServerPlayerEntity) _ent).teleport(nextWorld, nextWorld.getSpawnPoint().getX(), nextWorld.getSpawnPoint().getY() + 1,
-								nextWorld.getSpawnPoint().getZ(), _ent.rotationYaw, _ent.rotationPitch);
-						((ServerPlayerEntity) _ent).connection.sendPacket(new SPlayerAbilitiesPacket(((ServerPlayerEntity) _ent).abilities));
-						for (EffectInstance effectinstance : ((ServerPlayerEntity) _ent).getActivePotionEffects()) {
-							((ServerPlayerEntity) _ent).connection.sendPacket(new SPlayEntityEffectPacket(_ent.getEntityId(), effectinstance));
+				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockState _bs = EvergreenDepthsTravellerStoneBlock.block.getDefaultState();
+				BlockState _bso = world.getBlockState(_bp);
+				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+					Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+					if (_property != null && _bs.get(_property) != null)
+						try {
+							_bs = _bs.with(_property, (Comparable) entry.getValue());
+						} catch (Exception e) {
 						}
-						((ServerPlayerEntity) _ent).connection.sendPacket(new SPlaySoundEventPacket(1032, BlockPos.ZERO, 0, false));
-					}
 				}
-			}
-		} else if (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == Items.TOTEM_OF_UNDYING)
-				&& ((world instanceof World ? (((World) world).getDimensionKey()) : World.OVERWORLD) == (RegistryKey
-						.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("cobr:dunes")))))) {
-			(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).shrink((int) 1);
-			{
-				Entity _ent = entity;
-				if (!_ent.world.isRemote && _ent instanceof ServerPlayerEntity) {
-					RegistryKey<World> destinationType = World.OVERWORLD;
-					ServerWorld nextWorld = _ent.getServer().getWorld(destinationType);
-					if (nextWorld != null) {
-						((ServerPlayerEntity) _ent).connection.sendPacket(new SChangeGameStatePacket(SChangeGameStatePacket.field_241768_e_, 0));
-						((ServerPlayerEntity) _ent).teleport(nextWorld, nextWorld.getSpawnPoint().getX(), nextWorld.getSpawnPoint().getY() + 1,
-								nextWorld.getSpawnPoint().getZ(), _ent.rotationYaw, _ent.rotationPitch);
-						((ServerPlayerEntity) _ent).connection.sendPacket(new SPlayerAbilitiesPacket(((ServerPlayerEntity) _ent).abilities));
-						for (EffectInstance effectinstance : ((ServerPlayerEntity) _ent).getActivePotionEffects()) {
-							((ServerPlayerEntity) _ent).connection.sendPacket(new SPlayEntityEffectPacket(_ent.getEntityId(), effectinstance));
-						}
-						((ServerPlayerEntity) _ent).connection.sendPacket(new SPlaySoundEventPacket(1032, BlockPos.ZERO, 0, false));
-					}
-				}
+				world.setBlockState(_bp, _bs, 3);
 			}
 		}
 	}

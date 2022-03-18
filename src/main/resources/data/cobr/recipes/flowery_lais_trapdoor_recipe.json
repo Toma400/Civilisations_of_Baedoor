@@ -1,0 +1,16 @@
+{
+  "group": "flowery_lais_trapdoor",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cobr:lais_trapdoor"
+    },
+    {
+      "item": "cobr:blooming_lais_leaves"
+    }
+  ],
+  "result": {
+    "item": "cobr:flowery_lais_trapdoor",
+    "count": 1
+  }
+}

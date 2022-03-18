@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:DuneSandstone"
+      },
+      {
+        "value": "CUSTOM:DuneSandstoneBricks"
+      },
+      {
+        "value": "CUSTOM:ChiseledDuneSandstoneBricks"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "sandstone",
+    "namespace": "forge"
+  }
+}

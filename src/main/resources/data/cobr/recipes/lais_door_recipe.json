@@ -1,0 +1,33 @@
+{
+  "group": "lais_door",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    "45"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:lais_planks"
+    },
+    "1": {
+      "item": "cobr:lais_planks"
+    },
+    "2": {
+      "item": "cobr:lais_planks"
+    },
+    "3": {
+      "item": "cobr:lais_planks"
+    },
+    "4": {
+      "item": "cobr:lais_planks"
+    },
+    "5": {
+      "item": "cobr:lais_planks"
+    }
+  },
+  "result": {
+    "item": "cobr:lais_door",
+    "count": 3
+  }
+}

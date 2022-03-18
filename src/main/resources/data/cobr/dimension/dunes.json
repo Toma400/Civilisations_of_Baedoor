@@ -7,28 +7,28 @@
       "type": "minecraft:multi_noise",
       "seed": 0,
       "temperature_noise": {
-        "firstOctave": -5.32,
+        "firstOctave": -5.74,
         "amplitudes": [
           2,
           2
         ]
       },
       "humidity_noise": {
-        "firstOctave": -5.32,
+        "firstOctave": -5.74,
         "amplitudes": [
           2,
           2
         ]
       },
       "altitude_noise": {
-        "firstOctave": -5.32,
+        "firstOctave": -5.74,
         "amplitudes": [
           2,
           2
         ]
       },
       "weirdness_noise": {
-        "firstOctave": -5.32,
+        "firstOctave": -5.74,
         "amplitudes": [
           2,
           2
@@ -47,6 +47,26 @@
         },
         {
           "biome": "cobr:eotic_lakes",
+          "parameters": {
+            "temperature": 0.333333333334,
+            "humidity": -0.333333333334,
+            "altitude": -0.75,
+            "weirdness": 1.5,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "cobr:edge_tertenic_dunes",
+          "parameters": {
+            "temperature": -0.333333333334,
+            "humidity": 0.333333333334,
+            "altitude": 0.75,
+            "weirdness": -1.5,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "cobr:tertenic_dunes",
           "parameters": {
             "temperature": -1,
             "humidity": 1,

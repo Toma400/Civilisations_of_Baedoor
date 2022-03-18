@@ -1,0 +1,19 @@
+{
+  "group": "esrah_pressure_plate",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:esrah_planks"
+    },
+    "1": {
+      "item": "cobr:esrah_planks"
+    }
+  },
+  "result": {
+    "item": "cobr:esrah_pressure_plate",
+    "count": 1
+  }
+}

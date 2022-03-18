@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cobr:blocks/stripped_lais_log_top",
+    "up": "cobr:blocks/stripped_lais_log_top",
+    "north": "cobr:blocks/stripped_lais_log_side",
+    "east": "cobr:blocks/stripped_lais_log_side",
+    "south": "cobr:blocks/stripped_lais_log_side",
+    "west": "cobr:blocks/stripped_lais_log_side",
+    "particle": "cobr:blocks/stripped_lais_log_top"
+  }
+}

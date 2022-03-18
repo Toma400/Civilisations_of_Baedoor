@@ -1,0 +1,10 @@
+{
+  "_fv": 24,
+  "_type": "loottable",
+  "definition": {
+    "type": "Block",
+    "pools": [],
+    "name": "blocks/blooming_lais_leaves",
+    "namespace": "mod"
+  }
+}

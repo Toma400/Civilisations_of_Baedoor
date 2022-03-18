@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "cobr:blocks/lais_leaves",
+    "particle": "cobr:blocks/lais_leaves"
+  }
+}

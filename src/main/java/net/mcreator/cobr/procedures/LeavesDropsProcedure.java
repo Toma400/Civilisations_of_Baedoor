@@ -2,7 +2,8 @@ package net.mcreator.cobr.procedures;
 
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.item.ItemEntity;
@@ -11,11 +12,10 @@ import net.minecraft.entity.Entity;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.enchantment.EnchantmentHelper;
 
-import net.mcreator.cobr.block.EsrahSaplingBlock;
-import net.mcreator.cobr.block.EsrahLeavesBlock;
 import net.mcreator.cobr.CobrMod;
 
 import java.util.Map;
+import java.util.HashMap;
 
 public class LeavesDropsProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -49,34 +49,56 @@ public class LeavesDropsProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == EsrahLeavesBlock.block)) {
-			if (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == Items.SHEARS)
-					|| ((EnchantmentHelper.getEnchantmentLevel(Enchantments.SILK_TOUCH,
-							((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)) != 0)))) {
-				if (world instanceof World && !world.isRemote()) {
-					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(EsrahLeavesBlock.block));
-					entityToSpawn.setPickupDelay((int) 10);
-					world.addEntity(entityToSpawn);
+		if (((ItemTags.getCollection().getTagByID(new ResourceLocation(("forge:shears").toLowerCase(java.util.Locale.ENGLISH)))
+				.contains(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()))
+				|| ((EnchantmentHelper.getEnchantmentLevel(Enchantments.SILK_TOUCH,
+						((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)) != 0)))) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				LeavesDropsSilkTouchedProcedure.executeProcedure($_dependencies);
+			}
+		} else {
+			if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.FORTUNE,
+					((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)) != 0))) {
+				if (((5 + ((EnchantmentHelper.getEnchantmentLevel(Enchantments.FORTUNE,
+						((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))) * 1.5)) >= (Math
+								.random() * 100))) {
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("x", x);
+						$_dependencies.put("y", y);
+						$_dependencies.put("z", z);
+						$_dependencies.put("world", world);
+						LeavesDropsNormalProcedure.executeProcedure($_dependencies);
+					}
+				} else if (((5 + ((EnchantmentHelper.getEnchantmentLevel(Enchantments.FORTUNE,
+						((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))) * 1)) >= (Math.random()
+								* 100))) {
+					if (world instanceof World && !world.isRemote()) {
+						ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(Items.STICK));
+						entityToSpawn.setPickupDelay((int) 10);
+						world.addEntity(entityToSpawn);
+					}
 				}
 			} else {
-				if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.FORTUNE,
-						((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)) != 0))) {
-					if (((5 + ((EnchantmentHelper.getEnchantmentLevel(Enchantments.FORTUNE,
-							((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))) * 1.5)) >= (Math
-									.random() * 100))) {
-						if (world instanceof World && !world.isRemote()) {
-							ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(EsrahSaplingBlock.block));
-							entityToSpawn.setPickupDelay((int) 10);
-							world.addEntity(entityToSpawn);
-						}
+				if ((5 >= (Math.random() * 100))) {
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("x", x);
+						$_dependencies.put("y", y);
+						$_dependencies.put("z", z);
+						$_dependencies.put("world", world);
+						LeavesDropsNormalProcedure.executeProcedure($_dependencies);
 					}
-				} else {
-					if ((5 >= (Math.random() * 100))) {
-						if (world instanceof World && !world.isRemote()) {
-							ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(EsrahSaplingBlock.block));
-							entityToSpawn.setPickupDelay((int) 10);
-							world.addEntity(entityToSpawn);
-						}
+				} else if ((5 >= (Math.random() * 100))) {
+					if (world instanceof World && !world.isRemote()) {
+						ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(Items.STICK));
+						entityToSpawn.setPickupDelay((int) 10);
+						world.addEntity(entityToSpawn);
 					}
 				}
 			}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "cobr:block/lais_pressure_plate"
+    },
+    "powered=true": {
+      "model": "cobr:block/lais_pressure_plate_down"
+    }
+  }
+}

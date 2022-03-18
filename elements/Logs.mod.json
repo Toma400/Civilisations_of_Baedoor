@@ -7,6 +7,27 @@
     "blocks": [
       {
         "value": "CUSTOM:EsrahLog"
+      },
+      {
+        "value": "CUSTOM:StrippedEsrahLog"
+      },
+      {
+        "value": "CUSTOM:LaisLog"
+      },
+      {
+        "value": "CUSTOM:StrippedLaisLog"
+      },
+      {
+        "value": "CUSTOM:EsrahWood"
+      },
+      {
+        "value": "CUSTOM:StrippedEsrahWood"
+      },
+      {
+        "value": "CUSTOM:LaisWood"
+      },
+      {
+        "value": "CUSTOM:StrippedLaisWood"
       }
     ],
     "functions": [],

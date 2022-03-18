@@ -1,0 +1,16 @@
+{
+  "group": "lais_planks",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:stripped_lais_log"
+    }
+  },
+  "result": {
+    "item": "cobr:lais_planks",
+    "count": 4
+  }
+}

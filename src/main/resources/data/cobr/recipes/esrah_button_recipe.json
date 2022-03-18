@@ -1,0 +1,16 @@
+{
+  "group": "esrah_button",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:esrah_planks"
+    }
+  },
+  "result": {
+    "item": "cobr:esrah_button",
+    "count": 1
+  }
+}

@@ -113,13 +113,20 @@ public class SandstoneIronOreBlock extends CobrModElements.ModElement {
 				}
 			};
 			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 6)).range(50)
-					.square().func_242731_b(4);
+					.square().func_242731_b(18);
 			event.getRegistry().register(feature.setRegistryName("sandstone_iron_ore"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("cobr:sandstone_iron_ore"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
+		boolean biomeCriteria = false;
+		if (new ResourceLocation("cobr:dry_lands").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("cobr:eotic_lakes").equals(event.getName()))
+			biomeCriteria = true;
+		if (!biomeCriteria)
+			return;
 		event.getGeneration().getFeatures(GenerationStage.Decoration.UNDERGROUND_ORES).add(() -> configuredFeature);
 	}
 }

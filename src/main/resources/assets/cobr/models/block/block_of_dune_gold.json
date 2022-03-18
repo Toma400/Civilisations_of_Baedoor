@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cobr:blocks/block_of_dune_gold",
+    "up": "cobr:blocks/block_of_dune_gold",
+    "north": "cobr:blocks/block_of_dune_gold",
+    "east": "cobr:blocks/block_of_dune_gold",
+    "south": "cobr:blocks/block_of_dune_gold",
+    "west": "cobr:blocks/block_of_dune_gold",
+    "particle": "cobr:blocks/block_of_dune_gold"
+  }
+}

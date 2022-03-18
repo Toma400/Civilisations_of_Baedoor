@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_top",
+  "textures": {
+    "bottom": "cobr:blocks/lais_door_bottom",
+    "top": "cobr:blocks/lais_door_top"
+  }
+}

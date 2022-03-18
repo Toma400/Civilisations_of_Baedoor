@@ -2,8 +2,8 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "dune_sand",
-    "textureTop": "dune_sand",
+    "texture": "dune_sandstone_bottom",
+    "textureTop": "dune_sandstone_top",
     "textureLeft": "dune_sandstone_iron_ore",
     "textureFront": "dune_sandstone_iron_ore",
     "textureRight": "dune_sandstone_iron_ore",
@@ -121,12 +121,25 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
-    "blocksToReplace": [],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
-    "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "spawnWorldTypes": [
+      "CUSTOM:Dunes"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:EdgeTertenicDunes"
+      },
+      {
+        "value": "CUSTOM:TertenicDunes"
+      }
+    ],
+    "blocksToReplace": [
+      {
+        "value": "CUSTOM:DuneSandstone"
+      }
+    ],
+    "frequencyPerChunks": 18,
+    "frequencyOnChunk": 6,
+    "minGenerateHeight": 1,
+    "maxGenerateHeight": 50
   }
 }

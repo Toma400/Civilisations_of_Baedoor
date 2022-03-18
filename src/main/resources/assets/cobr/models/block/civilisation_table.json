@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "cobr:blocks/esrah_log_top",
-    "up": "cobr:blocks/civilisation_table_top",
-    "north": "cobr:blocks/civilisation_table_side",
-    "east": "cobr:blocks/civilisation_table_side",
-    "south": "cobr:blocks/civilisation_table_side",
-    "west": "cobr:blocks/civilisation_table_side",
-    "particle": "cobr:blocks/esrah_log_top"
+    "down": "cobr:blocks/civilization_table_side",
+    "up": "cobr:blocks/civilization_table_top",
+    "north": "cobr:blocks/civilization_table_front",
+    "east": "cobr:blocks/civilization_table_side",
+    "south": "cobr:blocks/civilization_table_back",
+    "west": "cobr:blocks/civilization_table_side",
+    "particle": "cobr:blocks/civilization_table_side"
   }
 }

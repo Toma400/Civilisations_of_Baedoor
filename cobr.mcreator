@@ -222,40 +222,6 @@
       "path": "~/Recipes"
     },
     {
-      "name": "ShortTravelTravellerStone",
-      "type": "procedure",
-      "sortid": 64,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "short_travel_traveller_stone",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Portals"
-    },
-    {
       "name": "EoticLakes",
       "type": "biome",
       "sortid": 65,
@@ -1376,7 +1342,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "eotic_bamboo_tip",
-      "path": "~/Blocks/Woods"
+      "path": "~/Blocks"
     },
     {
       "name": "DisbandmentSigned",
@@ -1759,9 +1725,10 @@
       "type": "loottable",
       "sortid": 155,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
-      "registry_name": "esrah_leaves_loot_table"
+      "registry_name": "esrah_leaves_loot_table",
+      "path": "~/Loot Tables/Blocks"
     },
     {
       "name": "Bonemealing",
@@ -1772,32 +1739,7 @@
       "ids": {},
       "registry_name": "bonemealing",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Pds - Plants"
     },
@@ -1927,7 +1869,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Pds - World"
     },
     {
       "name": "TertenCivil",
@@ -2133,10 +2076,6 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -2147,6 +2086,10 @@
           {
             "name": "z",
             "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -2158,7 +2101,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dune_coal"
+      "registry_name": "dune_coal",
+      "path": "~/Fuel"
     },
     {
       "name": "DuneCoalFuel",
@@ -2167,7 +2111,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dune_coal_fuel"
+      "registry_name": "dune_coal_fuel",
+      "path": "~/Fuel"
     },
     {
       "name": "Coals",
@@ -2336,7 +2281,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "dune_sandstone_coal_ore",
-      "path": "~/Blocks/Dune Sand"
+      "path": "~/Blocks/Ores"
     },
     {
       "name": "DuneSandstoneIronOre",
@@ -2346,7 +2291,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "dune_sandstone_iron_ore",
-      "path": "~/Blocks/Dune Sand"
+      "path": "~/Blocks/Ores"
     },
     {
       "name": "DuneSandstoneCoalOreUnrecipe",
@@ -2356,7 +2301,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "dune_sandstone_coal_ore_unrecipe",
-      "path": "~/Recipes"
+      "path": "~/Recipes/Ore Processing"
     },
     {
       "name": "DuneSandstoneCoalOreUnrecipe2",
@@ -2366,7 +2311,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "dune_sandstone_coal_ore_unrecipe_2",
-      "path": "~/Recipes"
+      "path": "~/Recipes/Ore Processing"
     },
     {
       "name": "DuneSandstoneIronOreUnrecipe",
@@ -2376,7 +2321,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "dune_sandstone_iron_ore_unrecipe",
-      "path": "~/Recipes"
+      "path": "~/Recipes/Ore Processing"
     },
     {
       "name": "DuneSandstoneIronOreUnrecipe2",
@@ -2386,7 +2331,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "dune_sandstone_iron_ore_unrecipe_2",
-      "path": "~/Recipes"
+      "path": "~/Recipes/Ore Processing"
     },
     {
       "name": "SandstoneCoalOre",
@@ -2395,7 +2340,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sandstone_coal_ore"
+      "registry_name": "sandstone_coal_ore",
+      "path": "~/Blocks/Ores"
     },
     {
       "name": "SandstoneIronOre",
@@ -2404,7 +2350,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sandstone_iron_ore"
+      "registry_name": "sandstone_iron_ore",
+      "path": "~/Blocks/Ores"
     },
     {
       "name": "SandstoneCoalOreUnrecipe",
@@ -2414,7 +2361,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sandstone_coal_ore_unrecipe",
-      "path": "~/Recipes"
+      "path": "~/Recipes/Ore Processing"
     },
     {
       "name": "SandstoneCoalOreUnrecipe2",
@@ -2424,7 +2371,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sandstone_coal_ore_unrecipe_2",
-      "path": "~/Recipes"
+      "path": "~/Recipes/Ore Processing"
     },
     {
       "name": "SandstoneIronOreUnrecipe",
@@ -2434,7 +2381,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sandstone_iron_ore_unrecipe",
-      "path": "~/Recipes"
+      "path": "~/Recipes/Ore Processing"
     },
     {
       "name": "SandstoneIronOreUnrecipe2",
@@ -2444,7 +2391,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sandstone_iron_ore_unrecipe_2",
-      "path": "~/Recipes"
+      "path": "~/Recipes/Ore Processing"
     },
     {
       "name": "DuneSandstoneSlab",
@@ -2695,6 +2642,1050 @@
       "ids": {},
       "registry_name": "smeltable_hardened_sand",
       "path": "~/Utility Tags"
+    },
+    {
+      "name": "TertenicDunes",
+      "type": "biome",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tertenic_dunes"
+    },
+    {
+      "name": "EdgeTertenicDunes",
+      "type": "biome",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "edge_tertenic_dunes"
+    },
+    {
+      "name": "BambooMatRecipe",
+      "type": "recipe",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "bamboo_mat_recipe",
+      "path": "~/Compatibility Recipes/Cultural Delights"
+    },
+    {
+      "name": "DuneCoalBlock",
+      "type": "block",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_coal_block",
+      "path": "~/Fuel"
+    },
+    {
+      "name": "DuneCoalBlockFuel",
+      "type": "fuel",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_coal_block_fuel",
+      "path": "~/Fuel"
+    },
+    {
+      "name": "DuneCoalBlockRecipe",
+      "type": "recipe",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_coal_block_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DuneCoalBlockUnrecipe",
+      "type": "recipe",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_coal_block_unrecipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "LaisLog",
+      "type": "block",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_log",
+      "path": "~/Blocks/Woods"
+    },
+    {
+      "name": "LaisPlanks",
+      "type": "block",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_planks",
+      "path": "~/Blocks/Woods"
+    },
+    {
+      "name": "LaisSlab",
+      "type": "block",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_slab",
+      "path": "~/Blocks/Woods"
+    },
+    {
+      "name": "LaisStairs",
+      "type": "block",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_stairs",
+      "path": "~/Blocks/Woods"
+    },
+    {
+      "name": "LaisFence",
+      "type": "block",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_fence",
+      "path": "~/Blocks/Woods"
+    },
+    {
+      "name": "StrippedLaisLog",
+      "type": "block",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stripped_lais_log",
+      "path": "~/Blocks/Woods"
+    },
+    {
+      "name": "LaisFenceGate",
+      "type": "block",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_fence_gate",
+      "path": "~/Blocks/Woods"
+    },
+    {
+      "name": "LaisWood",
+      "type": "block",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_wood",
+      "path": "~/Blocks/Woods"
+    },
+    {
+      "name": "StrippedLaisWood",
+      "type": "block",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stripped_lais_wood",
+      "path": "~/Blocks/Woods"
+    },
+    {
+      "name": "LaisTrapdoor",
+      "type": "block",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_trapdoor",
+      "path": "~/Blocks/Woods"
+    },
+    {
+      "name": "LaisDoor",
+      "type": "block",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_door",
+      "path": "~/Blocks/Woods"
+    },
+    {
+      "name": "LaisLeaves",
+      "type": "block",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_leaves",
+      "path": "~/Blocks/Woods"
+    },
+    {
+      "name": "BloomingLaisLeaves",
+      "type": "block",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blooming_lais_leaves",
+      "path": "~/Blocks/Woods"
+    },
+    {
+      "name": "FloweryLaisDoor",
+      "type": "block",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flowery_lais_door",
+      "path": "~/Blocks/Woods"
+    },
+    {
+      "name": "FloweryLaisTrapdoor",
+      "type": "block",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flowery_lais_trapdoor",
+      "path": "~/Blocks/Woods"
+    },
+    {
+      "name": "EsrahButton",
+      "type": "block",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "esrah_button",
+      "path": "~/Blocks/Woods"
+    },
+    {
+      "name": "EsrahPressurePlate",
+      "type": "block",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "esrah_pressure_plate",
+      "path": "~/Blocks/Woods"
+    },
+    {
+      "name": "LaisButton",
+      "type": "block",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_button",
+      "path": "~/Blocks/Woods"
+    },
+    {
+      "name": "LaisPressurePlate",
+      "type": "block",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_pressure_plate",
+      "path": "~/Blocks/Woods"
+    },
+    {
+      "name": "EsrahButtonRecipe",
+      "type": "recipe",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "esrah_button_recipe",
+      "path": "~/Recipes/Wood Recipes"
+    },
+    {
+      "name": "LaisPlanksRecipe",
+      "type": "recipe",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_planks_recipe",
+      "path": "~/Recipes/Wood Recipes"
+    },
+    {
+      "name": "LaisPlanksRecipe2",
+      "type": "recipe",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_planks_recipe_2",
+      "path": "~/Recipes/Wood Recipes"
+    },
+    {
+      "name": "LaisSlabRecipe",
+      "type": "recipe",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_slab_recipe",
+      "path": "~/Recipes/Wood Recipes"
+    },
+    {
+      "name": "LaisStairsRecipe",
+      "type": "recipe",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_stairs_recipe",
+      "path": "~/Recipes/Wood Recipes"
+    },
+    {
+      "name": "LaisFenceRecipe",
+      "type": "recipe",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_fence_recipe",
+      "path": "~/Recipes/Wood Recipes"
+    },
+    {
+      "name": "LaisFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_fence_gate_recipe",
+      "path": "~/Recipes/Wood Recipes"
+    },
+    {
+      "name": "LaisWoodRecipe",
+      "type": "recipe",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_wood_recipe",
+      "path": "~/Recipes/Wood Recipes"
+    },
+    {
+      "name": "StrippedLaisWoodRecipe",
+      "type": "recipe",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stripped_lais_wood_recipe",
+      "path": "~/Recipes/Wood Recipes"
+    },
+    {
+      "name": "LaisTrapdoorRecipe",
+      "type": "recipe",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_trapdoor_recipe",
+      "path": "~/Recipes/Wood Recipes"
+    },
+    {
+      "name": "LaisDoorRecipe",
+      "type": "recipe",
+      "sortid": 250,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_door_recipe",
+      "path": "~/Recipes/Wood Recipes"
+    },
+    {
+      "name": "LaisButtonRecipe",
+      "type": "recipe",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_button_recipe",
+      "path": "~/Recipes/Wood Recipes"
+    },
+    {
+      "name": "LaisPressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_pressure_plate_recipe",
+      "path": "~/Recipes/Wood Recipes"
+    },
+    {
+      "name": "EsrahPressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 253,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "esrah_pressure_plate_recipe",
+      "path": "~/Recipes/Wood Recipes"
+    },
+    {
+      "name": "FloweryLaisTrapdoorRecipe",
+      "type": "recipe",
+      "sortid": 254,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flowery_lais_trapdoor_recipe",
+      "path": "~/Recipes/Wood Recipes"
+    },
+    {
+      "name": "FloweryLaisDoorRecipe",
+      "type": "recipe",
+      "sortid": 255,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flowery_lais_door_recipe",
+      "path": "~/Recipes/Wood Recipes"
+    },
+    {
+      "name": "MessageOverlay",
+      "type": "overlay",
+      "sortid": 256,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "message_overlay",
+      "path": "~/Message Overlay System"
+    },
+    {
+      "name": "CobrMessagingPotion",
+      "type": "potioneffect",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cobr_messaging_potion",
+      "path": "~/Message Overlay System"
+    },
+    {
+      "name": "CobrMessageManager",
+      "type": "procedure",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cobr_message_manager",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Message Overlay System"
+    },
+    {
+      "name": "MessageOutcall",
+      "type": "procedure",
+      "sortid": 259,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "message_outcall",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Message Overlay System"
+    },
+    {
+      "name": "LaisLeavesLootTable",
+      "type": "loottable",
+      "sortid": 260,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "lais_leaves_loot_table",
+      "path": "~/Loot Tables/Blocks"
+    },
+    {
+      "name": "BloomingLaisLeavesLootTable",
+      "type": "loottable",
+      "sortid": 261,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "blooming_lais_leaves_loot_table",
+      "path": "~/Loot Tables/Blocks"
+    },
+    {
+      "name": "Composting",
+      "type": "code",
+      "sortid": 263,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "composting"
+    },
+    {
+      "name": "BonemealingEsrah",
+      "type": "procedure",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bonemealing_esrah",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Pds - Plants"
+    },
+    {
+      "name": "BonemealingCost",
+      "type": "procedure",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bonemealing_cost",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Pds - Plants"
+    },
+    {
+      "name": "LaisSapling",
+      "type": "plant",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lais_sapling",
+      "path": "~/Blocks/Woods"
+    },
+    {
+      "name": "DuneSandstoneCirtainOre",
+      "type": "block",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_cirtain_ore",
+      "path": "~/Blocks/Ores"
+    },
+    {
+      "name": "SandstoneCirtainOre",
+      "type": "block",
+      "sortid": 268,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandstone_cirtain_ore",
+      "path": "~/Blocks/Ores"
+    },
+    {
+      "name": "CirtainNugget",
+      "type": "item",
+      "sortid": 269,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cirtain_nugget"
+    },
+    {
+      "name": "CirtainScrap",
+      "type": "item",
+      "sortid": 270,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cirtain_scrap"
+    },
+    {
+      "name": "CirtainIngotRecipe",
+      "type": "recipe",
+      "sortid": 271,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "cirtain_ingot_recipe",
+      "path": "~/Compatibility Recipes/Wastelands of Baedoor"
+    },
+    {
+      "name": "CirtainScrapRecipe",
+      "type": "recipe",
+      "sortid": 272,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cirtain_scrap_recipe",
+      "path": "~/Recipes/Ore Processing"
+    },
+    {
+      "name": "CirtainScrapRecipeFromBlock",
+      "type": "recipe",
+      "sortid": 273,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cirtain_scrap_recipe_from_block",
+      "path": "~/Recipes/Ore Processing"
+    },
+    {
+      "name": "CirtainScrapRecipeFromBlock2",
+      "type": "recipe",
+      "sortid": 274,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cirtain_scrap_recipe_from_block_2",
+      "path": "~/Recipes/Ore Processing"
+    },
+    {
+      "name": "CirtainScrapRecipeBlasting",
+      "type": "recipe",
+      "sortid": 275,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cirtain_scrap_recipe_blasting",
+      "path": "~/Recipes/Ore Processing"
+    },
+    {
+      "name": "CirtainScrapRecipeBlastingFromBlock",
+      "type": "recipe",
+      "sortid": 276,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cirtain_scrap_recipe_blasting_from_block",
+      "path": "~/Recipes/Ore Processing"
+    },
+    {
+      "name": "CirtainScrapRecipeBlastingFromBlock2",
+      "type": "recipe",
+      "sortid": 277,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cirtain_scrap_recipe_blasting_from_block_2",
+      "path": "~/Recipes/Ore Processing"
+    },
+    {
+      "name": "LogsItems",
+      "type": "tag",
+      "sortid": 278,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "logs_items",
+      "path": "~/Common Tags"
+    },
+    {
+      "name": "ThatPricelessGem",
+      "type": "achievement",
+      "sortid": 279,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "that_priceless_gem"
+    },
+    {
+      "name": "CirtainHeaters",
+      "type": "tag",
+      "sortid": 280,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cirtain_heaters"
+    },
+    {
+      "name": "CirtainOreBreaking",
+      "type": "procedure",
+      "sortid": 280,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cirtain_ore_breaking",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BonemealingLais",
+      "type": "procedure",
+      "sortid": 281,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bonemealing_lais",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Pds - Plants"
+    },
+    {
+      "name": "LaisSaplingRecipe",
+      "type": "recipe",
+      "sortid": 282,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "lais_sapling_recipe"
+    },
+    {
+      "name": "ChiseledDuneSandstoneBricks",
+      "type": "block",
+      "sortid": 283,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chiseled_dune_sandstone_bricks",
+      "path": "~/Blocks/Dune Sand"
+    },
+    {
+      "name": "ChiseledDuneSandstoneBricksRecipe",
+      "type": "recipe",
+      "sortid": 284,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chiseled_dune_sandstone_bricks_recipe",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "ChiseledDuneSandstoneBricksRecipeStonecutter",
+      "type": "recipe",
+      "sortid": 285,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chiseled_dune_sandstone_bricks_recipe_stonecutter",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "ChiseledDuneSandstoneBricksRecipeStonecutter2",
+      "type": "recipe",
+      "sortid": 286,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chiseled_dune_sandstone_bricks_recipe_stonecutter_2",
+      "path": "~/Recipes/Sand Recipes"
+    },
+    {
+      "name": "WoodenButtons",
+      "type": "tag",
+      "sortid": 287,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wooden_buttons",
+      "path": "~/Common Tags"
+    },
+    {
+      "name": "PlanksLike",
+      "type": "tag",
+      "sortid": 288,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "planks_like",
+      "path": "~/Compatibility Tags/Tinkers Construct"
+    },
+    {
+      "name": "ActivatesFoundry",
+      "type": "tag",
+      "sortid": 289,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "activates_foundry",
+      "path": "~/Compatibility Tags/Technocraft"
+    },
+    {
+      "name": "Sandstone",
+      "type": "tag",
+      "sortid": 290,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandstone",
+      "path": "~/Common Tags"
+    },
+    {
+      "name": "ForgeFences",
+      "type": "tag",
+      "sortid": 291,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "forge_fences",
+      "path": "~/Common Tags"
+    },
+    {
+      "name": "DesolatSandstone",
+      "type": "tag",
+      "sortid": 292,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "desolat_sandstone",
+      "path": "~/Compatibility Tags/Desolat"
+    },
+    {
+      "name": "DuneGoldIngot",
+      "type": "item",
+      "sortid": 293,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_gold_ingot"
+    },
+    {
+      "name": "BlockofDuneGold",
+      "type": "block",
+      "sortid": 294,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_of_dune_gold"
+    },
+    {
+      "name": "BlockofDuneGoldRecipe",
+      "type": "recipe",
+      "sortid": 295,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blockof_dune_gold_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "BlockofDuneGoldUnrecipe",
+      "type": "recipe",
+      "sortid": 296,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blockof_dune_gold_unrecipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SandstoneGoldOre",
+      "type": "block",
+      "sortid": 293,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandstone_gold_ore",
+      "path": "~/Blocks/Ores"
+    },
+    {
+      "name": "DuneSandstoneGoldOre",
+      "type": "block",
+      "sortid": 293,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_gold_ore",
+      "path": "~/Blocks/Ores"
+    },
+    {
+      "name": "SandstoneGoldOreUnrecipe",
+      "type": "recipe",
+      "sortid": 297,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandstone_gold_ore_unrecipe",
+      "path": "~/Recipes/Ore Processing"
+    },
+    {
+      "name": "SandstoneGoldOreUnrecipe2",
+      "type": "recipe",
+      "sortid": 298,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandstone_gold_ore_unrecipe_2",
+      "path": "~/Recipes/Ore Processing"
+    },
+    {
+      "name": "DuneSandstoneGoldOreUnrecipe",
+      "type": "recipe",
+      "sortid": 299,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_gold_ore_unrecipe",
+      "path": "~/Recipes/Ore Processing"
+    },
+    {
+      "name": "DuneSandstoneGoldOreUnrecipe2",
+      "type": "recipe",
+      "sortid": 300,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_sandstone_gold_ore_unrecipe_2",
+      "path": "~/Recipes/Ore Processing"
+    },
+    {
+      "name": "LeavesDropsSilkTouched",
+      "type": "procedure",
+      "sortid": 301,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leaves_drops_silk_touched",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Pds - Plants"
+    },
+    {
+      "name": "LeavesDropsNormal",
+      "type": "procedure",
+      "sortid": 302,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leaves_drops_normal",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Pds - Plants"
     }
   ],
   "variable_elements": [
@@ -2744,83 +3735,118 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.cobr.eotic_bamboo_stem": "Eotic Bamboo",
       "block.cobr.esrah_door": "Esrah Door",
       "block.cobr.dune_sand": "Dune Sand",
-      "block.cobr.dune_traveller_stone": "Dune Traveller Stone",
       "gamerule.overworldImpact.description": "Decides whether structures spawn in both dimensions and overworld, or only in dimensions. Set to \"true\" to fully feel Baedoor invasion over Minecraft world.",
-      "block.cobr.esrah_slab": "Esrah Slab",
+      "block.cobr.dune_traveller_stone": "Dune Traveller Stone",
       "block.cobr.esrah_stairs": "Esrah Stairs",
       "block.cobr.esrah_wood": "Esrah Wood",
       "block.cobr.colourful_block": "WOB Integration Block",
-      "item.cobr.dune_coal": "Dune Coal",
-      "block.cobr.dune_sandstone": "Dune Sandstone",
       "item.cobr.terten_civil_spawn_egg": "Terten Civil Spawn Egg",
-      "block.cobr.rainforest_islands_traveller_stone": "Rainforest Islands Traveller Stone",
+      "block.cobr.dune_sandstone": "Dune Sandstone",
       "advancements.the_crusade_began.title": "The Crusade Began",
-      "block.cobr.wet_dune_sand": "Wet Dune Sand",
       "block.cobr.esrah_fence_gate": "Esrah Fence Gate",
       "block.cobr.stripped_esrah_wood": "Stripped Esrah Wood",
-      "block.cobr.evergreen_depths_traveller_stone": "Evergreen Depths Traveller Stone",
-      "block.cobr.eotic_bamboo_lamp": "Eotic Bamboo Block",
       "block.cobr.stripped_esrah_log": "Stripped Esrah Log",
       "block.cobr.eotic_bamboo_growing": "Eotic Bamboo",
       "block.cobr.dune_sandstone_brick_stairs": "Dune Sandstone Brick Stairs",
-      "advancements.the_crusade_began.descr": "You entered the time of civilisations. Use traveller stone with the book to get guide.",
       "block.cobr.bright_dune_sand": "Bright Dune Sand",
       "block.cobr.eotic_bamboo_stairs": "Eotic Bamboo Stairs",
       "block.cobr.dune_sandstone_coal_ore": "Dune Sandstone Coal Ore",
-      "item.cobr.dunes": "Scroll of the Dunes",
-      "block.cobr.esrah_log": "Esrah Log",
-      "block.cobr.eotic_bamboo_block": "Eotic Bamboo Block",
+      "block.cobr.lais_trapdoor": "Lais Trapdoor",
+      "block.cobr.dune_sandstone_cirtain_ore": "Dune Sandstone Cirtain Ore",
       "item.cobr.eotic_bamboo": "Eotic Bamboo",
-      "biome.cobr.dry_lands": "Dry Lands",
-      "entity.cobr.spawn_entity_bamboo": "[Spawn Entity] Bamboo",
+      "effect.cobr_messaging_potion": "Cobr Message Potion",
       "item.cobr.cooked_lizard_meat": "Cooked Lizard Meat",
-      "block.cobr.esrah_sapling": "Esrah Sapling",
-      "block.cobr.pack_of_eotic_bamboo": "Pack of Eotic Bamboo",
+      "block.cobr.esrah_button": "Esrah Button",
+      "block.cobr.lais_pressure_plate": "Lais Pressure Plate",
       "advancements.empire_foundation_set_in_wood.title": "Empire Foundation Set In... Wood",
       "block.cobr.eotic_bamboo_mat": "Eotic Bamboo Mat",
-      "item.cobr.bone_shortsword": "Bone Shortsword",
-      "block.cobr.esrah_planks": "Esrah Planks",
       "block.cobr.eotic_bamboo_slab": "Eotic Bamboo Slab",
-      "block.cobr.permafrost_traveller_stone": "Permafrost Traveller Stone",
+      "block.cobr.lais_fence": "Lais Fence",
       "item.cobr.compat_wob": "Compat Wob",
+      "item.cobr.dune_gold_ingot": "Dune Gold Ingot",
       "block.cobr.dune_sandstone_slab": "Dune Sandstone Slab",
-      "block.cobr.esrah_trapdoor": "Esrah Trapdoor",
+      "block.cobr.lais_log": "Lais Log",
       "item.cobr.spawn_entity_oasis_spawn_egg": "[Spawn Entity] Oasis Spawn Egg",
       "block.cobr.sandstone_coal_ore": "Sandstone Coal Ore",
       "item.cobr.white_lizard_spawn_egg": "White Lizard Spawn Egg",
       "block.cobr.hardened_sand": "Hardened Sand",
-      "item.cobr.disbandment_scroll": "Disbandment Scroll",
       "block.cobr.dune_sandstone_brick_slab": "Dune Sandstone Brick Slab",
       "block.cobr.dune_sandstone_wall": "Dune Sandstone Wall",
-      "block.cobr.dune_sandstone_brick_wall": "Dune Sandstone Brick Wall",
-      "advancements.acrossthe_dunes.descr": "You entered the portal to the neverending desert... let\u0027s the dry wind be felt in your lungs, wanderer.",
-      "gamerule.overworldImpact": "Overworld Impact",
+      "block.cobr.lais_fence_gate": "Lais Fence Gate",
+      "block.cobr.lais_wood": "Lais Wood",
       "block.cobr.dune_sandstone_iron_ore": "Dune Sandstone Iron Ore",
+      "block.cobr.lais_door": "Lais Door",
       "advancements.empire_foundation_set_in_wood.descr": "Take first step in creation of your Empire by creating civilisation table.",
-      "block.cobr.eotic_bamboo_tip": "Eotic Bamboo Tip",
       "advancements.acrossthe_dunes.title": "Across the Dunes",
-      "item.cobr.spawn_entity_bamboo_spawn_egg": "[Spawn Entity] Bamboo Spawn Egg",
       "block.cobr.sandstone_iron_ore": "Sandstone Iron Ore",
       "block.cobr.hardened_dune_sand": "Hardened Dune Sand",
+      "advancements.that_priceless_gem.title": "That Priceless Gem",
+      "item.cobr.cirtain_nugget": "Cirtain Nugget",
+      "block.cobr.spawn_block_mercenary_camp_terten": "[Spawn Block] Mercenary Camp Terten",
+      "block.cobr.stripped_lais_log": "Stripped Lais Log",
+      "item.cobr.raw_lizard_meat": "Raw Lizard Meat",
+      "advancements.that_priceless_gem.descr": "Find a cirtain ore and break it to get nugget!",
+      "item.cobr.bone_sabre": "Bone Sabre",
+      "block.cobr.portal_block": "Portal Block",
+      "block.cobr.lais_planks": "Lais Planks",
+      "block.cobr.empty_traveller_stone": "Empty Traveller Stone",
+      "block.cobr.flowery_lais_door": "Flowery Lais Door",
+      "biome.cobr.edge_tertenic_dunes": "Tertenic Dunes Edge",
+      "entity.cobr.terten_civil": "Terten Civil",
+      "entity.cobr.spawn_entity_oasis": "[Spawn Entity] Oasis",
+      "block.cobr.eotic_bamboo_stem": "Eotic Bamboo",
+      "block.cobr.dune_sandstone_gold_ore": "Dune Sandstone Gold Ore",
+      "block.cobr.esrah_slab": "Esrah Slab",
+      "item.cobr.dune_coal": "Dune Coal",
+      "block.cobr.blooming_lais_leaves": "Blooming Lais Leaves",
+      "block.cobr.lais_leaves": "Lais Leaves",
+      "block.cobr.rainforest_islands_traveller_stone": "Rainforest Islands Traveller Stone",
+      "block.cobr.dune_coal_block": "Dune Coal Block",
+      "block.cobr.wet_dune_sand": "Wet Dune Sand",
+      "block.cobr.evergreen_depths_traveller_stone": "Evergreen Depths Traveller Stone",
+      "block.cobr.eotic_bamboo_lamp": "Eotic Bamboo Lamp",
+      "advancements.the_crusade_began.descr": "You entered the time of civilisations. Use traveller stone with the book to get guide.",
+      "biome.cobr.tertenic_dunes": "Tertenic Dunes",
+      "block.cobr.lais_sapling": "Lais Sapling",
+      "item.cobr.dunes": "Scroll of the Dunes",
+      "block.cobr.esrah_log": "Esrah Log",
+      "block.cobr.sandstone_gold_ore": "Sandstone Gold Ore",
+      "block.cobr.eotic_bamboo_block": "Eotic Bamboo Block",
+      "biome.cobr.dry_lands": "Dry Lands",
+      "block.cobr.flowery_lais_trapdoor": "Flowery Lais Trapdoor",
+      "entity.cobr.spawn_entity_bamboo": "[Spawn Entity] Bamboo",
+      "block.cobr.esrah_sapling": "Esrah Sapling",
+      "block.cobr.pack_of_eotic_bamboo": "Pack of Eotic Bamboo",
+      "item.cobr.bone_shortsword": "Bone Shortsword",
+      "block.cobr.esrah_planks": "Esrah Planks",
+      "block.cobr.esrah_pressure_plate": "Esrah Pressure Plate",
+      "block.cobr.permafrost_traveller_stone": "Permafrost Traveller Stone",
+      "block.cobr.esrah_trapdoor": "Esrah Trapdoor",
+      "item.cobr.cirtain_scrap": "Cirtain Scrap",
+      "item.cobr.disbandment_scroll": "Disbandment Scroll",
+      "block.cobr.dune_sandstone_brick_wall": "Dune Sandstone Brick Wall",
+      "advancements.acrossthe_dunes.descr": "You entered the portal to the neverending desert... let\u0027s the dry wind be felt in your lungs, wanderer.",
+      "block.cobr.sandstone_cirtain_ore": "Sandstone Cirtain Ore",
+      "gamerule.overworldImpact": "Overworld Impact",
+      "block.cobr.chiseled_dune_sandstone_bricks": "Chiseled Dune Sandstone Bricks",
+      "block.cobr.eotic_bamboo_tip": "Eotic Bamboo Tip",
+      "block.cobr.block_of_dune_gold": "Block of Dune Gold",
+      "item.cobr.spawn_entity_bamboo_spawn_egg": "[Spawn Entity] Bamboo Spawn Egg",
       "entity.cobr.white_lizard": "White Lizard",
       "block.cobr.esrah_fence": "Esrah Fence",
       "biome.cobr.eotic_lakes": "Eotic Lakes",
       "block.cobr.esrah_leaves": "Esrah Leaves",
-      "block.cobr.spawn_block_mercenary_camp_terten": "[Spawn Block] Mercenary Camp Terten",
-      "item.cobr.raw_lizard_meat": "Raw Lizard Meat",
       "block.cobr.civilisation_table": "Civilisation Table",
-      "item.cobr.bone_sabre": "Bone Sabre",
       "item.cobr.lizard_stew": "Lizard Stew",
       "block.cobr.dune_sandstone_stairs": "Dune Sandstone Stairs",
+      "block.cobr.lais_slab": "Lais Slab",
       "itemGroup.tabcivilisationsof_baedoor": "Civilisations of Baedoor",
-      "block.cobr.portal_block": "Portal Block",
       "block.cobr.dune_sandstone_bricks": "Dune Sandstone Bricks",
-      "block.cobr.empty_traveller_stone": "Empty Traveller Stone",
-      "entity.cobr.terten_civil": "Terten Civil",
-      "entity.cobr.spawn_entity_oasis": "[Spawn Entity] Oasis"
+      "block.cobr.stripped_lais_wood": "Stripped Lais Wood",
+      "block.cobr.lais_button": "Lais Button",
+      "block.cobr.lais_stairs": "Lais Stairs"
     }
   },
   "foldersRoot": {
@@ -2835,6 +3861,10 @@
           },
           {
             "name": "Sand Recipes",
+            "children": []
+          },
+          {
+            "name": "Ore Processing",
             "children": []
           }
         ]
@@ -2853,6 +3883,10 @@
           {
             "name": "Farmers Delight",
             "children": []
+          },
+          {
+            "name": "Cultural Delights",
+            "children": []
           }
         ]
       },
@@ -2866,7 +3900,20 @@
       },
       {
         "name": "Compatibility Tags",
-        "children": []
+        "children": [
+          {
+            "name": "Tinkers Construct",
+            "children": []
+          },
+          {
+            "name": "Technocraft",
+            "children": []
+          },
+          {
+            "name": "Desolat",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Structures",
@@ -2942,15 +3989,40 @@
           {
             "name": "Woods",
             "children": []
+          },
+          {
+            "name": "Ores",
+            "children": []
           }
         ]
+      },
+      {
+        "name": "Message Overlay System",
+        "children": []
+      },
+      {
+        "name": "Pds - World",
+        "children": []
+      },
+      {
+        "name": "Loot Tables",
+        "children": [
+          {
+            "name": "Blocks",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Fuel",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "cobr",
     "modName": "Civilisations of Baedoor",
-    "version": "v0.a2",
+    "version": "v0.a2c",
     "description": "Wanderers of our world... new mysteries have arised, giving birth to new dimensional entrances. Some forces try to conquer the lands of Overworld.. or maybe they already succeed? Find yourself inside fight of strange civilisations that appeared in this place.",
     "author": "Toma400",
     "websiteURL": "https://mcreator.net/forum/76024/civilisations-baedoor-structures-npcs-and-civilisations-mod",

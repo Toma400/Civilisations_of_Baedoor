@@ -8,6 +8,12 @@
       },
       {
         "value": "CUSTOM:EoticLakes"
+      },
+      {
+        "value": "CUSTOM:EdgeTertenicDunes"
+      },
+      {
+        "value": "CUSTOM:TertenicDunes"
       }
     ],
     "worldGenType": "Normal world gen",

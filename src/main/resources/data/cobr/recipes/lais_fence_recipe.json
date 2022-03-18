@@ -1,0 +1,32 @@
+{
+  "group": "lais_fence",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:lais_planks"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "cobr:lais_planks"
+    },
+    "3": {
+      "item": "cobr:lais_planks"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "cobr:lais_planks"
+    }
+  },
+  "result": {
+    "item": "cobr:lais_fence",
+    "count": 3
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 1.0,
+    "cookingTime": 300,
+    "recipeRetstackSize": 1,
+    "group": "cirtain_scrap",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:CirtainNugget"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:CirtainScrap"
+    },
+    "name": "cirtain_scrap_recipe",
+    "namespace": "mod"
+  }
+}

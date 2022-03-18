@@ -1,0 +1,26 @@
+{
+  "group": "stripped_lais_wood",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:stripped_lais_log"
+    },
+    "1": {
+      "item": "cobr:stripped_lais_log"
+    },
+    "2": {
+      "item": "cobr:stripped_lais_log"
+    },
+    "3": {
+      "item": "cobr:stripped_lais_log"
+    }
+  },
+  "result": {
+    "item": "cobr:stripped_lais_wood",
+    "count": 3
+  }
+}
