@@ -3688,15 +3688,6 @@
       "path": "~/Pds - Plants"
     },
     {
-      "name": "LogBlocks",
-      "type": "code",
-      "sortid": 303,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "log_blocks"
-    },
-    {
       "name": "BeaconBase",
       "type": "tag",
       "sortid": 304,
