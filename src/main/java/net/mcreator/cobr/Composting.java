@@ -28,19 +28,19 @@ public class Composting {
 	        //ComposterBlock.field_220299_b.put((Object)item.func_199767_j(), chance);
 	    //}
 	
-	private static class GlobalTrigger {
+	//private static class GlobalTrigger {
 
-		@SubscribeEvent
-		private void setup(final FMLCommonSetupEvent event) {
-			event.enqueueWork(() -> {
-				ComposterBlock.add(0.3f, EsrahLeavesBlock.block);
-			});
-		}
+	//	@SubscribeEvent
+	//	private void setup(final FMLCommonSetupEvent event) {
+	//		event.enqueueWork(() -> {
+	//			ComposterBlock.add(0.3f, EsrahLeavesBlock.block);
+	//		});
+	//	}
 
 
 	//compostableItemsCoB();
 	
-	}
+	//}
 	
     //public static void compostableItemsCoB() {
     //    addingManager(0.2f, (IItemProvider)EsrahLeavesBlock.block.get().asItem());

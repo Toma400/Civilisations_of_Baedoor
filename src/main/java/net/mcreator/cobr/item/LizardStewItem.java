@@ -15,6 +15,7 @@ import net.minecraft.entity.LivingEntity;
 
 import net.mcreator.cobr.itemgroup.CivilisationsofBaedoorItemGroup;
 import net.mcreator.cobr.CobrModElements;
+import net.minecraft.item.SoupItem;
 
 @CobrModElements.ModElement.Tag
 public class LizardStewItem extends CobrModElements.ModElement {
@@ -28,32 +29,11 @@ public class LizardStewItem extends CobrModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new FoodItemCustom());
 	}
-	public static class FoodItemCustom extends Item {
+	public static class FoodItemCustom extends SoupItem {
 		public FoodItemCustom() {
-			super(new Item.Properties().group(CivilisationsofBaedoorItemGroup.tab).maxStackSize(16).rarity(Rarity.COMMON)
+			super(new Item.Properties().group(CivilisationsofBaedoorItemGroup.tab).maxStackSize(1).rarity(Rarity.COMMON)
 					.food((new Food.Builder()).hunger(10).saturation(0.6f).meat().build()));
 			setRegistryName("lizard_stew");
-		}
-
-		@Override
-		public UseAction getUseAction(ItemStack itemstack) {
-			return UseAction.EAT;
-		}
-
-		@Override
-		public ItemStack onItemUseFinish(ItemStack itemstack, World world, LivingEntity entity) {
-			ItemStack retval = new ItemStack(Items.BOWL);
-			super.onItemUseFinish(itemstack, world, entity);
-			if (itemstack.isEmpty()) {
-				return retval;
-			} else {
-				if (entity instanceof PlayerEntity) {
-					PlayerEntity player = (PlayerEntity) entity;
-					if (!player.isCreative() && !player.inventory.addItemStackToInventory(retval))
-						player.dropItem(retval, false);
-				}
-				return itemstack;
-			}
 		}
 	}
 }
