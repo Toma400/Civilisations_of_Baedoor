@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "" : { "model": "cobr:block/empty_traveller_stone" }
+  }
+}

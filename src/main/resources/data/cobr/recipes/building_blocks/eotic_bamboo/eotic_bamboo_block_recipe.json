@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "eotic_bamboo_block",
+  "pattern": [
+    "   ",
+    " CC",
+    " CC"
+  ],
+  "key": {
+    "C": {
+      "item": "cobr:eotic_bamboo"
+    }
+  },
+  "result": {
+    "item": "cobr:eotic_bamboo_block"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chiseled_dune_sandstone_bricks",
+  "pattern": [
+    "   ",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "S": {
+      "item": "cobr:dune_sandstone_bricks_slab"
+    }
+  },
+  "result": {
+    "item": "cobr:chiseled_dune_sandstone_bricks",
+    "count": 1
+  }
+}

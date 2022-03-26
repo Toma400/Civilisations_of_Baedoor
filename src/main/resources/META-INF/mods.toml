@@ -1,0 +1,41 @@
+# This is an example mods.toml file. It contains the data relating to the loading mods.
+# There are several mandatory fields (#mandatory), and many more that are optional (#optional).
+# The overall format is standard TOML format, v0.5.0.
+# Note that there are a couple of TOML lists in this file.
+# Find more information on toml format here:  https://github.com/toml-lang/toml
+# The name of the mod loader type to load - for regular FML @Mod mods it should be javafml
+modLoader="javafml" #mandatory
+# A version range to match for said mod loader - for regular FML @Mod it will be the forge version
+loaderVersion="[40,)"
+license="All Rights Reserved"
+[[mods]] #mandatory
+modId="cobr"
+version="${file.jarVersion}"
+displayName="Civilisations of Baedoor"
+logoFile="logo.png" #optional
+# A text field displayed in the mod UI
+credits="Toma400 - author, DylanVHS - textures, Poltergeist - models, RiftJaw - models"
+authors="Toma400"
+description='''
+Civilisations of Baedoor is part of Baedoor mods, introducing Baedoor universe in Minecraft. Civilisations are focused on exploration, lore and empire building.
+'''
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.cobr]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[40,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+# Here's another dependency
+[[dependencies.cobr]]
+    modId="minecraft"
+    mandatory=true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"

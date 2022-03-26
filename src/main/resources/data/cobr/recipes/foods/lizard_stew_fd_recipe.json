@@ -1,0 +1,23 @@
+{
+  "type": "farmersdelight:cooking",
+  "ingredients": [
+    {
+      "item": "cobr:raw_lizard_meat"
+    },
+    {
+      "tag": "cobr:lizard_stew_ingredient"
+    },
+    [
+      {"item": "minecraft:brown_mushroom"},
+      {"item": "minecraft:red_mushroom"}
+    ]
+  ],
+  "result": {
+    "item": "cobr:lizard_stew"
+  },
+  "container": {
+    "item": "minecraft:wooden_bowl"
+  },
+  "experience": 0.3,
+  "cookingtime": 200
+}

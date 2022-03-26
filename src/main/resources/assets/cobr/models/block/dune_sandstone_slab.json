@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "cobr:block/dune_sandstone_bottom",
+    "top": "cobr:block/dune_sandstone_top",
+    "side": "cobr:block/dune_sandstone_double"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cobr:block/dune_sandstone_bricks_slab"
+    },
+    "type=double": {
+      "model": "cobr:block/dune_sandstone_bricks"
+    },
+    "type=top": {
+      "model": "cobr:block/dune_sandstone_bricks_slab_top"
+    }
+  }
+}

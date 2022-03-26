@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bamboo_mat",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:string"
+    },
+    "1": {
+      "item": "cobr:eotic_bamboo"
+    },
+    "2": {
+      "item": "cobr:eotic_bamboo"
+    },
+    "3": {
+      "item": "minecraft:string"
+    },
+    "4": {
+      "item": "cobr:eotic_bamboo"
+    },
+    "5": {
+      "item": "cobr:eotic_bamboo"
+    }
+  },
+  "result": {
+    "item": "culturaldelights:bamboo_mat",
+    "count": 1
+  }
+}

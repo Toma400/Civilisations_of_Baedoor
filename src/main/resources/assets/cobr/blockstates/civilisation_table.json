@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north" : { "model": "cobr:block/civilisation_table" },
+    "facing=east" : { "model": "cobr:block/civilisation_table", "y": 90 },
+    "facing=south" : { "model": "cobr:block/civilisation_table", "y": 180 },
+    "facing=west" : { "model": "cobr:block/civilisation_table", "y": 270 }
+  }
+}

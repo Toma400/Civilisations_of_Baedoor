@@ -1,0 +1,88 @@
+{
+  "item.cobr.eotic_bamboo": "Eotic Bamboo",
+  "item.cobr.raw_lizard_meat": "Raw Lizard Meat",
+  "item.cobr.cooked_lizard_meat": "Cooked Lizard Meat",
+  "item.cobr.lizard_stew": "Lizard Stew",
+  "item.cobr.disbandment_scroll": "Disbandment Scroll",
+
+  "item.cobr.dune_coal": "Dune Coal",
+  "item.cobr.cirtain_nugget": "Cirtain Nugget",
+  "item.cobr.cirtain_scrap": "Cirtain Scrap",
+  "item.cobr.dune_gold_ingot": "Dune Gold Ingot",
+
+  "item.cobr.bone_shortsword": "Bone Shortsword",
+  "item.cobr.bone_sabre": "Bone Sabre",
+
+  "block.cobr.dune_sandstone_coal_ore": "Dune Sandstone Coal Ore",
+  "block.cobr.dune_sandstone_iron_ore": "Dune Sandstone Iron Ore",
+  "block.cobr.dune_sandstone_gold_ore": "Dune Sandstone Gold Ore",
+  "block.cobr.sandstone_coal_ore": "Sandstone Coal Ore",
+  "block.cobr.sandstone_iron_ore": "Sandstone Iron Ore",
+  "block.cobr.sandstone_gold_ore": "Sandstone Gold Ore",
+
+  "block.cobr.esrah_log": "Esrah Log",
+  "block.cobr.stripped_esrah_log": "Stripped Esrah Log",
+  "block.cobr.esrah_wood": "Esrah Wood",
+  "block.cobr.stripped_esrah_wood": "Stripped Esrah Wood",
+  "block.cobr.esrah_planks": "Esrah Planks",
+  "block.cobr.esrah_stairs": "Esrah Stairs",
+  "block.cobr.esrah_slab": "Esrah Slab",
+  "block.cobr.esrah_trapdoor": "Esrah Trapdoor",
+  "block.cobr.esrah_door": "Esrah Door",
+  "block.cobr.esrah_fence": "Esrah Fence",
+  "block.cobr.esrah_fence_gate": "Esrah Fence Gate",
+
+  "block.cobr.lais_log": "Lais Log",
+  "block.cobr.stripped_lais_log": "Stripped Lais Log",
+  "block.cobr.lais_wood": "Lais Wood",
+  "block.cobr.stripped_lais_wood": "Stripped Lais Wood",
+  "block.cobr.lais_planks": "Lais Planks",
+  "block.cobr.lais_stairs": "Lais Stairs",
+  "block.cobr.lais_slab": "Lais Slab",
+  "block.cobr.lais_trapdoor": "Lais Trapdoor",
+  "block.cobr.lais_door": "Lais Door",
+  "block.cobr.lais_fence": "Lais Fence",
+  "block.cobr.lais_fence_gate": "Lais Fence Gate",
+
+  "block.cobr.esrah_sapling": "Esrah Sapling",
+  "block.cobr.lais_sapling": "Lais Sapling",
+  "block.cobr.esrah_leaves": "Esrah Leaves",
+  "block.cobr.lais_leaves": "Lais Leaves",
+
+  "block.cobr.dune_sand": "Dune Sand",
+  "block.cobr.hardened_dune_sand": "Hardened Dune Sand",
+  "block.cobr.wet_dune_sand": "Wet Dune Sand",
+  "block.cobr.bright_dune_sand": "Bright Dune Sand",
+  "block.cobr.dune_sandstone": "Dune Sandstone",
+  "block.cobr.dune_sandstone_bricks": "Dune Sandstone Bricks",
+  "block.cobr.chiseled_dune_sandstone_bricks": "Chiseled Dune Sandstone Bricks",
+
+  "block.cobr.dune_sandstone_slab": "Dune Sandstone Slab",
+  "block.cobr.dune_sandstone_stairs": "Dune Sandstone Stairs",
+  "block.cobr.dune_sandstone_bricks_slab": "Dune Sandstone Bricks Slab",
+  "block.cobr.dune_sandstone_bricks_stairs": "Dune Sandstone Bricks Stairs",
+
+  "block.cobr.hardened_sand": "Hardened Sand",
+  "block.cobr.dune_coal_block": "Dune Coal Block",
+  "block.cobr.block_of_dune_gold": "Block of Dune Gold",
+
+  "block.cobr.pack_of_eotic_bamboo": "Pack of Eotic Bamboo",
+  "block.cobr.eotic_bamboo_block": "Eotic Bamboo Block",
+  "block.cobr.eotic_bamboo_stairs": "Eotic Bamboo Stairs",
+  "block.cobr.eotic_bamboo_slab": "Eotic Bamboo Slab",
+  "block.cobr.eotic_bamboo_mat": "Eotic Bamboo Mat",
+  "block.cobr.eotic_bamboo_lamp": "Eotic Bamboo Lamp",
+
+  "block.cobr.civilisation_table": "Civilisation Table",
+  "block.cobr.empty_traveller_stone": "Empty Traveller Stone",
+  "block.cobr.dune_traveller_stone": "Dune Traveller Stone",
+  "block.cobr.permafrost_traveller_stone": "Permafrost Traveller Stone",
+  "block.cobr.rainforest_islands_traveller_stone": "Rainforest Islands Traveller Stone",
+  "block.cobr.evergreen_depths_traveller_stone": "Evergreen Depths Traveller Stone",
+
+  "tooltip.cobr.disbandment_scroll": "Serves as a way to disband the warrior from its leader",
+
+  "event.cobr.disbandment_owner_info": "Disbandment scroll assigned by player with UUID: ",
+
+  "itemGroup.cobr_tab": "Civilisations of Baedoor"
+}

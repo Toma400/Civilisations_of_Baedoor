@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "cobr:esrah_log",
+    "cobr:esrah_wood",
+    "cobr:stripped_esrah_log",
+    "cobr:stripped_esrah_wood",
+    "cobr:lais_log",
+    "cobr:lais_wood",
+    "cobr:stripped_lais_log",
+    "cobr:stripped_lais_wood"
+  ]
+}

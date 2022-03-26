@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cobr:block/stripped_esrah_log_top",
+    "side": "cobr:block/stripped_esrah_log_side"
+  }
+}

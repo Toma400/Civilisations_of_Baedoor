@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cobr:block/lais_log_top",
+    "side": "cobr:block/lais_log_side"
+  }
+}

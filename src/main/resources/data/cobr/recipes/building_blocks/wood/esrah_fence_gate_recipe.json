@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "esrah_fence_gate",
+  "pattern": [
+    "   ",
+    "SPS",
+    "SPS"
+  ],
+  "key": {
+    "P": {
+      "item": "cobr:esrah_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "cobr:esrah_fence_gate",
+    "count": 1
+  }
+}
