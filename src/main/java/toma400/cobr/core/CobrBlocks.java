@@ -30,24 +30,24 @@ public class CobrBlocks {
 
     //UTIL BLOCKS
     public static final RegistryObject<Block> PACK_OF_EOTIC_BAMBOO = registerBlock("pack_of_eotic_bamboo",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.BAMBOO).sound(SoundType.BAMBOO).strength(0.5f, 0.5f)), CobrTab.COBR_TAB, 0);
+            () -> new LogBlocks(BlockBehaviour.Properties.of(Material.BAMBOO).sound(SoundType.BAMBOO).strength(0.5f, 0.5f)), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> HARDENED_SAND = registerBlock("hardened_sand",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SAND).strength(2f, 1f)), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> DUNE_COAL_BLOCK = registerBlock("dune_coal_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.STONE).strength(6f, 8f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 18000);
+            () -> new FlammableBlocks.FlammableStone(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.STONE).strength(6f, 8f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 18000);
     public static final RegistryObject<Block> BLOCK_OF_DUNE_GOLD = registerBlock("block_of_dune_gold",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(12f, 8f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
     //EOTIC BAMBOO + VARIANTS
     public static final RegistryObject<Block> EOTIC_BAMBOO_BLOCK = registerBlock("eotic_bamboo_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.BAMBOO).sound(SoundType.BAMBOO).strength(1f, 2f)), CobrTab.COBR_TAB, 0);
+            () -> new FlammableBlocks.Planks(BlockBehaviour.Properties.of(Material.BAMBOO).sound(SoundType.BAMBOO).strength(1f, 2f)), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> EOTIC_BAMBOO_STAIRS = registerBlock("eotic_bamboo_stairs",
-            () -> new StairBlock(() -> CobrBlocks.EOTIC_BAMBOO_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.BAMBOO).sound(SoundType.BAMBOO).strength(1f, 2f)), CobrTab.COBR_TAB, 0);
+            () -> new FlammableBlocks.Stairs(() -> CobrBlocks.EOTIC_BAMBOO_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.BAMBOO).sound(SoundType.BAMBOO).strength(1f, 2f)), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> EOTIC_BAMBOO_SLAB = registerBlock("eotic_bamboo_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.BAMBOO).sound(SoundType.BAMBOO).strength(1f, 2f)), CobrTab.COBR_TAB, 0);
+            () -> new FlammableBlocks.Slab(BlockBehaviour.Properties.of(Material.BAMBOO).sound(SoundType.BAMBOO).strength(1f, 2f)), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> EOTIC_BAMBOO_MAT = registerBlock("eotic_bamboo_mat",
             () -> new MatBlocks(BlockBehaviour.Properties.of(Material.BAMBOO).sound(SoundType.BAMBOO).strength(0.5f, 0.5f).noOcclusion()), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> EOTIC_BAMBOO_LAMP = registerBlock("eotic_bamboo_lamp",
-            () -> new Block(BlockBehaviour.Properties.of(Material.BAMBOO).sound(SoundType.BAMBOO).strength(1f, 2f).lightLevel(s -> 15)), CobrTab.COBR_TAB, 0);
+            () -> new FlammableBlocks.Planks(BlockBehaviour.Properties.of(Material.BAMBOO).sound(SoundType.BAMBOO).strength(1f, 2f).lightLevel(s -> 15)), CobrTab.COBR_TAB, 0);
     //TRAVELLER STONES
     public static final RegistryObject<Block> EMPTY_TRAVELLER_STONE = registerBlock("empty_traveller_stone",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.8f,0.8f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);

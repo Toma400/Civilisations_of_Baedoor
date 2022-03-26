@@ -15,6 +15,23 @@ public class FlammableBlocks {
     This way it can be managed easier, since we don't need separate class file for each variant.
      */
 
+    public static class FlammableStone extends Block {
+        public FlammableStone(Properties properties) {
+            super(properties);
+        }
+        @Override
+        public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return true;
+        }
+        @Override
+        public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return 5;
+        }
+        @Override
+        public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+            return 1;
+        }
+    }
     public static class Planks extends Block {
         public Planks(Properties properties) {
             super(properties);

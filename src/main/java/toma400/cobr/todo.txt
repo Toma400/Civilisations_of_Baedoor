@@ -1,20 +1,14 @@
 Simple todo:
 
 |||BUGS|||
-> fences not connecting (they are in #fences tag tho)
 > doors are dropping as items in creative
 
 
 ____________
-
 * flammable: eotic bamboo block(s), pack of eotic bamboo, dune coal block
-
 * eotic bamboo mat hitboxes [VoxelShape getShape]
-
 * wet dune sand generation
-
 ------------
-
 ------------
 learning about
 * blockstates
