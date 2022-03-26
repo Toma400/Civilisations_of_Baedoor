@@ -70,7 +70,7 @@ public class CobrBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.2f,1.2f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> SANDSTONE_IRON_ORE = registerBlock("sandstone_iron_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.2f,1.2f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
-    public static final RegistryObject<Block> SANDSTONE_GOLD_ORE = registerBlock("dune_sandstone_gold_ore",
+    public static final RegistryObject<Block> SANDSTONE_GOLD_ORE = registerBlock("sandstone_gold_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.2f,1.2f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
     //DUNE SAND
     public static final RegistryObject<Block> DUNE_SAND = registerBlock("dune_sand",
