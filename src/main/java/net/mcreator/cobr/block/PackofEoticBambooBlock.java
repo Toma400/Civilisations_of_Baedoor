@@ -50,7 +50,12 @@ public class PackofEoticBambooBlock extends CobrModElements.ModElement {
 
 		@Override
 		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
-			return 20;
+			return 5;
+		}
+
+		@Override
+		public int getFireSpreadSpeed(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
+			return 5;
 		}
 
 		@Override

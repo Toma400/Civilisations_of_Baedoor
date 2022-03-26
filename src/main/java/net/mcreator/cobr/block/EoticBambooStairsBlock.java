@@ -63,6 +63,11 @@ public class EoticBambooStairsBlock extends CobrModElements.ModElement {
 		}
 
 		@Override
+		public int getFireSpreadSpeed(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
+			return 5;
+		}
+
+		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
