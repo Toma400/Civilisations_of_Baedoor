@@ -8,19 +8,19 @@
   "item.cobr.dune_coal": "Charbon des Dunes",
   "item.cobr.cirtain_nugget": "Pépite de Cirtain",
   "item.cobr.cirtain_scrap": "Plaque de Cirtain",
-  "item.cobr.dune_gold_ingot": "Dune Gold Ingot",
-  "item.cobr.raw_dune_gold": "Raw Dune Gold",
-  "item.cobr.dune_gold_nugget": "Dune Gold Nugget",
+  "item.cobr.dune_gold_ingot": "Lingot d'Or des Dunes",
+  "item.cobr.raw_dune_gold": "Minerai Brut d'Or des Dunes",
+  "item.cobr.dune_gold_nugget": "Pépite d'Or des Dunes",
 
   "item.cobr.bone_shortsword": "Épée d'Os",
   "item.cobr.bone_sabre": "Sabre d'Os",
 
   "block.cobr.dune_sandstone_coal_ore": "Minerai de Charbon de Grès des Dunes",
   "block.cobr.dune_sandstone_iron_ore": "Minerai de Fer de Grès des Dunes",
-  "block.cobr.dune_sandstone_gold_ore": "Dune Sandstone Gold Ore",
+  "block.cobr.dune_sandstone_gold_ore": "Minerai d'Or de Grès des Dunes",
   "block.cobr.sandstone_coal_ore": "Minerai de Charbon de Grès",
   "block.cobr.sandstone_iron_ore": "Minerai de Fer de Grès ",
-  "block.cobr.sandstone_gold_ore": "Sandstone Gold Ore",
+  "block.cobr.sandstone_gold_ore": "Minerai d'Or de Grès",
 
   "block.cobr.esrah_log": "Bûche d'Esrah",
   "block.cobr.stripped_esrah_log": "Bûche d'Esrah Écorcée",
@@ -66,7 +66,7 @@
 
   "block.cobr.hardened_sand": "Sable Durci",
   "block.cobr.dune_coal_block": "Bloc de Charbon des Dunes",
-  "block.cobr.block_of_dune_gold": "Block of Dune Gold",
+  "block.cobr.block_of_dune_gold": "Bloc d'Or des Dunes",
 
   "block.cobr.pack_of_eotic_bamboo": "Fagot de Bambou Eotique",
   "block.cobr.eotic_bamboo_block": "Bloc de Bambou Eotique",
