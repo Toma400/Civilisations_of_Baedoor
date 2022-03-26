@@ -37,7 +37,11 @@ public class CobrItems {
             () -> new Item(new Item.Properties().tab(CobrTab.COBR_TAB)));
     public static final RegistryObject<Item> CIRTAIN_SCRAP = ITEMS.register("cirtain_scrap",
             () -> new Item(new Item.Properties().tab(CobrTab.COBR_TAB)));
+    public static final RegistryObject<Item> RAW_DUNE_GOLD = ITEMS.register("raw_dune_gold",
+            () -> new Item(new Item.Properties().tab(CobrTab.COBR_TAB)));
     public static final RegistryObject<Item> DUNE_GOLD_INGOT = ITEMS.register("dune_gold_ingot",
+            () -> new Item(new Item.Properties().tab(CobrTab.COBR_TAB)));
+    public static final RegistryObject<Item> DUNE_GOLD_NUGGET = ITEMS.register("dune_gold_nugget",
             () -> new Item(new Item.Properties().tab(CobrTab.COBR_TAB)));
 
     //WEAPONS
