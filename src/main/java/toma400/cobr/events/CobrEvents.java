@@ -9,6 +9,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ShieldItem;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.event.entity.player.BonemealEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -62,6 +63,20 @@ public class CobrEvents {
 
             }
         }
+
+    @SubscribeEvent
+    public static void bonemealing (BonemealEvent event) {
+        if(!event.getEntity().level.isClientSide()){
+            BlockState blockstate = event.getBlock();
+            BlockPos blockpos = event.getPos();
+            ItemStack item = event.getStack();
+            if(blockstate == CobrBlocks.LAIS_LEAVES.get().defaultBlockState()) {
+                item.shrink(1);
+                event.getWorld().setBlock(blockpos, CobrBlocks.BLOOMING_LAIS_LEAVES.get().defaultBlockState(), 1);
+            }
+
+        }
+    }
 
     //public static void disbandment(PlayerInteractEvent.EntityInteract event) {
     //    if(!event.getEntity().level.isClientSide()){
