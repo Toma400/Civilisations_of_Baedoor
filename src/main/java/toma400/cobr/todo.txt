@@ -5,8 +5,6 @@ Simple todo:
 
 
 ____________
-* flammable: eotic bamboo block(s), pack of eotic bamboo, dune coal block
-* eotic bamboo mat hitboxes [VoxelShape getShape]
 * wet dune sand generation
 ------------
 ------------
