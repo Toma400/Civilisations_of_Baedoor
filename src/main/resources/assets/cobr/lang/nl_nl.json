@@ -50,6 +50,7 @@
   "block.cobr.lais_sapling": "Lais Boompje",
   "block.cobr.esrah_leaves": "Esrah Bladeren",
   "block.cobr.lais_leaves": "Lais Bladeren",
+  "block.cobr.blooming_lais_leaves": "Bloeiende Lais Bladeren",
 
   "block.cobr.dune_sand": "Duin Zand",
   "block.cobr.hardened_dune_sand": "Verhard Duin Zand",
@@ -67,6 +68,7 @@
   "block.cobr.hardened_sand": "Verhard Zand",
   "block.cobr.dune_coal_block": "Duinkool",
   "block.cobr.block_of_dune_gold": "Blok van Dune Gold",
+  "block.cobr.raw_dune_gold_block": "Ruwe Duin Goud Blok",
 
   "block.cobr.pack_of_eotic_bamboo": "Pak Eotisch Bamboe",
   "block.cobr.eotic_bamboo_block": "Eotisch Bamboeblok",

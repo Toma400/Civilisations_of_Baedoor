@@ -50,6 +50,7 @@
   "block.cobr.lais_sapling": "Pousse de Laïs",
   "block.cobr.esrah_leaves": "Feuilles d'Esrah",
   "block.cobr.lais_leaves": "Feuilles de Laïs",
+  "block.cobr.blooming_lais_leaves": "Blooming Lais Leaves",
 
   "block.cobr.dune_sand": "Sable des Dunes",
   "block.cobr.hardened_dune_sand": "Sable des Dunes Durci",
@@ -67,6 +68,7 @@
   "block.cobr.hardened_sand": "Sable Durci",
   "block.cobr.dune_coal_block": "Bloc de Charbon des Dunes",
   "block.cobr.block_of_dune_gold": "Bloc d'Or des Dunes",
+  "block.cobr.raw_dune_gold_block": "Raw Dune Gold Block",
 
   "block.cobr.pack_of_eotic_bamboo": "Fagot de Bambou Eotique",
   "block.cobr.eotic_bamboo_block": "Bloc de Bambou Eotique",

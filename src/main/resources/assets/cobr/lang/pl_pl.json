@@ -50,6 +50,7 @@
   "block.cobr.lais_sapling": "Laisowa sadzonka",
   "block.cobr.esrah_leaves": "Liście z drzewa esrah",
   "block.cobr.lais_leaves": "Laisowe liście",
+  "block.cobr.blooming_lais_leaves": "Kwitnące laisowe liście",
 
   "block.cobr.dune_sand": "Wydmowy piasek",
   "block.cobr.hardened_dune_sand": "Utwardzony wydmowy piasek",
@@ -67,6 +68,7 @@
   "block.cobr.hardened_sand": "Utwardzony piasek",
   "block.cobr.dune_coal_block": "Blok węgla wydmowego",
   "block.cobr.block_of_dune_gold": "Blok wydmowego złota",
+  "block.cobr.raw_dune_gold_block": "Blok surowego wydmowego złota",
 
   "block.cobr.pack_of_eotic_bamboo": "Paczka eotycznego bambusa",
   "block.cobr.eotic_bamboo_block": "Blok eotycznego bambusa",

@@ -35,7 +35,7 @@ public class CobrBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SAND).strength(2f, 1f)), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> DUNE_COAL_BLOCK = registerBlock("dune_coal_block",
             () -> new FlammableBlocks.FlammableStone(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.STONE).strength(6f, 8f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 18000);
-    public static final RegistryObject<Block> BLOCK_OF_RAW_DUNE_GOLD = registerBlock("block_of_raw_dune_gold",
+    public static final RegistryObject<Block> RAW_DUNE_GOLD_BLOCK = registerBlock("raw_dune_gold_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(4f, 4f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> BLOCK_OF_DUNE_GOLD = registerBlock("block_of_dune_gold",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(12f, 8f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
@@ -151,13 +151,13 @@ public class CobrBlocks {
     //TREE THINGIES
     //[LEAVES - SAPLINGS]
     public static final RegistryObject<Block> ESRAH_LEAVES = registerBlock("esrah_leaves",
-            () -> new FlammableBlocks.Leaves(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(0.2f, 0.2f).noOcclusion()), CobrTab.COBR_TAB, 0);
+            () -> new FlammableBlocks.Leaves(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(0.2f, 0.2f).noOcclusion().requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> ESRAH_SAPLING = registerBlock("esrah_sapling",
             () -> new SaplingBlock(new EsrahTreeGrower(), BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.CROP).strength(0f, 0f).noOcclusion()), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> LAIS_LEAVES = registerBlock("lais_leaves",
-            () -> new FlammableBlocks.Leaves(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(0.2f, 0.2f).noOcclusion()), CobrTab.COBR_TAB, 0);
+            () -> new FlammableBlocks.Leaves(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(0.2f, 0.2f).noOcclusion().requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> BLOOMING_LAIS_LEAVES = registerBlock("blooming_lais_leaves",
-            () -> new FlammableBlocks.Leaves(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(0.2f, 0.2f).noOcclusion()), CobrTab.COBR_TAB, 0);
+            () -> new FlammableBlocks.Leaves(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(0.2f, 0.2f).noOcclusion().requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> LAIS_SAPLING = registerBlock("lais_sapling",
             () -> new SaplingBlock(new LaisTreeGrower(), BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.CROP).strength(0f, 0f).noOcclusion()), CobrTab.COBR_TAB, 0);
 

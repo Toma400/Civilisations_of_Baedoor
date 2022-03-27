@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "raw_dune_gold_block",
+  "pattern": [
+    "GGG",
+    "GGG",
+    "GGG"
+  ],
+  "key": {
+    "G": {
+      "item": "cobr:raw_dune_gold"
+    }
+  },
+  "result": {
+    "item": "cobr:raw_dune_gold_block"
+  }
+}

@@ -46,16 +46,19 @@ public class Cobr
         ItemBlockRenderTypes.setRenderLayer(CobrBlocks.LAIS_FENCE_GATE.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(CobrBlocks.ESRAH_LEAVES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(CobrBlocks.LAIS_LEAVES.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(CobrBlocks.BLOOMING_LAIS_LEAVES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(CobrBlocks.ESRAH_SAPLING.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(CobrBlocks.LAIS_SAPLING.get(), RenderType.cutout());
     }
 
     private void setup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
+            //composting registry
             ComposterBlock.COMPOSTABLES.put(CobrBlocks.ESRAH_SAPLING.get().asItem(), 0.2f);
             ComposterBlock.COMPOSTABLES.put(CobrBlocks.LAIS_SAPLING.get().asItem(), 0.2f);
             ComposterBlock.COMPOSTABLES.put(CobrBlocks.ESRAH_LEAVES.get().asItem(), 0.3f);
             ComposterBlock.COMPOSTABLES.put(CobrBlocks.LAIS_LEAVES.get().asItem(), 0.3f);
+            ComposterBlock.COMPOSTABLES.put(CobrBlocks.BLOOMING_LAIS_LEAVES.get().asItem(), 0.3f);
         });
     }
 }

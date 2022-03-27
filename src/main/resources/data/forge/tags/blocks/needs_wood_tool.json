@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "cobr:block_of_dune_gold",
+    "cobr:raw_dune_gold_block",
     "cobr:dune_coal_block",
     "cobr:dune_sandstone_coal_ore",
     "cobr:sandstone_coal_ore",

@@ -1,12 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "bamboo_mat",
+  "group": "bamboo_chime",
   "pattern": [
-    "SBB",
-    "SBB",
-    "   "
+    " L ",
+    " S ",
+    " B "
   ],
   "key": {
+    "L": {
+      "tag": "minecraft:wooden_slabs"
+    },
     "S": {
       "item": "minecraft:string"
     },
@@ -15,7 +18,7 @@
     }
   },
   "result": {
-    "item": "culturaldelights:bamboo_mat",
+    "item": "chimes:carved_bamboo_chimes",
     "count": 1
   }
 }
