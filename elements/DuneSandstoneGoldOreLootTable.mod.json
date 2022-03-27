@@ -1,0 +1,10 @@
+{
+  "_fv": 24,
+  "_type": "loottable",
+  "definition": {
+    "type": "Block",
+    "pools": [],
+    "name": "blocks/dune_sandstone_gold_ore",
+    "namespace": "mod"
+  }
+}

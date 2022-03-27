@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bamboo_chime",
+  "pattern": [
+    " L ",
+    " S ",
+    " B "
+  ],
+  "key": {
+    "L": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "S": {
+      "item": "minecraft:string"
+    },
+    "B": {
+      "item": "cobr:eotic_bamboo"
+    }
+  },
+  "result": {
+    "item": "chimes:carved_bamboo_chimes",
+    "count": 1
+  }
+}

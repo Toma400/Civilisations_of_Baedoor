@@ -1,0 +1,16 @@
+{
+  "group": "dune_gold_nugget_unrecipe",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "cobr:dune_gold_ingot"
+    }
+  },
+  "result": {
+    "item": "cobr:dune_gold_nugget",
+    "count": 9
+  }
+}

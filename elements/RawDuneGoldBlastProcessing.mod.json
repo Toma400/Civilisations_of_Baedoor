@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "dune_gold",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:RawDuneGold"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:DuneGoldIngot"
+    },
+    "name": "raw_dune_gold_blast_processing",
+    "namespace": "mod"
+  }
+}

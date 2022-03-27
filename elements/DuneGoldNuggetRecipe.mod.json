@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "dune_gold_ingot",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DuneGoldNugget"
+      },
+      {
+        "value": "CUSTOM:DuneGoldNugget"
+      },
+      {
+        "value": "CUSTOM:DuneGoldNugget"
+      },
+      {
+        "value": "CUSTOM:DuneGoldNugget"
+      },
+      {
+        "value": "CUSTOM:DuneGoldNugget"
+      },
+      {
+        "value": "CUSTOM:DuneGoldNugget"
+      },
+      {
+        "value": "CUSTOM:DuneGoldNugget"
+      },
+      {
+        "value": "CUSTOM:DuneGoldNugget"
+      },
+      {
+        "value": "CUSTOM:DuneGoldNugget"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DuneGoldIngot"
+    },
+    "name": "dune_gold_nugget_recipe",
+    "namespace": "mod"
+  }
+}

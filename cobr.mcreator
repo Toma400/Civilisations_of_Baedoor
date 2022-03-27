@@ -3696,6 +3696,103 @@
       "ids": {},
       "registry_name": "beacon_base",
       "path": "~/Common Tags"
+    },
+    {
+      "name": "BambooChimeRecipe",
+      "type": "recipe",
+      "sortid": 305,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "bamboo_chime_recipe",
+      "path": "~/Compatibility Recipes/Chimes"
+    },
+    {
+      "name": "DuneGoldNugget",
+      "type": "item",
+      "sortid": 306,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_gold_nugget"
+    },
+    {
+      "name": "DuneGoldNuggetRecipe",
+      "type": "recipe",
+      "sortid": 307,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_gold_nugget_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DuneGoldNuggetUnrecipe",
+      "type": "recipe",
+      "sortid": 308,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune_gold_nugget_unrecipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "RawDuneGold",
+      "type": "item",
+      "sortid": 309,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_dune_gold"
+    },
+    {
+      "name": "RawDuneGoldBlock",
+      "type": "block",
+      "sortid": 309,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_dune_gold_block"
+    },
+    {
+      "name": "SandstoneGoldOreLootTable",
+      "type": "loottable",
+      "sortid": 310,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "sandstone_gold_ore_loot_table",
+      "path": "~/Loot Tables/Blocks"
+    },
+    {
+      "name": "DuneSandstoneGoldOreLootTable",
+      "type": "loottable",
+      "sortid": 311,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "dune_sandstone_gold_ore_loot_table",
+      "path": "~/Loot Tables/Blocks"
+    },
+    {
+      "name": "RawDuneGoldProcessing",
+      "type": "recipe",
+      "sortid": 312,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_dune_gold_processing",
+      "path": "~/Recipes/Ore Processing"
+    },
+    {
+      "name": "RawDuneGoldBlastProcessing",
+      "type": "recipe",
+      "sortid": 313,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_dune_gold_blast_processing",
+      "path": "~/Recipes/Ore Processing"
     }
   ],
   "variable_elements": [
@@ -3745,8 +3842,8 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.cobr.dune_sand": "Dune Sand",
       "block.cobr.esrah_door": "Esrah Door",
+      "block.cobr.dune_sand": "Dune Sand",
       "gamerule.overworldImpact.description": "Decides whether structures spawn in both dimensions and overworld, or only in dimensions. Set to \"true\" to fully feel Baedoor invasion over Minecraft world.",
       "block.cobr.dune_traveller_stone": "Dune Traveller Stone",
       "block.cobr.esrah_stairs": "Esrah Stairs",
@@ -3754,8 +3851,8 @@
       "block.cobr.colourful_block": "WOB Integration Block",
       "item.cobr.terten_civil_spawn_egg": "Terten Civil Spawn Egg",
       "block.cobr.dune_sandstone": "Dune Sandstone",
-      "advancements.the_crusade_began.title": "The Crusade Began",
       "travelerstitles.biome.cobr.dry_lands": "Dry Lands",
+      "advancements.the_crusade_began.title": "The Crusade Began",
       "block.cobr.esrah_fence_gate": "Esrah Fence Gate",
       "block.cobr.stripped_esrah_wood": "Stripped Esrah Wood",
       "block.cobr.stripped_esrah_log": "Stripped Esrah Log",
@@ -3769,8 +3866,8 @@
       "item.cobr.eotic_bamboo": "Eotic Bamboo",
       "effect.cobr_messaging_potion": "Cobr Message Potion",
       "item.cobr.cooked_lizard_meat": "Cooked Lizard Meat",
-      "block.cobr.lais_pressure_plate": "Lais Pressure Plate",
       "block.cobr.esrah_button": "Esrah Button",
+      "block.cobr.lais_pressure_plate": "Lais Pressure Plate",
       "advancements.empire_foundation_set_in_wood.title": "Empire Foundation Set In... Wood",
       "block.cobr.eotic_bamboo_mat": "Eotic Bamboo Mat",
       "block.cobr.eotic_bamboo_slab": "Eotic Bamboo Slab",
@@ -3782,10 +3879,13 @@
       "item.cobr.spawn_entity_oasis_spawn_egg": "[Spawn Entity] Oasis Spawn Egg",
       "block.cobr.sandstone_coal_ore": "Sandstone Coal Ore",
       "item.cobr.white_lizard_spawn_egg": "White Lizard Spawn Egg",
-      "block.cobr.dune_sandstone_brick_slab": "Dune Sandstone Brick Slab",
       "block.cobr.hardened_sand": "Hardened Sand",
+      "block.cobr.dune_sandstone_brick_slab": "Dune Sandstone Brick Slab",
+      "item.cobr.raw_dune_gold": "Raw Dune Gold",
+      "item.cobr.dune_gold_nugget": "Dune Gold Nugget",
       "block.cobr.dune_sandstone_wall": "Dune Sandstone Wall",
       "block.cobr.lais_fence_gate": "Lais Fence Gate",
+      "block.cobr.raw_dune_gold_block": "Raw Dune Gold Block",
       "block.cobr.lais_wood": "Lais Wood",
       "block.cobr.dune_sandstone_iron_ore": "Dune Sandstone Iron Ore",
       "block.cobr.lais_door": "Lais Door",
@@ -3902,6 +4002,10 @@
           },
           {
             "name": "Cultural Delights",
+            "children": []
+          },
+          {
+            "name": "Chimes",
             "children": []
           }
         ]

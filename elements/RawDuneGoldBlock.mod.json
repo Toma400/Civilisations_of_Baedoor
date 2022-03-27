@@ -2,12 +2,12 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "dune_sandstone_bottom",
-    "textureTop": "dune_sandstone_top",
-    "textureLeft": "dune_sandstone_dune_gold_ore",
-    "textureFront": "dune_sandstone_dune_gold_ore",
-    "textureRight": "dune_sandstone_dune_gold_ore",
-    "textureBack": "dune_sandstone_dune_gold_ore",
+    "texture": "raw_dune_gold_block",
+    "textureTop": "raw_dune_gold_block",
+    "textureLeft": "raw_dune_gold_block",
+    "textureFront": "raw_dune_gold_block",
+    "textureRight": "raw_dune_gold_block",
+    "textureBack": "raw_dune_gold_block",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -32,27 +32,27 @@
         "subtract": false
       }
     ],
-    "name": "Dune Sandstone Gold Ore",
+    "name": "Raw Dune Gold Block",
     "specialInfo": [],
-    "hardness": 1.2,
-    "resistance": 1.2,
+    "hardness": 4.0,
+    "resistance": 4.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:CivilisationsofBaedoor"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
     "dropAmount": 1,
-    "useLootTableForDrops": true,
+    "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "ROCK"
+      "value": "IRON"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -77,7 +77,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""
@@ -96,7 +96,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -121,25 +121,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "CUSTOM:Dunes"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:EdgeTertenicDunes"
-      },
-      {
-        "value": "CUSTOM:TertenicDunes"
-      }
-    ],
-    "blocksToReplace": [
-      {
-        "value": "CUSTOM:DuneSandstone"
-      }
-    ],
-    "frequencyPerChunks": 9,
-    "frequencyOnChunk": 9,
-    "minGenerateHeight": 4,
-    "maxGenerateHeight": 45
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "blocksToReplace": [],
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
   }
 }
