@@ -1,4 +1,4 @@
-package toma400.cobr.elements.items;
+package toma400.cobr.elements.items.templated;
 
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ItemStack;

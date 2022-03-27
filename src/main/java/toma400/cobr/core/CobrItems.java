@@ -10,8 +10,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.Nullable;
 import toma400.cobr.Cobr;
-import toma400.cobr.elements.items.CustomCobrFoods;
-import toma400.cobr.elements.items.SabreItems;
+import toma400.cobr.elements.items.templated.SabreItems;
 
 import java.util.List;
 
@@ -26,7 +25,7 @@ public class CobrItems {
     public static final RegistryObject<Item> RAW_LIZARD_MEAT = ITEMS.register("raw_lizard_meat",
             () -> new Item(new Item.Properties().tab(CobrTab.COBR_TAB).food(CobrFoods.RAW_LIZARD_MEAT)));
     public static final RegistryObject<Item> COOKED_LIZARD_MEAT = ITEMS.register("cooked_lizard_meat",
-            () -> new Item(new Item.Properties().tab(CobrTab.COBR_TAB).food(CustomCobrFoods.COOKED_LIZARD_MEAT)));
+            () -> new CobrFoods.FoodItem(new Item.Properties().tab(CobrTab.COBR_TAB).food(CobrFoods.COOKED_LIZARD_MEAT)));
     public static final RegistryObject<Item> LIZARD_STEW = ITEMS.register("lizard_stew",
             () -> new BowlFoodItem(new BowlFoodItem.Properties().tab(CobrTab.COBR_TAB).food(CobrFoods.LIZARD_STEW)));
 
