@@ -3,7 +3,7 @@
   "group": "dune_sand",
   "ingredients": [
     {
-      "item": "cobr:dune_hardened_sand"
+      "item": "cobr:hardened_dune_sand"
     }
   ],
   "result": {

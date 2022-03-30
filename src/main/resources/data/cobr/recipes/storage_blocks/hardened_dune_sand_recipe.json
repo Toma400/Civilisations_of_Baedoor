@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "dune_hardened_sand",
+  "group": "hardened_dune_sand",
   "pattern": [
     "   ",
     " CC",
@@ -12,6 +12,6 @@
     }
   },
   "result": {
-    "item": "cobr:dune_hardened_sand"
+    "item": "cobr:hardened_dune_sand"
   }
 }
