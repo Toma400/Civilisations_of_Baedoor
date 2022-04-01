@@ -1,0 +1,92 @@
+{
+  "item.cobr.eotic_bamboo": "Eotikus Bambusz",
+  "item.cobr.raw_lizard_meat": "Nyers Gyíkhús",
+  "item.cobr.cooked_lizard_meat": "Sült Gyíkhús",
+  "item.cobr.lizard_stew": "Gyíkleves",
+  "item.cobr.disbandment_scroll": "Feloszlatási Tekercs",
+
+  "item.cobr.dune_coal": "Dűne Szén", 
+  "item.cobr.cirtain_nugget": "Kirtain Rög",
+  "item.cobr.cirtain_scrap": "Kirtain Darabka",
+  "item.cobr.dune_gold_ingot": "Dűne-aranyrúd",
+  "item.cobr.raw_dune_gold": "Nyers Dűnearany",
+  "item.cobr.dune_gold_nugget": "Dűne-aranyrög",
+
+  "item.cobr.bone_shortsword": "Csont Rövidkard",
+  "item.cobr.bone_sabre": "Csontszablya",
+
+  "block.cobr.dune_sandstone_coal_ore": "Dűne Homokkő Szénérc",
+  "block.cobr.dune_sandstone_iron_ore": "Dűne Homokkő Vasérc",
+  "block.cobr.dune_sandstone_gold_ore": "Dűne Homokkő Aranyérc",
+  "block.cobr.sandstone_coal_ore": "Homokkő Szénérc",
+  "block.cobr.sandstone_iron_ore": "Homokkő Vasérc",
+  "block.cobr.sandstone_gold_ore": "Homokkő Aranyérc",
+
+  "block.cobr.esrah_log": "Esrán Rönk",
+  "block.cobr.stripped_esrah_log": "Kérgezett Esrán Rönk",
+  "block.cobr.esrah_wood": "Esrán Blokk",
+  "block.cobr.stripped_esrah_wood": "Kérgezett Asrán Blokk",
+  "block.cobr.esrah_planks": "Esrán Deszka",
+  "block.cobr.esrah_stairs": "Esrán Lépcső",
+  "block.cobr.esrah_slab": "Esrán Lap",
+  "block.cobr.esrah_trapdoor": "Esrán Csapóajtó",
+  "block.cobr.esrah_door": "Esrán Ajtó",
+  "block.cobr.esrah_fence": "Esrán Kerítés",
+  "block.cobr.esrah_fence_gate": "Esrán Kapu",
+
+  "block.cobr.lais_log": "Laisz Rönk",
+  "block.cobr.stripped_lais_log": "Kérgezett Laisz Rönk",
+  "block.cobr.lais_wood": "Laisz Blokk",
+  "block.cobr.stripped_lais_wood": "Kérgezett Laisz Blokk",
+  "block.cobr.lais_planks": "Laisz Deszka",
+  "block.cobr.lais_stairs": "Laisz Lépcső",
+  "block.cobr.lais_slab": "Laisz Lap",
+  "block.cobr.lais_trapdoor": "Laisz Csapóajtó",
+  "block.cobr.lais_door": "Laisz Ajtó",
+  "block.cobr.lais_fence": "Laisz Kerítés",
+  "block.cobr.lais_fence_gate": "Laisz Kapu",
+
+  "block.cobr.esrah_sapling": "Esrán Facsemete",
+  "block.cobr.lais_sapling": "Laisz Facseme",
+  "block.cobr.esrah_leaves": "Esrán Levél",
+  "block.cobr.lais_leaves": "Laisz Levél",
+  "block.cobr.blooming_lais_leaves": "Virágzó Laisz Levél",
+
+  "block.cobr.dune_sand": "Dűne Homok",
+  "block.cobr.hardened_dune_sand": "Erősített Dűne Homok",
+  "block.cobr.wet_dune_sand": "Nedves Dűne Homok",
+  "block.cobr.bright_dune_sand": "Világos Dűne Homok",
+  "block.cobr.dune_sandstone": "Dűne Homokkő",
+  "block.cobr.dune_sandstone_bricks": "Dűne Homokkő Tégla",
+  "block.cobr.chiseled_dune_sandstone_bricks": "Vésett Dűne Homokkő Tégla",
+
+  "block.cobr.dune_sandstone_slab": "Dűne Homokkő Lap",
+  "block.cobr.dune_sandstone_stairs": "Dűne Homokkő Lépcső",
+  "block.cobr.dune_sandstone_bricks_slab": "Dűne Homokkő Tégla Lap",
+  "block.cobr.dune_sandstone_bricks_stairs": "Dűne Homokkő Tégla Lépcső",
+
+  "block.cobr.hardened_sand": "Erősített Homok",
+  "block.cobr.dune_coal_block": "Dűne Homok Szén Blokk",
+  "block.cobr.block_of_dune_gold": "Dűne Homok Arany Blokk",
+  "block.cobr.raw_dune_gold_block": "Nyers Dűne Arany Blokk",
+
+  "block.cobr.pack_of_eotic_bamboo": "Eotikus Bambusz Csomag",
+  "block.cobr.eotic_bamboo_block": "Eotikus Bambusz Blokk",
+  "block.cobr.eotic_bamboo_stairs": "Eotikus Bambusz Lépcső",
+  "block.cobr.eotic_bamboo_slab": "Eotikus Bambusz Lap",
+  "block.cobr.eotic_bamboo_mat": "Eotikus Bambusz Szőnyeg",
+  "block.cobr.eotic_bamboo_lamp": "Eotikus Bambusz Lámpa",
+
+  "block.cobr.civilisation_table": "Civilizáció Asztal",
+  "block.cobr.empty_traveller_stone": "Üres Utazókő",
+  "block.cobr.dune_traveller_stone": "Dűne Utazókő",
+  "block.cobr.permafrost_traveller_stone": "Örökfagyott Utazókő",
+  "block.cobr.rainforest_islands_traveller_stone": "Esőerdő Sziget Utazókő",
+  "block.cobr.evergreen_depths_traveller_stone": "Örökzöld Mélység Utazókő",
+
+  "tooltip.cobr.disbandment_scroll": "Segítségül szolgál a harcosok feloszlatásra a vezetőjétől",
+
+  "event.cobr.disbandment_owner_info": "Az UUID-vel rendelkező játkosok által hozzárendelt feloszlatási tekercs: ",
+
+  "itemGroup.cobr_tab": "Baedoor Civiláziója"
+}
