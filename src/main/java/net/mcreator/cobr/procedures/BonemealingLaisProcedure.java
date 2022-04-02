@@ -56,11 +56,7 @@ public class BonemealingLaisProcedure {
 								((World) world).rand);
 					}
 				}
-			} else {
-				System.out.println("No air above sapling! (at least 7 blocks needed)");
 			}
-		} else {
-			System.out.println("Grow chance not succeed.");
 		}
 	}
 }

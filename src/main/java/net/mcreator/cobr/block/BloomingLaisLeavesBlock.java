@@ -7,11 +7,13 @@ import net.minecraftforge.common.ToolType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
+import net.minecraft.util.ActionResultType;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.fluid.FluidState;
@@ -24,11 +26,10 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.cobr.procedures.LeavesDropsProcedure;
-import net.mcreator.cobr.procedures.BlockUpdaterProcedure;
+import net.mcreator.cobr.procedures.BonemealingProcedure;
 import net.mcreator.cobr.itemgroup.CivilisationsofBaedoorItemGroup;
 import net.mcreator.cobr.CobrModElements;
 
-import java.util.Random;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -75,32 +76,6 @@ public class BloomingLaisLeavesBlock extends CobrModElements.ModElement {
 		}
 
 		@Override
-		public void onBlockAdded(BlockState blockstate, World world, BlockPos pos, BlockState oldState, boolean moving) {
-			super.onBlockAdded(blockstate, world, pos, oldState, moving);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 10);
-		}
-
-		@Override
-		public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
-			super.tick(blockstate, world, pos, random);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				BlockUpdaterProcedure.executeProcedure($_dependencies);
-			}
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 10);
-		}
-
-		@Override
 		public boolean removedByPlayer(BlockState blockstate, World world, BlockPos pos, PlayerEntity entity, boolean willHarvest, FluidState fluid) {
 			boolean retval = super.removedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
 			int x = pos.getX();
@@ -116,6 +91,29 @@ public class BloomingLaisLeavesBlock extends CobrModElements.ModElement {
 				LeavesDropsProcedure.executeProcedure($_dependencies);
 			}
 			return retval;
+		}
+
+		@Override
+		public ActionResultType onBlockActivated(BlockState blockstate, World world, BlockPos pos, PlayerEntity entity, Hand hand,
+				BlockRayTraceResult hit) {
+			super.onBlockActivated(blockstate, world, pos, entity, hand, hit);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			double hitX = hit.getHitVec().x;
+			double hitY = hit.getHitVec().y;
+			double hitZ = hit.getHitVec().z;
+			Direction direction = hit.getFace();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				BonemealingProcedure.executeProcedure($_dependencies);
+			}
+			return ActionResultType.SUCCESS;
 		}
 	}
 }

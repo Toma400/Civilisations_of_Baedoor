@@ -7,19 +7,25 @@ import net.minecraftforge.common.PlantType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
+import net.minecraft.util.ActionResultType;
 import net.minecraft.potion.Effects;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
@@ -28,10 +34,15 @@ import net.minecraft.block.FlowerBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.cobr.procedures.BonemealingProcedure;
+import net.mcreator.cobr.procedures.BonemealingLaisProcedure;
 import net.mcreator.cobr.itemgroup.CivilisationsofBaedoorItemGroup;
 import net.mcreator.cobr.CobrModElements;
 
+import java.util.Random;
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 import java.util.Collections;
 
 @CobrModElements.ModElement.Tag
@@ -93,6 +104,44 @@ public class LaisSaplingBlock extends CobrModElements.ModElement {
 		@Override
 		public PlantType getPlantType(IBlockReader world, BlockPos pos) {
 			return PlantType.PLAINS;
+		}
+
+		@Override
+		public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				BonemealingLaisProcedure.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
+		public ActionResultType onBlockActivated(BlockState blockstate, World world, BlockPos pos, PlayerEntity entity, Hand hand,
+				BlockRayTraceResult hit) {
+			super.onBlockActivated(blockstate, world, pos, entity, hand, hit);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			double hitX = hit.getHitVec().x;
+			double hitY = hit.getHitVec().y;
+			double hitZ = hit.getHitVec().z;
+			Direction direction = hit.getFace();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				BonemealingProcedure.executeProcedure($_dependencies);
+			}
+			return ActionResultType.SUCCESS;
 		}
 	}
 }

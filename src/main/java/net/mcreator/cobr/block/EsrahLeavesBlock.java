@@ -7,7 +7,6 @@ import net.minecraftforge.common.ToolType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
@@ -24,11 +23,9 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.cobr.procedures.LeavesDropsProcedure;
-import net.mcreator.cobr.procedures.BlockUpdaterProcedure;
 import net.mcreator.cobr.itemgroup.CivilisationsofBaedoorItemGroup;
 import net.mcreator.cobr.CobrModElements;
 
-import java.util.Random;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -72,32 +69,6 @@ public class EsrahLeavesBlock extends CobrModElements.ModElement {
 		@Override
 		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
 			return 30;
-		}
-
-		@Override
-		public void onBlockAdded(BlockState blockstate, World world, BlockPos pos, BlockState oldState, boolean moving) {
-			super.onBlockAdded(blockstate, world, pos, oldState, moving);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 10);
-		}
-
-		@Override
-		public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
-			super.tick(blockstate, world, pos, random);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				BlockUpdaterProcedure.executeProcedure($_dependencies);
-			}
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 10);
 		}
 
 		@Override

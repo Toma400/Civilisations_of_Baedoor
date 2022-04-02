@@ -81,6 +81,12 @@
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "patchSize": 64
+    "patchSize": 64,
+    "onTickUpdate": {
+      "name": "BonemealingEsrah"
+    },
+    "onRightClicked": {
+      "name": "Bonemealing"
+    }
   }
 }

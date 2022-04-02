@@ -1739,7 +1739,28 @@
       "ids": {},
       "registry_name": "bonemealing",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/Pds - Plants"
     },
@@ -2064,35 +2085,6 @@
       "ids": {},
       "registry_name": "lizard_stew_ingredient",
       "path": "~/Compatibility Tags"
-    },
-    {
-      "name": "BlockUpdater",
-      "type": "procedure",
-      "sortid": 175,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "block_updater",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
     },
     {
       "name": "DuneCoal",
@@ -3188,8 +3180,8 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "itemstack",
-            "type": "itemstack"
+            "name": "entity",
+            "type": "entity"
           },
           {
             "name": "x",
@@ -3842,8 +3834,8 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.cobr.esrah_door": "Esrah Door",
       "block.cobr.dune_sand": "Dune Sand",
+      "block.cobr.esrah_door": "Esrah Door",
       "gamerule.overworldImpact.description": "Decides whether structures spawn in both dimensions and overworld, or only in dimensions. Set to \"true\" to fully feel Baedoor invasion over Minecraft world.",
       "block.cobr.dune_traveller_stone": "Dune Traveller Stone",
       "block.cobr.esrah_stairs": "Esrah Stairs",
@@ -3851,13 +3843,13 @@
       "block.cobr.colourful_block": "WOB Integration Block",
       "item.cobr.terten_civil_spawn_egg": "Terten Civil Spawn Egg",
       "block.cobr.dune_sandstone": "Dune Sandstone",
-      "travelerstitles.biome.cobr.dry_lands": "Dry Lands",
       "advancements.the_crusade_began.title": "The Crusade Began",
+      "travelerstitles.biome.cobr.dry_lands": "Dry Lands",
       "block.cobr.esrah_fence_gate": "Esrah Fence Gate",
       "block.cobr.stripped_esrah_wood": "Stripped Esrah Wood",
-      "block.cobr.stripped_esrah_log": "Stripped Esrah Log",
-      "block.cobr.eotic_bamboo_growing": "Eotic Bamboo",
       "block.cobr.dune_sandstone_brick_stairs": "Dune Sandstone Brick Stairs",
+      "block.cobr.eotic_bamboo_growing": "Eotic Bamboo",
+      "block.cobr.stripped_esrah_log": "Stripped Esrah Log",
       "block.cobr.bright_dune_sand": "Bright Dune Sand",
       "block.cobr.eotic_bamboo_stairs": "Eotic Bamboo Stairs",
       "block.cobr.dune_sandstone_coal_ore": "Dune Sandstone Coal Ore",
@@ -3866,8 +3858,8 @@
       "item.cobr.eotic_bamboo": "Eotic Bamboo",
       "effect.cobr_messaging_potion": "Cobr Message Potion",
       "item.cobr.cooked_lizard_meat": "Cooked Lizard Meat",
-      "block.cobr.esrah_button": "Esrah Button",
       "block.cobr.lais_pressure_plate": "Lais Pressure Plate",
+      "block.cobr.esrah_button": "Esrah Button",
       "advancements.empire_foundation_set_in_wood.title": "Empire Foundation Set In... Wood",
       "block.cobr.eotic_bamboo_mat": "Eotic Bamboo Mat",
       "block.cobr.eotic_bamboo_slab": "Eotic Bamboo Slab",

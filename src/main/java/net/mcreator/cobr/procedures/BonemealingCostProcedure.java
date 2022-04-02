@@ -8,8 +8,11 @@ import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Hand;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.item.ItemStack;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
 
 import net.mcreator.cobr.CobrMod;
 
@@ -17,9 +20,9 @@ import java.util.Map;
 
 public class BonemealingCostProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("itemstack") == null) {
-			if (!dependencies.containsKey("itemstack"))
-				CobrMod.LOGGER.warn("Failed to load dependency itemstack for procedure BonemealingCost!");
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				CobrMod.LOGGER.warn("Failed to load dependency entity for procedure BonemealingCost!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
@@ -42,12 +45,15 @@ public class BonemealingCostProcedure {
 				CobrMod.LOGGER.warn("Failed to load dependency world for procedure BonemealingCost!");
 			return;
 		}
-		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
+		Entity entity = (Entity) dependencies.get("entity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		double grow_chance = 0;
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).swing(Hand.MAIN_HAND, true);
+		}
 		if (world instanceof ServerWorld) {
 			((ServerWorld) world).spawnParticle(ParticleTypes.COMPOSTER, x, y, z, (int) 5, 3, 3, 3, 1);
 		}
@@ -60,6 +66,6 @@ public class BonemealingCostProcedure {
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.composter.fill")),
 					SoundCategory.BLOCKS, (float) 1, (float) 1, false);
 		}
-		((itemstack)).shrink((int) 1);
+		(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).shrink((int) 1);
 	}
 }

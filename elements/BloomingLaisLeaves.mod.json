@@ -121,8 +121,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
-      "name": "BlockUpdater"
+    "onRightClicked": {
+      "name": "Bonemealing"
     },
     "onDestroyedByPlayer": {
       "name": "LeavesDrops"

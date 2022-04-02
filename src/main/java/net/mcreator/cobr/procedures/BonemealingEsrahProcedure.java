@@ -79,11 +79,7 @@ public class BonemealingEsrahProcedure {
 								((World) world).rand);
 					}
 				}
-			} else {
-				System.out.println("No air above sapling! (at least 5 blocks needed)");
 			}
-		} else {
-			System.out.println("Grow chance not succeed.");
 		}
 	}
 }
