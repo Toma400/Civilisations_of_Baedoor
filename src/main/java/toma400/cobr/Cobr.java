@@ -11,8 +11,10 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import toma400.cobr.client.RenderTypeRegistry;
 import toma400.cobr.core.CobrBlocks;
 import toma400.cobr.core.CobrItems;
+import toma400.cobr.elements.behaviours.Composting;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Cobr.MOD_ID)
@@ -36,29 +38,10 @@ public class Cobr
     }
 
     private void setupClient(final FMLCommonSetupEvent event) {
-        ItemBlockRenderTypes.setRenderLayer(CobrBlocks.ESRAH_DOOR.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(CobrBlocks.ESRAH_TRAPDOOR.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(CobrBlocks.ESRAH_FENCE.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(CobrBlocks.ESRAH_FENCE_GATE.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(CobrBlocks.LAIS_DOOR.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(CobrBlocks.LAIS_TRAPDOOR.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(CobrBlocks.LAIS_FENCE.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(CobrBlocks.LAIS_FENCE_GATE.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(CobrBlocks.ESRAH_LEAVES.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(CobrBlocks.LAIS_LEAVES.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(CobrBlocks.BLOOMING_LAIS_LEAVES.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(CobrBlocks.ESRAH_SAPLING.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(CobrBlocks.LAIS_SAPLING.get(), RenderType.cutout());
+        RenderTypeRegistry.GlobalRenderingRegistrar();
     }
 
-    private void setup(final FMLCommonSetupEvent event) {
-        event.enqueueWork(() -> {
-            //composting registry
-            ComposterBlock.COMPOSTABLES.put(CobrBlocks.ESRAH_SAPLING.get().asItem(), 0.2f);
-            ComposterBlock.COMPOSTABLES.put(CobrBlocks.LAIS_SAPLING.get().asItem(), 0.2f);
-            ComposterBlock.COMPOSTABLES.put(CobrBlocks.ESRAH_LEAVES.get().asItem(), 0.3f);
-            ComposterBlock.COMPOSTABLES.put(CobrBlocks.LAIS_LEAVES.get().asItem(), 0.3f);
-            ComposterBlock.COMPOSTABLES.put(CobrBlocks.BLOOMING_LAIS_LEAVES.get().asItem(), 0.3f);
-        });
+    public void setup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(Composting::CompostingRegistry);
     }
 }
