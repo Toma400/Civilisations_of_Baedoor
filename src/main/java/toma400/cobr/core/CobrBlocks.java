@@ -17,8 +17,8 @@ import toma400.cobr.elements.blocks.*;
 import toma400.cobr.elements.blocks.templated.FlammableBlocks;
 import toma400.cobr.elements.blocks.templated.LogBlocks;
 import toma400.cobr.elements.blocks.templated.MatBlocks;
-import toma400.cobr.world.features.trees.EsrahTreeGrower;
-import toma400.cobr.world.features.trees.LaisTreeGrower;
+import toma400.cobr.world.environment.trees.EsrahTreeGrower;
+import toma400.cobr.world.environment.trees.LaisTreeGrower;
 
 import javax.annotation.Nullable;
 import java.util.function.Supplier;

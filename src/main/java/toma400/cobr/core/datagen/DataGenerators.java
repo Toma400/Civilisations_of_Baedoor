@@ -18,7 +18,7 @@ public class DataGenerators {
         if(event.includeClient()) {
             //generator.addProvider(new CobrBlockstatesGen(generator, event.getExistingFileHelper()));
             //generator.addProvider(new CobrBlockModelsGen(generator, event.getExistingFileHelper()));
-            generator.addProvider(new ItemsGen(generator, event.getExistingFileHelper()));
+            //generator.addProvider(new ItemsGen(generator, event.getExistingFileHelper()));
         }
 
         //language + textures + recipes + tags alone

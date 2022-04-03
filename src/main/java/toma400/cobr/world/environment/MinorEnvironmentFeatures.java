@@ -1,4 +1,4 @@
-package toma400.cobr.world.features;
+package toma400.cobr.world.environment;
 
 import net.minecraft.core.Holder;
 import net.minecraft.data.worldgen.features.FeatureUtils;
@@ -12,7 +12,7 @@ import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvi
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import toma400.cobr.core.CobrBlocks;
 
-public class CobrConfigurableFeatures {
+public class MinorEnvironmentFeatures {
 
     public static final Holder<? extends ConfiguredFeature<TreeConfiguration, ?>> ESRAH_TREE =
             FeatureUtils.register("esrah", Feature.TREE,

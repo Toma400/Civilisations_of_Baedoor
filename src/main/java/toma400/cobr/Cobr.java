@@ -8,13 +8,10 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import toma400.cobr.client.general.RenderTypeRegistry;
+import toma400.cobr.render.registrars.RenderTypeRegistry;
 import toma400.cobr.core.CobrBlocks;
 import toma400.cobr.core.CobrItems;
-import toma400.cobr.core.datagen.Helpers;
 import toma400.cobr.elements.behaviours.Composting;
-
-import java.util.Objects;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Cobr.MOD_ID)
@@ -39,7 +36,6 @@ public class Cobr
 
     private void setupClient(final FMLCommonSetupEvent event) {
         RenderTypeRegistry.GlobalRenderingRegistrar();
-        System.out.println(Objects.requireNonNull(Helpers.ItemRegistryIterator().getRegistryName()).getPath().toString());
     }
 
     public void setup(final FMLCommonSetupEvent event) {
