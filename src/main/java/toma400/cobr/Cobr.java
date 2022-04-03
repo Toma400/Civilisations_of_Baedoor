@@ -1,8 +1,5 @@
 package toma400.cobr;
 
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -11,7 +8,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import toma400.cobr.client.RenderTypeRegistry;
+import toma400.cobr.client.general.RenderTypeRegistry;
 import toma400.cobr.core.CobrBlocks;
 import toma400.cobr.core.CobrItems;
 import toma400.cobr.elements.behaviours.Composting;

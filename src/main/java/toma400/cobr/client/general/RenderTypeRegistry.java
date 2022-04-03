@@ -1,4 +1,4 @@
-package toma400.cobr.client;
+package toma400.cobr.client.general;
 
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
