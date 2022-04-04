@@ -18,7 +18,7 @@ import toma400.cobr.elements.behaviours.Composting;
 public class Cobr
 {
     // Directly reference a log4j logger.
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "cobr";
 
     public Cobr() {
