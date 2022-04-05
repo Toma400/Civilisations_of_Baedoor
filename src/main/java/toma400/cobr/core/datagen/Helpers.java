@@ -32,15 +32,13 @@ public class Helpers {
         };
     }
 
-    public static final ResourceLocation ItemPathRef(Item item, String nonStandardTypeSelector) {
-        ResourceLocation Item = new ResourceLocation(Cobr.MOD_ID + ":" + "item/" + item.getRegistryName().getPath());
-        ResourceLocation Block = new ResourceLocation(Cobr.MOD_ID + ":" + "block/" + item.getRegistryName().getPath());
-        if (nonStandardTypeSelector != "block") {
-            //default value returned
-            return Item;
-        } else {
-            return Block;
+    //ITEM GENERATION
+    public static final ResourceLocation ItemPathRef(String namespace, String item) {
+        ResourceLocation Item = new ResourceLocation(Cobr.MOD_ID + ":item/" + item);
+        if (namespace != "" && namespace != "mod") {
+            Item = new ResourceLocation(namespace + ":item/" + item);
         }
+        return Item;
     }
 
     //BLOCK GENERATION
