@@ -34,6 +34,7 @@ public class BlocksGen extends BlockModelProvider {
                         Helpers.BlockPathRef("", pathage + "_front"),
                         Helpers.BlockPathRef("", pathage + "_side"),
                         Helpers.BlockPathRef("", pathage + "_side"));
+                sign(pathage, Helpers.BlockPathRef("", pathage + "_side"));
             }
         }
     }

@@ -6,6 +6,7 @@
     "north": "cobr:block/civilisation_table_back",
     "south": "cobr:block/civilisation_table_front",
     "east": "cobr:block/civilisation_table_side",
-    "west": "cobr:block/civilisation_table_side"
+    "west": "cobr:block/civilisation_table_side",
+    "particle": "cobr:block/civilisation_table_side"
   }
 }
