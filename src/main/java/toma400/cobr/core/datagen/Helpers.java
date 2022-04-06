@@ -9,6 +9,7 @@ import toma400.cobr.core.CobrItems;
 public class Helpers {
 
     //ITERATORS
+    @Deprecated
     public static Item ItemRegistryIterator() {
         return CobrItems.ITEMS.getEntries().iterator().next().get().asItem();
     }
