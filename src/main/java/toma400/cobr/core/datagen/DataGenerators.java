@@ -20,7 +20,7 @@ public class DataGenerators {
     public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
         if(event.includeServer()) {
-            //generator.addProvider(new CobrLootTablesGen(generator));
+            //generator.addProvider(new LootTablesGen.LootTablesRedirector(generator));
         }
         if(event.includeClient()) {
             generator.addProvider(new BlockStatesGen(generator, event.getExistingFileHelper()));
