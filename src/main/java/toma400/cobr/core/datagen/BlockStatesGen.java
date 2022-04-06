@@ -1,7 +1,11 @@
 package toma400.cobr.core.datagen;
 
+import net.minecraft.core.Direction;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.client.model.generators.BlockModelProvider;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -30,11 +34,19 @@ public class BlockStatesGen extends BlockStateProvider {
             String pathage = block.get().getRegistryName().getPath();
 
             if(block.get() instanceof DataGenHelper.EachSideHorizontalBlock) {
-                horizontalBlock(block.get(),
-                        Helpers.BlockPathRef("", pathage),
-                        Helpers.BlockPathRef("", pathage),
-                        Helpers.BlockPathRef("", pathage));
+                horizontalBlock(block.get(), modelProvider(block.get(), ""));
             }
         }
     }
+
+    public ModelFile modelProvider (Block resourceGiven, String modelVariant) {
+        //----------------------------------------------------------------------------------------------------------------------
+        // modelVariant should be default as "", as it directs us precisely to file named after block
+        // though if we want to add some variation (for example "_horizontal" suffix), it will be used under that string
+        //----------------------------------------------------------------------------------------------------------------------
+        ResourceLocation locationWorkedOn = new ResourceLocation(Cobr.MOD_ID + ":block/" + resourceGiven.getRegistryName().getPath() + modelVariant);
+        ModelFile modelWorkedOn = models().withExistingParent(resourceGiven.getRegistryName().getPath(), locationWorkedOn);
+        return modelWorkedOn;
+    }
+
 }
