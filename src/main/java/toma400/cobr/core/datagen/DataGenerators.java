@@ -9,6 +9,13 @@ import toma400.cobr.Cobr;
 @Mod.EventBusSubscriber(modid = Cobr.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
 
+    //-----------------------------------------------------------------------------------
+    // For some reason, BlockStates need to go first, even though they are basing
+    // themselves on models generated in BlocksGen. Though after switching that to be
+    // "correct", it tends to somehow overwrite models with simple parenting.
+    // So, you should keep them unlogically, with BlockStates first.
+    //-----------------------------------------------------------------------------------
+
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();

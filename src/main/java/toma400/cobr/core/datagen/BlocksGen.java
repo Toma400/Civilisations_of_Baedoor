@@ -8,6 +8,7 @@ import net.minecraftforge.registries.RegistryObject;
 import toma400.cobr.Cobr;
 import toma400.cobr.core.CobrBlocks;
 import toma400.cobr.elements.blocks.templated.DataGenHelper;
+import toma400.cobr.elements.blocks.templated.FlammableBlocks;
 
 import java.util.Collection;
 
@@ -35,6 +36,10 @@ public class BlocksGen extends BlockModelProvider {
                         Helpers.BlockPathRef("", pathage + "_side"),
                         Helpers.BlockPathRef("", pathage + "_side"));
                 sign(pathage, Helpers.BlockPathRef("", pathage + "_side"));
+            }
+            if(block.get() instanceof FlammableBlocks.FlammableStone) {
+                cubeAll(pathage, Helpers.BlockPathRef("", pathage));
+                sign(pathage, Helpers.BlockPathRef("", pathage));
             }
         }
     }

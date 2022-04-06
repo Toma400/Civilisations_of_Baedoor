@@ -14,6 +14,7 @@ import net.minecraftforge.registries.RegistryObject;
 import toma400.cobr.Cobr;
 import toma400.cobr.core.CobrBlocks;
 import toma400.cobr.elements.blocks.templated.DataGenHelper;
+import toma400.cobr.elements.blocks.templated.FlammableBlocks;
 
 import java.io.File;
 import java.util.Collection;
@@ -35,6 +36,9 @@ public class BlockStatesGen extends BlockStateProvider {
 
             if(block.get() instanceof DataGenHelper.EachSideHorizontalBlock) {
                 horizontalBlock(block.get(), modelProvider(block.get(), ""));
+            }
+            if(block.get() instanceof FlammableBlocks.FlammableStone) {
+                simpleBlock(block.get(), modelProvider(block.get(), ""));
             }
         }
     }
