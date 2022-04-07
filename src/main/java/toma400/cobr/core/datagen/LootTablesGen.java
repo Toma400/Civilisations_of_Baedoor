@@ -93,6 +93,8 @@ public class LootTablesGen {
                         itemProvided = CobrItems.RAW_DUNE_GOLD.get();
                     } else if (namingConvention.contains("coal")) {
                         itemProvided = CobrItems.DUNE_COAL.get();
+                    } else if (namingConvention.contains("iron")) {
+                        itemProvided = Items.RAW_IRON;
                     }
                     //-------------------------------------------------
                     oresGen(block.get(), itemProvided);}
