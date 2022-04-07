@@ -1,7 +1,7 @@
 {
   "variants": {
     "axis=x": {
-      "model": "cobr:block/stripped_esrah_wood_horizontal",
+      "model": "cobr:block/stripped_esrah_wood",
       "x": 90,
       "y": 90
     },
@@ -9,7 +9,7 @@
       "model": "cobr:block/stripped_esrah_wood"
     },
     "axis=z": {
-      "model": "cobr:block/stripped_esrah_wood_horizontal",
+      "model": "cobr:block/stripped_esrah_wood",
       "x": 90
     }
   }

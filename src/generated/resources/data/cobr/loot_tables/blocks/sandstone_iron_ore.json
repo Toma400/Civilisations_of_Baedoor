@@ -39,7 +39,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "cobr:sandstone_iron_ore"
+              "name": "minecraft:raw_iron"
             }
           ]
         }

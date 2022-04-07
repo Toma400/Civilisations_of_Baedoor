@@ -14,7 +14,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import toma400.cobr.Cobr;
 import toma400.cobr.elements.blocks.*;
-import toma400.cobr.elements.blocks.templated.DataGenHelper;
 import toma400.cobr.elements.blocks.templated.FlammableBlocks;
 import toma400.cobr.elements.blocks.templated.LogBlocks;
 import toma400.cobr.elements.blocks.templated.MatBlocks;

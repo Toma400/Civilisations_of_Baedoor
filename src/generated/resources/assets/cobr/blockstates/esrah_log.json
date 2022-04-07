@@ -1,7 +1,7 @@
 {
   "variants": {
     "axis=x": {
-      "model": "cobr:block/esrah_log_horizontal",
+      "model": "cobr:block/esrah_log",
       "x": 90,
       "y": 90
     },
@@ -9,7 +9,7 @@
       "model": "cobr:block/esrah_log"
     },
     "axis=z": {
-      "model": "cobr:block/esrah_log_horizontal",
+      "model": "cobr:block/esrah_log",
       "x": 90
     }
   }

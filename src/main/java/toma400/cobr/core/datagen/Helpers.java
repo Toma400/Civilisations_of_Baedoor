@@ -21,6 +21,7 @@ public class Helpers {
     }
 
     //ITEM GENERATION
+    @Deprecated
     public class ItemModelTypes {
         // Parent type should evoke ItemModelTypeRef here instead
         public static final ResourceLocation GENERATED = new ResourceLocation("item/generated");

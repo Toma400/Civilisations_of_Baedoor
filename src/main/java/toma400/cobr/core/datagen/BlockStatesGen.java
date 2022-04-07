@@ -4,6 +4,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.OreBlock;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.client.model.generators.BlockModelProvider;
@@ -15,6 +16,7 @@ import toma400.cobr.Cobr;
 import toma400.cobr.core.CobrBlocks;
 import toma400.cobr.elements.blocks.templated.DataGenHelper;
 import toma400.cobr.elements.blocks.templated.FlammableBlocks;
+import toma400.cobr.elements.blocks.templated.LogBlocks;
 
 import java.io.File;
 import java.util.Collection;
@@ -39,6 +41,9 @@ public class BlockStatesGen extends BlockStateProvider {
             }
             if(block.get() instanceof FlammableBlocks.FlammableStone) {
                 simpleBlock(block.get(), modelProvider(block.get(), ""));
+            }
+            if(block.get() instanceof LogBlocks) {
+                axisBlock((RotatedPillarBlock) block.get(), modelProvider(block.get(), ""), modelProvider(block.get(), "_horizontal"));
             }
         }
     }
