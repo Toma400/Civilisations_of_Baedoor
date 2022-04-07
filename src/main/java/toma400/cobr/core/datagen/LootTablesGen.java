@@ -7,6 +7,7 @@ import net.minecraft.data.loot.BlockLoot;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.OreBlock;
@@ -76,15 +77,11 @@ public class LootTablesGen {
                         saplingProvided = CobrBlocks.LAIS_SAPLING.get();}
                     else if (namingConvention.contains("esrah")) {
                         saplingProvided = CobrBlocks.ESRAH_SAPLING.get();}
-                    //Block saplingProvided = block.get().setRegistryName(namingConvention.replace("leaves", "sapling"));
-                    //if (namingConvention.contains("blooming")) {
-                    //    saplingProvided = block.get().setRegistryName(namingConvention.replace("leaves", "sapling").replace("blooming_", ""));
-                    //}
-                    createLeavesDrops(block.get(), saplingProvided, valuesReferenced.NORMAL_LEAVES_SAPLING_CHANCES); }
+                    leavesGen(block.get(), saplingProvided, valuesReferenced.NORMAL_LEAVES_SAPLING_CHANCES);}
                 //-------------------------------------------------
                 // ORES
                 //-------------------------------------------------
-                else if (block.get() instanceof OreBlock){
+                else if (block.get() instanceof OreBlock) {
                     String namingConvention = block.get().getRegistryName().getPath();
                     Item itemProvided = block.get().asItem();
                     // -------------------------------------------------
@@ -93,11 +90,12 @@ public class LootTablesGen {
                     // silk-touched anyway (like pre-1.17 iron ore)
                     // -------------------------------------------------
                     if (namingConvention.contains("gold")) {
-                        itemProvided = CobrItems.RAW_DUNE_GOLD.get();}
-                    else if (namingConvention.contains("coal")) {
-                        itemProvided = CobrItems.DUNE_COAL.get();}
+                        itemProvided = CobrItems.RAW_DUNE_GOLD.get();
+                    } else if (namingConvention.contains("coal")) {
+                        itemProvided = CobrItems.DUNE_COAL.get();
+                    }
                     //-------------------------------------------------
-                    createOreDrop(block.get(), itemProvided);}
+                    oresGen(block.get(), itemProvided);}
                 //-------------------------------------------------
                 // REGULAR BLOCKS (DROP ITSELF)
                 //-------------------------------------------------
@@ -110,6 +108,17 @@ public class LootTablesGen {
         public static class valuesReferenced {
             public static final float[] NORMAL_LEAVES_SAPLING_CHANCES = new float[]{0.05F, 0.0625F, 0.083333336F, 0.1F};
         }
+
+        //--------------------------------------------------------------------------------------------------------
+        // GENERATION ACTORS
+        // Used to simplify some unnecessary code spaghetti in methods above
+        //--------------------------------------------------------------------------------------------------------
+        public void leavesGen(Block blockProvided, Block saplingProvided, float[] dropChances) {
+            this.add(blockProvided, (sTouch) -> {
+                return createLeavesDrops(blockProvided, saplingProvided, valuesReferenced.NORMAL_LEAVES_SAPLING_CHANCES);});}
+        public void oresGen(Block blockProvided, Item itemProvided) {
+            this.add(blockProvided, (sTouch) -> {
+                return createOreDrop(blockProvided, itemProvided);});}
 
         @Override
         protected @NotNull Iterable<Block> getKnownBlocks() {
