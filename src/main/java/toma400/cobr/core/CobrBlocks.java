@@ -14,6 +14,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import toma400.cobr.Cobr;
 import toma400.cobr.elements.blocks.*;
+import toma400.cobr.elements.blocks.templated.DataGenHelper;
 import toma400.cobr.elements.blocks.templated.FlammableBlocks;
 import toma400.cobr.elements.blocks.templated.LogBlocks;
 import toma400.cobr.elements.blocks.templated.MatBlocks;
@@ -63,17 +64,17 @@ public class CobrBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.8f,0.8f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
     //GENERATION BLOCKS
     public static final RegistryObject<Block> DUNE_SANDSTONE_COAL_ORE = registerBlock("dune_sandstone_coal_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.2f,1.2f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.2f,1.2f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> DUNE_SANDSTONE_IRON_ORE = registerBlock("dune_sandstone_iron_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.2f,1.2f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.2f,1.2f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> DUNE_SANDSTONE_GOLD_ORE = registerBlock("dune_sandstone_gold_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.2f,1.2f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.2f,1.2f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> SANDSTONE_COAL_ORE = registerBlock("sandstone_coal_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.2f,1.2f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.2f,1.2f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> SANDSTONE_IRON_ORE = registerBlock("sandstone_iron_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.2f,1.2f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.2f,1.2f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> SANDSTONE_GOLD_ORE = registerBlock("sandstone_gold_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.2f,1.2f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.2f,1.2f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
     //DUNE SAND
     public static final RegistryObject<Block> DUNE_SAND = registerBlock("dune_sand",
             () -> new Block(BlockBehaviour.Properties.of(Material.SAND).sound(SoundType.SAND).strength(0.7f, 1f)), CobrTab.COBR_TAB, 0);

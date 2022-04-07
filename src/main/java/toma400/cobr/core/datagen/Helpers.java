@@ -2,6 +2,7 @@ package toma400.cobr.core.datagen;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ModelFile;
 import toma400.cobr.Cobr;
 import toma400.cobr.core.CobrItems;
@@ -50,5 +51,4 @@ public class Helpers {
         }
         return Block;
     }
-
 }

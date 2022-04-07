@@ -6,7 +6,11 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.loot.BlockLoot;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.OreBlock;
+import net.minecraft.world.level.block.SaplingBlock;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.ValidationContext;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSet;
@@ -16,6 +20,7 @@ import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.NotNull;
 import toma400.cobr.Cobr;
 import toma400.cobr.core.CobrBlocks;
+import toma400.cobr.core.CobrItems;
 import toma400.cobr.elements.blocks.templated.DataGenHelper;
 import toma400.cobr.elements.blocks.templated.FlammableBlocks;
 
@@ -47,6 +52,10 @@ public class LootTablesGen {
         }
     }
 
+    //-----------------------------------------------------
+    // BLOCK LOOT TABLES
+    //-----------------------------------------------------
+
     public static class BlockLootTables extends BlockLoot {
 
         @Override
@@ -56,12 +65,45 @@ public class LootTablesGen {
 
         public void blockIterator(Collection<RegistryObject<Block>> blocks) {
             for (RegistryObject<Block> block : blocks) {
-                if(block.get()
-                        instanceof DataGenHelper.EachSideHorizontalBlock || block.get()
-                        instanceof FlammableBlocks.FlammableStone) {
+
+                //-------------------------------------------------
+                // LEAVES
+                //-------------------------------------------------
+                if(block.get() instanceof FlammableBlocks.Leaves) {
+                    String namingConvention = block.get().getRegistryName().getPath();
+                    Block saplingProvided = block.get().setRegistryName(namingConvention.replace("leaves", "sapling"));
+                    if (namingConvention.contains("blooming")) {
+                        saplingProvided = block.get().setRegistryName(namingConvention.replace("leaves", "sapling").replace("blooming_", ""));
+                    }
+                    createLeavesDrops(block.get(), saplingProvided, valuesReferenced.NORMAL_LEAVES_SAPLING_CHANCES); }
+                //-------------------------------------------------
+                // ORES
+                //-------------------------------------------------
+                else if (block.get() instanceof OreBlock){
+                    String namingConvention = block.get().getRegistryName().getPath();
+                    Item itemProvided = block.get().asItem();
+                    // -------------------------------------------------
+                    // CUSTOM ORE DROPS
+                    // If custom drop is not chosen, block will get
+                    // silk-touched anyway (like pre-1.17 iron ore)
+                    // -------------------------------------------------
+                    if (namingConvention.contains("gold")) {
+                        itemProvided = CobrItems.RAW_DUNE_GOLD.get();}
+                    else if (namingConvention.contains("coal")) {
+                        itemProvided = CobrItems.DUNE_COAL.get();}
+                    //-------------------------------------------------
+                    createOreDrop(block.get(), itemProvided);}
+                //-------------------------------------------------
+                // REGULAR BLOCKS (DROP ITSELF)
+                //-------------------------------------------------
+                else {
                     dropSelf(block.get());
                 }
             }
+        }
+
+        public static class valuesReferenced {
+            public static final float[] NORMAL_LEAVES_SAPLING_CHANCES = new float[]{0.05F, 0.0625F, 0.083333336F, 0.1F};
         }
 
         @Override
