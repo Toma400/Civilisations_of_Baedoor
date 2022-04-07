@@ -10,6 +10,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.Nullable;
 import toma400.cobr.Cobr;
+import toma400.cobr.elements.items.templated.FuelItems;
 import toma400.cobr.elements.items.templated.SabreItems;
 
 import java.util.List;
@@ -31,7 +32,7 @@ public class CobrItems {
 
     //ORE RESOURCES
     public static final RegistryObject<Item> DUNE_COAL = ITEMS.register("dune_coal",
-            () -> new CobrFuels(new Item.Properties().tab(CobrTab.COBR_TAB)));
+            () -> new FuelItems(new Item.Properties().tab(CobrTab.COBR_TAB)));
     public static final RegistryObject<Item> CIRTAIN_NUGGET = ITEMS.register("cirtain_nugget",
             () -> new Item(new Item.Properties().tab(CobrTab.COBR_TAB)));
     public static final RegistryObject<Item> CIRTAIN_SCRAP = ITEMS.register("cirtain_scrap",

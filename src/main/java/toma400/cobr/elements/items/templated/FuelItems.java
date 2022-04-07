@@ -1,17 +1,14 @@
-package toma400.cobr.core;
+package toma400.cobr.elements.items.templated;
 
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.crafting.RecipeType;
-import net.minecraft.world.level.Level;
+import toma400.cobr.core.CobrItems;
 
 import javax.annotation.Nullable;
-import java.util.List;
 
-public class CobrFuels extends Item {
-    public CobrFuels(Properties pProperties) {
+public class FuelItems extends Item {
+    public FuelItems(Properties pProperties) {
         super(pProperties);
     }
 
