@@ -8,6 +8,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import toma400.cobr.elements.paintings.CobrPaintings;
 import toma400.cobr.render.registrars.RenderTypeRegistry;
 import toma400.cobr.core.CobrBlocks;
 import toma400.cobr.core.CobrItems;
@@ -27,6 +28,7 @@ public class Cobr
 
         CobrItems.register(eventBus);
         CobrBlocks.register(eventBus);
+        CobrPaintings.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::setupClient);
