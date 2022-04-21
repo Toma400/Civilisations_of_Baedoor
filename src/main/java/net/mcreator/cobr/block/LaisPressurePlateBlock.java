@@ -33,7 +33,7 @@ public class LaisPressurePlateBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:lais_pressure_plate")
 	public static final Block block = null;
 	public LaisPressurePlateBlock(CobrModElements instance) {
-		super(instance, 238);
+		super(instance, 87);
 	}
 
 	@Override

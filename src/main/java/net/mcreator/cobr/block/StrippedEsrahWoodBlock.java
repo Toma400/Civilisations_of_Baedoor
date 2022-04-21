@@ -32,7 +32,7 @@ public class StrippedEsrahWoodBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:stripped_esrah_wood")
 	public static final Block block = null;
 	public StrippedEsrahWoodBlock(CobrModElements instance) {
-		super(instance, 21);
+		super(instance, 26);
 	}
 
 	@Override

@@ -34,7 +34,7 @@ public class LaisLeavesBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:lais_leaves")
 	public static final Block block = null;
 	public LaisLeavesBlock(CobrModElements instance) {
-		super(instance, 231);
+		super(instance, 53);
 	}
 
 	@Override

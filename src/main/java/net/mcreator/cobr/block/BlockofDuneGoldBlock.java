@@ -26,7 +26,7 @@ public class BlockofDuneGoldBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:block_of_dune_gold")
 	public static final Block block = null;
 	public BlockofDuneGoldBlock(CobrModElements instance) {
-		super(instance, 294);
+		super(instance, 57);
 	}
 
 	@Override

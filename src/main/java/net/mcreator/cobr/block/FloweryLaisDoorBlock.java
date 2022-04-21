@@ -35,7 +35,7 @@ public class FloweryLaisDoorBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:flowery_lais_door")
 	public static final Block block = null;
 	public FloweryLaisDoorBlock(CobrModElements instance) {
-		super(instance, 233);
+		super(instance, 46);
 	}
 
 	@Override

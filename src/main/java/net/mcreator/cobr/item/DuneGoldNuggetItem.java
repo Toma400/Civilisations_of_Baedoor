@@ -16,7 +16,7 @@ public class DuneGoldNuggetItem extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:dune_gold_nugget")
 	public static final Item block = null;
 	public DuneGoldNuggetItem(CobrModElements instance) {
-		super(instance, 306);
+		super(instance, 70);
 	}
 
 	@Override

@@ -21,7 +21,7 @@ public class LizardStewItem extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:lizard_stew")
 	public static final Item block = null;
 	public LizardStewItem(CobrModElements instance) {
-		super(instance, 50);
+		super(instance, 79);
 	}
 
 	@Override

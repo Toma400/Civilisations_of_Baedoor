@@ -32,7 +32,7 @@ public class LaisPlanksBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:lais_planks")
 	public static final Block block = null;
 	public LaisPlanksBlock(CobrModElements instance) {
-		super(instance, 221);
+		super(instance, 38);
 	}
 
 	@Override

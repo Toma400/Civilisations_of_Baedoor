@@ -34,7 +34,7 @@ public class EsrahLeavesBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:esrah_leaves")
 	public static final Block block = null;
 	public EsrahLeavesBlock(CobrModElements instance) {
-		super(instance, 35);
+		super(instance, 55);
 	}
 
 	@Override

@@ -31,7 +31,7 @@ public class DuneSandstoneBrickSlabBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:dune_sandstone_brick_slab")
 	public static final Block block = null;
 	public DuneSandstoneBrickSlabBlock(CobrModElements instance) {
-		super(instance, 16);
+		super(instance, 20);
 	}
 
 	@Override

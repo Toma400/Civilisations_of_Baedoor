@@ -32,7 +32,7 @@ public class StrippedLaisLogBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:stripped_lais_log")
 	public static final Block block = null;
 	public StrippedLaisLogBlock(CobrModElements instance) {
-		super(instance, 225);
+		super(instance, 36);
 	}
 
 	@Override

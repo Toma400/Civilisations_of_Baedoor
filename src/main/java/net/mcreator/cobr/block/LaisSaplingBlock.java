@@ -50,7 +50,7 @@ public class LaisSaplingBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:lais_sapling")
 	public static final Block block = null;
 	public LaisSaplingBlock(CobrModElements instance) {
-		super(instance, 266);
+		super(instance, 75);
 	}
 
 	@Override

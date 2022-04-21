@@ -46,7 +46,7 @@ public class DuneSandstoneIronOreBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:dune_sandstone_iron_ore")
 	public static final Block block = null;
 	public DuneSandstoneIronOreBlock(CobrModElements instance) {
-		super(instance, 10);
+		super(instance, 12);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

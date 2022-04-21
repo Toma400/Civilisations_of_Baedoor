@@ -26,7 +26,7 @@ public class DuneSandstoneBricksBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:dune_sandstone_bricks")
 	public static final Block block = null;
 	public DuneSandstoneBricksBlock(CobrModElements instance) {
-		super(instance, 14);
+		super(instance, 18);
 	}
 
 	@Override

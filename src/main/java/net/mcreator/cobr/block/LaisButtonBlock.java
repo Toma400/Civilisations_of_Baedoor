@@ -33,7 +33,7 @@ public class LaisButtonBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:lais_button")
 	public static final Block block = null;
 	public LaisButtonBlock(CobrModElements instance) {
-		super(instance, 237);
+		super(instance, 85);
 	}
 
 	@Override

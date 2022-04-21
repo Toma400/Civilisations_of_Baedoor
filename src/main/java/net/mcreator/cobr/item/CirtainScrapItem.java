@@ -16,7 +16,7 @@ public class CirtainScrapItem extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:cirtain_scrap")
 	public static final Item block = null;
 	public CirtainScrapItem(CobrModElements instance) {
-		super(instance, 270);
+		super(instance, 71);
 	}
 
 	@Override

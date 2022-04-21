@@ -33,7 +33,7 @@ public class LaisTrapdoorBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:lais_trapdoor")
 	public static final Block block = null;
 	public LaisTrapdoorBlock(CobrModElements instance) {
-		super(instance, 229);
+		super(instance, 43);
 	}
 
 	@Override

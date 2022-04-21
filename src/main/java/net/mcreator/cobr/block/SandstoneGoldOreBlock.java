@@ -42,7 +42,7 @@ public class SandstoneGoldOreBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:sandstone_gold_ore")
 	public static final Block block = null;
 	public SandstoneGoldOreBlock(CobrModElements instance) {
-		super(instance, 293);
+		super(instance, 4);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

@@ -16,7 +16,7 @@ public class CirtainNuggetItem extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:cirtain_nugget")
 	public static final Item block = null;
 	public CirtainNuggetItem(CobrModElements instance) {
-		super(instance, 269);
+		super(instance, 72);
 	}
 
 	@Override

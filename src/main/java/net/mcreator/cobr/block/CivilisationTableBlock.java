@@ -64,7 +64,7 @@ public class CivilisationTableBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:civilisation_table")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public CivilisationTableBlock(CobrModElements instance) {
-		super(instance, 36);
+		super(instance, 59);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 

@@ -46,7 +46,7 @@ public class SpawnBlockMercenaryCampTertenBlock extends CobrModElements.ModEleme
 	@ObjectHolder("cobr:spawn_block_mercenary_camp_terten")
 	public static final Block block = null;
 	public SpawnBlockMercenaryCampTertenBlock(CobrModElements instance) {
-		super(instance, 164);
+		super(instance, 195);
 	}
 
 	@Override

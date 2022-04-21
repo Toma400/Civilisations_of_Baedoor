@@ -33,7 +33,7 @@ public class EsrahFenceGateBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:esrah_fence_gate")
 	public static final Block block = null;
 	public EsrahFenceGateBlock(CobrModElements instance) {
-		super(instance, 26);
+		super(instance, 31);
 	}
 
 	@Override

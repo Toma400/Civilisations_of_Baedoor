@@ -13,7 +13,7 @@ public class OverworldImpactGameRule extends CobrModElements.ModElement {
 	public static final GameRules.RuleKey<GameRules.BooleanValue> gamerule = GameRules.register("overworldImpact", GameRules.Category.SPAWNING,
 			create(false));
 	public OverworldImpactGameRule(CobrModElements instance) {
-		super(instance, 165);
+		super(instance, 196);
 	}
 
 	public static GameRules.RuleType<GameRules.BooleanValue> create(boolean defaultValue) {

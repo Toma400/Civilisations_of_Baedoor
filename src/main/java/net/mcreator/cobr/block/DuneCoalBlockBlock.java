@@ -27,7 +27,7 @@ public class DuneCoalBlockBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:dune_coal_block")
 	public static final Block block = null;
 	public DuneCoalBlockBlock(CobrModElements instance) {
-		super(instance, 216);
+		super(instance, 58);
 	}
 
 	@Override

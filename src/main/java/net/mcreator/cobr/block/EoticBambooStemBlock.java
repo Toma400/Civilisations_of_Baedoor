@@ -76,7 +76,7 @@ public class EoticBambooStemBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:eotic_bamboo_stem")
 	public static final Block block = null;
 	public EoticBambooStemBlock(CobrModElements instance) {
-		super(instance, 66);
+		super(instance, 98);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

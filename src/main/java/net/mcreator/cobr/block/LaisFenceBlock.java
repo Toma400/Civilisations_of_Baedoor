@@ -34,7 +34,7 @@ public class LaisFenceBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:lais_fence")
 	public static final Block block = null;
 	public LaisFenceBlock(CobrModElements instance) {
-		super(instance, 224);
+		super(instance, 41);
 	}
 
 	@Override

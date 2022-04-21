@@ -4,7 +4,7 @@
     {
       "name": "Dunes",
       "type": "dimension",
-      "sortid": 42,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -16,7 +16,7 @@
     {
       "name": "EmptyTravellerStone",
       "type": "block",
-      "sortid": 37,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -26,7 +26,7 @@
     {
       "name": "EmptyTravellerStoneRecipe",
       "type": "recipe",
-      "sortid": 55,
+      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -36,7 +36,7 @@
     {
       "name": "TravellerStoneTransition",
       "type": "procedure",
-      "sortid": 56,
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -70,7 +70,7 @@
     {
       "name": "DuneTravellerStone",
       "type": "block",
-      "sortid": 38,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -80,7 +80,7 @@
     {
       "name": "CivilisationsofBaedoor",
       "type": "tab",
-      "sortid": 57,
+      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -89,7 +89,7 @@
     {
       "name": "PermafrostTravellerStone",
       "type": "block",
-      "sortid": 39,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -99,7 +99,7 @@
     {
       "name": "RainforestIslandsTravellerStone",
       "type": "block",
-      "sortid": 40,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -109,7 +109,7 @@
     {
       "name": "EvergreenDepthsTravellerStone",
       "type": "block",
-      "sortid": 41,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -119,7 +119,7 @@
     {
       "name": "DryLands",
       "type": "biome",
-      "sortid": 58,
+      "sortid": 91,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -128,7 +128,7 @@
     {
       "name": "PortalIgnition",
       "type": "procedure",
-      "sortid": 59,
+      "sortid": 92,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -162,7 +162,7 @@
     {
       "name": "SpawnEntityOasis",
       "type": "livingentity",
-      "sortid": 60,
+      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -171,7 +171,7 @@
     {
       "name": "OasisSmall",
       "type": "structure",
-      "sortid": 61,
+      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -181,7 +181,7 @@
     {
       "name": "SpawnEntitiesUse",
       "type": "procedure",
-      "sortid": 62,
+      "sortid": 95,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -214,7 +214,7 @@
     {
       "name": "DunesIgniterRecipe",
       "type": "recipe",
-      "sortid": 63,
+      "sortid": 96,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -224,7 +224,7 @@
     {
       "name": "EoticLakes",
       "type": "biome",
-      "sortid": 65,
+      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -233,7 +233,7 @@
     {
       "name": "EoticBambooStem",
       "type": "block",
-      "sortid": 66,
+      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -243,7 +243,7 @@
     {
       "name": "EoticBambooGrowing",
       "type": "block",
-      "sortid": 67,
+      "sortid": 99,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -253,7 +253,7 @@
     {
       "name": "EoticBamboo",
       "type": "item",
-      "sortid": 45,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -262,7 +262,7 @@
     {
       "name": "EoticBambooGrowth",
       "type": "procedure",
-      "sortid": 68,
+      "sortid": 100,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -292,7 +292,7 @@
     {
       "name": "EoticBambooVerticalBreaking",
       "type": "procedure",
-      "sortid": 69,
+      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -320,26 +320,9 @@
       "path": "~/Pds - Plants"
     },
     {
-      "name": "Shrinkage",
-      "type": "procedure",
-      "sortid": 70,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "shrinkage",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "EoticBambooPlantage",
       "type": "procedure",
-      "sortid": 71,
+      "sortid": 102,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -373,7 +356,7 @@
     {
       "name": "SandDustObtaining",
       "type": "recipe",
-      "sortid": 72,
+      "sortid": 103,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -383,7 +366,7 @@
     {
       "name": "SandDustObtaining2",
       "type": "recipe",
-      "sortid": 73,
+      "sortid": 104,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -393,7 +376,7 @@
     {
       "name": "EsrahLog",
       "type": "block",
-      "sortid": 18,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -403,7 +386,7 @@
     {
       "name": "Logs",
       "type": "tag",
-      "sortid": 74,
+      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -413,7 +396,7 @@
     {
       "name": "EsrahPlanks",
       "type": "block",
-      "sortid": 22,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -423,7 +406,7 @@
     {
       "name": "EsrahPlanksRecipe",
       "type": "recipe",
-      "sortid": 75,
+      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -433,7 +416,7 @@
     {
       "name": "Planks",
       "type": "tag",
-      "sortid": 76,
+      "sortid": 107,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -443,7 +426,7 @@
     {
       "name": "EoticBambooSpawnCondition",
       "type": "procedure",
-      "sortid": 77,
+      "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -474,7 +457,7 @@
     {
       "name": "BambooTypePlant",
       "type": "tag",
-      "sortid": 78,
+      "sortid": 109,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -484,7 +467,7 @@
     {
       "name": "PlantBreaking",
       "type": "procedure",
-      "sortid": 79,
+      "sortid": 110,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -514,7 +497,7 @@
     {
       "name": "WeakMeat",
       "type": "procedure",
-      "sortid": 80,
+      "sortid": 111,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -531,7 +514,7 @@
     {
       "name": "CookedLizardMeat",
       "type": "food",
-      "sortid": 48,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -541,7 +524,7 @@
     {
       "name": "CookedLizardMeatRecipe",
       "type": "recipe",
-      "sortid": 81,
+      "sortid": 112,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -551,7 +534,7 @@
     {
       "name": "CookedLizardMeatSmokerRecipe",
       "type": "recipe",
-      "sortid": 82,
+      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -561,7 +544,7 @@
     {
       "name": "CookedLizardMeatCampfireRecipe",
       "type": "recipe",
-      "sortid": 83,
+      "sortid": 114,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -580,7 +563,7 @@
     {
       "name": "HardenedSandRecipe",
       "type": "recipe",
-      "sortid": 84,
+      "sortid": 115,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -590,7 +573,7 @@
     {
       "name": "HardenedSandUnrecipe",
       "type": "recipe",
-      "sortid": 85,
+      "sortid": 116,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -600,7 +583,7 @@
     {
       "name": "HardenedSandIntoGlassRecipe",
       "type": "recipe",
-      "sortid": 86,
+      "sortid": 117,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -610,7 +593,7 @@
     {
       "name": "RawLizardMeat",
       "type": "food",
-      "sortid": 49,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -620,7 +603,7 @@
     {
       "name": "BoneWeaponsSlownessEffect",
       "type": "procedure",
-      "sortid": 87,
+      "sortid": 118,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -637,7 +620,7 @@
     {
       "name": "SabreRegistry",
       "type": "procedure",
-      "sortid": 88,
+      "sortid": 119,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -658,7 +641,7 @@
     {
       "name": "WobrSabre",
       "type": "tag",
-      "sortid": 89,
+      "sortid": 120,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -668,7 +651,7 @@
     {
       "name": "BoneShortsword",
       "type": "tool",
-      "sortid": 51,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -677,7 +660,7 @@
     {
       "name": "BoneSabre",
       "type": "tool",
-      "sortid": 52,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -686,7 +669,7 @@
     {
       "name": "BoneShortswordRecipe",
       "type": "recipe",
-      "sortid": 90,
+      "sortid": 121,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -696,7 +679,7 @@
     {
       "name": "BoneSabreRecipe",
       "type": "recipe",
-      "sortid": 91,
+      "sortid": 122,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -706,7 +689,7 @@
     {
       "name": "TheCrusadeBegan",
       "type": "achievement",
-      "sortid": 92,
+      "sortid": 123,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -715,7 +698,7 @@
     {
       "name": "EoticNearbyGrowable",
       "type": "tag",
-      "sortid": 93,
+      "sortid": 124,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -725,7 +708,7 @@
     {
       "name": "PreConfigManager",
       "type": "procedure",
-      "sortid": 94,
+      "sortid": 125,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -737,7 +720,7 @@
     {
       "name": "PatchouliRecipe",
       "type": "recipe",
-      "sortid": 95,
+      "sortid": 126,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -747,7 +730,7 @@
     {
       "name": "AcrosstheDunes",
       "type": "achievement",
-      "sortid": 96,
+      "sortid": 127,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -756,7 +739,7 @@
     {
       "name": "PortalBlock",
       "type": "block",
-      "sortid": 97,
+      "sortid": 128,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -765,7 +748,7 @@
     {
       "name": "EoticBambooVerticalBreakingDown",
       "type": "procedure",
-      "sortid": 98,
+      "sortid": 129,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -795,7 +778,7 @@
     {
       "name": "RockSmallSandstone",
       "type": "structure",
-      "sortid": 99,
+      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -805,7 +788,7 @@
     {
       "name": "EoticBamboo1",
       "type": "structure",
-      "sortid": 100,
+      "sortid": 131,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -815,7 +798,7 @@
     {
       "name": "EoticBamboo2",
       "type": "structure",
-      "sortid": 101,
+      "sortid": 132,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -825,7 +808,7 @@
     {
       "name": "EoticBamboo3",
       "type": "structure",
-      "sortid": 102,
+      "sortid": 133,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -835,7 +818,7 @@
     {
       "name": "TravellingAchievements",
       "type": "procedure",
-      "sortid": 103,
+      "sortid": 134,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -856,7 +839,7 @@
     {
       "name": "EoticBambooAdditionalSpawning",
       "type": "procedure",
-      "sortid": 104,
+      "sortid": 135,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -886,7 +869,7 @@
     {
       "name": "SpawnEntityBamboo",
       "type": "livingentity",
-      "sortid": 105,
+      "sortid": 136,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -896,7 +879,7 @@
     {
       "name": "DesertMobsConditioning",
       "type": "procedure",
-      "sortid": 106,
+      "sortid": 137,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -926,7 +909,7 @@
     {
       "name": "DesertMobsSpawnable",
       "type": "tag",
-      "sortid": 107,
+      "sortid": 138,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -936,7 +919,7 @@
     {
       "name": "InfoonWorkflow",
       "type": "code",
-      "sortid": 108,
+      "sortid": 139,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -945,7 +928,7 @@
     {
       "name": "OldRoad",
       "type": "structure",
-      "sortid": 109,
+      "sortid": 140,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -955,7 +938,7 @@
     {
       "name": "EoticBamboo1D",
       "type": "structure",
-      "sortid": 110,
+      "sortid": 141,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -965,7 +948,7 @@
     {
       "name": "EoticBamboo2D",
       "type": "structure",
-      "sortid": 111,
+      "sortid": 142,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -975,7 +958,7 @@
     {
       "name": "EoticBamboo3D",
       "type": "structure",
-      "sortid": 112,
+      "sortid": 143,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -985,7 +968,7 @@
     {
       "name": "DesertAnimalsMobcap",
       "type": "tag",
-      "sortid": 113,
+      "sortid": 144,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -995,7 +978,7 @@
     {
       "name": "EsrahSlab",
       "type": "block",
-      "sortid": 24,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1005,7 +988,7 @@
     {
       "name": "EsrahStairs",
       "type": "block",
-      "sortid": 23,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1015,7 +998,7 @@
     {
       "name": "EsrahFence",
       "type": "block",
-      "sortid": 25,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1025,7 +1008,7 @@
     {
       "name": "SandPillar",
       "type": "structure",
-      "sortid": 114,
+      "sortid": 145,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1035,7 +1018,7 @@
     {
       "name": "OldRoadCrossing",
       "type": "structure",
-      "sortid": 115,
+      "sortid": 146,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1045,7 +1028,7 @@
     {
       "name": "StrippedEsrahLog",
       "type": "block",
-      "sortid": 20,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1055,7 +1038,7 @@
     {
       "name": "Strippage",
       "type": "procedure",
-      "sortid": 116,
+      "sortid": 147,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1089,7 +1072,7 @@
     {
       "name": "EsrahPlanksRecipe2",
       "type": "recipe",
-      "sortid": 117,
+      "sortid": 148,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1099,7 +1082,7 @@
     {
       "name": "EsrahSlabRecipe",
       "type": "recipe",
-      "sortid": 118,
+      "sortid": 149,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1109,7 +1092,7 @@
     {
       "name": "EsrahStairsRecipe",
       "type": "recipe",
-      "sortid": 119,
+      "sortid": 150,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1119,7 +1102,7 @@
     {
       "name": "EsrahFenceGate",
       "type": "block",
-      "sortid": 26,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1129,7 +1112,7 @@
     {
       "name": "EsrahFenceRecipe",
       "type": "recipe",
-      "sortid": 120,
+      "sortid": 151,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1139,7 +1122,7 @@
     {
       "name": "EsrahFenceGateRecipe",
       "type": "recipe",
-      "sortid": 121,
+      "sortid": 152,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1149,7 +1132,7 @@
     {
       "name": "WoodenSlabs",
       "type": "tag",
-      "sortid": 122,
+      "sortid": 153,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1159,7 +1142,7 @@
     {
       "name": "EsrahWood",
       "type": "block",
-      "sortid": 19,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1169,7 +1152,7 @@
     {
       "name": "StrippedEsrahWood",
       "type": "block",
-      "sortid": 21,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1179,7 +1162,7 @@
     {
       "name": "EsrahWoodRecipe",
       "type": "recipe",
-      "sortid": 123,
+      "sortid": 154,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1189,7 +1172,7 @@
     {
       "name": "StrippedEsrahWoodRecipe",
       "type": "recipe",
-      "sortid": 124,
+      "sortid": 155,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1199,7 +1182,7 @@
     {
       "name": "CivilisationTable",
       "type": "block",
-      "sortid": 36,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1208,7 +1191,7 @@
     {
       "name": "CivilisationTableRecipe",
       "type": "recipe",
-      "sortid": 125,
+      "sortid": 156,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1218,7 +1201,7 @@
     {
       "name": "EmpireFoundationSetInWood",
       "type": "achievement",
-      "sortid": 126,
+      "sortid": 157,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1227,7 +1210,7 @@
     {
       "name": "PackofEoticBamboo",
       "type": "block",
-      "sortid": 34,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1237,7 +1220,7 @@
     {
       "name": "EoticBambooBlock",
       "type": "block",
-      "sortid": 29,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1247,7 +1230,7 @@
     {
       "name": "PackofEoticBambooRecipe",
       "type": "recipe",
-      "sortid": 127,
+      "sortid": 158,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1257,7 +1240,7 @@
     {
       "name": "PackofEoticBambooUnRecipe",
       "type": "recipe",
-      "sortid": 128,
+      "sortid": 159,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1267,7 +1250,7 @@
     {
       "name": "EoticBambooSlab",
       "type": "block",
-      "sortid": 32,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1277,7 +1260,7 @@
     {
       "name": "EoticBambooStairs",
       "type": "block",
-      "sortid": 31,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1287,7 +1270,7 @@
     {
       "name": "EoticBambooMat",
       "type": "block",
-      "sortid": 33,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1297,7 +1280,7 @@
     {
       "name": "EoticBambooBlockRecipe",
       "type": "recipe",
-      "sortid": 129,
+      "sortid": 160,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1307,7 +1290,7 @@
     {
       "name": "EoticBambooSlabRecipe",
       "type": "recipe",
-      "sortid": 130,
+      "sortid": 161,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1317,7 +1300,7 @@
     {
       "name": "EoticBambooStairsRecipe",
       "type": "recipe",
-      "sortid": 131,
+      "sortid": 162,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1327,7 +1310,7 @@
     {
       "name": "EoticBambooMatRecipe",
       "type": "recipe",
-      "sortid": 132,
+      "sortid": 163,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1337,7 +1320,7 @@
     {
       "name": "EoticBambooTip",
       "type": "block",
-      "sortid": 47,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1347,7 +1330,7 @@
     {
       "name": "DisbandmentSigned",
       "type": "procedure",
-      "sortid": 133,
+      "sortid": 164,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1366,7 +1349,7 @@
     {
       "name": "DisbandmentScroll",
       "type": "item",
-      "sortid": 43,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1375,7 +1358,7 @@
     {
       "name": "DisbandmentSignage",
       "type": "procedure",
-      "sortid": 134,
+      "sortid": 165,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1393,7 +1376,7 @@
     {
       "name": "DisbandmentScrollInfoRequired",
       "type": "procedure",
-      "sortid": 135,
+      "sortid": 166,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1411,7 +1394,7 @@
     {
       "name": "DisbandmentScrollInfo",
       "type": "command",
-      "sortid": 136,
+      "sortid": 167,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1420,7 +1403,7 @@
     {
       "name": "DisbandmentScrollRecipe",
       "type": "recipe",
-      "sortid": 137,
+      "sortid": 168,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1430,7 +1413,7 @@
     {
       "name": "CobrHireables",
       "type": "tag",
-      "sortid": 138,
+      "sortid": 169,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1440,7 +1423,7 @@
     {
       "name": "CobrEmeraldHiring",
       "type": "tag",
-      "sortid": 139,
+      "sortid": 170,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1450,7 +1433,7 @@
     {
       "name": "CobrDiamondHiring",
       "type": "tag",
-      "sortid": 140,
+      "sortid": 171,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1460,7 +1443,7 @@
     {
       "name": "HiringSystem",
       "type": "procedure",
-      "sortid": 141,
+      "sortid": 172,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1473,7 +1456,7 @@
     {
       "name": "HiringCost",
       "type": "procedure",
-      "sortid": 142,
+      "sortid": 173,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1495,7 +1478,7 @@
     {
       "name": "DisbandmentCost",
       "type": "procedure",
-      "sortid": 143,
+      "sortid": 174,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1508,7 +1491,7 @@
     {
       "name": "MonthlyCostCounter",
       "type": "procedure",
-      "sortid": 144,
+      "sortid": 175,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1521,7 +1504,7 @@
     {
       "name": "HiringCostPayout",
       "type": "procedure",
-      "sortid": 145,
+      "sortid": 176,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1543,7 +1526,7 @@
     {
       "name": "PlayerDataImport",
       "type": "procedure",
-      "sortid": 146,
+      "sortid": 177,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1577,7 +1560,7 @@
     {
       "name": "EmpireInfoGet",
       "type": "procedure",
-      "sortid": 147,
+      "sortid": 178,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1590,7 +1573,7 @@
     {
       "name": "EmpireStatus",
       "type": "command",
-      "sortid": 148,
+      "sortid": 179,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1599,7 +1582,7 @@
     {
       "name": "DeathDisbandmentCost",
       "type": "procedure",
-      "sortid": 149,
+      "sortid": 180,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1621,7 +1604,7 @@
     {
       "name": "EoticBambooLamp",
       "type": "block",
-      "sortid": 30,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1631,7 +1614,7 @@
     {
       "name": "EsrahTrapdoor",
       "type": "block",
-      "sortid": 27,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1641,7 +1624,7 @@
     {
       "name": "EsrahDoor",
       "type": "block",
-      "sortid": 28,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1651,7 +1634,7 @@
     {
       "name": "EsrahTrapdoorRecipe",
       "type": "recipe",
-      "sortid": 150,
+      "sortid": 181,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1661,7 +1644,7 @@
     {
       "name": "EsrahDoorRecipe",
       "type": "recipe",
-      "sortid": 151,
+      "sortid": 182,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1671,7 +1654,7 @@
     {
       "name": "EoticBambooLampRecipe",
       "type": "recipe",
-      "sortid": 152,
+      "sortid": 183,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1681,7 +1664,7 @@
     {
       "name": "Fences",
       "type": "tag",
-      "sortid": 153,
+      "sortid": 184,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1691,7 +1674,7 @@
     {
       "name": "ConfigManager",
       "type": "procedure",
-      "sortid": 154,
+      "sortid": 185,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1703,7 +1686,7 @@
     {
       "name": "EsrahLeaves",
       "type": "block",
-      "sortid": 35,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1713,7 +1696,7 @@
     {
       "name": "EsrahSapling",
       "type": "plant",
-      "sortid": 46,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1723,7 +1706,7 @@
     {
       "name": "EsrahLeavesLootTable",
       "type": "loottable",
-      "sortid": 155,
+      "sortid": 186,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -1733,7 +1716,7 @@
     {
       "name": "Bonemealing",
       "type": "procedure",
-      "sortid": 156,
+      "sortid": 187,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1767,7 +1750,7 @@
     {
       "name": "TreeHeightCheck5h",
       "type": "procedure",
-      "sortid": 157,
+      "sortid": 188,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1798,7 +1781,7 @@
     {
       "name": "TreeHeightCheck7h",
       "type": "procedure",
-      "sortid": 158,
+      "sortid": 189,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1829,7 +1812,7 @@
     {
       "name": "WhiteLizard",
       "type": "livingentity",
-      "sortid": 53,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1838,7 +1821,7 @@
     {
       "name": "TreeLeaves",
       "type": "tag",
-      "sortid": 159,
+      "sortid": 190,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1848,7 +1831,7 @@
     {
       "name": "WhiteLizardLootTable",
       "type": "loottable",
-      "sortid": 160,
+      "sortid": 191,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1857,7 +1840,7 @@
     {
       "name": "SimpleAdvancements",
       "type": "procedure",
-      "sortid": 161,
+      "sortid": 192,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1878,7 +1861,7 @@
     {
       "name": "Sleep",
       "type": "procedure",
-      "sortid": 162,
+      "sortid": 193,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1896,7 +1879,7 @@
     {
       "name": "TertenCivil",
       "type": "livingentity",
-      "sortid": 54,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1905,7 +1888,7 @@
     {
       "name": "SpawnBlockMercenaryCamp",
       "type": "procedure",
-      "sortid": 163,
+      "sortid": 194,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1934,7 +1917,7 @@
     {
       "name": "SpawnBlockMercenaryCampTerten",
       "type": "block",
-      "sortid": 164,
+      "sortid": 195,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1943,7 +1926,7 @@
     {
       "name": "OverworldImpact",
       "type": "gamerule",
-      "sortid": 165,
+      "sortid": 196,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1955,7 +1938,7 @@
     {
       "name": "MercenaryCampTerten",
       "type": "structure",
-      "sortid": 166,
+      "sortid": 197,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1965,7 +1948,7 @@
     {
       "name": "DuneSand",
       "type": "block",
-      "sortid": 4,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1975,7 +1958,7 @@
     {
       "name": "DuneSandRecipe",
       "type": "recipe",
-      "sortid": 167,
+      "sortid": 198,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1985,7 +1968,7 @@
     {
       "name": "LeavesDrops",
       "type": "procedure",
-      "sortid": 168,
+      "sortid": 199,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2019,7 +2002,7 @@
     {
       "name": "ColourfulBlock",
       "type": "block",
-      "sortid": 169,
+      "sortid": 200,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2029,7 +2012,7 @@
     {
       "name": "CompatWob",
       "type": "item",
-      "sortid": 170,
+      "sortid": 201,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2039,7 +2022,7 @@
     {
       "name": "AvoiderKillable",
       "type": "tag",
-      "sortid": 171,
+      "sortid": 202,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2049,7 +2032,7 @@
     {
       "name": "LizardStew",
       "type": "food",
-      "sortid": 50,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2059,7 +2042,7 @@
     {
       "name": "LizardStewRecipe",
       "type": "recipe",
-      "sortid": 172,
+      "sortid": 203,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2069,7 +2052,7 @@
     {
       "name": "LizardStewFDRecipe",
       "type": "recipe",
-      "sortid": 173,
+      "sortid": 204,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -2079,7 +2062,7 @@
     {
       "name": "LizardStewIngredient",
       "type": "tag",
-      "sortid": 174,
+      "sortid": 205,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -2089,7 +2072,7 @@
     {
       "name": "DuneCoal",
       "type": "item",
-      "sortid": 44,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2099,7 +2082,7 @@
     {
       "name": "DuneCoalFuel",
       "type": "fuel",
-      "sortid": 176,
+      "sortid": 206,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2109,7 +2092,7 @@
     {
       "name": "Coals",
       "type": "tag",
-      "sortid": 177,
+      "sortid": 207,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2119,7 +2102,7 @@
     {
       "name": "DuneCoalRenewability",
       "type": "recipe",
-      "sortid": 178,
+      "sortid": 208,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -2129,7 +2112,7 @@
     {
       "name": "BrightDuneSand",
       "type": "block",
-      "sortid": 5,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2139,7 +2122,7 @@
     {
       "name": "WetDuneSand",
       "type": "block",
-      "sortid": 6,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2149,7 +2132,7 @@
     {
       "name": "WettingtheSand",
       "type": "procedure",
-      "sortid": 179,
+      "sortid": 209,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2178,7 +2161,7 @@
     {
       "name": "BrightDuneSandObtaining",
       "type": "recipe",
-      "sortid": 180,
+      "sortid": 210,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -2188,7 +2171,7 @@
     {
       "name": "DuneSandstone",
       "type": "block",
-      "sortid": 8,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2198,7 +2181,7 @@
     {
       "name": "DuneSandstoneRecipe",
       "type": "recipe",
-      "sortid": 181,
+      "sortid": 211,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2208,7 +2191,7 @@
     {
       "name": "DuneSandstoneBricks",
       "type": "block",
-      "sortid": 14,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2218,7 +2201,7 @@
     {
       "name": "DuneSandstoneBricksRecipe",
       "type": "recipe",
-      "sortid": 182,
+      "sortid": 212,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2228,7 +2211,7 @@
     {
       "name": "DuneSandstoneBricksRecipeStonecutter",
       "type": "recipe",
-      "sortid": 183,
+      "sortid": 213,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2238,7 +2221,7 @@
     {
       "name": "HardenedDuneSand",
       "type": "block",
-      "sortid": 7,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2248,7 +2231,7 @@
     {
       "name": "HardenedDuneSandRecipe",
       "type": "recipe",
-      "sortid": 184,
+      "sortid": 214,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2258,7 +2241,7 @@
     {
       "name": "HardenedDuneSandUnrecipe",
       "type": "recipe",
-      "sortid": 185,
+      "sortid": 215,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2268,7 +2251,7 @@
     {
       "name": "DuneSandstoneCoalOre",
       "type": "block",
-      "sortid": 9,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2278,7 +2261,7 @@
     {
       "name": "DuneSandstoneIronOre",
       "type": "block",
-      "sortid": 10,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2288,7 +2271,7 @@
     {
       "name": "DuneSandstoneCoalOreUnrecipe",
       "type": "recipe",
-      "sortid": 186,
+      "sortid": 216,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2298,7 +2281,7 @@
     {
       "name": "DuneSandstoneCoalOreUnrecipe2",
       "type": "recipe",
-      "sortid": 187,
+      "sortid": 217,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2308,7 +2291,7 @@
     {
       "name": "DuneSandstoneIronOreUnrecipe",
       "type": "recipe",
-      "sortid": 188,
+      "sortid": 218,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2318,7 +2301,7 @@
     {
       "name": "DuneSandstoneIronOreUnrecipe2",
       "type": "recipe",
-      "sortid": 189,
+      "sortid": 219,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2348,7 +2331,7 @@
     {
       "name": "SandstoneCoalOreUnrecipe",
       "type": "recipe",
-      "sortid": 190,
+      "sortid": 220,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2358,7 +2341,7 @@
     {
       "name": "SandstoneCoalOreUnrecipe2",
       "type": "recipe",
-      "sortid": 191,
+      "sortid": 221,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2368,7 +2351,7 @@
     {
       "name": "SandstoneIronOreUnrecipe",
       "type": "recipe",
-      "sortid": 192,
+      "sortid": 222,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2378,7 +2361,7 @@
     {
       "name": "SandstoneIronOreUnrecipe2",
       "type": "recipe",
-      "sortid": 193,
+      "sortid": 223,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2388,7 +2371,7 @@
     {
       "name": "DuneSandstoneSlab",
       "type": "block",
-      "sortid": 12,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2398,7 +2381,7 @@
     {
       "name": "DuneSandstoneStairs",
       "type": "block",
-      "sortid": 11,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2408,7 +2391,7 @@
     {
       "name": "DuneSandstoneBrickSlab",
       "type": "block",
-      "sortid": 16,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2418,7 +2401,7 @@
     {
       "name": "DuneSandstoneBrickStairs",
       "type": "block",
-      "sortid": 15,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2428,7 +2411,7 @@
     {
       "name": "DuneSandstoneSlabRecipe",
       "type": "recipe",
-      "sortid": 194,
+      "sortid": 224,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2438,7 +2421,7 @@
     {
       "name": "DuneSandstoneStairsRecipe",
       "type": "recipe",
-      "sortid": 195,
+      "sortid": 225,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2448,7 +2431,7 @@
     {
       "name": "DuneSandstoneSlabRecipeStonecutter",
       "type": "recipe",
-      "sortid": 196,
+      "sortid": 226,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2458,7 +2441,7 @@
     {
       "name": "DuneSandstoneStairsRecipeStonecutter",
       "type": "recipe",
-      "sortid": 197,
+      "sortid": 227,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2468,7 +2451,7 @@
     {
       "name": "DuneSandstoneBrickSlabRecipe",
       "type": "recipe",
-      "sortid": 198,
+      "sortid": 228,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2478,7 +2461,7 @@
     {
       "name": "DuneSandstoneBrickStairsRecipe",
       "type": "recipe",
-      "sortid": 199,
+      "sortid": 229,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2488,7 +2471,7 @@
     {
       "name": "DuneSandstoneBrickSlabRecipeStonecutter",
       "type": "recipe",
-      "sortid": 200,
+      "sortid": 230,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2498,7 +2481,7 @@
     {
       "name": "DuneSandstoneBrickStairsRecipeStonecutter",
       "type": "recipe",
-      "sortid": 201,
+      "sortid": 231,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2508,7 +2491,7 @@
     {
       "name": "DuneSandstoneBrickSlabRecipeStonecutterS1",
       "type": "recipe",
-      "sortid": 202,
+      "sortid": 232,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2518,7 +2501,7 @@
     {
       "name": "DuneSandstoneBrickStairsRecipeStonecutterS1",
       "type": "recipe",
-      "sortid": 203,
+      "sortid": 233,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2528,7 +2511,7 @@
     {
       "name": "SandBlocks",
       "type": "tag",
-      "sortid": 204,
+      "sortid": 234,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2538,7 +2521,7 @@
     {
       "name": "SandItems",
       "type": "tag",
-      "sortid": 205,
+      "sortid": 235,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2548,7 +2531,7 @@
     {
       "name": "DuneSandstoneWall",
       "type": "block",
-      "sortid": 13,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2558,7 +2541,7 @@
     {
       "name": "DuneSandstoneBrickWall",
       "type": "block",
-      "sortid": 17,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2568,7 +2551,7 @@
     {
       "name": "DuneSandstoneWallRecipe",
       "type": "recipe",
-      "sortid": 206,
+      "sortid": 236,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2578,7 +2561,7 @@
     {
       "name": "DuneSandstoneBrickWallRecipe",
       "type": "recipe",
-      "sortid": 207,
+      "sortid": 237,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2588,7 +2571,7 @@
     {
       "name": "DuneSandstoneWallRecipeStonecutter",
       "type": "recipe",
-      "sortid": 208,
+      "sortid": 238,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2598,7 +2581,7 @@
     {
       "name": "DuneSandstoneBrickWallRecipeStonecutter",
       "type": "recipe",
-      "sortid": 209,
+      "sortid": 239,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2608,7 +2591,7 @@
     {
       "name": "DuneSandstoneBrickWallRecipeStonecutterS1",
       "type": "recipe",
-      "sortid": 210,
+      "sortid": 240,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2618,7 +2601,7 @@
     {
       "name": "BrightDuneSandRecipe",
       "type": "recipe",
-      "sortid": 211,
+      "sortid": 241,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2628,7 +2611,7 @@
     {
       "name": "SmeltableHardenedSand",
       "type": "tag",
-      "sortid": 212,
+      "sortid": 242,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2638,7 +2621,7 @@
     {
       "name": "TertenicDunes",
       "type": "biome",
-      "sortid": 213,
+      "sortid": 243,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2647,7 +2630,7 @@
     {
       "name": "EdgeTertenicDunes",
       "type": "biome",
-      "sortid": 214,
+      "sortid": 244,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2656,7 +2639,7 @@
     {
       "name": "BambooMatRecipe",
       "type": "recipe",
-      "sortid": 215,
+      "sortid": 245,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -2666,7 +2649,7 @@
     {
       "name": "DuneCoalBlock",
       "type": "block",
-      "sortid": 216,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2676,7 +2659,7 @@
     {
       "name": "DuneCoalBlockFuel",
       "type": "fuel",
-      "sortid": 217,
+      "sortid": 246,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2686,7 +2669,7 @@
     {
       "name": "DuneCoalBlockRecipe",
       "type": "recipe",
-      "sortid": 218,
+      "sortid": 247,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2696,7 +2679,7 @@
     {
       "name": "DuneCoalBlockUnrecipe",
       "type": "recipe",
-      "sortid": 219,
+      "sortid": 248,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2706,7 +2689,7 @@
     {
       "name": "LaisLog",
       "type": "block",
-      "sortid": 220,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2716,7 +2699,7 @@
     {
       "name": "LaisPlanks",
       "type": "block",
-      "sortid": 221,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2726,7 +2709,7 @@
     {
       "name": "LaisSlab",
       "type": "block",
-      "sortid": 222,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2736,7 +2719,7 @@
     {
       "name": "LaisStairs",
       "type": "block",
-      "sortid": 223,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2746,7 +2729,7 @@
     {
       "name": "LaisFence",
       "type": "block",
-      "sortid": 224,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2756,7 +2739,7 @@
     {
       "name": "StrippedLaisLog",
       "type": "block",
-      "sortid": 225,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2766,7 +2749,7 @@
     {
       "name": "LaisFenceGate",
       "type": "block",
-      "sortid": 226,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2776,7 +2759,7 @@
     {
       "name": "LaisWood",
       "type": "block",
-      "sortid": 227,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2786,7 +2769,7 @@
     {
       "name": "StrippedLaisWood",
       "type": "block",
-      "sortid": 228,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2796,7 +2779,7 @@
     {
       "name": "LaisTrapdoor",
       "type": "block",
-      "sortid": 229,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2806,7 +2789,7 @@
     {
       "name": "LaisDoor",
       "type": "block",
-      "sortid": 230,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2816,7 +2799,7 @@
     {
       "name": "LaisLeaves",
       "type": "block",
-      "sortid": 231,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2826,7 +2809,7 @@
     {
       "name": "BloomingLaisLeaves",
       "type": "block",
-      "sortid": 232,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2836,7 +2819,7 @@
     {
       "name": "FloweryLaisDoor",
       "type": "block",
-      "sortid": 233,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2846,7 +2829,7 @@
     {
       "name": "FloweryLaisTrapdoor",
       "type": "block",
-      "sortid": 234,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2856,7 +2839,7 @@
     {
       "name": "EsrahButton",
       "type": "block",
-      "sortid": 235,
+      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2866,7 +2849,7 @@
     {
       "name": "EsrahPressurePlate",
       "type": "block",
-      "sortid": 236,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2876,7 +2859,7 @@
     {
       "name": "LaisButton",
       "type": "block",
-      "sortid": 237,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2886,7 +2869,7 @@
     {
       "name": "LaisPressurePlate",
       "type": "block",
-      "sortid": 238,
+      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2896,7 +2879,7 @@
     {
       "name": "EsrahButtonRecipe",
       "type": "recipe",
-      "sortid": 239,
+      "sortid": 249,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2906,7 +2889,7 @@
     {
       "name": "LaisPlanksRecipe",
       "type": "recipe",
-      "sortid": 241,
+      "sortid": 250,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2916,7 +2899,7 @@
     {
       "name": "LaisPlanksRecipe2",
       "type": "recipe",
-      "sortid": 242,
+      "sortid": 251,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2926,7 +2909,7 @@
     {
       "name": "LaisSlabRecipe",
       "type": "recipe",
-      "sortid": 243,
+      "sortid": 252,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2936,7 +2919,7 @@
     {
       "name": "LaisStairsRecipe",
       "type": "recipe",
-      "sortid": 244,
+      "sortid": 253,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2946,7 +2929,7 @@
     {
       "name": "LaisFenceRecipe",
       "type": "recipe",
-      "sortid": 245,
+      "sortid": 254,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2956,7 +2939,7 @@
     {
       "name": "LaisFenceGateRecipe",
       "type": "recipe",
-      "sortid": 246,
+      "sortid": 255,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2966,7 +2949,7 @@
     {
       "name": "LaisWoodRecipe",
       "type": "recipe",
-      "sortid": 247,
+      "sortid": 256,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2976,7 +2959,7 @@
     {
       "name": "StrippedLaisWoodRecipe",
       "type": "recipe",
-      "sortid": 248,
+      "sortid": 257,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2986,7 +2969,7 @@
     {
       "name": "LaisTrapdoorRecipe",
       "type": "recipe",
-      "sortid": 249,
+      "sortid": 258,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2996,7 +2979,7 @@
     {
       "name": "LaisDoorRecipe",
       "type": "recipe",
-      "sortid": 250,
+      "sortid": 259,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3006,7 +2989,7 @@
     {
       "name": "LaisButtonRecipe",
       "type": "recipe",
-      "sortid": 251,
+      "sortid": 260,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3016,7 +2999,7 @@
     {
       "name": "LaisPressurePlateRecipe",
       "type": "recipe",
-      "sortid": 252,
+      "sortid": 261,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3026,7 +3009,7 @@
     {
       "name": "EsrahPressurePlateRecipe",
       "type": "recipe",
-      "sortid": 253,
+      "sortid": 262,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3036,7 +3019,7 @@
     {
       "name": "FloweryLaisTrapdoorRecipe",
       "type": "recipe",
-      "sortid": 254,
+      "sortid": 263,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3046,7 +3029,7 @@
     {
       "name": "FloweryLaisDoorRecipe",
       "type": "recipe",
-      "sortid": 255,
+      "sortid": 264,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3056,7 +3039,7 @@
     {
       "name": "MessageOverlay",
       "type": "overlay",
-      "sortid": 256,
+      "sortid": 265,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3066,7 +3049,7 @@
     {
       "name": "CobrMessagingPotion",
       "type": "potioneffect",
-      "sortid": 257,
+      "sortid": 266,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3076,7 +3059,7 @@
     {
       "name": "CobrMessageManager",
       "type": "procedure",
-      "sortid": 258,
+      "sortid": 267,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3094,7 +3077,7 @@
     {
       "name": "MessageOutcall",
       "type": "procedure",
-      "sortid": 259,
+      "sortid": 268,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3113,7 +3096,7 @@
     {
       "name": "LaisLeavesLootTable",
       "type": "loottable",
-      "sortid": 260,
+      "sortid": 269,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -3123,7 +3106,7 @@
     {
       "name": "BloomingLaisLeavesLootTable",
       "type": "loottable",
-      "sortid": 261,
+      "sortid": 270,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -3133,7 +3116,7 @@
     {
       "name": "Composting",
       "type": "code",
-      "sortid": 263,
+      "sortid": 271,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -3142,7 +3125,7 @@
     {
       "name": "BonemealingEsrah",
       "type": "procedure",
-      "sortid": 264,
+      "sortid": 272,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3172,7 +3155,7 @@
     {
       "name": "BonemealingCost",
       "type": "procedure",
-      "sortid": 265,
+      "sortid": 273,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3206,7 +3189,7 @@
     {
       "name": "LaisSapling",
       "type": "plant",
-      "sortid": 266,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3216,7 +3199,7 @@
     {
       "name": "DuneSandstoneCirtainOre",
       "type": "block",
-      "sortid": 267,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3226,7 +3209,7 @@
     {
       "name": "SandstoneCirtainOre",
       "type": "block",
-      "sortid": 268,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3236,7 +3219,7 @@
     {
       "name": "CirtainNugget",
       "type": "item",
-      "sortid": 269,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3245,7 +3228,7 @@
     {
       "name": "CirtainScrap",
       "type": "item",
-      "sortid": 270,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3254,7 +3237,7 @@
     {
       "name": "CirtainIngotRecipe",
       "type": "recipe",
-      "sortid": 271,
+      "sortid": 274,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -3264,7 +3247,7 @@
     {
       "name": "CirtainScrapRecipe",
       "type": "recipe",
-      "sortid": 272,
+      "sortid": 275,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3274,7 +3257,7 @@
     {
       "name": "CirtainScrapRecipeFromBlock",
       "type": "recipe",
-      "sortid": 273,
+      "sortid": 276,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3284,7 +3267,7 @@
     {
       "name": "CirtainScrapRecipeFromBlock2",
       "type": "recipe",
-      "sortid": 274,
+      "sortid": 277,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3294,7 +3277,7 @@
     {
       "name": "CirtainScrapRecipeBlasting",
       "type": "recipe",
-      "sortid": 275,
+      "sortid": 278,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3304,7 +3287,7 @@
     {
       "name": "CirtainScrapRecipeBlastingFromBlock",
       "type": "recipe",
-      "sortid": 276,
+      "sortid": 279,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3314,7 +3297,7 @@
     {
       "name": "CirtainScrapRecipeBlastingFromBlock2",
       "type": "recipe",
-      "sortid": 277,
+      "sortid": 280,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3324,7 +3307,7 @@
     {
       "name": "LogsItems",
       "type": "tag",
-      "sortid": 278,
+      "sortid": 281,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3334,7 +3317,7 @@
     {
       "name": "ThatPricelessGem",
       "type": "achievement",
-      "sortid": 279,
+      "sortid": 282,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3343,7 +3326,7 @@
     {
       "name": "CirtainHeaters",
       "type": "tag",
-      "sortid": 280,
+      "sortid": 283,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3352,7 +3335,7 @@
     {
       "name": "CirtainOreBreaking",
       "type": "procedure",
-      "sortid": 280,
+      "sortid": 284,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3385,7 +3368,7 @@
     {
       "name": "BonemealingLais",
       "type": "procedure",
-      "sortid": 281,
+      "sortid": 285,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3415,7 +3398,7 @@
     {
       "name": "LaisSaplingRecipe",
       "type": "recipe",
-      "sortid": 282,
+      "sortid": 286,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -3424,7 +3407,7 @@
     {
       "name": "ChiseledDuneSandstoneBricks",
       "type": "block",
-      "sortid": 283,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3434,7 +3417,7 @@
     {
       "name": "ChiseledDuneSandstoneBricksRecipe",
       "type": "recipe",
-      "sortid": 284,
+      "sortid": 287,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3444,7 +3427,7 @@
     {
       "name": "ChiseledDuneSandstoneBricksRecipeStonecutter",
       "type": "recipe",
-      "sortid": 285,
+      "sortid": 288,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3454,7 +3437,7 @@
     {
       "name": "ChiseledDuneSandstoneBricksRecipeStonecutter2",
       "type": "recipe",
-      "sortid": 286,
+      "sortid": 289,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3464,7 +3447,7 @@
     {
       "name": "WoodenButtons",
       "type": "tag",
-      "sortid": 287,
+      "sortid": 290,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3474,7 +3457,7 @@
     {
       "name": "PlanksLike",
       "type": "tag",
-      "sortid": 288,
+      "sortid": 291,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3484,7 +3467,7 @@
     {
       "name": "ActivatesFoundry",
       "type": "tag",
-      "sortid": 289,
+      "sortid": 292,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3494,7 +3477,7 @@
     {
       "name": "Sandstone",
       "type": "tag",
-      "sortid": 290,
+      "sortid": 293,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3504,7 +3487,7 @@
     {
       "name": "ForgeFences",
       "type": "tag",
-      "sortid": 291,
+      "sortid": 294,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3514,7 +3497,7 @@
     {
       "name": "DesolatSandstone",
       "type": "tag",
-      "sortid": 292,
+      "sortid": 295,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3524,7 +3507,7 @@
     {
       "name": "DuneGoldIngot",
       "type": "item",
-      "sortid": 293,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3533,7 +3516,7 @@
     {
       "name": "BlockofDuneGold",
       "type": "block",
-      "sortid": 294,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3542,7 +3525,7 @@
     {
       "name": "BlockofDuneGoldRecipe",
       "type": "recipe",
-      "sortid": 295,
+      "sortid": 296,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3552,7 +3535,7 @@
     {
       "name": "BlockofDuneGoldUnrecipe",
       "type": "recipe",
-      "sortid": 296,
+      "sortid": 297,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3562,7 +3545,7 @@
     {
       "name": "SandstoneGoldOre",
       "type": "block",
-      "sortid": 293,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3572,7 +3555,7 @@
     {
       "name": "DuneSandstoneGoldOre",
       "type": "block",
-      "sortid": 293,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3582,7 +3565,7 @@
     {
       "name": "SandstoneGoldOreUnrecipe",
       "type": "recipe",
-      "sortid": 297,
+      "sortid": 298,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3592,7 +3575,7 @@
     {
       "name": "SandstoneGoldOreUnrecipe2",
       "type": "recipe",
-      "sortid": 298,
+      "sortid": 299,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3602,7 +3585,7 @@
     {
       "name": "DuneSandstoneGoldOreUnrecipe",
       "type": "recipe",
-      "sortid": 299,
+      "sortid": 300,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3612,7 +3595,7 @@
     {
       "name": "DuneSandstoneGoldOreUnrecipe2",
       "type": "recipe",
-      "sortid": 300,
+      "sortid": 301,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3622,7 +3605,7 @@
     {
       "name": "LeavesDropsSilkTouched",
       "type": "procedure",
-      "sortid": 301,
+      "sortid": 302,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3652,7 +3635,7 @@
     {
       "name": "LeavesDropsNormal",
       "type": "procedure",
-      "sortid": 302,
+      "sortid": 303,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3702,7 +3685,7 @@
     {
       "name": "DuneGoldNugget",
       "type": "item",
-      "sortid": 306,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3711,7 +3694,7 @@
     {
       "name": "DuneGoldNuggetRecipe",
       "type": "recipe",
-      "sortid": 307,
+      "sortid": 306,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3721,7 +3704,7 @@
     {
       "name": "DuneGoldNuggetUnrecipe",
       "type": "recipe",
-      "sortid": 308,
+      "sortid": 307,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3731,7 +3714,7 @@
     {
       "name": "RawDuneGold",
       "type": "item",
-      "sortid": 309,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3740,7 +3723,7 @@
     {
       "name": "RawDuneGoldBlock",
       "type": "block",
-      "sortid": 309,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3749,7 +3732,7 @@
     {
       "name": "SandstoneGoldOreLootTable",
       "type": "loottable",
-      "sortid": 310,
+      "sortid": 308,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -3759,7 +3742,7 @@
     {
       "name": "DuneSandstoneGoldOreLootTable",
       "type": "loottable",
-      "sortid": 311,
+      "sortid": 309,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -3769,7 +3752,7 @@
     {
       "name": "RawDuneGoldProcessing",
       "type": "recipe",
-      "sortid": 312,
+      "sortid": 310,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3779,12 +3762,52 @@
     {
       "name": "RawDuneGoldBlastProcessing",
       "type": "recipe",
-      "sortid": 313,
+      "sortid": 311,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "raw_dune_gold_blast_processing",
       "path": "~/Recipes/Ore Processing"
+    },
+    {
+      "name": "Fire",
+      "type": "painting",
+      "sortid": 312,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fire",
+      "path": "~/Paintings"
+    },
+    {
+      "name": "Wind",
+      "type": "painting",
+      "sortid": 313,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wind",
+      "path": "~/Paintings"
+    },
+    {
+      "name": "Earth",
+      "type": "painting",
+      "sortid": 314,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "earth",
+      "path": "~/Paintings"
+    },
+    {
+      "name": "Water",
+      "type": "painting",
+      "sortid": 315,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "water",
+      "path": "~/Paintings"
     }
   ],
   "variable_elements": [
@@ -4127,6 +4150,10 @@
       },
       {
         "name": "Fuel",
+        "children": []
+      },
+      {
+        "name": "Paintings",
         "children": []
       }
     ]

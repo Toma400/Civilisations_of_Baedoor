@@ -24,7 +24,7 @@ public class ColourfulBlockBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:colourful_block")
 	public static final Block block = null;
 	public ColourfulBlockBlock(CobrModElements instance) {
-		super(instance, 169);
+		super(instance, 200);
 	}
 
 	@Override

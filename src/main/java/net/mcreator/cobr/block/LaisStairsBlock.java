@@ -33,7 +33,7 @@ public class LaisStairsBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:lais_stairs")
 	public static final Block block = null;
 	public LaisStairsBlock(CobrModElements instance) {
-		super(instance, 223);
+		super(instance, 39);
 	}
 
 	@Override

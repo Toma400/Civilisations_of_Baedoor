@@ -33,7 +33,7 @@ public class EsrahPressurePlateBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:esrah_pressure_plate")
 	public static final Block block = null;
 	public EsrahPressurePlateBlock(CobrModElements instance) {
-		super(instance, 236);
+		super(instance, 86);
 	}
 
 	@Override

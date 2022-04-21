@@ -42,7 +42,7 @@ import java.util.List;
 public class EoticLakesBiome extends CobrModElements.ModElement {
 	public static Biome biome;
 	public EoticLakesBiome(CobrModElements instance) {
-		super(instance, 65);
+		super(instance, 97);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

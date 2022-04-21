@@ -52,7 +52,7 @@ public class DuneSandstoneCirtainOreBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:dune_sandstone_cirtain_ore")
 	public static final Block block = null;
 	public DuneSandstoneCirtainOreBlock(CobrModElements instance) {
-		super(instance, 267);
+		super(instance, 14);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

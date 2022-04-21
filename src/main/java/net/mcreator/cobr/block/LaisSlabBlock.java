@@ -34,7 +34,7 @@ public class LaisSlabBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:lais_slab")
 	public static final Block block = null;
 	public LaisSlabBlock(CobrModElements instance) {
-		super(instance, 222);
+		super(instance, 40);
 	}
 
 	@Override

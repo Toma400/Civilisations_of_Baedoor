@@ -31,7 +31,7 @@ public class WetDuneSandBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:wet_dune_sand")
 	public static final Block block = null;
 	public WetDuneSandBlock(CobrModElements instance) {
-		super(instance, 6);
+		super(instance, 8);
 	}
 
 	@Override

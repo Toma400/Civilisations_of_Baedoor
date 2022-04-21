@@ -22,7 +22,7 @@ public class DuneGoldIngotItem extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:dune_gold_ingot")
 	public static final Item block = null;
 	public DuneGoldIngotItem(CobrModElements instance) {
-		super(instance, 293);
+		super(instance, 69);
 	}
 
 	@Override

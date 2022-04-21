@@ -24,7 +24,7 @@ import net.mcreator.cobr.CobrModElements;
 public class EdgeTertenicDunesBiome extends CobrModElements.ModElement {
 	public static Biome biome;
 	public EdgeTertenicDunesBiome(CobrModElements instance) {
-		super(instance, 214);
+		super(instance, 244);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

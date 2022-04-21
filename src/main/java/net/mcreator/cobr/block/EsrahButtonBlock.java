@@ -33,7 +33,7 @@ public class EsrahButtonBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:esrah_button")
 	public static final Block block = null;
 	public EsrahButtonBlock(CobrModElements instance) {
-		super(instance, 235);
+		super(instance, 84);
 	}
 
 	@Override

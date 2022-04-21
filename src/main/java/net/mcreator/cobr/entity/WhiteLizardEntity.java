@@ -53,7 +53,7 @@ public class WhiteLizardEntity extends CobrModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.8f)).build("white_lizard").setRegistryName("white_lizard");
 	public WhiteLizardEntity(CobrModElements instance) {
-		super(instance, 53);
+		super(instance, 82);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new WhiteLizardRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

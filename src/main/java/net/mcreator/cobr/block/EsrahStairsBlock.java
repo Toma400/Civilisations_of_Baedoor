@@ -33,7 +33,7 @@ public class EsrahStairsBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:esrah_stairs")
 	public static final Block block = null;
 	public EsrahStairsBlock(CobrModElements instance) {
-		super(instance, 23);
+		super(instance, 28);
 	}
 
 	@Override

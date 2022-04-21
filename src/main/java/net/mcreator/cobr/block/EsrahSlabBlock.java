@@ -34,7 +34,7 @@ public class EsrahSlabBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:esrah_slab")
 	public static final Block block = null;
 	public EsrahSlabBlock(CobrModElements instance) {
-		super(instance, 24);
+		super(instance, 29);
 	}
 
 	@Override

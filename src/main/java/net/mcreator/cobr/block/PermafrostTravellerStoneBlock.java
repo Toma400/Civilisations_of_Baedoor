@@ -57,7 +57,7 @@ public class PermafrostTravellerStoneBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:permafrost_traveller_stone")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public PermafrostTravellerStoneBlock(CobrModElements instance) {
-		super(instance, 39);
+		super(instance, 62);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 

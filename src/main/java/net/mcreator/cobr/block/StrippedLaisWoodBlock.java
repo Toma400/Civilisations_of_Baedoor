@@ -32,7 +32,7 @@ public class StrippedLaisWoodBlock extends CobrModElements.ModElement {
 	@ObjectHolder("cobr:stripped_lais_wood")
 	public static final Block block = null;
 	public StrippedLaisWoodBlock(CobrModElements instance) {
-		super(instance, 228);
+		super(instance, 37);
 	}
 
 	@Override
