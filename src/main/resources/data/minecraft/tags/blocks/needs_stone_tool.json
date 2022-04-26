@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "cobr:empty_traveller_stone",
+    "cobr:dune_traveller_stone",
+    "cobr:permafrost_traveller_stone",
+    "cobr:rainforest_islands_traveller_stone",
+    "cobr:evergreen_depths_traveller_stone",
+    "cobr:dune_sandstone_gold_ore",
+    "cobr:sandstone_gold_ore",
+    "cobr:dune_sandstone_iron_ore",
+    "cobr:sandstone_iron_ore"
+  ]
+}

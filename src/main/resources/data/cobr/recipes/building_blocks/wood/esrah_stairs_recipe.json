@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "esrah_stairs",
+  "pattern": [
+    "P  ",
+    "PP ",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "cobr:esrah_planks"
+    }
+  },
+  "result": {
+    "item": "cobr:esrah_stairs",
+    "count": 4
+  }
+}

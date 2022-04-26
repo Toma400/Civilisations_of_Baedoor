@@ -1,0 +1,12 @@
+{
+  "group": "dune_gold_ingot",
+  "type": "minecraft:blasting",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "cobr:sandstone_gold_ore"
+  },
+  "result": {
+    "item": "cobr:dune_gold_ingot"
+  }
+}

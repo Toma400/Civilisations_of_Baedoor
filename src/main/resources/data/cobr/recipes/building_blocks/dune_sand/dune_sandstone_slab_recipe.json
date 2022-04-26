@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dune_sandstone_slab",
+  "pattern": [
+    "   ",
+    "   ",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "cobr:dune_sandstone"
+    }
+  },
+  "result": {
+    "item": "cobr:dune_sandstone_slab",
+    "count": 6
+  }
+}

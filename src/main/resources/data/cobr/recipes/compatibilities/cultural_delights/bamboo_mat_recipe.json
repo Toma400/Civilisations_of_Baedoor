@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bamboo_mat",
+  "pattern": [
+    "SBB",
+    "SBB",
+    "   "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:string"
+    },
+    "B": {
+      "item": "cobr:eotic_bamboo"
+    }
+  },
+  "result": {
+    "item": "culturaldelights:bamboo_mat",
+    "count": 1
+  }
+}

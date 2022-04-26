@@ -1,0 +1,16 @@
+{
+  "group": "gettable",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:acacia_sapling"
+    },
+    {
+      "item": "minecraft:vine"
+    }
+  ],
+  "result": {
+    "item": "cobr:lais_sapling",
+    "count": 1
+  }
+}

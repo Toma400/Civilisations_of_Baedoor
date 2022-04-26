@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "empty_traveller_stone",
+  "pattern": [
+    " S ",
+    "SES",
+    " S "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:cut_sandstone"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    }
+  },
+  "result": {
+    "item": "cobr:empty_traveller_stone"
+  }
+}

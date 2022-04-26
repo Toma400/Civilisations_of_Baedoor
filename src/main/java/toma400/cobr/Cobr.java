@@ -7,6 +7,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import toma400.cobr.core.CobrItems;
 import toma400.cobr.elements.paintings.CobrPaintings;
 import static toma400.cobr.Cobr.MOD_ID;
 
@@ -21,6 +22,7 @@ public class Cobr
 
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        CobrItems.register(eventBus);
         CobrPaintings.register(eventBus);
 
         MinecraftForge.EVENT_BUS.register(this);

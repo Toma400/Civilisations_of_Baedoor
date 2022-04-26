@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "dune_gold_nugget",
+  "ingredients": [
+    {
+      "item": "cobr:dune_gold_ingot"
+    }
+  ],
+  "result": {
+    "item": "cobr:dune_gold_nugget",
+    "count": 9
+  }
+}
