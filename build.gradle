@@ -16,7 +16,7 @@ apply plugin: 'org.parchmentmc.librarian.forgegradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.18.v0.a2e'
+version = '1.18.v0.a3'
 group = 'toma400.cobr' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'cobr'
 

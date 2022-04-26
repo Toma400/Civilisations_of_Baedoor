@@ -1,7 +1,6 @@
 package toma400.cobr.elements.paintings;
 
 import net.minecraft.world.entity.decoration.Motive;
-import net.minecraft.world.entity.decoration.Painting;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -20,6 +19,8 @@ public class CobrPaintings {
             PAINTING_MOTIVES.register("earth", () -> new Motive(32, 32));
     public static final RegistryObject<Motive> WATER =
             PAINTING_MOTIVES.register("water", () -> new Motive(32, 32));
+    public static final RegistryObject<Motive> WORLDS_COLLIDE =
+            PAINTING_MOTIVES.register("worlds_collide", () -> new Motive(64, 64));
 
     public static void register(IEventBus eventBus) {
         PAINTING_MOTIVES.register(eventBus);

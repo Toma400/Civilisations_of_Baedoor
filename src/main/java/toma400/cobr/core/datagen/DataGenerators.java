@@ -10,17 +10,17 @@ import toma400.cobr.Cobr;
 public class DataGenerators {
 
     //-----------------------------------------------------------------------------------
-    // For some reason, BlockStates need to go first, even though they are basing
-    // themselves on models generated in BlocksGen. Though after switching that to be
-    // "correct", it tends to somehow overwrite models with simple parenting.
-    // So, you should keep them unlogically, with BlockStates first.
+    // BlocksGen is doubled because for some reason, BlockStates overwrites data made
+    // by BlocksGen, but it also -requires- BlocksGen to be run correctly.
+    // Therefore, we run BlocksGen again to overwrite badly written files with correct
+    // references.
     //-----------------------------------------------------------------------------------
 
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
         if(event.includeServer()) {
-            generator.addProvider(new LootTablesGen.LootTablesRedirector(generator));
+            generator.addProvider(new LootTablesGen.LootTablesRedirector(generator));  // fully done
             generator.addProvider(new BlocksGen(generator, event.getExistingFileHelper()));
             generator.addProvider(new BlockStatesGen(generator, event.getExistingFileHelper()));
             generator.addProvider(new BlocksGen(generator, event.getExistingFileHelper()));
