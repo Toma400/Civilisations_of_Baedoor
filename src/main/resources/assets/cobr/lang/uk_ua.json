@@ -1,0 +1,92 @@
+{
+  "item.cobr.eotic_bamboo": "Еотичний бамбук",
+  "item.cobr.raw_lizard_meat": "Сире м'ясо ящірки",
+  "item.cobr.cooked_lizard_meat": "Приготоване м'ясо ящірки",
+  "item.cobr.lizard_stew": "Підлива з ящірки",
+  "item.cobr.disbandment_scroll": "Скруток розформування",
+
+  "item.cobr.dune_coal": "Вугілля дюн",
+  "item.cobr.cirtain_nugget": "Циртановий самородок",
+  "item.cobr.cirtain_scrap": "Циртановий уламок",
+  "item.cobr.dune_gold_ingot": "Злиток золота дюн",
+  "item.cobr.raw_dune_gold": "Сире золото дюн",
+  "item.cobr.dune_gold_nugget": "Самородок золота дюн",
+
+  "item.cobr.bone_shortsword": "Кістяний меч",
+  "item.cobr.bone_sabre": "Кістяна шабля",
+
+  "block.cobr.dune_sandstone_coal_ore": "Вугільна руда у пісковику дюн",
+  "block.cobr.dune_sandstone_iron_ore": "Залізна руда у пісковику дюн",
+  "block.cobr.dune_sandstone_gold_ore": "Золота руда у пісковику дюн",
+  "block.cobr.sandstone_coal_ore": "Вугільна руда у пісковику",
+  "block.cobr.sandstone_iron_ore": "Залізна руда у пісковику",
+  "block.cobr.sandstone_gold_ore": "Золота руда у пісковику",
+
+  "block.cobr.esrah_log": "Ісрахова колода",
+  "block.cobr.stripped_esrah_log": "Обтесана ісрахова колода",
+  "block.cobr.esrah_wood": "Ісрах",
+  "block.cobr.stripped_esrah_wood": "Обтесаний ісрай",
+  "block.cobr.esrah_planks": "Ісрахові дошки",
+  "block.cobr.esrah_stairs": "Ісрайові сходи",
+  "block.cobr.esrah_slab": "Ісрахова плита",
+  "block.cobr.esrah_trapdoor": "Ісраховий люк",
+  "block.cobr.esrah_door": "Ісрахові двері",
+  "block.cobr.esrah_fence": "Ісраховий паркан",
+  "block.cobr.esrah_fence_gate": "Ісрахова хвіртка",
+
+  "block.cobr.lais_log": "Колода дерева леіс",
+  "block.cobr.stripped_lais_log": "Обтесана колода леіс",
+  "block.cobr.lais_wood": "Дерево леіс",
+  "block.cobr.stripped_lais_wood": "Обтесане дерево леіс",
+  "block.cobr.lais_planks": "Дошки з дерева леіс",
+  "block.cobr.lais_stairs": "Сходи з дерева леіс",
+  "block.cobr.lais_slab": "Плита з дерева леіс",
+  "block.cobr.lais_trapdoor": "Люк з дерева леіс",
+  "block.cobr.lais_door": "Двері з дерева леіс",
+  "block.cobr.lais_fence": "Паркан з дерева леіс",
+  "block.cobr.lais_fence_gate": "Хвіртка з дерева леіс",
+
+  "block.cobr.esrah_sapling": "Ісраховий саджанець",
+  "block.cobr.lais_sapling": "Садженець дерева леіс",
+  "block.cobr.esrah_leaves": "Ісрахове листя",
+  "block.cobr.lais_leaves": "Листя дерева леіс",
+  "block.cobr.blooming_lais_leaves": "Квітуче листя дерева леіс",
+
+  "block.cobr.dune_sand": "Пісок дюн",
+  "block.cobr.hardened_dune_sand": "Зміцнілий пісок дюн",
+  "block.cobr.wet_dune_sand": "Вогкий пісок дюн",
+  "block.cobr.bright_dune_sand": "Яскравий пісок дюн",
+  "block.cobr.dune_sandstone": "Пісковик дюн",
+  "block.cobr.dune_sandstone_bricks": "Цегла з пісковику дюн",
+  "block.cobr.chiseled_dune_sandstone_bricks": "Вирізана цегла з пісковику дюн",
+
+  "block.cobr.dune_sandstone_slab": "Плита з пісковику дюн",
+  "block.cobr.dune_sandstone_stairs": "Сходи з пісковику дюн",
+  "block.cobr.dune_sandstone_bricks_slab": "Плита з цегли з пісковику дюн",
+  "block.cobr.dune_sandstone_bricks_stairs": "Сходи з цегли з пісковику дюн",
+
+  "block.cobr.hardened_sand": "Зміцнілий пісок",
+  "block.cobr.dune_coal_block": "Блок з вугілля дюн",
+  "block.cobr.block_of_dune_gold": "Блок з золота дюн",
+  "block.cobr.raw_dune_gold_block": "Блок сирого золота дюн",
+
+  "block.cobr.pack_of_eotic_bamboo": "Упакований еотичний бамбук",
+  "block.cobr.eotic_bamboo_block": "Блок еотичного бамбуку",
+  "block.cobr.eotic_bamboo_stairs": "Сходи з еотичного бамбуку",
+  "block.cobr.eotic_bamboo_slab": "Плита з еотичного бамбуку",
+  "block.cobr.eotic_bamboo_mat": "Пластинка з еотичного бамбуку",
+  "block.cobr.eotic_bamboo_lamp": "Лампа з еотичного бамбуку",
+
+  "block.cobr.civilisation_table": "Стіл цивілізації",
+  "block.cobr.empty_traveller_stone": "Пустий мандрівничий камінь",
+  "block.cobr.dune_traveller_stone": "Мандрівничий камінь дюн",
+  "block.cobr.permafrost_traveller_stone": "Мерзлий мандрівничний камінь",
+  "block.cobr.rainforest_islands_traveller_stone": "Мандрівничий камінь укріплених островів",
+  "block.cobr.evergreen_depths_traveller_stone": "Мандрівничий камінь вічнозелених глибин",
+
+  "tooltip.cobr.disbandment_scroll": "Є способом розформування воїна від його лідера",
+
+  "event.cobr.disbandment_owner_info": "Скруток розформування, призначений гравцем з UUID: ",
+
+  "itemGroup.cobr_tab": "Цивілізація Баедуру"
+}

@@ -1,0 +1,92 @@
+{
+  "item.cobr.eotic_bamboo": "Bamboo Eotique",
+  "item.cobr.raw_lizard_meat": "Viande de Lézard Crue",
+  "item.cobr.cooked_lizard_meat": "Viande de Lézard Cuite",
+  "item.cobr.lizard_stew": "Soupe de Lézard",
+  "item.cobr.disbandment_scroll": "Parchemin de Désengagement",
+
+  "item.cobr.dune_coal": "Charbon des Dunes",
+  "item.cobr.cirtain_nugget": "Pépite de Cirtain",
+  "item.cobr.cirtain_scrap": "Plaque de Cirtain",
+  "item.cobr.dune_gold_ingot": "Lingot d'Or des Dunes",
+  "item.cobr.raw_dune_gold": "Minerai Brut d'Or des Dunes",
+  "item.cobr.dune_gold_nugget": "Pépite d'Or des Dunes",
+
+  "item.cobr.bone_shortsword": "Épée d'Os",
+  "item.cobr.bone_sabre": "Sabre d'Os",
+
+  "block.cobr.dune_sandstone_coal_ore": "Minerai de Charbon de Grès des Dunes",
+  "block.cobr.dune_sandstone_iron_ore": "Minerai de Fer de Grès des Dunes",
+  "block.cobr.dune_sandstone_gold_ore": "Minerai d'Or de Grès des Dunes",
+  "block.cobr.sandstone_coal_ore": "Minerai de Charbon de Grès",
+  "block.cobr.sandstone_iron_ore": "Minerai de Fer de Grès ",
+  "block.cobr.sandstone_gold_ore": "Minerai d'Or de Grès",
+
+  "block.cobr.esrah_log": "Bûche d'Esrah",
+  "block.cobr.stripped_esrah_log": "Bûche d'Esrah Écorcée",
+  "block.cobr.esrah_wood": "Bois d'Esrah",
+  "block.cobr.stripped_esrah_wood": "Bois d'Esrah Écorcé",
+  "block.cobr.esrah_planks": "Planches d'Esrah",
+  "block.cobr.esrah_stairs": "Escaliers d'Esrah",
+  "block.cobr.esrah_slab": "Dalles d'Esrah",
+  "block.cobr.esrah_trapdoor": "Trappe d'Esrah",
+  "block.cobr.esrah_door": "Porte d'Esrah",
+  "block.cobr.esrah_fence": "Barrière d'Esrah",
+  "block.cobr.esrah_fence_gate": "Portillon d'Esrah",
+
+  "block.cobr.lais_log": "Bûche de Laïs",
+  "block.cobr.stripped_lais_log": "Bûche de Laïs Écorcée",
+  "block.cobr.lais_wood": "Bois de Laïs",
+  "block.cobr.stripped_lais_wood": "Bois de Laïs Écorcé",
+  "block.cobr.lais_planks": "Planches de Laïs",
+  "block.cobr.lais_stairs": "Escaliers de Laïs",
+  "block.cobr.lais_slab": "Dalles de Laïs",
+  "block.cobr.lais_trapdoor": "Trappe de Laïs",
+  "block.cobr.lais_door": "Porte de Laïs",
+  "block.cobr.lais_fence": "Barrière de Laïs",
+  "block.cobr.lais_fence_gate": "Portillon de Laïs",
+
+  "block.cobr.esrah_sapling": "Pousse d'Esrah",
+  "block.cobr.lais_sapling": "Pousse de Laïs",
+  "block.cobr.esrah_leaves": "Feuilles d'Esrah",
+  "block.cobr.lais_leaves": "Feuilles de Laïs",
+  "block.cobr.blooming_lais_leaves": "Feuilles de Laïs Fleuries",
+
+  "block.cobr.dune_sand": "Sable des Dunes",
+  "block.cobr.hardened_dune_sand": "Sable des Dunes Durci",
+  "block.cobr.wet_dune_sand": "Sable des Dunes Humide",
+  "block.cobr.bright_dune_sand": "Sable des Dunes Clair",
+  "block.cobr.dune_sandstone": "Grès des Dunes",
+  "block.cobr.dune_sandstone_bricks": "Briques de Grès des Dunes",
+  "block.cobr.chiseled_dune_sandstone_bricks": "Briques Ciselées de Grès des Dunes",
+
+  "block.cobr.dune_sandstone_slab": "Dalle de Grès des Dunes",
+  "block.cobr.dune_sandstone_stairs": "Escaliers de Grès des Dunes",
+  "block.cobr.dune_sandstone_bricks_slab": "Dalle de Briques de Grès des Dunes",
+  "block.cobr.dune_sandstone_bricks_stairs": "Escaliers de Briques de Grès des Dunes",
+
+  "block.cobr.hardened_sand": "Sable Durci",
+  "block.cobr.dune_coal_block": "Bloc de Charbon des Dunes",
+  "block.cobr.block_of_dune_gold": "Bloc d'Or des Dunes",
+  "block.cobr.raw_dune_gold_block": "Bloc d'Or des Dunes Brut",
+
+  "block.cobr.pack_of_eotic_bamboo": "Fagot de Bambou Eotique",
+  "block.cobr.eotic_bamboo_block": "Bloc de Bambou Eotique",
+  "block.cobr.eotic_bamboo_stairs": "Escaliers de Bambou Eotique",
+  "block.cobr.eotic_bamboo_slab": "Dalle de Bambou Eotique",
+  "block.cobr.eotic_bamboo_mat": "Tapis de Bambou Eotique",
+  "block.cobr.eotic_bamboo_lamp": "Lampe de Bambou Eotique",
+
+  "block.cobr.civilisation_table": "Table de Civilisation",
+  "block.cobr.empty_traveller_stone": "Pierre du Voyageur Vide",
+  "block.cobr.dune_traveller_stone": "Pierre du Voyageur des Dunes",
+  "block.cobr.permafrost_traveller_stone": "Pierre du Voyageur de l'Evergel",
+  "block.cobr.rainforest_islands_traveller_stone": "Pierre du Voyageur des Tropiques",
+  "block.cobr.evergreen_depths_traveller_stone": "Pierre du Voyageur des Luxuriantes",
+
+  "tooltip.cobr.disbandment_scroll": "Peut être utilisé pour résilier le contrat de guerriers",
+
+  "event.cobr.disbandment_owner_info": "Parchemin de Désengagement assigné au joueur dont l'UUID est: ",
+
+  "itemGroup.cobr_tab": "Civilisations of Baedoor"
+}

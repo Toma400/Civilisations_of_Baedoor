@@ -1,0 +1,92 @@
+{
+  "item.cobr.eotic_bamboo": "Eotyczny bambus",
+  "item.cobr.raw_lizard_meat": "Surowe mięso jaszczurki",
+  "item.cobr.cooked_lizard_meat": "Gotowane mięso jaszczurki",
+  "item.cobr.lizard_stew": "Gulasz z jaszczurki",
+  "item.cobr.disbandment_scroll": "Zwój odwołania",
+
+  "item.cobr.dune_coal": "Węgiel wydmowy",
+  "item.cobr.cirtain_nugget": "Bryłka cyrtanu",
+  "item.cobr.cirtain_scrap": "Płytka cyrtanu",
+  "item.cobr.dune_gold_ingot": "Sztabka wydmowego złota",
+  "item.cobr.raw_dune_gold": "Surowe wydmowe złoto",
+  "item.cobr.dune_gold_nugget": "Bryłka wydmowego złota",
+
+  "item.cobr.bone_shortsword": "Kościany krótki miecz",
+  "item.cobr.bone_sabre": "Bone Sabre",
+
+  "block.cobr.dune_sandstone_coal_ore": "Wydmowa piaskowcowa ruda węgla",
+  "block.cobr.dune_sandstone_iron_ore": "Wydmowa piaskowcowa ruda żelaza",
+  "block.cobr.dune_sandstone_gold_ore": "Wydmowa piaskowcowa ruda złota",
+  "block.cobr.sandstone_coal_ore": "Piaskowcowa ruda węgla",
+  "block.cobr.sandstone_iron_ore": "Piaskowcowa ruda żelaza",
+  "block.cobr.sandstone_gold_ore": "Piaskowcowa ruda złota",
+
+  "block.cobr.esrah_log": "Pień esrah",
+  "block.cobr.stripped_esrah_log": "Okorowany pień esrah",
+  "block.cobr.esrah_wood": "Drewno esrah",
+  "block.cobr.stripped_esrah_wood": "Okorowane drewno esrah",
+  "block.cobr.esrah_planks": "Deski z drewna esrah",
+  "block.cobr.esrah_stairs": "Schody z drewna esrah",
+  "block.cobr.esrah_slab": "Płyta z drewna esrah",
+  "block.cobr.esrah_trapdoor": "Klapa z drewna esrah",
+  "block.cobr.esrah_door": "Drzwi z drewna esrah",
+  "block.cobr.esrah_fence": "Płot z drewna esrah",
+  "block.cobr.esrah_fence_gate": "Furtka z drewna esrah",
+
+  "block.cobr.lais_log": "Pień lais",
+  "block.cobr.stripped_lais_log": "Okorowany pień lais",
+  "block.cobr.lais_wood": "Drewno lais",
+  "block.cobr.stripped_lais_wood": "Okorowane drewno lais",
+  "block.cobr.lais_planks": "Deski laisowe",
+  "block.cobr.lais_stairs": "Laisowe schody",
+  "block.cobr.lais_slab": "Laisowa płyta",
+  "block.cobr.lais_trapdoor": "Laisowa klapa",
+  "block.cobr.lais_door": "Laisowe drzwi",
+  "block.cobr.lais_fence": "Laisowy płot",
+  "block.cobr.lais_fence_gate": "Laisowa furtka",
+
+  "block.cobr.esrah_sapling": "Sadzonka drzewa esrah",
+  "block.cobr.lais_sapling": "Laisowa sadzonka",
+  "block.cobr.esrah_leaves": "Liście z drzewa esrah",
+  "block.cobr.lais_leaves": "Laisowe liście",
+  "block.cobr.blooming_lais_leaves": "Kwitnące laisowe liście",
+
+  "block.cobr.dune_sand": "Wydmowy piasek",
+  "block.cobr.hardened_dune_sand": "Utwardzony wydmowy piasek",
+  "block.cobr.wet_dune_sand": "Mokry wydmowy piasek",
+  "block.cobr.bright_dune_sand": "Błyszczący wydmowy piasek",
+  "block.cobr.dune_sandstone": "Wydmowy piaskowiec",
+  "block.cobr.dune_sandstone_bricks": "Wydmowe piaskowcowe cegły",
+  "block.cobr.chiseled_dune_sandstone_bricks": "Rzeźbiony wydmowy piaskowiec",
+
+  "block.cobr.dune_sandstone_slab": "Wydmowa piaskowcowa płyta",
+  "block.cobr.dune_sandstone_stairs": "Wydmowe piaskowcowe schody",
+  "block.cobr.dune_sandstone_bricks_slab": "Wydmowa piaskowcowa ceglana płyta",
+  "block.cobr.dune_sandstone_bricks_stairs": "Wydmowe piaskowcowe ceglane schody",
+
+  "block.cobr.hardened_sand": "Utwardzony piasek",
+  "block.cobr.dune_coal_block": "Blok węgla wydmowego",
+  "block.cobr.block_of_dune_gold": "Blok wydmowego złota",
+  "block.cobr.raw_dune_gold_block": "Blok surowego wydmowego złota",
+
+  "block.cobr.pack_of_eotic_bamboo": "Paczka eotycznego bambusa",
+  "block.cobr.eotic_bamboo_block": "Blok eotycznego bambusa",
+  "block.cobr.eotic_bamboo_stairs": "Schody z eotycznego bambusa",
+  "block.cobr.eotic_bamboo_slab": "Płyta z eotycznego bambusa",
+  "block.cobr.eotic_bamboo_mat": "Mata z eotycznego bambusa",
+  "block.cobr.eotic_bamboo_lamp": "Lampa z eotycznego bambusa",
+
+  "block.cobr.civilisation_table": "Stół Cywilizacyjny",
+  "block.cobr.empty_traveller_stone": "Pusty Kamień Podróżniczy",
+  "block.cobr.dune_traveller_stone": "Wydmowy Kamień Podróżniczy",
+  "block.cobr.permafrost_traveller_stone": "Zmarzlinowy Kamień Podróżniczy",
+  "block.cobr.rainforest_islands_traveller_stone": "Deszczowy Kamień Podróżniczy",
+  "block.cobr.evergreen_depths_traveller_stone": "Zielonogłębny Kamień Podróżniczy",
+
+  "tooltip.cobr.disbandment_scroll": "Służy do odwoływania wojowników z ich służby wobec właściciela",
+
+  "event.cobr.disbandment_owner_info": "Zwój odwołania przypisany do gracza o UUID: ",
+
+  "itemGroup.cobr_tab": "Civilisations of Baedoor"
+}

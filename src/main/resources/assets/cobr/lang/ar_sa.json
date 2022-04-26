@@ -1,0 +1,92 @@
+{
+  "item.cobr.eotic_bamboo": "البامبو الايوتيكي",
+  "item.cobr.raw_lizard_meat": "لحمة السحلية النية",
+  "item.cobr.cooked_lizard_meat": "لحمة السحلية المطهية",
+  "item.cobr.lizard_stew": "حساء السحالي",
+  "item.cobr.disbandment_scroll": "مخطوطة التحرير",
+
+  "item.cobr.dune_coal": "الفحم الرملي",
+  "item.cobr.cirtain_nugget": "كتلة سيترين",
+  "item.cobr.cirtain_scrap": "خردة السيترين",
+  "item.cobr.dune_gold_ingot": "سبيكة الذهب الرملي",
+  "item.cobr.raw_dune_gold": "ذهب رملي خام",
+  "item.cobr.dune_gold_nugget": "كتلة الذهب الرملي",
+
+  "item.cobr.bone_shortsword": "خنجر العظام",
+  "item.cobr.bone_sabre": "سيف العظام",
+
+  "block.cobr.dune_sandstone_coal_ore": "كثبان رملية كثيفة بالفحم الخام",
+  "block.cobr.dune_sandstone_iron_ore": "كثبان رملية كثيفة بالحديد الخام",
+  "block.cobr.dune_sandstone_gold_ore": "كثبان رملية كثيفة بالذهب الخام",
+  "block.cobr.sandstone_coal_ore": "كثبان رملية  بالفحم الخام",
+  "block.cobr.sandstone_iron_ore": "كثبان رملية بالحديد الخام",
+  "block.cobr.sandstone_gold_ore": "كثبان رملية بالذهب الخام",
+
+  "block.cobr.esrah_log": " خشب الاسراه",
+  "block.cobr.stripped_esrah_log": "خشب الاسراه المجرد",
+  "block.cobr.esrah_wood": "خشب الاسراه",
+  "block.cobr.stripped_esrah_wood": "خشب الاسراه المجرد",
+  "block.cobr.esrah_planks": "لوح الاسراه",
+  "block.cobr.esrah_stairs": "سلم الاسراه",
+  "block.cobr.esrah_slab": "بلاط الاسراه",
+  "block.cobr.esrah_trapdoor": "باب الاسراه المصغر",
+  "block.cobr.esrah_door": "باب الاسراه",
+  "block.cobr.esrah_fence": "سور الاسراه",
+  "block.cobr.esrah_fence_gate": "باب سور الاسراه",
+
+  "block.cobr.lais_log": "خشب لايس",
+  "block.cobr.stripped_lais_log": "خشب لايس المجرد",
+  "block.cobr.lais_wood": "خشب لايس",
+  "block.cobr.stripped_lais_wood": "خشب لايس المجرد",
+  "block.cobr.lais_planks": "لوح لايس",
+  "block.cobr.lais_stairs": "سلم لايس",
+  "block.cobr.lais_slab": "بلاط لايس",
+  "block.cobr.lais_trapdoor": "باب لايس المصغر",
+  "block.cobr.lais_door": "باب لايس",
+  "block.cobr.lais_fence": "سور لايس",
+  "block.cobr.lais_fence_gate": "باب سور لايس",
+
+  "block.cobr.esrah_sapling": "شتلة الاسراه",
+  "block.cobr.lais_sapling": "شتلة لايس",
+  "block.cobr.esrah_leaves": "اوراق شجر اسراه",
+  "block.cobr.lais_leaves": "اوراق شجر لايس",
+  "block.cobr.blooming_lais_leaves": "اوراق شجر لايس المتفتحة",
+
+  "block.cobr.dune_sand": "الرمل الكثيف",
+  "block.cobr.hardened_dune_sand": "الرمل الكثيف الصلب",
+  "block.cobr.wet_dune_sand": "الرمل الكثيف المبلل",
+  "block.cobr.bright_dune_sand": "الرمل الكثيف اللامع",
+  "block.cobr.dune_sandstone": "كثبان رملية كثيفة",
+  "block.cobr.dune_sandstone_bricks": "طوب كثبان رملية كثيفة",
+  "block.cobr.chiseled_dune_sandstone_bricks": "طوب كثبان رملية كثيفة مزخرف",
+
+  "block.cobr.dune_sandstone_slab": "بلاط الكثبان الرملية الكثيفة",
+  "block.cobr.dune_sandstone_stairs": "سلم الكثبان الرملية الكثيفة",
+  "block.cobr.dune_sandstone_bricks_slab": "بلاط طوب الكثبان الرملية الكثيفة المزخرفة",
+  "block.cobr.dune_sandstone_bricks_stairs": "سلم طوب الكثبان الرملية الكثيفة المزخرفة",
+
+  "block.cobr.hardened_sand": "الرمل الصلب",
+  "block.cobr.dune_coal_block": "كتلة الفحم الرملي",
+  "block.cobr.block_of_dune_gold": "كتلة الذهب الرملي",
+  "block.cobr.raw_dune_gold_block": "كتلة الذهب الرملي الخام",
+
+  "block.cobr.pack_of_eotic_bamboo": "مجموعة بامبو ايوتيكي",
+  "block.cobr.eotic_bamboo_block": "كتلة بامبو ايوتيكي",
+  "block.cobr.eotic_bamboo_stairs": "سلم البامبو ايوتيكي",
+  "block.cobr.eotic_bamboo_slab": "بلاط البامبو ايوتيكي",
+  "block.cobr.eotic_bamboo_mat": "مشاية البامبو ايوتيكي",
+  "block.cobr.eotic_bamboo_lamp": "مصباح البامبو ايوتيكي",
+
+  "block.cobr.civilisation_table": "طاولة الحضارة",
+  "block.cobr.empty_traveller_stone": "حجر المسافر فارغ",
+  "block.cobr.dune_traveller_stone": "حجر المسافر رملية",
+  "block.cobr.permafrost_traveller_stone": "حجر المسافر مجمد",
+  "block.cobr.rainforest_islands_traveller_stone": "حجر المسافر لجزيرة الغابة المطيرة",
+  "block.cobr.evergreen_depths_traveller_stone": "حجر المسافر لاعماق ايفيردريم",
+
+  "tooltip.cobr.disbandment_scroll": "بمثابة وسيلة لتفكيك المحارب من زعيمه",
+
+  "event.cobr.disbandment_owner_info": "مخطوطة التحرير المعين من قبل لاعب مع UUID: ",
+
+  "itemGroup.cobr_tab": "حضارات بايدور"
+}
