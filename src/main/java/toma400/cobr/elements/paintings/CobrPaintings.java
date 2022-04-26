@@ -20,6 +20,8 @@ public class CobrPaintings {
             PAINTING_MOTIVES.register("earth", () -> new PaintingType(32, 32));
     public static final RegistryObject<PaintingType> WATER =
             PAINTING_MOTIVES.register("water", () -> new PaintingType(32, 32));
+    public static final RegistryObject<PaintingType> WORLDS_COLLIDE =
+            PAINTING_MOTIVES.register("worlds_collide", () -> new PaintingType(64, 64));
 
     public static void register(IEventBus eventBus) {
         PAINTING_MOTIVES.register(eventBus);
