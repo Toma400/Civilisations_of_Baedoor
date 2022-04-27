@@ -27,6 +27,7 @@ public class Cobr
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         CobrItems.register(eventBus);
+        CobrBlocks.register(eventBus);
         CobrPaintings.register(eventBus);
 
         MinecraftForge.EVENT_BUS.register(this);

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "cobr:dune_sandstone_bricks"
-  },
-  "result": "cobr:dune_sandstone_bricks_slab",
-  "count": 2
-}
