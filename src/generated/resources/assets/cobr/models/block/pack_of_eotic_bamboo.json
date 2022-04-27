@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "cobr:block/pack_of_eotic_bamboo_side",
+    "end": "cobr:block/pack_of_eotic_bamboo_top"
+  }
+}

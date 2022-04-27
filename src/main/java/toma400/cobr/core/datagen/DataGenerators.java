@@ -20,10 +20,10 @@ public class DataGenerators {
     public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
         if(event.includeServer()) {
-            generator.addProvider(new ItemsGen(generator, event.getExistingFileHelper()));
             generator.addProvider(new BlocksGen(generator, event.getExistingFileHelper()));
             generator.addProvider(new BlockStatesGen(generator, event.getExistingFileHelper()));
             generator.addProvider(new BlocksGen(generator, event.getExistingFileHelper()));
+            generator.addProvider(new ItemsGen(generator, event.getExistingFileHelper()));
         }
 
         //language + textures + recipes + tags alone
