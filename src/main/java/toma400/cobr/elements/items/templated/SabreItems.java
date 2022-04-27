@@ -15,7 +15,7 @@ public class SabreItems extends SwordItem {
     @Override
     //Sabre registry for Wastelands of Baedoor compat (adds NBTs to the sabre depending on its type)
     public void inventoryTick(ItemStack pStack, Level pLevel, Entity pEntity, int pSlotId, boolean pIsSelected) {
-        if(pStack.getOrCreateTag().getBoolean("is_NBT_set") == false) {
+        if(!pStack.getOrCreateTag().getBoolean("is_NBT_set")) {
             pStack.getOrCreateTag().putBoolean("is_NBT_set", true);
             if(pStack.getItem() == CobrItems.BONE_SABRE.get()) {
                 pStack.getOrCreateTag().putDouble("sabre_defence", 10);

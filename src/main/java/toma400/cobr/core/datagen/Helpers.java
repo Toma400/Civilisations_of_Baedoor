@@ -14,32 +14,6 @@ import java.util.stream.Collectors;
 
 public class Helpers {
 
-    //ITERATORS
-    @Deprecated
-    public static Item ItemRegistryIterator() {
-        return CobrItems.ITEMS.getEntries().iterator().next().get().asItem();
-    }
-
-    //ITEM GENERATION
-    @Deprecated
-    public class ItemModelTypes {
-        // Parent type should evoke ItemModelTypeRef here instead
-        public static final ResourceLocation GENERATED = new ResourceLocation("item/generated");
-        public static final ResourceLocation HANDHELD = new ResourceLocation("item/handheld");
-        public static final ModelFile GENERATED_FILE = new ModelFile(new ResourceLocation("item/generated")) {
-            @Override
-            protected boolean exists() {
-                return false;
-            }
-        };
-        public static final ModelFile HANDHELD_FILE = new ModelFile(new ResourceLocation("item/handheld")) {
-            @Override
-            protected boolean exists() {
-                return false;
-            }
-        };
-    }
-
     //ITEM GENERATION
     public static final ResourceLocation ItemPathRef(String namespace, String item) {
         ResourceLocation Item = new ResourceLocation(Cobr.MOD_ID + ":item/" + item);

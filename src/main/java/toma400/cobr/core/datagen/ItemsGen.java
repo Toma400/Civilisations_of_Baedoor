@@ -2,6 +2,7 @@ package toma400.cobr.core.datagen;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.TieredItem;
@@ -28,7 +29,7 @@ public class ItemsGen extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        //ItemRegistrar(CobrItems.ITEMS.getEntries());
+        ItemRegistrar(CobrItems.ITEMS.getEntries());
         //BlockRegistrar(CobrBlocks.BLOCKS.getEntries());
     }
 
@@ -37,12 +38,14 @@ public class ItemsGen extends ItemModelProvider {
     //--------------------------------------------------------------------
     public void ItemRegistrar(Collection<RegistryObject<Item>> items) {
         for (RegistryObject<Item> item : items) {
-            String name = item.getId().getPath();
-            ModelFile modelType = getExistingFile(mcLoc("item/generated"));
-            if (item.get() instanceof TieredItem) {
-                modelType = getExistingFile(mcLoc("item/handheld"));
+            if (!(item.get() instanceof BlockItem)) { // delegates all possible blockItems to another builder
+                String name = item.getId().getPath();
+                ModelFile modelType = getExistingFile(mcLoc("item/generated"));
+                if (item.get() instanceof TieredItem) {
+                    modelType = getExistingFile(mcLoc("item/handheld"));
+                }
+                this.getBuilder(name).parent(modelType).texture("layer0", ITEM_FOLDER + "/" + name);
             }
-            this.getBuilder(name).parent(modelType).texture("layer0", ITEM_FOLDER + "/" + name);
         }
     }
 

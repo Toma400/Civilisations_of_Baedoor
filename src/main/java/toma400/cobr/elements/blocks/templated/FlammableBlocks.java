@@ -67,8 +67,8 @@ public class FlammableBlocks {
         }
     }
     public static class Fence extends FenceBlock {
-        public Fence(Properties p_53302_) {
-            super(p_53302_);
+        public Fence(Properties properties) {
+            super(properties);
         }
         @Override
         public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
@@ -84,8 +84,8 @@ public class FlammableBlocks {
         }
     }
     public static class FenceGate extends FenceGateBlock {
-        public FenceGate(Properties p_53356_) {
-            super(p_53356_);
+        public FenceGate(Properties properties) {
+            super(properties);
         }
         @Override
         public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
@@ -101,8 +101,8 @@ public class FlammableBlocks {
         }
     }
     public static class Slab extends SlabBlock {
-        public Slab(Properties p_56359_) {
-            super(p_56359_);
+        public Slab(Properties properties) {
+            super(properties);
         }
         @Override
         public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
@@ -135,8 +135,8 @@ public class FlammableBlocks {
         }
     }
     public static class Trapdoor extends TrapDoorBlock {
-        public Trapdoor(Properties p_57526_) {
-            super(p_57526_);
+        public Trapdoor(Properties properties) {
+            super(properties);
         }
         @Override
         public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
@@ -152,8 +152,8 @@ public class FlammableBlocks {
         }
     }
     public static class Leaves extends LeavesBlock {
-        public Leaves(Properties p_54422_) {
-            super(p_54422_);
+        public Leaves(Properties properties) {
+            super(properties);
         }
         @Override
         public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
