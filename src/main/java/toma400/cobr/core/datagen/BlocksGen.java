@@ -41,7 +41,7 @@ public class BlocksGen extends BlockModelProvider {
                         Helpers.BlockPathRef("", pathage + "_side"));
                 sign(pathage, Helpers.BlockPathRef("", pathage + "_side"));
             }
-            else if(block.get() instanceof FlammableBlocks.FlammableStone) {
+            else if(block.get() instanceof FlammableBlocks.FlammableStone  || block.get() == CobrBlocks.EOTIC_BAMBOO_BLOCK.get() || block.get() == CobrBlocks.DUNE_SANDSTONE.get() || block.get() == CobrBlocks.DUNE_SANDSTONE_BRICKS.get() || block.get() == CobrBlocks.ESRAH_PLANKS.get() || block.get() == CobrBlocks.LAIS_PLANKS.get()) {
                 cubeAll(pathage, Helpers.BlockPathRef("", pathage));
                 sign(pathage, Helpers.BlockPathRef("", pathage));
             }
@@ -73,20 +73,17 @@ public class BlocksGen extends BlockModelProvider {
                         Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 2)),
                         Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 3)));
             }
-            //else if(block.get() instanceof SlabBlock) {
-            //    String pathage2 = pathage.replace("_slab", "");
-            //    if(pathage.contains("wood")) {
-            //        pathage2 = pathage.replace("wood", "log");
-            //    }
-            //    slab(pathage,
-            //            Helpers.BlockPathRef("", pathage2),
-            //            Helpers.BlockPathRef("", pathage2),
-            //            Helpers.BlockPathRef("", pathage2));
-            //    slabTop(pathage + "_top",
-            //            Helpers.BlockPathRef("", pathage2),
-            //            Helpers.BlockPathRef("", pathage2),
-            //            Helpers.BlockPathRef("", pathage2));
-            //}
+            else if(block.get() instanceof SlabBlock) {
+                String pathage2 = Helpers.slabNamingModifier(block.get(), pathage);
+                slab(pathage,
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 1)),
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 2)),
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 3)));
+                slabTop(pathage + "_top",
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 1)),
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 2)),
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 3)));
+            }
             //---------------------------------------------------------------------
             // SKIPPED
             // Here are all blockstates that are added manually.

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "cobr:block/eotic_bamboo",
-    "top": "cobr:block/eotic_bamboo",
-    "side": "cobr:block/eotic_bamboo"
-  }
-}

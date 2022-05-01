@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "cobr:block/lais_planks",
+    "particle": "cobr:block/lais_planks"
+  }
+}

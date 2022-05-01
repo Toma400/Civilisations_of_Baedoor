@@ -37,7 +37,7 @@ public class BlockStatesGen extends BlockStateProvider {
             if(block.get() instanceof DataGenHelper.EachSideHorizontalBlock) {
                 horizontalBlock(block.get(), modelProvider(block.get(), ""));
             }
-            else if(block.get() instanceof FlammableBlocks.FlammableStone) {
+            else if(block.get() instanceof FlammableBlocks.FlammableStone  || block.get() == CobrBlocks.EOTIC_BAMBOO_BLOCK.get() || block.get() == CobrBlocks.DUNE_SANDSTONE.get() || block.get() == CobrBlocks.DUNE_SANDSTONE_BRICKS.get() || block.get() == CobrBlocks.ESRAH_PLANKS.get() || block.get() == CobrBlocks.LAIS_PLANKS.get()) {
                 simpleBlock(block.get(), modelProvider(block.get(), ""));
             }
             else if(block.get() instanceof LogBlocks) {
@@ -46,18 +46,10 @@ public class BlockStatesGen extends BlockStateProvider {
             else if(block.get() instanceof StairBlock) {
                 stairsBlock((StairBlock) block.get(), modelProviderAdv(block.get(), ""), modelProviderAdv(block.get(), "_inner"), modelProviderAdv(block.get(), "_outer"));
             }
-            //if(block.get() instanceof SlabBlock) {
-            //    String doubleVariant = block.get().getRegistryName().getPath().replace("_slab", "");;
-            //    if(block.get() instanceof FlammableBlocks.Slab) {  // for logs
-            //        if(block.get() == CobrBlocks.EOTIC_BAMBOO_SLAB.get()) {
-            //            doubleVariant = block.get().getRegistryName().getPath().replace("_slab", "_block");
-            //        }
-            //        else {
-            //            doubleVariant = block.get().getRegistryName().getPath().replace("_slab", "_planks");
-            //        }
-            //    }
-            //    slabBlock((SlabBlock) block.get(), modelProvider(block.get(), ""), customModelProvider(block.get(), ""), modelProvider(block.get(), "_top"));
-            //}
+            else if(block.get() instanceof SlabBlock) {
+                String doubleVariant = Helpers.slabDoubleVariant(block.get());
+                slabBlock((SlabBlock) block.get(), modelProvider(block.get(), ""), modelProviderAdv(block.get(), "_top"), customModelProvider(block.get(), doubleVariant));
+            }
         }
     }
 
@@ -86,7 +78,7 @@ public class BlockStatesGen extends BlockStateProvider {
         // though if we want to add some variation (for example "_horizontal" suffix), it will be used under that string
         //----------------------------------------------------------------------------------------------------------------------
         ResourceLocation locationWorkedOn = new ResourceLocation(Cobr.MOD_ID + ":block/" + modelVariant);
-        ModelFile modelWorkedOn = models().withExistingParent(resourceGiven.getRegistryName().getPath(), locationWorkedOn);
+        ModelFile modelWorkedOn = models().withExistingParent(modelVariant, locationWorkedOn);
         return modelWorkedOn;
     }
 

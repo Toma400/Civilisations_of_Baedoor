@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "cobr:block/eotic_bamboo_block",
+    "particle": "cobr:block/eotic_bamboo_block"
+  }
+}
