@@ -1,6 +1,9 @@
 package toma400.cobr.core.datagen;
 
+import javafx.scene.transform.Rotate;
 import net.minecraft.block.Block;
+import net.minecraft.block.RotatedPillarBlock;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.BlockModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -37,11 +40,11 @@ public class BlocksGen extends BlockModelProvider {
                         Helpers.BlockPathRef("", pathage + "_side"));
                 //sign(pathage, Helpers.BlockPathRef("", pathage + "_side"));
             }
-            if(block.get() instanceof FlammableBlocks.FlammableStone) {
+            else if(block.get() instanceof FlammableBlocks.FlammableStone) {
                 cubeAll(pathage, Helpers.BlockPathRef("", pathage));
                 //sign(pathage, Helpers.BlockPathRef("", pathage));
             }
-            if(block.get() instanceof FlammableBlocks.LogBlocks){
+            else if(block.get() instanceof RotatedPillarBlock){
                 String pathage2 = pathage;
                 if(pathage.contains("wood")) {
                     pathage2 = pathage.replace("wood", "log");
@@ -53,6 +56,21 @@ public class BlocksGen extends BlockModelProvider {
                         Helpers.BlockPathRef("", pathage2 + "_side"),
                         Helpers.BlockPathRef("", pathage2 + "_top"));
                 //sign(pathage, Helpers.BlockPathRef("", pathage2 + "_side"));
+            }
+            else if(block.get() instanceof StairsBlock) {
+                String pathage2 = Helpers.stairNamingModifier(block.get(), pathage);
+                stairs(pathage,
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 1)),
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 2)),
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 3)));
+                stairsInner(pathage + "_inner",
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 1)),
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 2)),
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 3)));
+                stairsOuter(pathage + "_outer",
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 1)),
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 2)),
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 3)));
             }
             //---------------------------------------------------------------------
             // SKIPPED

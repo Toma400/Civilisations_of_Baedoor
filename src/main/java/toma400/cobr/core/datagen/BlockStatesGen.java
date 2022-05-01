@@ -2,6 +2,7 @@ package toma400.cobr.core.datagen;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.RotatedPillarBlock;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
@@ -33,11 +34,14 @@ public class BlockStatesGen extends BlockStateProvider {
             if(block.get() instanceof DataGenHelper.EachSideHorizontalBlock) {
                 horizontalBlock(block.get(), modelProvider(block.get(), ""));
             }
-            if(block.get() instanceof FlammableBlocks.FlammableStone) {
+            else if(block.get() instanceof FlammableBlocks.FlammableStone) {
                 simpleBlock(block.get(), modelProvider(block.get(), ""));
             }
-            if(block.get() instanceof FlammableBlocks.LogBlocks) {
+            else if(block.get() instanceof FlammableBlocks.LogBlocks) {
                 axisBlock((RotatedPillarBlock) block.get(), modelProvider(block.get(), ""), modelProvider(block.get(), "_horizontal"));
+            }
+            else if(block.get() instanceof StairsBlock) {
+                stairsBlock((StairsBlock) block.get(), modelProviderAdv(block.get(), ""), modelProviderAdv(block.get(), "_inner"), modelProviderAdv(block.get(), "_outer"));
             }
         }
     }
@@ -49,6 +53,14 @@ public class BlockStatesGen extends BlockStateProvider {
         //----------------------------------------------------------------------------------------------------------------------
         ResourceLocation locationWorkedOn = new ResourceLocation(Cobr.MOD_ID + ":block/" + resourceGiven.getRegistryName().getPath() + modelVariant);
         ModelFile modelWorkedOn = models().withExistingParent(resourceGiven.getRegistryName().getPath(), locationWorkedOn);
+        return modelWorkedOn;
+    }
+    public ModelFile modelProviderAdv (Block resourceGiven, String modelVariant) {
+        //----------------------------------------------------------------------------------------------------------------------
+        // Advanced provider, adding `modelVariant` string as nested (required for some blockstates, such as slabs)
+        //----------------------------------------------------------------------------------------------------------------------
+        ResourceLocation locationWorkedOn = new ResourceLocation(Cobr.MOD_ID + ":block/" + resourceGiven.getRegistryName().getPath() + modelVariant);
+        ModelFile modelWorkedOn = models().withExistingParent(resourceGiven.getRegistryName().getPath() + modelVariant, locationWorkedOn);
         return modelWorkedOn;
     }
 
