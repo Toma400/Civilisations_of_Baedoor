@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "cobr:block/eotic_bamboo_slab_top"
+    },
+    "type=bottom": {
+      "model": "cobr:block/eotic_bamboo_slab"
+    },
+    "type=double": {
+      "model": "cobr:block/eotic_bamboo_block"
+    }
+  }
+}

@@ -2,6 +2,7 @@ package toma400.cobr.core.datagen;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.RotatedPillarBlock;
+import net.minecraft.block.SlabBlock;
 import net.minecraft.block.StairsBlock;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.util.ResourceLocation;
@@ -34,7 +35,7 @@ public class BlockStatesGen extends BlockStateProvider {
             if(block.get() instanceof DataGenHelper.EachSideHorizontalBlock) {
                 horizontalBlock(block.get(), modelProvider(block.get(), ""));
             }
-            else if(block.get() instanceof FlammableBlocks.FlammableStone) {
+            else if(block.get() instanceof FlammableBlocks.FlammableStone || block.get() == CobrBlocks.EOTIC_BAMBOO_BLOCK.get() || block.get() == CobrBlocks.DUNE_SANDSTONE.get() || block.get() == CobrBlocks.DUNE_SANDSTONE_BRICKS.get() || block.get() == CobrBlocks.ESRAH_PLANKS.get() || block.get() == CobrBlocks.LAIS_PLANKS.get()) {
                 simpleBlock(block.get(), modelProvider(block.get(), ""));
             }
             else if(block.get() instanceof FlammableBlocks.LogBlocks) {
@@ -42,6 +43,10 @@ public class BlockStatesGen extends BlockStateProvider {
             }
             else if(block.get() instanceof StairsBlock) {
                 stairsBlock((StairsBlock) block.get(), modelProviderAdv(block.get(), ""), modelProviderAdv(block.get(), "_inner"), modelProviderAdv(block.get(), "_outer"));
+            }
+            else if(block.get() instanceof SlabBlock) {
+                String doubleVariant = Helpers.slabDoubleVariant(block.get());
+                slabBlock((SlabBlock) block.get(), modelProvider(block.get(), ""), modelProviderAdv(block.get(), "_top"), customModelProvider(block.get(), doubleVariant));
             }
         }
     }
@@ -63,5 +68,13 @@ public class BlockStatesGen extends BlockStateProvider {
         ModelFile modelWorkedOn = models().withExistingParent(resourceGiven.getRegistryName().getPath() + modelVariant, locationWorkedOn);
         return modelWorkedOn;
     }
-
+    public ModelFile customModelProvider (Block resourceGiven, String modelVariant) {
+        //----------------------------------------------------------------------------------------------------------------------
+        // modelVariant should be default as "", as it directs us precisely to file named after block
+        // though if we want to add some variation (for example "_horizontal" suffix), it will be used under that string
+        //----------------------------------------------------------------------------------------------------------------------
+        ResourceLocation locationWorkedOn = new ResourceLocation(Cobr.MOD_ID + ":block/" + modelVariant);
+        ModelFile modelWorkedOn = models().withExistingParent(modelVariant, locationWorkedOn);
+        return modelWorkedOn;
+    }
 }

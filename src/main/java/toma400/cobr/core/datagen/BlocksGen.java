@@ -1,8 +1,8 @@
 package toma400.cobr.core.datagen;
 
-import javafx.scene.transform.Rotate;
 import net.minecraft.block.Block;
 import net.minecraft.block.RotatedPillarBlock;
+import net.minecraft.block.SlabBlock;
 import net.minecraft.block.StairsBlock;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.BlockModelProvider;
@@ -38,11 +38,9 @@ public class BlocksGen extends BlockModelProvider {
                         Helpers.BlockPathRef("", pathage + "_front"),
                         Helpers.BlockPathRef("", pathage + "_side"),
                         Helpers.BlockPathRef("", pathage + "_side"));
-                //sign(pathage, Helpers.BlockPathRef("", pathage + "_side"));
             }
-            else if(block.get() instanceof FlammableBlocks.FlammableStone) {
+            else if(block.get() instanceof FlammableBlocks.FlammableStone  || block.get() == CobrBlocks.EOTIC_BAMBOO_BLOCK.get() || block.get() == CobrBlocks.DUNE_SANDSTONE.get() || block.get() == CobrBlocks.DUNE_SANDSTONE_BRICKS.get() || block.get() == CobrBlocks.ESRAH_PLANKS.get() || block.get() == CobrBlocks.LAIS_PLANKS.get()) {
                 cubeAll(pathage, Helpers.BlockPathRef("", pathage));
-                //sign(pathage, Helpers.BlockPathRef("", pathage));
             }
             else if(block.get() instanceof RotatedPillarBlock){
                 String pathage2 = pathage;
@@ -55,7 +53,6 @@ public class BlocksGen extends BlockModelProvider {
                 cubeColumnHorizontal(pathage + "_horizontal",
                         Helpers.BlockPathRef("", pathage2 + "_side"),
                         Helpers.BlockPathRef("", pathage2 + "_top"));
-                //sign(pathage, Helpers.BlockPathRef("", pathage2 + "_side"));
             }
             else if(block.get() instanceof StairsBlock) {
                 String pathage2 = Helpers.stairNamingModifier(block.get(), pathage);
@@ -68,6 +65,17 @@ public class BlocksGen extends BlockModelProvider {
                         Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 2)),
                         Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 3)));
                 stairsOuter(pathage + "_outer",
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 1)),
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 2)),
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 3)));
+            }
+            else if(block.get() instanceof SlabBlock) {
+                String pathage2 = Helpers.slabNamingModifier(block.get(), pathage);
+                slab(pathage,
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 1)),
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 2)),
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 3)));
+                slabTop(pathage + "_top",
                         Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 1)),
                         Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 2)),
                         Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 3)));

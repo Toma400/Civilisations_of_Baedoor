@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "cobr:block/lais_slab_top"
+    },
+    "type=bottom": {
+      "model": "cobr:block/lais_slab"
+    },
+    "type=double": {
+      "model": "cobr:block/lais_planks"
+    }
+  }
+}
