@@ -3,9 +3,7 @@ package toma400.cobr.core.datagen;
 import net.minecraft.core.Direction;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.OreBlock;
-import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.client.model.generators.BlockModelProvider;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
@@ -39,12 +37,27 @@ public class BlockStatesGen extends BlockStateProvider {
             if(block.get() instanceof DataGenHelper.EachSideHorizontalBlock) {
                 horizontalBlock(block.get(), modelProvider(block.get(), ""));
             }
-            if(block.get() instanceof FlammableBlocks.FlammableStone) {
+            else if(block.get() instanceof FlammableBlocks.FlammableStone) {
                 simpleBlock(block.get(), modelProvider(block.get(), ""));
             }
-            if(block.get() instanceof LogBlocks) {
+            else if(block.get() instanceof LogBlocks) {
                 axisBlock((RotatedPillarBlock) block.get(), modelProvider(block.get(), ""), modelProvider(block.get(), "_horizontal"));
             }
+            else if(block.get() instanceof StairBlock) {
+                stairsBlock((StairBlock) block.get(), modelProviderAdv(block.get(), ""), modelProviderAdv(block.get(), "_inner"), modelProviderAdv(block.get(), "_outer"));
+            }
+            //if(block.get() instanceof SlabBlock) {
+            //    String doubleVariant = block.get().getRegistryName().getPath().replace("_slab", "");;
+            //    if(block.get() instanceof FlammableBlocks.Slab) {  // for logs
+            //        if(block.get() == CobrBlocks.EOTIC_BAMBOO_SLAB.get()) {
+            //            doubleVariant = block.get().getRegistryName().getPath().replace("_slab", "_block");
+            //        }
+            //        else {
+            //            doubleVariant = block.get().getRegistryName().getPath().replace("_slab", "_planks");
+            //        }
+            //    }
+            //    slabBlock((SlabBlock) block.get(), modelProvider(block.get(), ""), customModelProvider(block.get(), ""), modelProvider(block.get(), "_top"));
+            //}
         }
     }
 
@@ -54,6 +67,25 @@ public class BlockStatesGen extends BlockStateProvider {
         // though if we want to add some variation (for example "_horizontal" suffix), it will be used under that string
         //----------------------------------------------------------------------------------------------------------------------
         ResourceLocation locationWorkedOn = new ResourceLocation(Cobr.MOD_ID + ":block/" + resourceGiven.getRegistryName().getPath() + modelVariant);
+        ModelFile modelWorkedOn = models().withExistingParent(resourceGiven.getRegistryName().getPath(), locationWorkedOn);
+        return modelWorkedOn;
+    }
+
+    public ModelFile modelProviderAdv (Block resourceGiven, String modelVariant) {
+        //----------------------------------------------------------------------------------------------------------------------
+        // Advanced provider, adding `modelVariant` string as nested (required for some blockstates, such as slabs)
+        //----------------------------------------------------------------------------------------------------------------------
+        ResourceLocation locationWorkedOn = new ResourceLocation(Cobr.MOD_ID + ":block/" + resourceGiven.getRegistryName().getPath() + modelVariant);
+        ModelFile modelWorkedOn = models().withExistingParent(resourceGiven.getRegistryName().getPath() + modelVariant, locationWorkedOn);
+        return modelWorkedOn;
+    }
+
+    public ModelFile customModelProvider (Block resourceGiven, String modelVariant) {
+        //----------------------------------------------------------------------------------------------------------------------
+        // modelVariant should be default as "", as it directs us precisely to file named after block
+        // though if we want to add some variation (for example "_horizontal" suffix), it will be used under that string
+        //----------------------------------------------------------------------------------------------------------------------
+        ResourceLocation locationWorkedOn = new ResourceLocation(Cobr.MOD_ID + ":block/" + modelVariant);
         ModelFile modelWorkedOn = models().withExistingParent(resourceGiven.getRegistryName().getPath(), locationWorkedOn);
         return modelWorkedOn;
     }

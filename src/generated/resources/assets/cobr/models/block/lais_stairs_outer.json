@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/outer_stairs",
   "textures": {
+    "side": "cobr:block/lais_planks",
     "bottom": "cobr:block/lais_planks",
-    "top": "cobr:block/lais_planks",
-    "side": "cobr:block/lais_planks"
+    "top": "cobr:block/lais_planks"
   }
 }

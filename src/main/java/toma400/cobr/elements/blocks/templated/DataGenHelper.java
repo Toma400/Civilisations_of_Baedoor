@@ -5,6 +5,7 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -21,8 +22,8 @@ public class DataGenHelper {
 
         public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
-        public EachSideHorizontalBlock(Properties p_49795_) {
-            super(p_49795_);
+        public EachSideHorizontalBlock(Properties properties) {
+            super(properties);
             this.registerDefaultState(this.getStateDefinition().any().setValue(FACING, Direction.NORTH));
         }
 

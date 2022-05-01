@@ -2,6 +2,9 @@ package toma400.cobr.core.datagen;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraftforge.client.model.generators.BlockModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
@@ -38,11 +41,11 @@ public class BlocksGen extends BlockModelProvider {
                         Helpers.BlockPathRef("", pathage + "_side"));
                 sign(pathage, Helpers.BlockPathRef("", pathage + "_side"));
             }
-            if(block.get() instanceof FlammableBlocks.FlammableStone) {
+            else if(block.get() instanceof FlammableBlocks.FlammableStone) {
                 cubeAll(pathage, Helpers.BlockPathRef("", pathage));
                 sign(pathage, Helpers.BlockPathRef("", pathage));
             }
-            if(block.get() instanceof LogBlocks){
+            else if(block.get() instanceof RotatedPillarBlock){
                 String pathage2 = pathage;
                 if(pathage.contains("wood")) {
                     pathage2 = pathage.replace("wood", "log");
@@ -55,6 +58,35 @@ public class BlocksGen extends BlockModelProvider {
                         Helpers.BlockPathRef("", pathage2 + "_top"));
                 sign(pathage, Helpers.BlockPathRef("", pathage2 + "_side"));
             }
+            else if(block.get() instanceof StairBlock) {
+                String pathage2 = Helpers.stairNamingModifier(block.get(), pathage);
+                stairs(pathage,
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 1)),
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 2)),
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 3)));
+                stairsInner(pathage + "_inner",
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 1)),
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 2)),
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 3)));
+                stairsOuter(pathage + "_outer",
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 1)),
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 2)),
+                        Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 3)));
+            }
+            //else if(block.get() instanceof SlabBlock) {
+            //    String pathage2 = pathage.replace("_slab", "");
+            //    if(pathage.contains("wood")) {
+            //        pathage2 = pathage.replace("wood", "log");
+            //    }
+            //    slab(pathage,
+            //            Helpers.BlockPathRef("", pathage2),
+            //            Helpers.BlockPathRef("", pathage2),
+            //            Helpers.BlockPathRef("", pathage2));
+            //    slabTop(pathage + "_top",
+            //            Helpers.BlockPathRef("", pathage2),
+            //            Helpers.BlockPathRef("", pathage2),
+            //            Helpers.BlockPathRef("", pathage2));
+            //}
             //---------------------------------------------------------------------
             // SKIPPED
             // Here are all blockstates that are added manually.

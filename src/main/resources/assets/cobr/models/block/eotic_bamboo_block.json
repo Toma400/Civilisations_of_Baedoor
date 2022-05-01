@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "cobr:block/eotic_bamboo_tiles"
+    "all": "cobr:block/eotic_bamboo"
   }
 }
