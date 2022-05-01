@@ -1,0 +1,98 @@
+                        BAEDOOR MOD LICENSE
+                       Version 1, 1 May 2022
+
+                        created by Toma400
+                         (Tomasz Stępień)
+
+
+License created to distinct Baedoor mods from my other art
+(since mods differ by copyrights inherited from core game) and
+to set distinction between All Rights Reserved and Baedoor Mod
+License (later: BML), since BML gives you some more possibilities.
+
+License may change in the future with next iterations.
+As an owner of the license and copyrights, I will use term "we" to
+describe myself.
+For software under BML license I will use term "product". Parent
+game for mod (for which it was made for) is called as "core game".
+
+
+1. GENERAL LICENSE
+Baedoor Mod License prohibits use of any product's contents - by
+that we mean code and assets in their broad sense, if not stated
+in section 2.
+Content copyrights belong to product's owner (or team, if stated so).
+
+Any exceptions in copyrights' holding or specific licenses being used
+for part of product's contents are stated explicitly on either
+product's page, readme, license or EULA.
+If more than one license is used for product's contents, BML is
+applied only to contents not being under any other license.
+
+2. CONTENT USE EXCEPTIONS
+Any use of product contents has to be discussed with copyrights owner,
+unless it is meant to be used for:
+
+  2.1. Mod compatibility with the product, which isn't blatant copy-paste
+       of content feature and is within core game EULA
+    -> "Compatibility feature" needs to add feature that is exclusive
+       and wasn't done in any of those mods. Most of compatibilities
+       should count here, but this subsection is here to protect
+       copy-pasting product's feature and calling it "compatibility".
+    -> Compatibility has to follow core game EULA, so if said agreement
+       prohibits selling of mods, compatibility software using product's
+       contents should not be sold, to comply that EULA.
+
+  2.2. Porting the product to another core game version, if copyright's
+       owner is not active nor reachable via any provided social media
+       for long time
+    -> You need explicit permission from author to port product to
+       another core game version or API, if said author is active.
+    -> If author is unreachable by any means for more than one year,
+       you are granted to use its contents ONLY to port the mod to
+       another core game version or API, and to maintain it as long
+       as author becomes active. Person who ports product should
+       leave message for author for them to know that product is
+       being ported and they can inspect it.
+    -> Author who came back after such long break has right to do
+       anything with said port, though users of BML license are asked
+       to not overuse this right as stated here.
+
+3. REDISTRIBUTION OF PRODUCT AND WAYS OF USE
+Baedoor Mod License does not allow for further redistribution of the
+product.
+BML allows user to:
+
+  3.1. Using the product for its intended purpose (playing within core
+       game environment)
+  3.2. Changing product for their own private purposes (not being
+       shared with anyone)
+  3.3. Creating new creative public content based on the product
+       (gameplay videos)
+  3.4. Creating modpacks with product
+
+As long as none of the above breaks core game EULA.
+
+4. BAEDOOR UNIVERSE LICENSE
+Baedoor Mod License is made for universal use for any mods and is
+described above.
+This section is restricted only for products using Baedoor universe,
+as it is following a bit different copyright status being
+Baedoor License (BL).
+
+-----------------------------------------------------------------------
+This is only excerpt from Baedoor License (v1) on Baedoor Universe use,
+full license can be found under this link:
+https://github.com/Toma400/The_Isle_of_Ansur/blob/Alpha/license
+-----------------------------------------------------------------------
+Baedoor universe, is intellectual property of Tomasz Stępień, also
+known as Toma400. Use of said universe outside author's context is
+restricted to be:
+
+  - free from requesting any beneficial actions (see section 5.1)
+  - explicitly stating use of the universe/RPG system in visible place
+    (if artistic value of the art would suffer from stating such - by,
+    for example, putting watermark on image - it is then allowed to
+    leave it without such remark; it is appreciated though to credit
+    universe/RPG system elsewhere instead)
+-----------------------------------------------------------------------
