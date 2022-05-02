@@ -5,27 +5,31 @@
                          (Tomasz Stępień)
 
 
-License created to distinct Baedoor mods from my other art
-(since mods differ by copyrights inherited from core game) and
+License created originally to distinct Baedoor mods from other art
+(since mods differ by copyrights inherited from parent game) and
 to set distinction between All Rights Reserved and Baedoor Mod
 License (later: BML), since BML gives you some more possibilities.
 
+As much as it is private license for Toma400's mods, all modders
+are welcome to use BML for their own purposes, with requirement to
+not remove anything but section 4 (if it is redundant).
+If license is edited, it should be stated explicitly in its first
+paragraph that it is modified.
+
 License may change in the future with next iterations.
-As an owner of the license and copyrights, I will use term "we" to
-describe myself.
 For software under BML license I will use term "product". Parent
 game for mod (for which it was made for) is called as "core game".
 
 
 1. GENERAL LICENSE
 Baedoor Mod License prohibits use of any product's contents - by
-that we mean code and assets in their broad sense - if not stated
+that it is meant code and assets in their broad sense - if not stated
 in section 2.
 Content copyrights belong to product's owner (or team, if stated so).
 
 Any exceptions in copyrights' holding or specific licenses being used
 for part of product's contents are stated explicitly on either
-product's page, readme, license or EULA.
+product's distribution page, readme, license or EULA.
 If more than one license is used for product's contents, BML is
 applied only to contents not being under any other license.
 
@@ -52,9 +56,10 @@ before it gets used for any purpose, unless it is meant to be used for:
     -> If author is unreachable by any means for more than one year,
        you are granted to use its contents ONLY to port the mod to
        another core game version or API, and to maintain it.
-       This permission is granted as long as author becomes active.
-       Person who ports product should leave message for author for
-       them to know that product is being ported and they can inspect it.
+       This permission is granted until author becomes active again.
+       Person who ports product should leave message for author(s) for
+       them to know that product is being ported and that they can
+       inspect it.
     -> Author who came back after such long break has right to do
        anything with said port, though users of BML license are asked
        to not overuse this right as stated here.
