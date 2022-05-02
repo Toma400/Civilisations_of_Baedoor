@@ -1,9 +1,6 @@
 package toma400.cobr.core.datagen;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.RotatedPillarBlock;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.StairsBlock;
+import net.minecraft.block.*;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.BlockModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -79,6 +76,20 @@ public class BlocksGen extends BlockModelProvider {
                         Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 1)),
                         Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 2)),
                         Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 3)));
+            }
+            else if(block.get() instanceof DoorBlock) {
+                doorBottomLeft(pathage + "_bottom",
+                        Helpers.BlockPathRef("", pathage + "_bottom"),
+                        Helpers.BlockPathRef("", pathage + "_top"));
+                doorBottomRight(pathage + "_bottom_hinge",
+                        Helpers.BlockPathRef("", pathage + "_bottom"),
+                        Helpers.BlockPathRef("", pathage + "_top"));
+                doorTopLeft(pathage + "_top",
+                        Helpers.BlockPathRef("", pathage + "_bottom"),
+                        Helpers.BlockPathRef("", pathage + "_top"));
+                doorTopRight(pathage + "_top_hinge",
+                        Helpers.BlockPathRef("", pathage + "_bottom"),
+                        Helpers.BlockPathRef("", pathage + "_top"));
             }
             //---------------------------------------------------------------------
             // SKIPPED
