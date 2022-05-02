@@ -1,11 +1,8 @@
 package toma400.cobr.core.datagen;
 
-import net.minecraft.core.Direction;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraftforge.client.model.generators.BlockModelProvider;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -35,13 +32,13 @@ public class BlockStatesGen extends BlockStateProvider {
             String pathage = block.get().getRegistryName().getPath();
 
             if(block.get() instanceof DataGenHelper.EachSideHorizontalBlock) {
-                horizontalBlock(block.get(), modelProvider(block.get(), ""));
+                horizontalBlock(block.get(), modelProviderAdv(block.get(), ""));
             }
             else if(block.get() instanceof FlammableBlocks.FlammableStone  || block.get() == CobrBlocks.EOTIC_BAMBOO_BLOCK.get() || block.get() == CobrBlocks.DUNE_SANDSTONE.get() || block.get() == CobrBlocks.DUNE_SANDSTONE_BRICKS.get() || block.get() == CobrBlocks.ESRAH_PLANKS.get() || block.get() == CobrBlocks.LAIS_PLANKS.get()) {
-                simpleBlock(block.get(), modelProvider(block.get(), ""));
+                simpleBlock(block.get(), modelProviderAdv(block.get(), ""));
             }
             else if(block.get() instanceof LogBlocks) {
-                axisBlock((RotatedPillarBlock) block.get(), modelProvider(block.get(), ""), modelProvider(block.get(), "_horizontal"));
+                axisBlock((RotatedPillarBlock) block.get(), modelProviderAdv(block.get(), ""), modelProvider(block.get(), "_horizontal"));
             }
             else if(block.get() instanceof StairBlock) {
                 stairsBlock((StairBlock) block.get(), modelProviderAdv(block.get(), ""), modelProviderAdv(block.get(), "_inner"), modelProviderAdv(block.get(), "_outer"));
@@ -50,9 +47,13 @@ public class BlockStatesGen extends BlockStateProvider {
                 String doubleVariant = Helpers.slabDoubleVariant(block.get());
                 slabBlock((SlabBlock) block.get(), modelProvider(block.get(), ""), modelProviderAdv(block.get(), "_top"), customModelProvider(block.get(), doubleVariant));
             }
+            else if(block.get() instanceof DoorBlock) {
+                doorBlock((DoorBlock) block.get(), modelProviderAdv(block.get(), "_bottom"), modelProviderAdv(block.get(), "_bottom_hinge"), modelProviderAdv(block.get(), "_top"), modelProviderAdv(block.get(), "_top_hinge"));
+            }
         }
     }
 
+    @Deprecated
     public ModelFile modelProvider (Block resourceGiven, String modelVariant) {
         //----------------------------------------------------------------------------------------------------------------------
         // modelVariant should be default as "", as it directs us precisely to file named after block
