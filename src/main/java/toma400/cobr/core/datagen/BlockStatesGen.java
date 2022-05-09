@@ -47,6 +47,9 @@ public class BlockStatesGen extends BlockStateProvider {
                 String doubleVariant = Helpers.slabDoubleVariant(block.get());
                 slabBlock((SlabBlock) block.get(), modelProvider(block.get(), ""), modelProviderAdv(block.get(), "_top"), customModelProvider(block.get(), doubleVariant));
             }
+            else if(block.get() instanceof TrapDoorBlock) {
+                trapdoorBlock((TrapDoorBlock) block.get(), modelProviderAdv(block.get(), "_bottom"), modelProviderAdv(block.get(), "_top"), modelProviderAdv(block.get(), "_open"), true);
+            }
             else if(block.get() instanceof DoorBlock) {
                 doorBlock((DoorBlock) block.get(), modelProviderAdv(block.get(), "_bottom"), modelProviderAdv(block.get(), "_bottom_hinge"), modelProviderAdv(block.get(), "_top"), modelProviderAdv(block.get(), "_top_hinge"));
             }
