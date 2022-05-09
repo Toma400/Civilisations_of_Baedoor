@@ -77,6 +77,14 @@ public class BlocksGen extends BlockModelProvider {
                         Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 2)),
                         Helpers.BlockPathRef("", Helpers.sandstoneNaming(block.get(), pathage2, 3)));
             }
+            else if(block.get() instanceof TrapDoorBlock) {
+                trapdoorBottom(pathage + "_bottom",
+                        Helpers.BlockPathRef("", pathage));
+                trapdoorOpen(pathage + "_open",
+                        Helpers.BlockPathRef("", pathage));
+                trapdoorTop(pathage + "_top",
+                        Helpers.BlockPathRef("", pathage));
+            }
             else if(block.get() instanceof DoorBlock) {
                 doorBottomLeft(pathage + "_bottom",
                         Helpers.BlockPathRef("", pathage + "_bottom"),

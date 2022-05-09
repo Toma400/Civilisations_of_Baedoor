@@ -5,7 +5,6 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.furnace.FurnaceFuelBurnTimeEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -15,10 +14,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 import toma400.cobr.Cobr;
 import toma400.cobr.elements.blocks.CivilisationTableBlock;
 import toma400.cobr.elements.blocks.templated.FlammableBlocks;
-import toma400.cobr.elements.blocks.templated.FlammableBlocks.LogBlocks;
 import toma400.cobr.elements.blocks.templated.MatBlocks;
 
-import javax.annotation.Nullable;
 import java.util.function.Supplier;
 
 public class CobrBlocks {
