@@ -8,7 +8,7 @@ import static net.minecraft.world.level.block.state.properties.BlockStatePropert
 
 public class Stripping {
 
-    public static BlockState strippageRegistry(BlockState state, ItemStack stack) {
+    public static BlockState strippageRegistry(BlockState state) {
         BlockState final_value = null;
         if(state.is(CobrBlocks.ESRAH_LOG.get())) {
             final_value = CobrBlocks.STRIPPED_ESRAH_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));

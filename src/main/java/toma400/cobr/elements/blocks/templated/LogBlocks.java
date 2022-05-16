@@ -43,7 +43,7 @@ public class LogBlocks extends RotatedPillarBlock {
     public BlockState getToolModifiedState(BlockState state, Level world, BlockPos pos, Player player,
                                            ItemStack stack, ToolAction toolAction) {
         if(stack.getItem() instanceof AxeItem) {
-            return Stripping.strippageRegistry(state, stack);
+            return Stripping.strippageRegistry(state);
         }
         return super.getToolModifiedState(state, world, pos, player, stack, toolAction);
     }
