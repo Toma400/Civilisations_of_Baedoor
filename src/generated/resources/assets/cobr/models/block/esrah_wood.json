@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube_column",
   "textures": {
     "side": "cobr:block/esrah_log_side",
-    "end": "cobr:block/esrah_log_top",
+    "end": "cobr:block/esrah_log_side",
     "particle": "cobr:block/esrah_log_side"
   }
 }

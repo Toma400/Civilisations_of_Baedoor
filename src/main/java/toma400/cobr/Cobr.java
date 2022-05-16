@@ -37,7 +37,7 @@ public class Cobr
     }
 
     private void setupClient(final FMLCommonSetupEvent event) {
-        RenderTypeRegistry.GlobalRenderingRegistrar();
+        RenderTypeRegistry.GlobalRenderingRegistrar(CobrBlocks.BLOCKS.getEntries());
     }
 
     public void setup(final FMLCommonSetupEvent event) {
