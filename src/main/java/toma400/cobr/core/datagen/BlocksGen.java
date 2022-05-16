@@ -40,16 +40,18 @@ public class BlocksGen extends BlockModelProvider {
                 cubeAll(pathage, Helpers.BlockPathRef("", pathage));
             }
             else if(block.get() instanceof RotatedPillarBlock){
-                String pathage2 = pathage;
+                String pathage_side = pathage + "_side";
+                String pathage_top = pathage + "_top";
                 if(pathage.contains("wood")) {
-                    pathage2 = pathage.replace("wood", "log");
+                    pathage_side = pathage_side.replace("wood", "log");
+                    pathage_top = pathage_side;
                 }
                 cubeColumn(pathage,
-                        Helpers.BlockPathRef("", pathage2 + "_side"),
-                        Helpers.BlockPathRef("", pathage2 + "_top"));
+                        Helpers.BlockPathRef("", pathage_side),
+                        Helpers.BlockPathRef("", pathage_top));
                 cubeColumnHorizontal(pathage + "_horizontal",
-                        Helpers.BlockPathRef("", pathage2 + "_side"),
-                        Helpers.BlockPathRef("", pathage2 + "_top"));
+                        Helpers.BlockPathRef("", pathage_side),
+                        Helpers.BlockPathRef("", pathage_top));
             }
             else if(block.get() instanceof StairsBlock) {
                 String pathage2 = Helpers.stairNamingModifier(block.get(), pathage);

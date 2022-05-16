@@ -37,12 +37,12 @@ public class Cobr
     }
 
     private void setupClient(final FMLCommonSetupEvent event) {
-        RenderTypeRegistry.GlobalRenderingRegistrar();
+        RenderTypeRegistry.globalBlockRenderingRegistrar(CobrBlocks.BLOCKS.getEntries());
     }
 
     private void setup(final FMLCommonSetupEvent event)
     {
-        event.enqueueWork(Stripping::StrippingRegistry);
+        event.enqueueWork(Stripping::strippingRegistry);
         event.enqueueWork(Composting::CompostingRegistry);
     }
 }

@@ -6,7 +6,8 @@ import net.minecraft.item.AxeItem;
 import toma400.cobr.core.CobrBlocks;
 
 public class Stripping {
-    public static void StrippingRegistry() {
+
+    public static void strippingRegistry() {
             AxeItem.STRIPABLES = new ImmutableMap.Builder<Block, Block>().putAll(AxeItem.STRIPABLES)
                     .put(CobrBlocks.ESRAH_LOG.get(), CobrBlocks.STRIPPED_ESRAH_LOG.get())
                     .put(CobrBlocks.ESRAH_WOOD.get(), CobrBlocks.STRIPPED_ESRAH_WOOD.get())
