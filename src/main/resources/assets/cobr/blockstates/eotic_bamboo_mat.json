@@ -1,5 +1,7 @@
 {
   "variants": {
-    "" : { "model": "cobr:block/eotic_bamboo_mat" }
+    "": {
+      "model": "cobr:block/eotic_bamboo_mat"
+    }
   }
 }

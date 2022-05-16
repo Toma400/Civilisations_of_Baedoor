@@ -14,6 +14,7 @@ import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.Nullable;
 import toma400.cobr.Cobr;
 import toma400.cobr.core.CobrBlocks;
+import toma400.cobr.elements.behaviours.Stripping;
 
 @Mod.EventBusSubscriber(modid = Cobr.MOD_ID)
 public class LogBlocks extends RotatedPillarBlock {
@@ -42,20 +43,8 @@ public class LogBlocks extends RotatedPillarBlock {
     public BlockState getToolModifiedState(BlockState state, Level world, BlockPos pos, Player player,
                                            ItemStack stack, ToolAction toolAction) {
         if(stack.getItem() instanceof AxeItem) {
-            if(state.is(CobrBlocks.ESRAH_LOG.get())) {
-                return CobrBlocks.STRIPPED_ESRAH_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
-            }
-            if(state.is(CobrBlocks.ESRAH_WOOD.get())) {
-                return CobrBlocks.STRIPPED_ESRAH_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
-            }
-            if(state.is(CobrBlocks.LAIS_LOG.get())) {
-                return CobrBlocks.STRIPPED_LAIS_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
-            }
-            if(state.is(CobrBlocks.LAIS_WOOD.get())) {
-                return CobrBlocks.STRIPPED_LAIS_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
-            }
+            return Stripping.strippageRegistry(state, stack);
         }
-
         return super.getToolModifiedState(state, world, pos, player, stack, toolAction);
     }
 }

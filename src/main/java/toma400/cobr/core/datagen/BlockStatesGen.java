@@ -12,6 +12,7 @@ import toma400.cobr.core.CobrBlocks;
 import toma400.cobr.elements.blocks.templated.DataGenHelper;
 import toma400.cobr.elements.blocks.templated.FlammableBlocks;
 import toma400.cobr.elements.blocks.templated.LogBlocks;
+import toma400.cobr.elements.blocks.templated.MatBlocks;
 
 import java.io.File;
 import java.util.Collection;
@@ -34,7 +35,12 @@ public class BlockStatesGen extends BlockStateProvider {
             if(block.get() instanceof DataGenHelper.EachSideHorizontalBlock) {
                 horizontalBlock(block.get(), modelProviderAdv(block.get(), ""));
             }
-            else if(block.get() instanceof FlammableBlocks.FlammableStone  || block.get() == CobrBlocks.EOTIC_BAMBOO_BLOCK.get() || block.get() == CobrBlocks.DUNE_SANDSTONE.get() || block.get() == CobrBlocks.DUNE_SANDSTONE_BRICKS.get() || block.get() == CobrBlocks.ESRAH_PLANKS.get() || block.get() == CobrBlocks.LAIS_PLANKS.get()) {
+            else if(block.get() instanceof FlammableBlocks.FlammableStone  ||
+                    block.get() == CobrBlocks.EOTIC_BAMBOO_BLOCK.get() ||
+                    block.get() == CobrBlocks.DUNE_SANDSTONE.get() ||
+                    block.get() == CobrBlocks.DUNE_SANDSTONE_BRICKS.get() ||
+                    block.get() == CobrBlocks.ESRAH_PLANKS.get() ||
+                    block.get() == CobrBlocks.LAIS_PLANKS.get()) {
                 simpleBlock(block.get(), modelProviderAdv(block.get(), ""));
             }
             else if(block.get() instanceof LogBlocks) {

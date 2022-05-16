@@ -16,7 +16,8 @@ public class RenderTypeRegistry {
                         block.get() instanceof TrapDoorBlock ||
                         block.get() instanceof FenceBlock ||
                         block.get() instanceof FenceGateBlock ||
-                        block.get() instanceof LeavesBlock) {
+                        block.get() instanceof LeavesBlock ||
+                        block.get() instanceof SaplingBlock) {
                     ItemBlockRenderTypes.setRenderLayer(block.get(), RenderType.cutout());
                 }
             }
