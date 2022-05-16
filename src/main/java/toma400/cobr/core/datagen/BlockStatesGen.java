@@ -11,6 +11,7 @@ import toma400.cobr.Cobr;
 import toma400.cobr.core.CobrBlocks;
 import toma400.cobr.elements.blocks.templated.DataGenHelper;
 import toma400.cobr.elements.blocks.templated.FlammableBlocks;
+import toma400.cobr.elements.blocks.templated.MatBlocks;
 
 import java.util.Collection;
 
@@ -30,43 +31,40 @@ public class BlockStatesGen extends BlockStateProvider {
             String pathage = block.get().getRegistryName().getPath();
 
             if(block.get() instanceof DataGenHelper.EachSideHorizontalBlock) {
-                horizontalBlock(block.get(), modelProviderAdv(block.get(), ""));
+                horizontalBlock(block.get(), modelProvider(block.get(), ""));
             }
-            else if(block.get() instanceof FlammableBlocks.FlammableStone || block.get() == CobrBlocks.EOTIC_BAMBOO_BLOCK.get() || block.get() == CobrBlocks.DUNE_SANDSTONE.get() || block.get() == CobrBlocks.DUNE_SANDSTONE_BRICKS.get() || block.get() == CobrBlocks.ESRAH_PLANKS.get() || block.get() == CobrBlocks.LAIS_PLANKS.get()) {
-                simpleBlock(block.get(), modelProviderAdv(block.get(), ""));
+            else if(block.get() instanceof FlammableBlocks.FlammableStone ||
+                    block.get() == CobrBlocks.EOTIC_BAMBOO_BLOCK.get() ||
+                    block.get() == CobrBlocks.DUNE_SANDSTONE.get() ||
+                    block.get() == CobrBlocks.DUNE_SANDSTONE_BRICKS.get() ||
+                    block.get() == CobrBlocks.ESRAH_PLANKS.get() ||
+                    block.get() == CobrBlocks.LAIS_PLANKS.get() ||
+                    block.get() instanceof MatBlocks) {
+                simpleBlock(block.get(), modelProvider(block.get(), ""));
             }
             else if(block.get() instanceof FlammableBlocks.LogBlocks) {
-                axisBlock((RotatedPillarBlock) block.get(), modelProviderAdv(block.get(), ""), modelProvider(block.get(), "_horizontal"));
+                axisBlock((RotatedPillarBlock) block.get(), modelProvider(block.get(), ""), modelProvider(block.get(), "_horizontal"));
             }
             else if(block.get() instanceof StairsBlock) {
-                stairsBlock((StairsBlock) block.get(), modelProviderAdv(block.get(), ""), modelProviderAdv(block.get(), "_inner"), modelProviderAdv(block.get(), "_outer"));
+                stairsBlock((StairsBlock) block.get(), modelProvider(block.get(), ""), modelProvider(block.get(), "_inner"), modelProvider(block.get(), "_outer"));
             }
             else if(block.get() instanceof SlabBlock) {
                 String doubleVariant = Helpers.slabDoubleVariant(block.get());
-                slabBlock((SlabBlock) block.get(), modelProvider(block.get(), ""), modelProviderAdv(block.get(), "_top"), customModelProvider(block.get(), doubleVariant));
+                slabBlock((SlabBlock) block.get(), modelProvider(block.get(), ""), modelProvider(block.get(), "_top"), customModelProvider(block.get(), doubleVariant));
             }
             else if(block.get() instanceof TrapDoorBlock) {
-                trapdoorBlock((TrapDoorBlock) block.get(), modelProviderAdv(block.get(), "_bottom"), modelProviderAdv(block.get(), "_top"), modelProviderAdv(block.get(), "_open"), true);
+                trapdoorBlock((TrapDoorBlock) block.get(), modelProvider(block.get(), "_bottom"), modelProvider(block.get(), "_top"), modelProvider(block.get(), "_open"), true);
             }
             else if(block.get() instanceof DoorBlock) {
-                doorBlock((DoorBlock) block.get(), modelProviderAdv(block.get(), "_bottom"), modelProviderAdv(block.get(), "_bottom_hinge"), modelProviderAdv(block.get(), "_top"), modelProviderAdv(block.get(), "_top_hinge"));
+                doorBlock((DoorBlock) block.get(), modelProvider(block.get(), "_bottom"), modelProvider(block.get(), "_bottom_hinge"), modelProvider(block.get(), "_top"), modelProvider(block.get(), "_top_hinge"));
             }
         }
     }
 
-    @Deprecated
     public ModelFile modelProvider (Block resourceGiven, String modelVariant) {
         //----------------------------------------------------------------------------------------------------------------------
         // modelVariant should be default as "", as it directs us precisely to file named after block
         // though if we want to add some variation (for example "_horizontal" suffix), it will be used under that string
-        //----------------------------------------------------------------------------------------------------------------------
-        ResourceLocation locationWorkedOn = new ResourceLocation(Cobr.MOD_ID + ":block/" + resourceGiven.getRegistryName().getPath() + modelVariant);
-        ModelFile modelWorkedOn = models().withExistingParent(resourceGiven.getRegistryName().getPath(), locationWorkedOn);
-        return modelWorkedOn;
-    }
-    public ModelFile modelProviderAdv (Block resourceGiven, String modelVariant) {
-        //----------------------------------------------------------------------------------------------------------------------
-        // Advanced provider, adding `modelVariant` string as nested (required for some blockstates, such as slabs)
         //----------------------------------------------------------------------------------------------------------------------
         ResourceLocation locationWorkedOn = new ResourceLocation(Cobr.MOD_ID + ":block/" + resourceGiven.getRegistryName().getPath() + modelVariant);
         ModelFile modelWorkedOn = models().withExistingParent(resourceGiven.getRegistryName().getPath() + modelVariant, locationWorkedOn);
