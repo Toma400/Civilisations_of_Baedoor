@@ -5,6 +5,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.fml.RegistryObject;
 import toma400.cobr.core.CobrBlocks;
+import toma400.cobr.elements.blocks.templated.Base;
 
 import java.util.Collection;
 
@@ -16,7 +17,8 @@ public class RenderTypeRegistry {
                 block.get() instanceof TrapDoorBlock ||
                 block.get() instanceof FenceBlock ||
                 block.get() instanceof FenceGateBlock ||
-                block.get() instanceof LeavesBlock) {
+                block.get() instanceof LeavesBlock ||
+                block.get() instanceof Base.SaplingBlock) {
                 RenderTypeLookup.setRenderLayer(block.get(), RenderType.cutout());
             }
         }

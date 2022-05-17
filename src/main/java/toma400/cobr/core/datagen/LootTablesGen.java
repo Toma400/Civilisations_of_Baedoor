@@ -69,10 +69,10 @@ public class LootTablesGen {
                 if(block.get() instanceof FlammableBlocks.Leaves) {
                     String namingConvention = block.get().getRegistryName().getPath();
                     Block saplingProvided = Blocks.AIR;
-                    //if (namingConvention.contains("lais")) {
-                    //    saplingProvided = CobrBlocks.LAIS_SAPLING.get();}
-                    //else if (namingConvention.contains("esrah")) {
-                    //    saplingProvided = CobrBlocks.ESRAH_SAPLING.get();}
+                    if (namingConvention.contains("lais")) {
+                        saplingProvided = CobrBlocks.LAIS_SAPLING.get();}
+                    else if (namingConvention.contains("esrah")) {
+                        saplingProvided = CobrBlocks.ESRAH_SAPLING.get();}
                     leavesGen(block.get(), saplingProvided, valuesReferenced.NORMAL_LEAVES_SAPLING_CHANCES);}
                 //-------------------------------------------------
                 // ORES
