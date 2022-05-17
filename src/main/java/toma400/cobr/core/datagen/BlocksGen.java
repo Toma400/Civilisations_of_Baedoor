@@ -133,18 +133,12 @@ public class BlocksGen extends BlockModelProvider {
                 cross(pathage,
                         Helpers.BlockPathRef("", pathage));
             }
-            else {  //later: it will redirect everything to what is yet conditioned, with exclusion of Helpers.isBlockSidelined
-                if(Helpers.isBlockSimplified(block.get())) {
+            else {
+                if(!(Helpers.isBlockSidelined(block.get()))) {
                     cubeAll(pathage, Helpers.BlockPathRef("", pathage));
                     sign(pathage, Helpers.BlockPathRef("", pathage));
                 }
             }
-            //---------------------------------------------------------------------
-            // SKIPPED
-            // Here are all blockstates that are added manually.
-            // If placed in case I will change my mind and switch them to datagen.
-            //---------------------------------------------------------------------
-            //if(block.get() instanceof OreBlock){}
         }
     }
 }

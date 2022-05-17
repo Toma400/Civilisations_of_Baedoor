@@ -134,8 +134,8 @@ public class Helpers {
     }
     public static String blockItemsGenNaming(Block block) {
         String evaluation = "";
-        if (block instanceof TrapDoorBlock || block instanceof DoorBlock) {
-            evaluation = "_top";
+        if (block instanceof TrapDoorBlock) {
+            evaluation = "_bottom";
         } else if (block instanceof FenceBlock) {
             evaluation = "_inventory";
         }
@@ -147,6 +147,7 @@ public class Helpers {
     // Used to list all blocks that have manually put models/blockstates
     public static Boolean isBlockSidelined(Block block) {
         ArrayList<Block> custom_blocks = new ArrayList<>();
+        custom_blocks.add(CobrBlocks.EOTIC_BAMBOO_MAT.get());
         return (custom_blocks.contains(block));
     }
 
@@ -166,6 +167,7 @@ public class Helpers {
     }
 
     // Used for blocks that use simpleBlock method (have 1 texture all around)
+    @Deprecated
     public static Boolean isBlockSimplified(Block block) {
         ArrayList<Block> simplified_blocks = new ArrayList<>();
         // Adding entries to arraylist from instancing

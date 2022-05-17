@@ -7,6 +7,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.FurnaceBlock;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -58,15 +59,19 @@ public class ItemsGen extends ItemModelProvider {
             String name = block.getId().getPath();
             String evaluation = Helpers.blockItemsGenNaming(block.get());
             //--------------------------------------------------------
-            Collection<Block> lister = Collections.EMPTY_LIST;
+            ArrayList<Block> lister = new ArrayList<>();
+            for (RegistryObject<Block> block_iterated : CobrBlocks.BLOCKS.getEntries()) {
+                if (block_iterated.get() instanceof DoorBlock) {
+                    lister.add(block_iterated.get());
+                }
+            }
             //--------------------------------------------------------
             // DEFAULT VALUE
             // Default value is 'else', 'if' using items from `lister`
-            // Collection above (if you want to append new items,
-            // remove emptyList() and replace with some sort of list
+            // ArrayList above
             //--------------------------------------------------------
             if (lister.contains(block.get())) {
-                withExistingParent(name, new ResourceLocation(Cobr.MOD_ID, "block/" + name));
+                this.getBuilder(name).parent(getExistingFile(mcLoc("item/generated"))).texture("layer0", ITEM_FOLDER + "/" + name);
             } else {
                 withExistingParent(name, new ResourceLocation(Cobr.MOD_ID, "block/" + name + evaluation));
             }
