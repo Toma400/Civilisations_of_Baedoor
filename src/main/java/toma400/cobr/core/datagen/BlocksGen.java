@@ -98,6 +98,26 @@ public class BlocksGen extends BlockModelProvider {
                         Helpers.BlockPathRef("", pathage + "_bottom"),
                         Helpers.BlockPathRef("", pathage + "_top"));
             }
+            else if(block.get() instanceof FenceBlock) {
+                String pathage2 = Helpers.fenceTypesNamingModifier(block.get(), pathage);
+                fenceInventory(pathage + "_inventory",
+                        Helpers.BlockPathRef("", pathage2));
+                fencePost(pathage + "_post",
+                        Helpers.BlockPathRef("", pathage2));
+                fenceSide(pathage + "_side",
+                        Helpers.BlockPathRef("", pathage2));
+            }
+            else if(block.get() instanceof FenceGateBlock) {
+                String pathage2 = Helpers.fenceTypesNamingModifier(block.get(), pathage);
+                fenceGate(pathage,
+                        Helpers.BlockPathRef("", pathage2));
+                fenceGateOpen(pathage + "_open",
+                        Helpers.BlockPathRef("", pathage2));
+                fenceGateWall(pathage + "_wall",
+                        Helpers.BlockPathRef("", pathage2));
+                fenceGateWall(pathage + "_wall_open",
+                        Helpers.BlockPathRef("", pathage2));
+            }
             else {  //later: it will redirect everything to what is yet conditioned, with exclusion of Helpers.isBlockSidelined
                 if(Helpers.isBlockSimplified(block.get())  ||
                    block.get() instanceof FlammableBlocks.Planks ||
