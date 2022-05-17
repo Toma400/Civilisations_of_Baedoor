@@ -8,7 +8,7 @@ import toma400.cobr.world.environment.MinorEnvironmentFeatures;
 
 import java.util.Random;
 
-public class EsrahTreeGrower extends AbstractTreeGrower {
+public class EsrahTree extends AbstractTreeGrower {
     @Nullable
     @Override
     protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(Random pRandom, boolean pLargeHive) {

@@ -15,8 +15,8 @@ import net.minecraftforge.registries.RegistryObject;
 import toma400.cobr.Cobr;
 import toma400.cobr.elements.blocks.*;
 import toma400.cobr.elements.blocks.templated.*;
-import toma400.cobr.world.environment.trees.EsrahTreeGrower;
-import toma400.cobr.world.environment.trees.LaisTreeGrower;
+import toma400.cobr.world.environment.trees.EsrahTree;
+import toma400.cobr.world.environment.trees.LaisTree;
 
 import javax.annotation.Nullable;
 import java.util.function.Supplier;
@@ -151,13 +151,13 @@ public class CobrBlocks {
     public static final RegistryObject<Block> ESRAH_LEAVES = registerBlock("esrah_leaves",
             () -> new FlammableBlocks.Leaves(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(0.2f, 0.2f).noOcclusion().requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> ESRAH_SAPLING = registerBlock("esrah_sapling",
-            () -> new SaplingBlock(new EsrahTreeGrower(), BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.CROP).strength(0f, 0f).noOcclusion()), CobrTab.COBR_TAB, 0);
+            () -> new SaplingBlock(new EsrahTree(), BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.CROP).strength(0f, 0f).noOcclusion()), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> LAIS_LEAVES = registerBlock("lais_leaves",
             () -> new FlammableBlocks.Leaves(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(0.2f, 0.2f).noOcclusion().requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> BLOOMING_LAIS_LEAVES = registerBlock("blooming_lais_leaves",
             () -> new FlammableBlocks.Leaves(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(0.2f, 0.2f).noOcclusion().requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> LAIS_SAPLING = registerBlock("lais_sapling",
-            () -> new SaplingBlock(new LaisTreeGrower(), BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.CROP).strength(0f, 0f).noOcclusion()), CobrTab.COBR_TAB, 0);
+            () -> new SaplingBlock(new LaisTree(), BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.CROP).strength(0f, 0f).noOcclusion()), CobrTab.COBR_TAB, 0);
 
     //EMPIRE-RELATED
     public static final RegistryObject<Block> CIVILISATION_TABLE = registerBlock("civilisation_table",

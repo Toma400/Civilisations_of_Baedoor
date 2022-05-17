@@ -1,6 +1,7 @@
 package toma400.cobr.events;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.entity.Entity;
@@ -46,6 +47,7 @@ public class CobrEvents {
             if(blockstate == CobrBlocks.LAIS_LEAVES.get().defaultBlockState()) {
                 item.shrink(1);
                 event.getWorld().setBlock(blockpos, CobrBlocks.BLOOMING_LAIS_LEAVES.get().defaultBlockState(), 1);
+                event.getWorld().addParticle(ParticleTypes.COMPOSTER, 3f, 3f, 3f, 1f, 1f, 1f);
             }
 
         }
