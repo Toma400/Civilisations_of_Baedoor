@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "eotic_bamboo_lamp",
+  "pattern": [
+    "CCC",
+    "CCC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "cobr:eotic_bamboo"
+    }
+  },
+  "result": {
+    "item": "cobr:pack_of_eotic_bamboo"
+  }
+}

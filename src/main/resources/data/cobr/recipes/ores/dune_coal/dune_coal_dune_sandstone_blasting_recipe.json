@@ -1,0 +1,12 @@
+{
+  "group": "dune_coal_ingot",
+  "type": "minecraft:blasting",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "cobr:dune_sandstone_coal_ore"
+  },
+  "result": {
+    "item": "cobr:dune_coal"
+  }
+}

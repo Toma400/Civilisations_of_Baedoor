@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "esrah_fence",
+  "pattern": [
+    "   ",
+    "PSP",
+    "PSP"
+  ],
+  "key": {
+    "P": {
+      "item": "cobr:esrah_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "cobr:esrah_fence",
+    "count": 3
+  }
+}
