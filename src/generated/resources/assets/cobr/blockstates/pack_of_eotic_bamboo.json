@@ -1,7 +1,7 @@
 {
   "variants": {
     "axis=x": {
-      "model": "cobr:block/pack_of_eotic_bamboo",
+      "model": "cobr:block/pack_of_eotic_bamboo_horizontal",
       "x": 90,
       "y": 90
     },
@@ -9,7 +9,7 @@
       "model": "cobr:block/pack_of_eotic_bamboo"
     },
     "axis=z": {
-      "model": "cobr:block/pack_of_eotic_bamboo",
+      "model": "cobr:block/pack_of_eotic_bamboo_horizontal",
       "x": 90
     }
   }

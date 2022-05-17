@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cube_column",
   "textures": {
     "side": "cobr:block/stripped_esrah_log_side",
-    "end": "cobr:block/stripped_esrah_log_top"
+    "end": "cobr:block/stripped_esrah_log_side"
   }
 }

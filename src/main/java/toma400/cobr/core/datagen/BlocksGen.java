@@ -36,9 +36,6 @@ public class BlocksGen extends BlockModelProvider {
                         Helpers.BlockPathRef("", pathage + "_side"),
                         Helpers.BlockPathRef("", pathage + "_side"));
             }
-            else if(block.get() instanceof FlammableBlocks.FlammableStone  || block.get() == CobrBlocks.EOTIC_BAMBOO_BLOCK.get() || block.get() == CobrBlocks.DUNE_SANDSTONE.get() || block.get() == CobrBlocks.DUNE_SANDSTONE_BRICKS.get() || block.get() == CobrBlocks.ESRAH_PLANKS.get() || block.get() == CobrBlocks.LAIS_PLANKS.get()) {
-                cubeAll(pathage, Helpers.BlockPathRef("", pathage));
-            }
             else if(block.get() instanceof RotatedPillarBlock){
                 String pathage_side = pathage + "_side";
                 String pathage_top = pathage + "_top";
@@ -100,6 +97,13 @@ public class BlocksGen extends BlockModelProvider {
                 doorTopRight(pathage + "_top_hinge",
                         Helpers.BlockPathRef("", pathage + "_bottom"),
                         Helpers.BlockPathRef("", pathage + "_top"));
+            }
+            else {  //later: it will redirect everything to what is yet conditioned, with exclusion of Helpers.isBlockSidelined
+                if(Helpers.isBlockSimplified(block.get())  ||
+                   block.get() instanceof FlammableBlocks.Planks ||
+                   block.get() instanceof FlammableBlocks.FlammableStone) {
+                        cubeAll(pathage, Helpers.BlockPathRef("", pathage));
+                }
             }
             //---------------------------------------------------------------------
             // SKIPPED
