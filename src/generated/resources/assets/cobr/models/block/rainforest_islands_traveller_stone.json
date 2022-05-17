@@ -1,12 +1,11 @@
 {
-  "parent": "block/cube",
+  "parent": "minecraft:block/cube",
   "textures": {
     "down": "cobr:block/sandstone_top",
     "up": "cobr:block/sandstone_top",
     "north": "cobr:block/rainforest_islands_traveller_stone",
-    "east": "cobr:block/rainforest_islands_traveller_stone",
     "south": "cobr:block/rainforest_islands_traveller_stone",
-    "west": "cobr:block/rainforest_islands_traveller_stone",
-    "particle": "cobr:block/sandstone_top"
+    "east": "cobr:block/rainforest_islands_traveller_stone",
+    "west": "cobr:block/rainforest_islands_traveller_stone"
   }
 }

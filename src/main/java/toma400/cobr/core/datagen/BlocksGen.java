@@ -29,13 +29,22 @@ public class BlocksGen extends BlockModelProvider {
 
             if(block.get() instanceof Base.EachSideHorizontalBlock) {
                 cube(pathage,
-                        Helpers.BlockPathRef("", pathage + "_side"),
+                        Helpers.BlockPathRef("", pathage + "_side"), // this is exclusive to civilisation block
                         Helpers.BlockPathRef("", pathage + "_top"),
                         Helpers.BlockPathRef("", pathage + "_back"),
                         Helpers.BlockPathRef("", pathage + "_front"),
                         Helpers.BlockPathRef("", pathage + "_side"),
                         Helpers.BlockPathRef("", pathage + "_side"));
                 sign(pathage, Helpers.BlockPathRef("", pathage + "_side"));
+            }
+            else if(Helpers.isBlockHorizontal(block.get())) {
+                cube(pathage,
+                        Helpers.BlockPathRef("", Helpers.horizontalBlocksNamingModifier(block.get(), "_bottom")),
+                        Helpers.BlockPathRef("", Helpers.horizontalBlocksNamingModifier(block.get(), "_top")),
+                        Helpers.BlockPathRef("", Helpers.horizontalBlocksNamingModifier(block.get(), "_side")),
+                        Helpers.BlockPathRef("", Helpers.horizontalBlocksNamingModifier(block.get(), "_side")),
+                        Helpers.BlockPathRef("", Helpers.horizontalBlocksNamingModifier(block.get(), "_side")),
+                        Helpers.BlockPathRef("", Helpers.horizontalBlocksNamingModifier(block.get(), "_side")));
             }
             else if(block.get() instanceof RotatedPillarBlock){
                 String pathage_side = pathage + "_side";

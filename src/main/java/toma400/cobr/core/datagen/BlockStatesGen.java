@@ -11,7 +11,6 @@ import toma400.cobr.Cobr;
 import toma400.cobr.core.CobrBlocks;
 import toma400.cobr.elements.blocks.templated.Base;
 import toma400.cobr.elements.blocks.templated.FlammableBlocks;
-import toma400.cobr.elements.blocks.templated.LogBlocks;
 
 import java.util.Collection;
 
@@ -33,7 +32,10 @@ public class BlockStatesGen extends BlockStateProvider {
             if(block.get() instanceof Base.EachSideHorizontalBlock) {
                 horizontalBlock(block.get(), modelProvider(block.get(), ""));
             }
-            else if(block.get() instanceof LogBlocks) {
+            else if(Helpers.isBlockHorizontal(block.get())) {
+                simpleBlock(block.get(), modelProvider(block.get(), ""));
+            }
+            else if(block.get() instanceof FlammableBlocks.LogBlocks) {
                 axisBlock((RotatedPillarBlock) block.get(), modelProvider(block.get(), ""), modelProvider(block.get(), "_horizontal"));
             }
             else if(block.get() instanceof StairBlock) {
