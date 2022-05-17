@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "cobr:block/sandstone_top",
+    "up": "cobr:block/sandstone_top",
+    "north": "cobr:block/dune_traveller_stone",
+    "south": "cobr:block/dune_traveller_stone",
+    "east": "cobr:block/dune_traveller_stone",
+    "west": "cobr:block/dune_traveller_stone"
+  }
+}

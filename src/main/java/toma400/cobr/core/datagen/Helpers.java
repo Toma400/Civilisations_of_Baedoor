@@ -2,12 +2,14 @@ package toma400.cobr.core.datagen;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.FenceGateBlock;
+import net.minecraft.block.OreBlock;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import toma400.cobr.Cobr;
 import toma400.cobr.core.CobrBlocks;
 import toma400.cobr.elements.blocks.templated.FlammableBlocks;
+import toma400.cobr.elements.blocks.templated.TravellerStoneBlocks;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -85,6 +87,33 @@ public class Helpers {
         return switcher;
     }
     // --------------------------------------------
+    // HORIZONTAL BLOCKS
+    // Naming for horizontal blocks
+    // --------------------------------------------
+    public static String horizontalBlocksNamingModifier(Block block, String variant) {
+        String outcome = block.getRegistryName().getPath();
+        // "_side" variant by default takes regular naming value
+        if (outcome.contains("traveller_stone")) {
+            if (!(variant == "_side")) {
+                // for blocks using same bottom and top values
+                outcome = "sandstone_top";
+            }
+        } else {
+            if (!(variant == "_side")) {
+                outcome = horizontalStringOperator(block, variant);
+            }
+        }
+        return outcome;
+    }
+
+    public static String horizontalStringOperator(Block block, String variant) {
+        String name_entry = block.getRegistryName().getPath();
+        String name_outry = name_entry;
+        if (name_entry.contains("dune_sandstone")) { name_outry = "dune_sandstone"; }
+        else if (name_entry.contains("sandstone")) { name_outry = "sandstone"; }
+        return name_outry + variant;
+    }
+    // --------------------------------------------
     // GENERAL
     // Naming convention for sandstone blocks (for each type of texture)
     // --------------------------------------------
@@ -104,11 +133,28 @@ public class Helpers {
     // --------------------------------------------
     // LISTS
     // --------------------------------------------
-    // System checking if block has sandstone texturing rules (different top, bottom and double)
+    // Used to list all blocks that have manually put models/blockstates
     public static Boolean isBlockSidelined(Block block) {
         ArrayList<Block> custom_blocks = new ArrayList<>();
         return (custom_blocks.contains(block));
     }
+
+    // Used to list all blocks being horizontal
+    public static Boolean isBlockHorizontal(Block block) {
+        ArrayList<Block> horizontal_blocks = new ArrayList<>();
+        // Adding entries to arraylist from instancing
+        for (RegistryObject<Block> block_iterated : CobrBlocks.BLOCKS.getEntries()) {
+            if (block_iterated.get() instanceof OreBlock ||
+                block_iterated.get() instanceof TravellerStoneBlocks) {
+                horizontal_blocks.add(block_iterated.get());
+            }
+        }
+        // Adding entries to arraylist via manual entries
+        // Here <-
+        return (horizontal_blocks.contains(block));
+    }
+
+    // Used for blocks that use simpleBlock method (have 1 texture all around)
     public static Boolean isBlockSimplified(Block block) {
         ArrayList<Block> simplified_blocks = new ArrayList<>();
         simplified_blocks.add(CobrBlocks.EOTIC_BAMBOO_BLOCK.get());
@@ -126,6 +172,8 @@ public class Helpers {
         simplified_blocks.add(CobrBlocks.WET_DUNE_SAND.get());
         return (simplified_blocks.contains(block));
     }
+
+    // System checking if block has sandstone texturing rules (different top, bottom and double)
     public static Boolean isSandstone(Block block) {
         ArrayList<Block> sandstone_blocks = new ArrayList<>();
         sandstone_blocks.add(CobrBlocks.DUNE_SANDSTONE.get());
@@ -142,15 +190,7 @@ public class Helpers {
         }
         return Block;
     }
-    //ITEM GENERATION
-    @Deprecated
-    public static final ResourceLocation ItemPathRef(String namespace, String item) {
-        ResourceLocation Item = new ResourceLocation(Cobr.MOD_ID + ":item/" + item);
-        if (namespace != "" && namespace != "mod") {
-            Item = new ResourceLocation(namespace + ":item/" + item);
-        }
-        return Item;
-    }
+
     @Deprecated
     public void leafThingForTomi(Collection<RegistryObject<Block>> blocks) {
         for (RegistryObject<Block> block : blocks) {

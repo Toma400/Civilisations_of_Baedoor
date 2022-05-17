@@ -9,7 +9,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.fml.RegistryObject;
 import toma400.cobr.Cobr;
 import toma400.cobr.core.CobrBlocks;
-import toma400.cobr.elements.blocks.templated.DataGenHelper;
+import toma400.cobr.elements.blocks.templated.Base;
 import toma400.cobr.elements.blocks.templated.FlammableBlocks;
 
 import java.util.Collection;
@@ -29,8 +29,11 @@ public class BlockStatesGen extends BlockStateProvider {
         for (RegistryObject<Block> block : blocks) {
             String pathage = block.get().getRegistryName().getPath();
 
-            if(block.get() instanceof DataGenHelper.EachSideHorizontalBlock) {
+            if(block.get() instanceof Base.EachSideHorizontalBlock) {
                 horizontalBlock(block.get(), modelProvider(block.get(), ""));
+            }
+            else if(Helpers.isBlockHorizontal(block.get())) {
+                simpleBlock(block.get(), modelProvider(block.get(), ""));
             }
             else if(block.get() instanceof FlammableBlocks.LogBlocks) {
                 axisBlock((RotatedPillarBlock) block.get(), modelProvider(block.get(), ""), modelProvider(block.get(), "_horizontal"));

@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "cobr:block/sandstone_top",
+    "up": "cobr:block/sandstone_top",
+    "north": "cobr:block/empty_traveller_stone",
+    "south": "cobr:block/empty_traveller_stone",
+    "east": "cobr:block/empty_traveller_stone",
+    "west": "cobr:block/empty_traveller_stone"
+  }
+}

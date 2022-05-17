@@ -1,9 +1,9 @@
 package toma400.cobr.elements.blocks;
 
 import net.minecraft.util.Direction;
-import toma400.cobr.elements.blocks.templated.DataGenHelper;
+import toma400.cobr.elements.blocks.templated.Base;
 
-public class CivilisationTableBlock extends DataGenHelper.EachSideHorizontalBlock {
+public class CivilisationTableBlock extends Base.EachSideHorizontalBlock {
 
     public CivilisationTableBlock(Properties properties) {
         super(properties);

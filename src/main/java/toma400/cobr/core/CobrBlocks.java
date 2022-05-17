@@ -15,6 +15,7 @@ import toma400.cobr.Cobr;
 import toma400.cobr.elements.blocks.CivilisationTableBlock;
 import toma400.cobr.elements.blocks.templated.FlammableBlocks;
 import toma400.cobr.elements.blocks.templated.MatBlocks;
+import toma400.cobr.elements.blocks.templated.TravellerStoneBlocks;
 
 import java.util.function.Supplier;
 
@@ -49,15 +50,15 @@ public class CobrBlocks {
             () -> new FlammableBlocks.Planks(Block.Properties.of(Material.BAMBOO).sound(SoundType.BAMBOO).strength(1f, 2f).lightLevel(s -> 15)), CobrTab.COBR_TAB, 0);
     //TRAVELLER STONES
     public static final RegistryObject<Block> EMPTY_TRAVELLER_STONE = registerBlock("empty_traveller_stone",
-            () -> new Block(Block.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.8f,0.8f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
+            () -> new TravellerStoneBlocks(Block.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.8f,0.8f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> DUNE_TRAVELLER_STONE = registerBlock("dune_traveller_stone",
-            () -> new Block(Block.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.8f,0.8f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
+            () -> new TravellerStoneBlocks(Block.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.8f,0.8f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> PERMAFROST_TRAVELLER_STONE = registerBlock("permafrost_traveller_stone",
-            () -> new Block(Block.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.8f,0.8f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
+            () -> new TravellerStoneBlocks(Block.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.8f,0.8f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> RAINFOREST_ISLANDS_TRAVELLER_STONE = registerBlock("rainforest_islands_traveller_stone",
-            () -> new Block(Block.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.8f,0.8f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
+            () -> new TravellerStoneBlocks(Block.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.8f,0.8f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> EVERGREEN_DEPTHS_TRAVELLER_STONE = registerBlock("evergreen_depths_traveller_stone",
-            () -> new Block(Block.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.8f,0.8f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
+            () -> new TravellerStoneBlocks(Block.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.8f,0.8f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
     //GENERATION BLOCKS
     public static final RegistryObject<Block> DUNE_SANDSTONE_COAL_ORE = registerBlock("dune_sandstone_coal_ore",
             () -> new OreBlock(Block.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.2f,1.2f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 0);
