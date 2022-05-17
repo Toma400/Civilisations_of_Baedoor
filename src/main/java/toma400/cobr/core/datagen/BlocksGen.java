@@ -129,12 +129,14 @@ public class BlocksGen extends BlockModelProvider {
                 fenceGateWall(pathage + "_wall_open",
                         Helpers.BlockPathRef("", pathage2));
             }
+            else if(block.get() instanceof SaplingBlock) {
+                cross(pathage,
+                        Helpers.BlockPathRef("", pathage));
+            }
             else {  //later: it will redirect everything to what is yet conditioned, with exclusion of Helpers.isBlockSidelined
-                if(Helpers.isBlockSimplified(block.get())  ||
-                   block.get() instanceof FlammableBlocks.Planks ||
-                   block.get() instanceof FlammableBlocks.FlammableStone) {
-                        cubeAll(pathage, Helpers.BlockPathRef("", pathage));
-                        sign(pathage, Helpers.BlockPathRef("", pathage));
+                if(Helpers.isBlockSimplified(block.get())) {
+                    cubeAll(pathage, Helpers.BlockPathRef("", pathage));
+                    sign(pathage, Helpers.BlockPathRef("", pathage));
                 }
             }
             //---------------------------------------------------------------------

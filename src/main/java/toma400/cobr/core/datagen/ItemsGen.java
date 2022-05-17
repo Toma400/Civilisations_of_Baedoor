@@ -31,7 +31,7 @@ public class ItemsGen extends ItemModelProvider {
     @Override
     protected void registerModels() {
         ItemRegistrar(CobrItems.ITEMS.getEntries());
-        //BlockRegistrar(CobrBlocks.BLOCKS.getEntries());
+        BlockRegistrar(CobrBlocks.BLOCKS.getEntries());
     }
 
     //--------------------------------------------------------------------
@@ -56,6 +56,7 @@ public class ItemsGen extends ItemModelProvider {
     public void BlockRegistrar(Collection<RegistryObject<Block>> blocks) {
         for (RegistryObject<Block> block : blocks) {
             String name = block.getId().getPath();
+            String evaluation = Helpers.blockItemsGenNaming(block.get());
             //--------------------------------------------------------
             Collection<Block> lister = Collections.EMPTY_LIST;
             //--------------------------------------------------------
@@ -67,7 +68,7 @@ public class ItemsGen extends ItemModelProvider {
             if (lister.contains(block.get())) {
                 withExistingParent(name, new ResourceLocation(Cobr.MOD_ID, "block/" + name));
             } else {
-                withExistingParent(name, new ResourceLocation(Cobr.MOD_ID, "block/" + name));
+                withExistingParent(name, new ResourceLocation(Cobr.MOD_ID, "block/" + name + evaluation));
             }
         }
     }

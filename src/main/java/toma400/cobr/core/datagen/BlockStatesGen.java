@@ -59,10 +59,8 @@ public class BlockStatesGen extends BlockStateProvider {
                 fenceGateBlock((FenceGateBlock) block.get(), modelProvider(block.get(), ""), modelProvider(block.get(), "_open"), modelProvider(block.get(), "_wall"), modelProvider(block.get(), "_wall_open"));
             }
             else {  //later: it will redirect everything to what is yet conditioned, with exclusion of Helpers.isBlockSidelined
-                if(Helpers.isBlockSimplified(block.get())  ||
-                   block.get() instanceof FlammableBlocks.Planks ||
-                   block.get() instanceof FlammableBlocks.FlammableStone) {
-                        simpleBlock(block.get(), modelProvider(block.get(), ""));
+                if(Helpers.isBlockSimplified(block.get()) || block.get() instanceof SaplingBlock) {
+                    simpleBlock(block.get(), modelProvider(block.get(), ""));
                 }
             }
         }

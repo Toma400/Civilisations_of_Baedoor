@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "cobr:block/blooming_lais_leaves",
+    "particle": "cobr:block/blooming_lais_leaves"
+  }
+}

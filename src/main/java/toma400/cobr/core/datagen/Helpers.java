@@ -2,9 +2,7 @@ package toma400.cobr.core.datagen;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.FenceGateBlock;
-import net.minecraft.world.level.block.OreBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -120,8 +118,8 @@ public class Helpers {
     }
     // --------------------------------------------
     // GENERAL
-    // Naming convention for sandstone blocks (for each type of texture)
     // --------------------------------------------
+    // Naming convention for sandstone blocks (for each type of texture)
     public static String sandstoneNaming(Block block, String pathage2, Integer blockSet) {
         if (isSandstone(block) && blockSet == 1) {
             pathage2 = pathage2 + "_double";
@@ -134,7 +132,15 @@ public class Helpers {
         }
         return pathage2;
     }
-
+    public static String blockItemsGenNaming(Block block) {
+        String evaluation = "";
+        if (block instanceof TrapDoorBlock || block instanceof DoorBlock) {
+            evaluation = "_top";
+        } else if (block instanceof FenceBlock) {
+            evaluation = "_inventory";
+        }
+        return evaluation;
+    }
     // --------------------------------------------
     // LISTS
     // --------------------------------------------
@@ -162,6 +168,14 @@ public class Helpers {
     // Used for blocks that use simpleBlock method (have 1 texture all around)
     public static Boolean isBlockSimplified(Block block) {
         ArrayList<Block> simplified_blocks = new ArrayList<>();
+        // Adding entries to arraylist from instancing
+        for (RegistryObject<Block> block_iterated : CobrBlocks.BLOCKS.getEntries()) {
+            if (block_iterated.get() instanceof LeavesBlock ||
+                block_iterated.get() instanceof FlammableBlocks.Planks ||
+                block_iterated.get() instanceof FlammableBlocks.FlammableStone) {
+                    simplified_blocks.add(block_iterated.get());
+            }
+        }
         simplified_blocks.add(CobrBlocks.EOTIC_BAMBOO_BLOCK.get());
         simplified_blocks.add(CobrBlocks.DUNE_SANDSTONE_BRICKS.get());
         simplified_blocks.add(CobrBlocks.DUNE_SANDSTONE.get()); // TO FIX!
