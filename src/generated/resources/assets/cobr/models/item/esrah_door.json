@@ -1,3 +1,6 @@
 {
-  "parent": "cobr:block/esrah_door_top"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cobr:item/esrah_door"
+  }
 }

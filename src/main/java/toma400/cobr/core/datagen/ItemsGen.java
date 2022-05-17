@@ -1,9 +1,6 @@
 package toma400.cobr.core.datagen;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.DoorBlock;
-import net.minecraft.block.FurnaceBlock;
-import net.minecraft.block.TrapDoorBlock;
+import net.minecraft.block.*;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -16,7 +13,9 @@ import net.minecraftforge.fml.RegistryObject;
 import toma400.cobr.Cobr;
 import toma400.cobr.core.CobrBlocks;
 import toma400.cobr.core.CobrItems;
+import toma400.cobr.elements.blocks.templated.FlammableBlocks;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 
@@ -56,15 +55,19 @@ public class ItemsGen extends ItemModelProvider {
             String name = block.getId().getPath();
             String evaluation = Helpers.blockItemsGenNaming(block.get());
             //--------------------------------------------------------
-            Collection<Block> lister = Collections.EMPTY_LIST;
+            ArrayList<Block> lister = new ArrayList<>();
+            for (RegistryObject<Block> block_iterated : CobrBlocks.BLOCKS.getEntries()) {
+                if (block_iterated.get() instanceof DoorBlock) {
+                    lister.add(block_iterated.get());
+                }
+            }
             //--------------------------------------------------------
             // DEFAULT VALUE
             // Default value is 'else', 'if' using items from `lister`
-            // Collection above (if you want to append new items,
-            // remove emptyList() and replace with some sort of list
+            // ArrayList above
             //--------------------------------------------------------
             if (lister.contains(block.get())) {
-                withExistingParent(name, new ResourceLocation(Cobr.MOD_ID, "item/" + name));
+                this.getBuilder(name).parent(getExistingFile(mcLoc("item/generated"))).texture("layer0", ITEM_FOLDER + "/" + name);
             } else {
                 withExistingParent(name, new ResourceLocation(Cobr.MOD_ID, "block/" + name + evaluation));
             }

@@ -34,6 +34,12 @@ public class CobrBlocks {
             () -> new FlammableBlocks.LogBlocks(Block.Properties.of(Material.BAMBOO).sound(SoundType.BAMBOO).strength(0.5f, 0.5f)), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> HARDENED_SAND = registerBlock("hardened_sand",
             () -> new Block(Block.Properties.of(Material.STONE).sound(SoundType.SAND).strength(2f, 1f)), CobrTab.COBR_TAB, 0);
+    public static final RegistryObject<Block> SAND_PATH = registerBlock("sand_path",
+            () -> new Block(Block.Properties.of(Material.STONE).sound(SoundType.SAND).strength(2f, 6f)), CobrTab.COBR_TAB, 0);
+    public static final RegistryObject<Block> SAND_PATH_SLAB = registerBlock("sand_path_slab",
+            () -> new SlabBlock(Block.Properties.of(Material.STONE).sound(SoundType.SAND).strength(2f, 6f)), CobrTab.COBR_TAB, 0);
+    public static final RegistryObject<Block> SAND_PATH_STAIRS = registerBlock("sand_path_stairs",
+            () -> new StairsBlock(() -> CobrBlocks.SAND_PATH.get().defaultBlockState(), Block.Properties.of(Material.STONE).sound(SoundType.SAND).strength(2f, 6f)), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> DUNE_COAL_BLOCK = registerBlock("dune_coal_block",
             () -> new FlammableBlocks.FlammableStone(Block.Properties.of(Material.WOOD).sound(SoundType.STONE).strength(6f, 8f).requiresCorrectToolForDrops()), CobrTab.COBR_TAB, 18000);
     public static final RegistryObject<Block> RAW_DUNE_GOLD_BLOCK = registerBlock("raw_dune_gold_block",
