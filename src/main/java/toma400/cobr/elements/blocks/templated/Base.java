@@ -5,13 +5,12 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Rotation;
-import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 
-public class DataGenHelper {
+public class Base {
 
     /*
     *  CLASS HERE IS USED MOSTLY FOR DATAGEN OF MODELS/BLOCKSTATES, BUT ALSO AS A REFERENCE FOR GENERAL BLOCKSTATE PROPERTIES

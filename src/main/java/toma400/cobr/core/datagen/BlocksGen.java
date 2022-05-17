@@ -7,9 +7,8 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import toma400.cobr.Cobr;
 import toma400.cobr.core.CobrBlocks;
-import toma400.cobr.elements.blocks.templated.DataGenHelper;
+import toma400.cobr.elements.blocks.templated.Base;
 import toma400.cobr.elements.blocks.templated.FlammableBlocks;
-import toma400.cobr.elements.blocks.templated.LogBlocks;
 
 import java.util.Collection;
 
@@ -28,7 +27,7 @@ public class BlocksGen extends BlockModelProvider {
         for (RegistryObject<Block> block : blocks) {
             String pathage = block.get().getRegistryName().getPath();
 
-            if(block.get() instanceof DataGenHelper.EachSideHorizontalBlock) {
+            if(block.get() instanceof Base.EachSideHorizontalBlock) {
                 cube(pathage,
                         Helpers.BlockPathRef("", pathage + "_side"),
                         Helpers.BlockPathRef("", pathage + "_top"),

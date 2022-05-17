@@ -21,33 +21,6 @@ import toma400.cobr.core.CobrItems;
 public class CobrEvents {
 
     @SubscribeEvent
-    public static void travellerStoneSwitcher(PlayerInteractEvent.RightClickBlock event) {
-        if(!event.getEntity().level.isClientSide()){
-            Player player = ((Player) event.getPlayer());
-            BlockPos blockpos = ((BlockPos) event.getPos());
-            BlockState blockstate = event.getWorld().getBlockState(blockpos);
-            if(blockstate == CobrBlocks.EMPTY_TRAVELLER_STONE.get().defaultBlockState()) {
-                if(player.getMainHandItem().getItem() == Items.GOLD_INGOT) {
-                    player.getMainHandItem().shrink(1);
-                    event.getWorld().setBlock(blockpos, CobrBlocks.DUNE_TRAVELLER_STONE.get().defaultBlockState(), 1);
-                }
-                if(player.getMainHandItem().getItem() == Items.EMERALD) {
-                    player.getMainHandItem().shrink(1);
-                    event.getWorld().setBlock(blockpos, CobrBlocks.RAINFOREST_ISLANDS_TRAVELLER_STONE.get().defaultBlockState(), 1);
-                }
-                if(player.getMainHandItem().getItem() == Items.DIAMOND) {
-                    player.getMainHandItem().shrink(1);
-                    event.getWorld().setBlock(blockpos, CobrBlocks.PERMAFROST_TRAVELLER_STONE.get().defaultBlockState(), 1);
-                }
-                if(player.getMainHandItem().getItem() == Items.VINE) {
-                    player.getMainHandItem().shrink(1);
-                    event.getWorld().setBlock(blockpos, CobrBlocks.EVERGREEN_DEPTHS_TRAVELLER_STONE.get().defaultBlockState(), 1);
-                }
-            }
-        }
-    }
-
-    @SubscribeEvent
     public static void disbandmentScrollSigning(PlayerInteractEvent.RightClickItem event) {
         if(!event.getEntity().level.isClientSide()){
             Player player = ((Player) event.getPlayer());

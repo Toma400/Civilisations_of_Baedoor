@@ -1,6 +1,5 @@
 package toma400.cobr.elements.behaviours;
 
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.BlockState;
 import toma400.cobr.core.CobrBlocks;
 

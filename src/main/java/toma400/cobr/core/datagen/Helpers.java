@@ -4,6 +4,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.FenceGateBlock;
+import net.minecraft.world.level.block.OreBlock;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -109,11 +110,25 @@ public class Helpers {
     // --------------------------------------------
     // LISTS
     // --------------------------------------------
-    // System checking if block has sandstone texturing rules (different top, bottom and double)
+    // Used to list all blocks that have manually put models/blockstates
     public static Boolean isBlockSidelined(Block block) {
         ArrayList<Block> custom_blocks = new ArrayList<>();
         return (custom_blocks.contains(block));
     }
+    // Used to list all blocks being horizontal
+    public static Boolean isBlockHorizontal(Block block) {
+        ArrayList<Block> horizontal_blocks = new ArrayList<>();
+        // Adding entries to arraylist from instancing
+        for (RegistryObject<Block> block_iterated : CobrBlocks.BLOCKS.getEntries()) {
+            if (block_iterated.get() instanceof OreBlock) {
+                horizontal_blocks.add(block_iterated.get());
+            }
+        }
+        // Adding entries to arraylist via manual entries
+        horizontal_blocks.add(CobrBlocks.DUNE_TRAVELLER_STONE.get());
+        return (horizontal_blocks.contains(block));
+    }
+    // Used for blocks that use simpleBlock method (have 1 texture all around)
     public static Boolean isBlockSimplified(Block block) {
         ArrayList<Block> simplified_blocks = new ArrayList<>();
         simplified_blocks.add(CobrBlocks.EOTIC_BAMBOO_BLOCK.get());
@@ -131,6 +146,7 @@ public class Helpers {
         simplified_blocks.add(CobrBlocks.WET_DUNE_SAND.get());
         return (simplified_blocks.contains(block));
     }
+    // System checking if block has sandstone texturing rules (different top, bottom and double)
     public static Boolean isSandstone(Block block) {
         ArrayList<Block> sandstone_blocks = new ArrayList<>();
         sandstone_blocks.add(CobrBlocks.DUNE_SANDSTONE.get());
