@@ -34,14 +34,6 @@ public class BlockStatesGen extends BlockStateProvider {
             if(block.get() instanceof DataGenHelper.EachSideHorizontalBlock) {
                 horizontalBlock(block.get(), modelProvider(block.get(), ""));
             }
-            else if(block.get() instanceof FlammableBlocks.FlammableStone  ||
-                    block.get() == CobrBlocks.EOTIC_BAMBOO_BLOCK.get() ||
-                    block.get() == CobrBlocks.DUNE_SANDSTONE.get() ||
-                    block.get() == CobrBlocks.DUNE_SANDSTONE_BRICKS.get() ||
-                    block.get() == CobrBlocks.ESRAH_PLANKS.get() ||
-                    block.get() == CobrBlocks.LAIS_PLANKS.get()) {
-                simpleBlock(block.get(), modelProvider(block.get(), ""));
-            }
             else if(block.get() instanceof LogBlocks) {
                 axisBlock((RotatedPillarBlock) block.get(), modelProvider(block.get(), ""), modelProvider(block.get(), "_horizontal"));
             }
@@ -57,6 +49,13 @@ public class BlockStatesGen extends BlockStateProvider {
             }
             else if(block.get() instanceof DoorBlock) {
                 doorBlock((DoorBlock) block.get(), modelProvider(block.get(), "_bottom"), modelProvider(block.get(), "_bottom_hinge"), modelProvider(block.get(), "_top"), modelProvider(block.get(), "_top_hinge"));
+            }
+            else {  //later: it will redirect everything to what is yet conditioned, with exclusion of Helpers.isBlockSidelined
+                if(Helpers.isBlockSimplified(block.get())  ||
+                   block.get() instanceof FlammableBlocks.Planks ||
+                   block.get() instanceof FlammableBlocks.FlammableStone) {
+                        simpleBlock(block.get(), modelProvider(block.get(), ""));
+                }
             }
         }
     }

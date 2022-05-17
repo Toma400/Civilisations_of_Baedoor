@@ -1,7 +1,7 @@
 {
   "variants": {
     "axis=x": {
-      "model": "cobr:block/lais_wood",
+      "model": "cobr:block/lais_wood_horizontal",
       "x": 90,
       "y": 90
     },
@@ -9,7 +9,7 @@
       "model": "cobr:block/lais_wood"
     },
     "axis=z": {
-      "model": "cobr:block/lais_wood",
+      "model": "cobr:block/lais_wood_horizontal",
       "x": 90
     }
   }

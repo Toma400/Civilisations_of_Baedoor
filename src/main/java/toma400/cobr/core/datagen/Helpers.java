@@ -84,6 +84,27 @@ public class Helpers {
     // LISTS
     // --------------------------------------------
     // System checking if block has sandstone texturing rules (different top, bottom and double)
+    public static Boolean isBlockSidelined(Block block) {
+        ArrayList<Block> custom_blocks = new ArrayList<>();
+        return (custom_blocks.contains(block));
+    }
+    public static Boolean isBlockSimplified(Block block) {
+        ArrayList<Block> simplified_blocks = new ArrayList<>();
+        simplified_blocks.add(CobrBlocks.EOTIC_BAMBOO_BLOCK.get());
+        simplified_blocks.add(CobrBlocks.DUNE_SANDSTONE_BRICKS.get());
+        simplified_blocks.add(CobrBlocks.DUNE_SANDSTONE.get()); // TO FIX!
+
+        simplified_blocks.add(CobrBlocks.CHISELED_DUNE_SANDSTONE_BRICKS.get());
+        simplified_blocks.add(CobrBlocks.BLOCK_OF_DUNE_GOLD.get());
+        simplified_blocks.add(CobrBlocks.BRIGHT_DUNE_SAND.get());
+        simplified_blocks.add(CobrBlocks.DUNE_SAND.get());
+        simplified_blocks.add(CobrBlocks.EOTIC_BAMBOO_LAMP.get());
+        simplified_blocks.add(CobrBlocks.HARDENED_DUNE_SAND.get());
+        simplified_blocks.add(CobrBlocks.HARDENED_SAND.get());
+        simplified_blocks.add(CobrBlocks.RAW_DUNE_GOLD_BLOCK.get());
+        simplified_blocks.add(CobrBlocks.WET_DUNE_SAND.get());
+        return (simplified_blocks.contains(block));
+    }
     public static Boolean isSandstone(Block block) {
         ArrayList<Block> sandstone_blocks = new ArrayList<>();
         sandstone_blocks.add(CobrBlocks.DUNE_SANDSTONE.get());
@@ -91,6 +112,7 @@ public class Helpers {
         sandstone_blocks.add(CobrBlocks.DUNE_SANDSTONE_STAIRS.get());
         return (sandstone_blocks.contains(block));
     }
+
     // ITEM GENERATION
     public static final ResourceLocation ItemPathRef(String namespace, String item) {
         ResourceLocation Item = new ResourceLocation(Cobr.MOD_ID + ":item/" + item);

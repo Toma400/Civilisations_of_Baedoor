@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "cobr:block/bright_dune_sand"
-  }
-}

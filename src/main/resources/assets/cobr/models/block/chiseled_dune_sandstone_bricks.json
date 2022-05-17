@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "cobr:block/chiseled_dune_sandstone_bricks"
-  }
-}
