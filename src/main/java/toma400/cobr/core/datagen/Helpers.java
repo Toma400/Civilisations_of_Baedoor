@@ -3,6 +3,7 @@ package toma400.cobr.core.datagen;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.FenceGateBlock;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -64,6 +65,31 @@ public class Helpers {
         return doubleVariant;
     }
     // --------------------------------------------
+    // FENCES & FENCE GATES
+    // Basic system for fence-related blocks naming
+    // --------------------------------------------
+    public static String fenceTypesNamingModifier(Block block, String pathage) {
+        String isItFenceOrFenceGate = "fence";
+        if (block instanceof FenceGateBlock) {
+            isItFenceOrFenceGate = "fence_gate";
+        }
+        String pathage2;
+        if(block instanceof FlammableBlocks.FenceGate || block instanceof FlammableBlocks.Fence) {
+            pathage2 = pathage.replace(isItFenceOrFenceGate, "planks");
+        } else {
+            pathage2 = pathage.replace(isItFenceOrFenceGate, "bricks");
+        }
+        return pathage2;
+    }
+    // Special class for BlockStates
+    public static String fenceTypesNamingModifierBlockStates(Block block) {
+        String switcher = block.getRegistryName().getPath().replace("fence", "bricks");
+        if (block instanceof FlammableBlocks.Fence) {
+            switcher = block.getRegistryName().getPath().replace("fence", "planks");
+        }
+        return switcher;
+    }
+    // --------------------------------------------
     // GENERAL
     // Naming convention for sandstone blocks (for each type of texture)
     // --------------------------------------------
@@ -113,14 +139,6 @@ public class Helpers {
         return (sandstone_blocks.contains(block));
     }
 
-    // ITEM GENERATION
-    public static final ResourceLocation ItemPathRef(String namespace, String item) {
-        ResourceLocation Item = new ResourceLocation(Cobr.MOD_ID + ":item/" + item);
-        if (namespace != "" && namespace != "mod") {
-            Item = new ResourceLocation(namespace + ":item/" + item);
-        }
-        return Item;
-    }
     // BLOCK GENERATION
     public static final ResourceLocation BlockPathRef(String namespace, String item) {
         ResourceLocation Block = new ResourceLocation(Cobr.MOD_ID + ":block/" + item);
@@ -130,7 +148,15 @@ public class Helpers {
         return Block;
     }
 
-
+    // ITEM GENERATION
+    @Deprecated
+    public static final ResourceLocation ItemPathRef(String namespace, String item) {
+        ResourceLocation Item = new ResourceLocation(Cobr.MOD_ID + ":item/" + item);
+        if (namespace != "" && namespace != "mod") {
+            Item = new ResourceLocation(namespace + ":item/" + item);
+        }
+        return Item;
+    }
     @Deprecated
     public void leafThingForTomi(Collection<RegistryObject<Block>> blocks) {
         for (RegistryObject<Block> block : blocks) {
