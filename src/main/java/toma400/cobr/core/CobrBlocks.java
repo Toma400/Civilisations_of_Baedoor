@@ -28,7 +28,7 @@ public class CobrBlocks {
 
     //UTIL BLOCKS
     public static final RegistryObject<Block> PACK_OF_EOTIC_BAMBOO = registerBlock("pack_of_eotic_bamboo",
-            () -> new LogBlocks(BlockBehaviour.Properties.of(Material.BAMBOO).sound(SoundType.BAMBOO).strength(0.5f, 0.5f)), CobrTab.COBR_TAB, 0);
+            () -> new FlammableBlocks.LogBlocks(BlockBehaviour.Properties.of(Material.BAMBOO).sound(SoundType.BAMBOO).strength(0.5f, 0.5f)), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> HARDENED_SAND = registerBlock("hardened_sand",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SAND).strength(2f, 1f)), CobrTab.COBR_TAB, 0);
     public static final RegistryObject<Block> DUNE_COAL_BLOCK = registerBlock("dune_coal_block",
@@ -98,23 +98,23 @@ public class CobrBlocks {
     //WOODS
     //[LOGS - WOODS - PLANKS]
     public static final RegistryObject<Block> ESRAH_LOG = registerBlock("esrah_log",
-            () -> new LogBlocks(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2f, 2f)), CobrTab.COBR_TAB, 300);
+            () -> new FlammableBlocks.LogBlocks(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2f, 2f)), CobrTab.COBR_TAB, 300);
     public static final RegistryObject<Block> STRIPPED_ESRAH_LOG = registerBlock("stripped_esrah_log",
-            () -> new LogBlocks(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2f, 2f)), CobrTab.COBR_TAB, 300);
+            () -> new FlammableBlocks.LogBlocks(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2f, 2f)), CobrTab.COBR_TAB, 300);
     public static final RegistryObject<Block> ESRAH_WOOD = registerBlock("esrah_wood",
-            () -> new LogBlocks(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2f, 2f)), CobrTab.COBR_TAB, 300);
+            () -> new FlammableBlocks.LogBlocks(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2f, 2f)), CobrTab.COBR_TAB, 300);
     public static final RegistryObject<Block> STRIPPED_ESRAH_WOOD = registerBlock("stripped_esrah_wood",
-            () -> new LogBlocks(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2f, 2f)), CobrTab.COBR_TAB, 300);
+            () -> new FlammableBlocks.LogBlocks(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2f, 2f)), CobrTab.COBR_TAB, 300);
     public static final RegistryObject<Block> ESRAH_PLANKS = registerBlock("esrah_planks",
             () -> new FlammableBlocks.Planks(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2f, 3f)), CobrTab.COBR_TAB, 300);
     public static final RegistryObject<Block> LAIS_LOG = registerBlock("lais_log",
-            () -> new LogBlocks(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2f, 2f)), CobrTab.COBR_TAB, 300);
+            () -> new FlammableBlocks.LogBlocks(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2f, 2f)), CobrTab.COBR_TAB, 300);
     public static final RegistryObject<Block> STRIPPED_LAIS_LOG = registerBlock("stripped_lais_log",
-            () -> new LogBlocks(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2f, 2f)), CobrTab.COBR_TAB, 300);
+            () -> new FlammableBlocks.LogBlocks(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2f, 2f)), CobrTab.COBR_TAB, 300);
     public static final RegistryObject<Block> LAIS_WOOD = registerBlock("lais_wood",
-            () -> new LogBlocks(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2f, 2f)), CobrTab.COBR_TAB, 300);
+            () -> new FlammableBlocks.LogBlocks(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2f, 2f)), CobrTab.COBR_TAB, 300);
     public static final RegistryObject<Block> STRIPPED_LAIS_WOOD = registerBlock("stripped_lais_wood",
-            () -> new LogBlocks(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2f, 2f)), CobrTab.COBR_TAB, 300);
+            () -> new FlammableBlocks.LogBlocks(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2f, 2f)), CobrTab.COBR_TAB, 300);
     public static final RegistryObject<Block> LAIS_PLANKS = registerBlock("lais_planks",
             () -> new FlammableBlocks.Planks(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2f, 3f)), CobrTab.COBR_TAB, 300);
     //WOOD VARIANTS
