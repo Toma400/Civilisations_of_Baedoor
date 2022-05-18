@@ -66,6 +66,9 @@
   "block.cobr.dune_sandstone_bricks_stairs": "Wydmowe piaskowcowe ceglane schody",
 
   "block.cobr.hardened_sand": "Utwardzony piasek",
+  "block.cobr.sand_path": "Piaskowa droga",
+  "block.cobr.sand_path_slab": "Piaskowa płyta drogowa",
+  "block.cobr.sand_path_stairs": "Piaskowe schody drogowe",
   "block.cobr.dune_coal_block": "Blok węgla wydmowego",
   "block.cobr.block_of_dune_gold": "Blok wydmowego złota",
   "block.cobr.raw_dune_gold_block": "Blok surowego wydmowego złota",

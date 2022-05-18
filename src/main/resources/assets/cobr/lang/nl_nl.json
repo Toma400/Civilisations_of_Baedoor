@@ -66,6 +66,9 @@
   "block.cobr.dune_sandstone_bricks_stairs": "Duin Zandsteen Bakstenen Trap",
 
   "block.cobr.hardened_sand": "Verhard Zand",
+  "block.cobr.sand_path": "Zand Pad",
+  "block.cobr.sand_path_slab": "Zand Pad Plaat",
+  "block.cobr.sand_path_stairs": "Zand Pad Trap",
   "block.cobr.dune_coal_block": "Duinkool",
   "block.cobr.block_of_dune_gold": "Blok van Dune Gold",
   "block.cobr.raw_dune_gold_block": "Ruwe Duin Goud Blok",
