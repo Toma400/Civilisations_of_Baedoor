@@ -66,6 +66,9 @@
   "block.cobr.dune_sandstone_bricks_stairs": "Escaliers de Briques de Grès des Dunes",
 
   "block.cobr.hardened_sand": "Sable Durci",
+  "block.cobr.sand_path": "Chemin de Sable",
+  "block.cobr.sand_path_slab": "Dalle de Chemin de Sable",
+  "block.cobr.sand_path_stairs": "Escaliers de chemin de Sable",
   "block.cobr.dune_coal_block": "Bloc de Charbon des Dunes",
   "block.cobr.block_of_dune_gold": "Bloc d'Or des Dunes",
   "block.cobr.raw_dune_gold_block": "Bloc d'Or des Dunes Brut",

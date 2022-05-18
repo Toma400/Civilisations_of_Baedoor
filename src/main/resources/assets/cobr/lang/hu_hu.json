@@ -66,6 +66,9 @@
   "block.cobr.dune_sandstone_bricks_stairs": "Dűne Homokkő Tégla Lépcső",
 
   "block.cobr.hardened_sand": "Erősített Homok",
+  "block.cobr.sand_path": "Homok Ösvény",
+  "block.cobr.sand_path_slab": "Homok Ösvény Lap",
+  "block.cobr.sand_path_stairs": "Homok Ösvény Lépcső",
   "block.cobr.dune_coal_block": "Dűne Homok Szén Blokk",
   "block.cobr.block_of_dune_gold": "Dűne Homok Arany Blokk",
   "block.cobr.raw_dune_gold_block": "Nyers Dűne Arany Blokk",

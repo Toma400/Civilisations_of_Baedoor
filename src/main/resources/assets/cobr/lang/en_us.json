@@ -66,6 +66,9 @@
   "block.cobr.dune_sandstone_bricks_stairs": "Dune Sandstone Bricks Stairs",
 
   "block.cobr.hardened_sand": "Hardened Sand",
+  "block.cobr.sand_path": "Sand Path",
+  "block.cobr.sand_path_slab": "Sand Path Slab",
+  "block.cobr.sand_path_stairs": "Sand Path Stairs",
   "block.cobr.dune_coal_block": "Dune Coal Block",
   "block.cobr.block_of_dune_gold": "Block of Dune Gold",
   "block.cobr.raw_dune_gold_block": "Raw Dune Gold Block",

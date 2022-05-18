@@ -66,6 +66,9 @@
   "block.cobr.dune_sandstone_bricks_stairs": "Сходи з цегли з пісковику дюн",
 
   "block.cobr.hardened_sand": "Зміцнілий пісок",
+  "block.cobr.sand_path": "Доріжка на піску",
+  "block.cobr.sand_path_slab": "Плита з доріжки на піску",
+  "block.cobr.sand_path_stairs": "Сходи з доріжки на піску",
   "block.cobr.dune_coal_block": "Блок з вугілля дюн",
   "block.cobr.block_of_dune_gold": "Блок з золота дюн",
   "block.cobr.raw_dune_gold_block": "Блок сирого золота дюн",

@@ -66,6 +66,9 @@
   "block.cobr.dune_sandstone_bricks_stairs": "سلم طوب الكثبان الرملية الكثيفة المزخرفة",
 
   "block.cobr.hardened_sand": "الرمل الصلب",
+  "block.cobr.sand_path": "طريق رملي",
+  "block.cobr.sand_path_slab": "لوح من الطريق الرملي",
+  "block.cobr.sand_path_stairs": "سلالم الطريق الرملي",
   "block.cobr.dune_coal_block": "كتلة الفحم الرملي",
   "block.cobr.block_of_dune_gold": "كتلة الذهب الرملي",
   "block.cobr.raw_dune_gold_block": "كتلة الذهب الرملي الخام",

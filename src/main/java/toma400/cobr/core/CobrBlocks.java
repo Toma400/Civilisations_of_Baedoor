@@ -27,9 +27,6 @@ public class CobrBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, Cobr.MOD_ID);
 
-    // TEMPORARILY OUTED
-    // - Saplings (treeGrower)
-
     //UTIL BLOCKS
     public static final RegistryObject<Block> PACK_OF_EOTIC_BAMBOO = registerBlock("pack_of_eotic_bamboo",
             () -> new FlammableBlocks.LogBlocks(Block.Properties.of(Material.BAMBOO).sound(SoundType.BAMBOO).strength(0.5f, 0.5f).harvestTool(ToolType.AXE)), CobrTab.COBR_TAB, 0);

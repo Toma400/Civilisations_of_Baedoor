@@ -4,6 +4,7 @@ import com.google.common.collect.ImmutableList;
 import com.mojang.datafixers.util.Pair;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.DoorBlock;
 import net.minecraft.block.OreBlock;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.LootTableProvider;
@@ -92,6 +93,12 @@ public class LootTablesGen {
                     }
                     //-------------------------------------------------
                     oresGen(block.get(), itemProvided);}
+                //-------------------------------------------------
+                // DOORS
+                //-------------------------------------------------
+                else if (block.get() instanceof DoorBlock) {
+                    add(block.get(), BlockLootTables::createDoorTable);
+                }
                 //-------------------------------------------------
                 // REGULAR BLOCKS (DROP ITSELF)
                 //-------------------------------------------------
