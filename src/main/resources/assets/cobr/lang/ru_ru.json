@@ -15,12 +15,12 @@
   "item.cobr.bone_shortsword": "Костяной короткий меч",
   "item.cobr.bone_sabre": "Костяная сабля",
 
-  "block.cobr.dune_sandstone_coal_ore": "Песчаниковая руда угля Дюны",
-  "block.cobr.dune_sandstone_iron_ore": "Песчаниковая руда железа Дюны",
-  "block.cobr.dune_sandstone_gold_ore": "Песчаниковая руда золота Дюны",
-  "block.cobr.sandstone_coal_ore": "Песчаниковая руда угля",
-  "block.cobr.sandstone_iron_ore": "Песчаниковая руда железа",
-  "block.cobr.sandstone_gold_ore": "Песчаниковая руда золота",
+  "block.cobr.dune_sandstone_coal_ore": "Песчаниковая угольная руда Дюны",
+  "block.cobr.dune_sandstone_iron_ore": "Песчаниковая железная руда Дюны",
+  "block.cobr.dune_sandstone_gold_ore": "Песчаниковая золотая руда Дюны",
+  "block.cobr.sandstone_coal_ore": "Песчаниковая угольная руда",
+  "block.cobr.sandstone_iron_ore": "Песчаниковая железная руда",
+  "block.cobr.sandstone_gold_ore": "Песчаниковая золотая руда",
 
   "block.cobr.esrah_log": "Бревно Эсра",
   "block.cobr.stripped_esrah_log": "Обтёсанное бревно Эсра",
