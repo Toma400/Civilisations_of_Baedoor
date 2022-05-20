@@ -1,4 +1,4 @@
-package toma400.cobr.elements.paintings;
+package toma400.cobr.core;
 
 import net.minecraft.world.entity.decoration.Motive;
 import net.minecraftforge.eventbus.api.IEventBus;
