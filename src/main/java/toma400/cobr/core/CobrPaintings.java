@@ -1,4 +1,4 @@
-package toma400.cobr.elements.paintings;
+package toma400.cobr.core;
 
 import net.minecraft.entity.item.PaintingType;
 import net.minecraftforge.eventbus.api.IEventBus;

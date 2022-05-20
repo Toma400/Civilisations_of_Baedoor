@@ -11,7 +11,7 @@ import toma400.cobr.core.CobrBlocks;
 import toma400.cobr.core.CobrItems;
 import toma400.cobr.elements.behaviours.Composting;
 import toma400.cobr.elements.behaviours.Stripping;
-import toma400.cobr.elements.paintings.CobrPaintings;
+import toma400.cobr.core.CobrPaintings;
 import toma400.cobr.render.registrars.RenderTypeRegistry;
 
 import static toma400.cobr.Cobr.MOD_ID;
