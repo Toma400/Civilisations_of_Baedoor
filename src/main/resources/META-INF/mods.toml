@@ -1,11 +1,11 @@
 modLoader="javafml"
 loaderVersion="[40,)"
-license="All Rights Reserved"
+license="Baedoor Mod License"
 [[mods]]
 modId="cobr"
 version="${file.jarVersion}"
 displayName="Civilisations of Baedoor"
-logoFile="logo.png"
+logoFile="cobr.png"
 credits="Toma400 - author, DylanVHS - textures, Poltergeist - models, RiftJaw - models"
 authors="Toma400"
 description='''

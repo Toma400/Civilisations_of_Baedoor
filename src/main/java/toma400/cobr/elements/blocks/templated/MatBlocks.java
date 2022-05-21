@@ -19,13 +19,14 @@ public class MatBlocks extends Block {
         super(properties);
     }
 
+    //SHAPE
     private static final VoxelShape MAT_SHAPE = Stream.of(
             Block.box(0,0,0,16,1,16)
     ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR)).get();
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        return MAT_SHAPE;
+        return Block.box(0,0,0,16,1,16);
     }
 
     //FIRE-RELATIONS SECTION

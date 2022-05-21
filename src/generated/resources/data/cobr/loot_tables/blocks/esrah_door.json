@@ -7,6 +7,15 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "cobr:esrah_door",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ],
           "name": "cobr:esrah_door"
         }
       ],

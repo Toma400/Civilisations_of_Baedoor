@@ -13,7 +13,6 @@ import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvi
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import org.jetbrains.annotations.Nullable;
 import toma400.cobr.core.CobrBlocks;
-import toma400.cobr.world.environment.MinorEnvironmentFeatures;
 
 import java.util.Random;
 
