@@ -89,7 +89,7 @@
 
   "tooltip.cobr.disbandment_scroll": "Peut être utilisé pour résilier le contrat de guerriers",
 
-  "event.cobr.disbandment_owner_info": "Parchemin de Désengagement assigné au joueur dont l'UUID est: ",
+  "event.cobr.disbandment_owner_info": "Parchemin de Désengagement assigné au joueur dont l'UUID est: %s",
 
   "itemGroup.cobr_tab": "Civilisations of Baedoor"
 }

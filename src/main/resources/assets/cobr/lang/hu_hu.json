@@ -89,7 +89,7 @@
 
   "tooltip.cobr.disbandment_scroll": "Segítségül szolgál a harcosok feloszlatásra a vezetőjétől",
 
-  "event.cobr.disbandment_owner_info": "Az UUID-vel rendelkező játkosok által hozzárendelt feloszlatási tekercs: ",
+  "event.cobr.disbandment_owner_info": "Az UUID-vel rendelkező játkosok által hozzárendelt feloszlatási tekercs: %s",
 
   "itemGroup.cobr_tab": "Baedoor Civiláziója"
 }

@@ -89,7 +89,7 @@
 
   "tooltip.cobr.disbandment_scroll": "بمثابة وسيلة لتفكيك المحارب من زعيمه",
 
-  "event.cobr.disbandment_owner_info": "مخطوطة التحرير المعين من قبل لاعب مع UUID: ",
+  "event.cobr.disbandment_owner_info": "مخطوطة التحرير المعين من قبل لاعب مع UUID: %s",
 
   "itemGroup.cobr_tab": "حضارات بايدور"
 }

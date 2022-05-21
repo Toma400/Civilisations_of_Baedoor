@@ -89,7 +89,7 @@
 
   "tooltip.cobr.disbandment_scroll": "Dient als een manier om de krijger van zijn leider te ontbinden",
 
-  "event.cobr.disbandment_owner_info": "Ontbinding scroll toegewezen door speler met UUID: ",
+  "event.cobr.disbandment_owner_info": "Ontbinding scroll toegewezen door speler met UUID: %s",
 
   "itemGroup.cobr_tab": "Civilisations of Baedoor"
 }

@@ -22,9 +22,12 @@ public class MatBlocks extends Block {
         super(properties);
     }
 
-    private static final VoxelShape MAT_SHAPE = Stream.of(
-            Block.box(0,0,0,16,1,16)
-    ).reduce((v1, v2) -> VoxelShapes.join(v1, v2, IBooleanFunction.OR)).get();
+    //SHAPE
+    @Override
+    public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
+        return VoxelShapes.or(box(0, 0, 0, 16, 1, 16));
+    }
+
 
     //FIRE-RELATIONS SECTION
     @Override

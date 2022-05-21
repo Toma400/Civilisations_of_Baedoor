@@ -27,7 +27,8 @@ public class CobrEvents {
                     itemstack.getOrCreateTag().putBoolean("if_signed", true);
                     itemstack.getOrCreateTag().putString("assigned_by", player.getStringUUID());
                 } else {
-                    player.sendMessage (new TranslationTextComponent("event.cobr.disbandment_owner_info" + itemstack.getOrCreateTag().getString("assigned_by")), player.getUUID());
+                    String assigning = itemstack.getOrCreateTag().getString("assigned_by");
+                    player.sendMessage (new TranslationTextComponent("event.cobr.disbandment_owner_info", assigning), player.getUUID());
                 }
             }
 

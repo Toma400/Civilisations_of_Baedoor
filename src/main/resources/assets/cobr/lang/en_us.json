@@ -89,7 +89,7 @@
 
   "tooltip.cobr.disbandment_scroll": "Serves as a way to disband the warrior from its leader",
 
-  "event.cobr.disbandment_owner_info": "Disbandment scroll assigned by player with UUID: ",
+  "event.cobr.disbandment_owner_info": "Disbandment scroll assigned by player with UUID: %s",
 
   "itemGroup.cobr_tab": "Civilisations of Baedoor"
 }

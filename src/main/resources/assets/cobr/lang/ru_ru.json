@@ -89,7 +89,7 @@
 
   "tooltip.cobr.disbandment_scroll": "Служит способом роспуска воина от его лидера",
 
-  "event.cobr.disbandment_owner_info": "Свиток роспуска, назначенный игроком с UUID: ",
+  "event.cobr.disbandment_owner_info": "Свиток роспуска, назначенный игроком с UUID: %s",
 
   "itemGroup.cobr_tab": "Цивилизации Баэдора"
 }

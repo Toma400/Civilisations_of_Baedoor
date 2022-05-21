@@ -89,7 +89,7 @@
 
   "tooltip.cobr.disbandment_scroll": "Є способом розформування воїна від його лідера",
 
-  "event.cobr.disbandment_owner_info": "Скруток розформування, призначений гравцем з UUID: ",
+  "event.cobr.disbandment_owner_info": "Скруток розформування, призначений гравцем з UUID: %s",
 
   "itemGroup.cobr_tab": "Цивілізація Баедуру"
 }

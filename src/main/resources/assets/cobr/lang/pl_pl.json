@@ -89,7 +89,7 @@
 
   "tooltip.cobr.disbandment_scroll": "Służy do odwoływania wojowników z ich służby wobec właściciela",
 
-  "event.cobr.disbandment_owner_info": "Zwój odwołania przypisany do gracza o UUID: ",
+  "event.cobr.disbandment_owner_info": "Zwój odwołania przypisany do gracza o UUID: %s",
 
   "itemGroup.cobr_tab": "Civilisations of Baedoor"
 }

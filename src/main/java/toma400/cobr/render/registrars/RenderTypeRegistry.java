@@ -6,7 +6,9 @@ import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.fml.RegistryObject;
 import toma400.cobr.core.CobrBlocks;
 import toma400.cobr.elements.blocks.templated.Base;
+import toma400.cobr.elements.blocks.templated.MatBlocks;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
 public class RenderTypeRegistry {
@@ -18,7 +20,8 @@ public class RenderTypeRegistry {
                 block.get() instanceof FenceBlock ||
                 block.get() instanceof FenceGateBlock ||
                 block.get() instanceof LeavesBlock ||
-                block.get() instanceof Base.SaplingBlock) {
+                block.get() instanceof Base.SaplingBlock ||
+                block.get() instanceof MatBlocks) {
                 RenderTypeLookup.setRenderLayer(block.get(), RenderType.cutout());
             }
         }

@@ -66,9 +66,9 @@
   "block.cobr.dune_sandstone_bricks_stairs": "Tangga Batu Bata Pasir Bukit Pasir",
 
   "block.cobr.hardened_sand": "Pasir Yang Mengeras",
-  "block.cobr.sand_path": "Sand Path",
-  "block.cobr.sand_path_slab": "Sand Path Slab",
-  "block.cobr.sand_path_stairs": "Sand Path Stairs",
+  "block.cobr.sand_path": "Laluan Pasir",
+  "block.cobr.sand_path_slab": "Tangga Laluan Pasir",
+  "block.cobr.sand_path_stairs": "Papak Laluan Pasir",
   "block.cobr.dune_coal_block": "Blok Arang Bukit Pasir",
   "block.cobr.block_of_dune_gold": "Blok Emas Bukit Pasir",
   "block.cobr.raw_dune_gold_block": "Blok Emas Bukit Pasir Mentah",
@@ -89,7 +89,7 @@
 
   "tooltip.cobr.disbandment_scroll": "Berfungsi sebagai cara untuk membubarkan pahlawan daripada ketuanya",
 
-  "event.cobr.disbandment_owner_info": "Tatal pembubaran yang diberikan oleh pemain dengan UUID: ",
+  "event.cobr.disbandment_owner_info": "Tatal pembubaran yang diberikan oleh pemain dengan UUID: %s",
 
   "itemGroup.cobr_tab": "Civilisations of Baedoor"
 }
