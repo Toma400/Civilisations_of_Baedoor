@@ -8,6 +8,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import toma400.cobr.core.CobrBlocks;
+import toma400.cobr.core.CobrEntities;
 import toma400.cobr.core.CobrItems;
 import toma400.cobr.elements.behaviours.Composting;
 import toma400.cobr.elements.behaviours.Stripping;
@@ -29,6 +30,7 @@ public class Cobr
         CobrItems.register(eventBus);
         CobrBlocks.register(eventBus);
         CobrPaintings.register(eventBus);
+        CobrEntities.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::setupClient);
@@ -37,7 +39,7 @@ public class Cobr
     }
 
     private void setupClient(final FMLCommonSetupEvent event) {
-        RenderTypeRegistry.globalBlockRenderingRegistrar(CobrBlocks.BLOCKS.getEntries());
+        RenderTypeRegistry.globalBlockRenderingRegistrar(CobrBlocks.BLOCKS.getEntries(), CobrEntities.ENTITIES.getEntries());
     }
 
     private void setup(final FMLCommonSetupEvent event)
