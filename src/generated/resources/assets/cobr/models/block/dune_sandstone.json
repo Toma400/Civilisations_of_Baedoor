@@ -1,6 +1,11 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube",
   "textures": {
-    "all": "cobr:block/dune_sandstone"
+    "down": "cobr:block/dune_sandstone_bottom",
+    "up": "cobr:block/dune_sandstone_top",
+    "north": "cobr:block/dune_sandstone",
+    "south": "cobr:block/dune_sandstone",
+    "east": "cobr:block/dune_sandstone",
+    "west": "cobr:block/dune_sandstone"
   }
 }
