@@ -162,7 +162,7 @@ public class Helpers {
             }
         }
         // Adding entries to arraylist via manual entries
-        // Here <-
+        horizontal_blocks.add(CobrBlocks.DUNE_SANDSTONE.get());
         return (horizontal_blocks.contains(block));
     }
 
