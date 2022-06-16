@@ -113,8 +113,8 @@ public class Helpers {
     }
     // --------------------------------------------
     // GENERAL
+    // Naming convention for various blocks (for each type of texture)
     // --------------------------------------------
-    // Naming convention for sandstone blocks (for each type of texture)
     public static String sandstoneNaming(Block block, String pathage2, Integer blockSet) {
         if (isSandstone(block) && blockSet == 1) {
             pathage2 = pathage2 + "_double";
@@ -159,34 +159,6 @@ public class Helpers {
         // Adding entries to arraylist via manual entries
         horizontal_blocks.add(CobrBlocks.DUNE_SANDSTONE.get());
         return (horizontal_blocks.contains(block));
-    }
-
-    // Used for blocks that use simpleBlock method (have 1 texture all around)
-    @Deprecated
-    public static Boolean isBlockSimplified(Block block) {
-        ArrayList<Block> simplified_blocks = new ArrayList<>();
-        // Adding entries to arraylist from instancing
-        for (RegistryObject<Block> block_iterated : CobrBlocks.BLOCKS.getEntries()) {
-            if (block_iterated.get() instanceof LeavesBlock ||
-                block_iterated.get() instanceof FlammableBlocks.Planks ||
-                block_iterated.get() instanceof FlammableBlocks.FlammableStone) {
-                simplified_blocks.add(block_iterated.get());
-            }
-        }
-        simplified_blocks.add(CobrBlocks.EOTIC_BAMBOO_BLOCK.get());
-        simplified_blocks.add(CobrBlocks.DUNE_SANDSTONE_BRICKS.get());
-        simplified_blocks.add(CobrBlocks.DUNE_SANDSTONE.get()); // TO FIX!
-
-        simplified_blocks.add(CobrBlocks.CHISELED_DUNE_SANDSTONE_BRICKS.get());
-        simplified_blocks.add(CobrBlocks.BLOCK_OF_DUNE_GOLD.get());
-        simplified_blocks.add(CobrBlocks.BRIGHT_DUNE_SAND.get());
-        simplified_blocks.add(CobrBlocks.DUNE_SAND.get());
-        simplified_blocks.add(CobrBlocks.EOTIC_BAMBOO_LAMP.get());
-        simplified_blocks.add(CobrBlocks.HARDENED_DUNE_SAND.get());
-        simplified_blocks.add(CobrBlocks.HARDENED_SAND.get());
-        simplified_blocks.add(CobrBlocks.RAW_DUNE_GOLD_BLOCK.get());
-        simplified_blocks.add(CobrBlocks.WET_DUNE_SAND.get());
-        return (simplified_blocks.contains(block));
     }
 
     // System checking if block has sandstone texturing rules (different top, bottom and double)
