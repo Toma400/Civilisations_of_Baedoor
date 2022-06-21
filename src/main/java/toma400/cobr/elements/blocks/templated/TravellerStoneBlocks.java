@@ -28,27 +28,26 @@ public class TravellerStoneBlocks extends Block {
                         world.setBlock(blockpos, CobrBlocks.DUNE_TRAVELLER_STONE.get().defaultBlockState(), 1);
                         return ActionResultType.SUCCESS;
                     }
-                    if(player.getMainHandItem().getItem() == Items.EMERALD) {
+                    else if(player.getMainHandItem().getItem() == Items.EMERALD) {
                         player.getMainHandItem().shrink(1);
                         world.setBlock(blockpos, CobrBlocks.RAINFOREST_ISLANDS_TRAVELLER_STONE.get().defaultBlockState(), 1);
                         return ActionResultType.SUCCESS;
                     }
-                    if(player.getMainHandItem().getItem() == Items.DIAMOND) {
+                    else if(player.getMainHandItem().getItem() == Items.DIAMOND) {
                         player.getMainHandItem().shrink(1);
                         world.setBlock(blockpos, CobrBlocks.PERMAFROST_TRAVELLER_STONE.get().defaultBlockState(), 1);
                         return ActionResultType.SUCCESS;
                     }
-                    if(player.getMainHandItem().getItem() == Items.VINE) {
+                    else if(player.getMainHandItem().getItem() == Items.VINE) {
                         player.getMainHandItem().shrink(1);
                         world.setBlock(blockpos, CobrBlocks.EVERGREEN_DEPTHS_TRAVELLER_STONE.get().defaultBlockState(), 1);
                         return ActionResultType.SUCCESS;
                     }
-                    else {
-                        return ActionResultType.FAIL;
-                    }
+                    return ActionResultType.FAIL;
                 }
+                return ActionResultType.FAIL;
             }
-            return ActionResultType.SUCCESS;
+            return ActionResultType.FAIL;
         }
     }
 }
