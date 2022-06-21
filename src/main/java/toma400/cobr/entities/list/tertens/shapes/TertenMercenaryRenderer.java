@@ -1,11 +1,10 @@
-package toma400.cobr.render.entities.renderers;
+package toma400.cobr.entities.list.tertens.shapes;
 
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
 import toma400.cobr.Cobr;
 import toma400.cobr.entities.list.tertens.TertenMercenary;
-import toma400.cobr.render.entities.models.TertenMercenaryType;
 
 public class TertenMercenaryRenderer extends MobRenderer<TertenMercenary, TertenMercenaryType<TertenMercenary>> {
 

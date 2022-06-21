@@ -9,7 +9,7 @@ import java.io.File;
 
 public class WorldConfig {
 
-    public static final String WORLD_CONFIG_PATH = FMLPaths.GAMEDIR.get().toString();
+    public static final String WORLD_CONFIG_PATH = FMLPaths.GAMEDIR.get().resolve("cobr-server.toml").toString();
     // Categories for values
     public static final String TYPE_WORLDGEN = "World Generation";
     public static final String TYPE_STRUCTURES = "Structures";

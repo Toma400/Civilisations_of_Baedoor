@@ -6,10 +6,9 @@ import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.registries.RegistryObject;
-import toma400.cobr.core.CobrBlocks;
 import toma400.cobr.core.CobrEntities;
 import toma400.cobr.elements.blocks.templated.MatBlocks;
-import toma400.cobr.render.entities.renderers.TertenMercenaryRenderer;
+import toma400.cobr.entities.list.tertens.shapes.TertenMercenaryRenderer;
 
 import java.util.Collection;
 
@@ -28,8 +27,7 @@ public class RenderTypeRegistry {
                 }
             }
             for (RegistryObject<EntityType<?>> entity : entities) {
-                // pass
-                //EntityRenderers.register(CobrEntities.TERTEN_MERCENARY.get(), TertenMercenaryRenderer::new);
+                EntityRenderers.register(CobrEntities.TERTEN_MERCENARY.get(), TertenMercenaryRenderer::new);
             }
         }
 }

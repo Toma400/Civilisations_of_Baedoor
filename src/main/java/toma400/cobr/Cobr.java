@@ -18,8 +18,10 @@ import toma400.cobr.core.CobrBlocks;
 import toma400.cobr.core.CobrItems;
 import toma400.cobr.elements.behaviours.Composting;
 
+import static toma400.cobr.Cobr.MOD_ID;
+
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(Cobr.MOD_ID)
+@Mod(MOD_ID)
 public class Cobr
 {
     // Directly reference a log4j logger.

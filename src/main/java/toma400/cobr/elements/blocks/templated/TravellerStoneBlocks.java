@@ -47,8 +47,9 @@ public class TravellerStoneBlocks extends Block {
                         return InteractionResult.FAIL;
                     }
                 }
+                return InteractionResult.FAIL;
             }
-            return InteractionResult.SUCCESS;
+            return InteractionResult.FAIL;
         }
     }
 }
