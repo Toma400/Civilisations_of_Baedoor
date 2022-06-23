@@ -53,6 +53,6 @@ public class Cobr
     }
 
     public void setup(final FMLCommonSetupEvent event) {
-        event.enqueueWork(Composting::CompostingRegistry);
+        event.enqueueWork(Composting::compostingRegistry);
     }
 }

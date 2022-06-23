@@ -30,6 +30,7 @@ public class CobrEntities {
 
     @SubscribeEvent
     public static void attributesRegistrar(EntityAttributeCreationEvent event) {
+        System.out.println("Loading of entity attributes");
         event.put(CobrEntities.TERTEN_MERCENARY.get(), TertenMercenary.setAttributes());
     }
 }
