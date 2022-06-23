@@ -11,7 +11,6 @@ import net.minecraft.item.Items;
 import net.minecraft.util.math.MathHelper;
 
 public class TertenMercenaryType <T extends CreatureEntity> extends EntityModel<T> {
-		//extends EntityModel<Entity> {
 	private final ModelRenderer leftLeg;
 	private final ModelRenderer rightLeg;
 	private final ModelRenderer leftArm;

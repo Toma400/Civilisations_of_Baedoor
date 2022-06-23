@@ -28,7 +28,7 @@ public class RenderTypeRegistry {
             }
         }
         for (RegistryObject<EntityType<?>> entity : entities) {
-            RenderingRegistry.registerEntityRenderingHandler(CobrEntities.TERTEN_MERCENARY.get(), TertenMercenaryRenderer::new);
+            //RenderingRegistry.registerEntityRenderingHandler(CobrEntities.TERTEN_MERCENARY.get(), TertenMercenaryRenderer::new);
         }
     }
 

@@ -2,6 +2,7 @@ package toma400.cobr.events;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ItemStack;
@@ -28,6 +29,8 @@ public class CobrEvents {
         if(!event.getEntity().level.isClientSide()){
             PlayerEntity player = (event.getPlayer());
             ItemStack itemstack = (event.getItemStack());
+            Entity entity = (event.getEntity());
+            String o = entity.getName().getString();
             if(itemstack.getItem() == CobrItems.DISBANDMENT_SCROLL.get()) {
                 if(itemstack.getOrCreateTag().getBoolean("if_signed") == false) {
                     itemstack.getOrCreateTag().putBoolean("if_signed", true);
