@@ -65,18 +65,10 @@ public class TertenMercenary extends PathfinderMob {
     //----------------------------------------------------------
     //  SOUNDS
     //----------------------------------------------------------
-    protected SoundEvent getAmbientSound() {
-        return SoundEvents.WITHER_SKELETON_AMBIENT;
-    }
-    protected SoundEvent getHurtSound(DamageSource damageSource) {
-        return SoundEvents.WITHER_SKELETON_AMBIENT;
-    }
-    protected SoundEvent getDeathSound() {
-        return SoundEvents.WITHER_SKELETON_AMBIENT;
-    }
-    protected float getSoundVolume() {
-        return 0.2F;
-    }
+    protected SoundEvent getAmbientSound()                       { return SoundEvents.WITHER_SKELETON_AMBIENT; }
+    protected SoundEvent getHurtSound(DamageSource damageSource) { return SoundEvents.WITHER_SKELETON_AMBIENT; }
+    protected SoundEvent getDeathSound()                         { return SoundEvents.WITHER_SKELETON_AMBIENT; }
+    protected float getSoundVolume()                             { return 0.2F; }
 
     //----------------------------------------------------------
     //  HELPERS

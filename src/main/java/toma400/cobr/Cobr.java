@@ -1,7 +1,10 @@
 package toma400.cobr;
 
-import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
@@ -14,11 +17,13 @@ import com.mojang.logging.LogUtils;
 import toma400.cobr.core.CobrEntities;
 import toma400.cobr.core.CobrPaintings;
 import toma400.cobr.core.config.WorldConfig;
-import toma400.cobr.entities.list.tertens.shapes.TertenMercenaryRenderer;
 import toma400.cobr.render.registrars.RenderTypeRegistry;
 import toma400.cobr.core.CobrBlocks;
 import toma400.cobr.core.CobrItems;
 import toma400.cobr.elements.behaviours.Composting;
+
+import java.util.Map;
+
 import static toma400.cobr.Cobr.MOD_ID;
 
 @Mod(MOD_ID)
@@ -40,6 +45,7 @@ public class Cobr
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::setupClient);
+        eventBus.addListener(this::entityAttributes);
 
         WorldConfig.loadConfigFile(WorldConfig.WORLD_CONFIG, WorldConfig.WORLD_CONFIG_PATH);
 
@@ -47,12 +53,17 @@ public class Cobr
     }
 
     private void setupClient(final FMLCommonSetupEvent event) {
-        RenderTypeRegistry.GlobalRenderingRegistrar(
-                CobrBlocks.BLOCKS.getEntries(),
-                CobrEntities.ENTITIES.getEntries());
+        RenderTypeRegistry.GlobalRenderingRegistrar(CobrBlocks.BLOCKS.getEntries());
+        CobrEntities.globalEntityRenderingRegistrar(CobrEntities.ENTITIES.getEntries());
     }
 
     public void setup(final FMLCommonSetupEvent event) {
         event.enqueueWork(Composting::compostingRegistry);
+    }
+
+    public void entityAttributes (EntityAttributeCreationEvent event) {
+        for (Map.Entry<EntityType<? extends LivingEntity>, AttributeSupplier> entity : CobrEntities.entityRegistry.entrySet()) {
+            event.put(entity.getKey(), entity.getValue());
+        }
     }
 }

@@ -14,7 +14,7 @@ import java.util.Collection;
 
 public class RenderTypeRegistry {
 
-    public static void GlobalRenderingRegistrar(Collection<RegistryObject<Block>> blocks, Collection<RegistryObject<EntityType<?>>> entities){
+    public static void GlobalRenderingRegistrar(Collection<RegistryObject<Block>> blocks){
             for (RegistryObject<Block> block : blocks) {
                 if (block.get() instanceof DoorBlock ||
                     block.get() instanceof TrapDoorBlock ||
@@ -25,9 +25,6 @@ public class RenderTypeRegistry {
                     block.get() instanceof MatBlocks) {
                         ItemBlockRenderTypes.setRenderLayer(block.get(), RenderType.cutout());
                 }
-            }
-            for (RegistryObject<EntityType<?>> entity : entities) {
-                EntityRenderers.register(CobrEntities.TERTEN_MERCENARY.get(), TertenMercenaryRenderer::new);
             }
         }
 }
