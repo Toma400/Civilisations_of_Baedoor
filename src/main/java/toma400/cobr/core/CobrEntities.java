@@ -2,17 +2,20 @@ package toma400.cobr.core;
 
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
-import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import toma400.cobr.Cobr;
 import toma400.cobr.entities.list.tertens.TertenMercenary;
+import toma400.cobr.entities.list.tertens.shapes.TertenMercenaryRenderer;
 
-import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 
 public class CobrEntities {
     public static final DeferredRegister<EntityType<?>> ENTITIES =
@@ -31,7 +34,19 @@ public class CobrEntities {
     // ---------------------------------------------------------------------------------
     // TECHNICAL REGISTRARS
     // ---------------------------------------------------------------------------------
-    public static void attributesRegistrar(EntityAttributeCreationEvent event, Collection<RegistryObject<EntityType<?>>> entities) {
-        event.put(CobrEntities.TERTEN_MERCENARY.get(), TertenMercenary.setAttributes());
+    public static final Map<EntityType<? extends LivingEntity>,
+                                         AttributeModifierMap> entityRegistry = new HashMap<EntityType<? extends LivingEntity>,
+                                                                                                         AttributeModifierMap>() {{
+        put(CobrEntities.TERTEN_MERCENARY.get(), TertenMercenary.setAttributes());
+    }};
+
+    public static void globalEntityRenderingRegistrar() {
+
+        // Entities
+        for (RegistryObject<EntityType<?>> entity : ENTITIES.getEntries()) {
+            // empty loop for later use
+        }
+        // all manual registrars are done below, though:
+        RenderingRegistry.registerEntityRenderingHandler(CobrEntities.TERTEN_MERCENARY.get(), TertenMercenaryRenderer::new);
     }
 }

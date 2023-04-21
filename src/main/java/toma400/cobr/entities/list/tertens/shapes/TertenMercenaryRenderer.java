@@ -8,9 +8,9 @@ import toma400.cobr.entities.list.tertens.TertenMercenary;
 
 public class TertenMercenaryRenderer extends MobRenderer<TertenMercenary, TertenMercenaryType<TertenMercenary>> {
 
-    public TertenMercenaryRenderer(EntityRendererManager renderManagerIn, TertenMercenaryType<TertenMercenary> entityManagerIn) {
+    public TertenMercenaryRenderer(EntityRendererManager renderManagerIn) {
         // Third element sets entities' shadow
-        super(renderManagerIn, entityManagerIn, 0.5f);
+        super(renderManagerIn, new TertenMercenaryType<>(), 0.5f);
     }
 
     @Override
