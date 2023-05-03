@@ -50,7 +50,7 @@ public class Cobr
 
     private void setupClient(final FMLCommonSetupEvent event) {
         RenderTypeRegistry.globalBlockRenderingRegistrar(CobrBlocks.BLOCKS.getEntries());
-        CobrEntities.globalEntityRenderingRegistrar();
+        CobrEntitiesRef.globalEntityRenderingRegistrar();
     }
 
     private void setup(final FMLCommonSetupEvent event)
@@ -58,7 +58,7 @@ public class Cobr
         event.enqueueWork(Stripping::strippingRegistry);
         event.enqueueWork(Composting::compostingRegistry);
         DeferredWorkQueue.runLater(() -> {
-            for (Map.Entry<EntityType<? extends LivingEntity>, AttributeModifierMap> entity : CobrEntities.entityRegistry.entrySet()) {
+            for (Map.Entry<EntityType<? extends LivingEntity>, AttributeModifierMap> entity : CobrEntitiesRef.entityRegistry.entrySet()) {
                 GlobalEntityTypeAttributes.put(entity.getKey(), entity.getValue());
             }
         });

@@ -18,6 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CobrEntities {
+
     public static final DeferredRegister<EntityType<?>> ENTITIES =
             DeferredRegister.create(ForgeRegistries.ENTITIES, Cobr.MOD_ID);
 
@@ -31,22 +32,4 @@ public class CobrEntities {
         ENTITIES.register(eventBus);
     }
 
-    // ---------------------------------------------------------------------------------
-    // TECHNICAL REGISTRARS
-    // ---------------------------------------------------------------------------------
-    public static final Map<EntityType<? extends LivingEntity>,
-                                         AttributeModifierMap> entityRegistry = new HashMap<EntityType<? extends LivingEntity>,
-                                                                                                         AttributeModifierMap>() {{
-        put(CobrEntities.TERTEN_MERCENARY.get(), TertenMercenary.setAttributes());
-    }};
-
-    public static void globalEntityRenderingRegistrar() {
-
-        // Entities
-        for (RegistryObject<EntityType<?>> entity : ENTITIES.getEntries()) {
-            // empty loop for later use
-        }
-        // all manual registrars are done below, though:
-        RenderingRegistry.registerEntityRenderingHandler(CobrEntities.TERTEN_MERCENARY.get(), TertenMercenaryRenderer::new);
-    }
 }
