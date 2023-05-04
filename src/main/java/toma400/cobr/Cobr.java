@@ -3,6 +3,7 @@ package toma400.cobr;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -46,6 +47,7 @@ public class Cobr
         eventBus.addListener(this::setup);
         eventBus.addListener(this::setupClient);
         eventBus.addListener(this::entityAttributes);
+        eventBus.addListener(this::entityLayers);
 
         WorldConfig.loadConfigFile(WorldConfig.WORLD_CONFIG, WorldConfig.WORLD_CONFIG_PATH);
 
@@ -59,6 +61,10 @@ public class Cobr
 
     public void setup(final FMLCommonSetupEvent event) {
         event.enqueueWork(Composting::compostingRegistry);
+    }
+
+    public void entityLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
+        CobrEntities.Helper.layersRegistry(event);
     }
 
     public void entityAttributes (EntityAttributeCreationEvent event) {
