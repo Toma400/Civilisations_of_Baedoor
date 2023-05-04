@@ -21,35 +21,47 @@ import java.util.Map;
 
 @Mod.EventBusSubscriber(modid = Cobr.MOD_ID)
 public class CobrEntities {
-    public static final DeferredRegister<EntityType<?>> ENTITIES =
-            DeferredRegister.create(ForgeRegistries.ENTITIES, Cobr.MOD_ID);
 
-    public static final RegistryObject<EntityType<TertenMercenary>> TERTEN_MERCENARY = ENTITIES.register("terten_mercenary",
-            () -> EntityType.Builder.of(TertenMercenary::new, MobCategory.AMBIENT)
-                    .sized(0.6f, 2.5f).setTrackingRange(64)
-                    .fireImmune()
-                    .build(new ResourceLocation(Cobr.MOD_ID, "terten_mercenary").toString()));
+    public class Reg {
 
-    public static void register(IEventBus eventBus) {
-        ENTITIES.register(eventBus);
+        public static final DeferredRegister<EntityType<?>> ENTITIES =
+                DeferredRegister.create(ForgeRegistries.ENTITIES, Cobr.MOD_ID);
+
+        public static final RegistryObject<EntityType<TertenMercenary>> TERTEN_MERCENARY = ENTITIES.register("terten_mercenary",
+                () -> EntityType.Builder.of(TertenMercenary::new, MobCategory.AMBIENT)
+                        .sized(0.6f, 2.5f).setTrackingRange(64)
+                        .fireImmune()
+                        .build(new ResourceLocation(Cobr.MOD_ID, "terten_mercenary").toString()));
+
+        public static void register(IEventBus eventBus) {
+            ENTITIES.register(eventBus);
+        }
+
     }
 
-    // ---------------------------------------------------------------------------------
-    // TECHNICAL REGISTRARS
-    // ---------------------------------------------------------------------------------
-    public static final Map<EntityType<? extends LivingEntity>,
-                                            AttributeSupplier> entityRegistry = new HashMap<EntityType<? extends LivingEntity>,
-                                                                                                            AttributeSupplier>() {{
-        put(CobrEntities.TERTEN_MERCENARY.get(), TertenMercenary.setAttributes());
-    }};
+    public class Helper {
+        // ---------------------------------------------------------------------------------
+        // TECHNICAL REGISTRARS
+        // -- Fill those:
+        //    * entityRegistry
+        //    * globalEntityRenderingRegistrar
+        // ---------------------------------------------------------------------------------
 
-    public static void globalEntityRenderingRegistrar(Collection<RegistryObject<EntityType<?>>> entities) {
+        public static final Map<EntityType<? extends LivingEntity>,
+                                                AttributeSupplier> entityRegistry = new HashMap<EntityType<? extends LivingEntity>,
+                                                                                                                AttributeSupplier>() {{
+            put(Reg.TERTEN_MERCENARY.get(), TertenMercenary.setAttributes());
+        }};
 
-        // Entities
-        for (RegistryObject<EntityType<?>> entity : entities) {
-            // empty loop for later use
+        public static void globalEntityRenderingRegistrar(Collection<RegistryObject<EntityType<?>>> entities) {
+
+            // Entities
+            for (RegistryObject<EntityType<?>> entity : entities) {
+                // empty loop for later use
+            }
+            // all manual registrars are done below, though:
+            EntityRenderers.register(Reg.TERTEN_MERCENARY.get(), TertenMercenaryRenderer::new);
         }
-        // all manual registrars are done below, though:
-        EntityRenderers.register(CobrEntities.TERTEN_MERCENARY.get(), TertenMercenaryRenderer::new);
+
     }
 }

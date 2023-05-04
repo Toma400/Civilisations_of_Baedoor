@@ -77,7 +77,7 @@ public class TertenMercenary extends PathfinderMob {
     //----------------------------------------------------------
     public static ArrayList<?> mobs_helping() {
         ArrayList<RegistryObject<?>> helping_mobs = new ArrayList<>();
-        helping_mobs.add(CobrEntities.TERTEN_MERCENARY);
+        helping_mobs.add(CobrEntities.Reg.TERTEN_MERCENARY);
         return helping_mobs;
     }
     public static ArrayList<?> mobs_attacked() {

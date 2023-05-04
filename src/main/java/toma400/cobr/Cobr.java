@@ -41,7 +41,7 @@ public class Cobr
         CobrItems.register(eventBus);
         CobrBlocks.register(eventBus);
         CobrPaintings.register(eventBus);
-        CobrEntities.register(eventBus);
+        CobrEntities.Reg.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::setupClient);
@@ -54,7 +54,7 @@ public class Cobr
 
     private void setupClient(final FMLCommonSetupEvent event) {
         RenderTypeRegistry.GlobalRenderingRegistrar(CobrBlocks.BLOCKS.getEntries());
-        CobrEntities.globalEntityRenderingRegistrar(CobrEntities.ENTITIES.getEntries());
+        CobrEntities.Helper.globalEntityRenderingRegistrar(CobrEntities.Reg.ENTITIES.getEntries());
     }
 
     public void setup(final FMLCommonSetupEvent event) {
@@ -62,7 +62,7 @@ public class Cobr
     }
 
     public void entityAttributes (EntityAttributeCreationEvent event) {
-        for (Map.Entry<EntityType<? extends LivingEntity>, AttributeSupplier> entity : CobrEntities.entityRegistry.entrySet()) {
+        for (Map.Entry<EntityType<? extends LivingEntity>, AttributeSupplier> entity : CobrEntities.Helper.entityRegistry.entrySet()) {
             event.put(entity.getKey(), entity.getValue());
         }
     }
