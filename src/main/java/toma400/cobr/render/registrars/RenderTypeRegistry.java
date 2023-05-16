@@ -2,13 +2,9 @@ package toma400.cobr.render.registrars;
 
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.entity.EntityRenderers;
-import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.registries.RegistryObject;
-import toma400.cobr.core.CobrEntities;
 import toma400.cobr.elements.blocks.templated.MatBlocks;
-import toma400.cobr.entities.list.tertens.shapes.TertenMercenaryRenderer;
 
 import java.util.Collection;
 

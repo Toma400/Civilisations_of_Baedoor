@@ -13,9 +13,9 @@ import net.minecraft.util.Mth;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import toma400.cobr.Cobr;
-import toma400.cobr.entities.list.tertens.TertenMercenary;
+import toma400.cobr.entities.list.tertens.TertenCaravanMercenary;
 
-public class TertenMercenaryType <T extends TertenMercenary> extends EntityModel<T> {
+public class TertenCaravanMercenaryType<T extends TertenCaravanMercenary> extends EntityModel<T> {
     // This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
     public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(Cobr.MOD_ID, "terten_mercenary_type"), "main");
 
@@ -26,7 +26,7 @@ public class TertenMercenaryType <T extends TertenMercenary> extends EntityModel
     private final ModelPart head;
     private final ModelPart chest;
 
-    public TertenMercenaryType (ModelPart root) {
+    public TertenCaravanMercenaryType(ModelPart root) {
         this.leftLeg = root.getChild("leftLeg");
         this.rightLeg = root.getChild("rightLeg");
         this.leftArm = root.getChild("leftArm");

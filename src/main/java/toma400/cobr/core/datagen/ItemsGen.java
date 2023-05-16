@@ -2,10 +2,7 @@ package toma400.cobr.core.datagen;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.FurnaceBlock;
@@ -42,11 +39,14 @@ public class ItemsGen extends ItemModelProvider {
         for (RegistryObject<Item> item : items) {
             if (!(item.get() instanceof BlockItem)) { // delegates all possible blockItems to another builder
                 String name = item.getId().getPath();
+                if (item.get() instanceof SpawnEggItem) {
+                    name = "spawn_egg";
+                }
                 ModelFile modelType = getExistingFile(mcLoc("item/generated"));
                 if (item.get() instanceof TieredItem) {
                     modelType = getExistingFile(mcLoc("item/handheld"));
                 }
-                this.getBuilder(name).parent(modelType).texture("layer0", ITEM_FOLDER + "/" + name);
+                this.getBuilder(item.getId().getPath()).parent(modelType).texture("layer0", ITEM_FOLDER + "/" + name);
             }
         }
     }
