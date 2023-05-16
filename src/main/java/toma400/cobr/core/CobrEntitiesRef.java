@@ -5,8 +5,8 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
-import toma400.cobr.entities.list.tertens.TertenMercenary;
-import toma400.cobr.entities.list.tertens.shapes.TertenMercenaryRenderer;
+import toma400.cobr.entities.list.tertens.TertenCaravanMercenary;
+import toma400.cobr.entities.list.tertens.shapes.TertenCaravanMercenaryRenderer;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,11 +18,14 @@ public class CobrEntitiesRef {
     // -- Fill those:
     //    * entityRegistry
     //    * globalEntityRenderingRegistrar
+    // -- Make:
+    //    * spawn egg
+    //    * translation key (entity + egg)
     // ---------------------------------------------------------------------------------
     public static final Map<EntityType<? extends LivingEntity>,
             AttributeModifierMap> entityRegistry = new HashMap<EntityType<? extends LivingEntity>,
             AttributeModifierMap>() {{
-        put(CobrEntities.TERTEN_MERCENARY.get(), TertenMercenary.setAttributes());
+        put(CobrEntities.TERTEN_CARAVAN_MERCENARY.get(), TertenCaravanMercenary.setAttributes());
     }};
 
     public static void globalEntityRenderingRegistrar() {
@@ -31,7 +34,7 @@ public class CobrEntitiesRef {
             // empty loop for later use
         }
         // all manual registrars are done below, though:
-        RenderingRegistry.registerEntityRenderingHandler(CobrEntities.TERTEN_MERCENARY.get(), TertenMercenaryRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(CobrEntities.TERTEN_CARAVAN_MERCENARY.get(), TertenCaravanMercenaryRenderer::new);
     }
 
 }

@@ -1,6 +1,7 @@
 package toma400.cobr.core;
 
 import net.minecraft.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -8,6 +9,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import toma400.cobr.Cobr;
 import toma400.cobr.elements.items.templated.FuelItems;
 import toma400.cobr.elements.items.templated.SabreItems;
+import toma400.cobr.entities.list.tertens.TertenCaravanMercenary;
 
 // ------------------------------------------
 // DISBANDMENT SCROLL TOOLTIP GOT OUTED TEMPORARILY
@@ -46,6 +48,10 @@ public class CobrItems {
             () -> new SwordItem(ItemTier.IRON, 6, 1.5f, new Item.Properties().tab(CobrTab.COBR_TAB).durability(240)));
     public static final RegistryObject<Item> BONE_SABRE = ITEMS.register("bone_sabre",
             () -> new SabreItems(ItemTier.IRON, 6, 2.4f, new Item.Properties().tab(CobrTab.COBR_TAB).durability(140)));
+
+    //SPAWN EGGS
+    public static final RegistryObject<Item> TERTEN_CARAVAN_MERCENARY_SPAWN_EGG = ITEMS.register(TertenCaravanMercenary.ID + "_spawn_egg",
+            () -> new ForgeSpawnEggItem(CobrEntities.TERTEN_CARAVAN_MERCENARY, 0xe0c52d, 0xccc07c, new SpawnEggItem.Properties().tab(CobrTab.COBR_ENTITY_TAB)));
 
 
     //more complex items which I don't want to make separate class for (yet or ever)

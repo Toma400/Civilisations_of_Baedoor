@@ -10,7 +10,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.util.math.MathHelper;
 
-public class TertenMercenaryType <T extends CreatureEntity> extends EntityModel<T> {
+public class TertenCaravanMercenaryType<T extends CreatureEntity> extends EntityModel<T> {
 	private final ModelRenderer leftLeg;
 	private final ModelRenderer rightLeg;
 	private final ModelRenderer leftArm;
@@ -21,7 +21,7 @@ public class TertenMercenaryType <T extends CreatureEntity> extends EntityModel<
 	private final ModelRenderer hat;
 	private final ModelRenderer chest;
 
-	public TertenMercenaryType() {
+	public TertenCaravanMercenaryType() {
 		texWidth = 64;
 		texHeight = 64;
 

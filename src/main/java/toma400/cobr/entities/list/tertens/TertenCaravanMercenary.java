@@ -4,10 +4,7 @@ import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.ai.attributes.Attributes;
-import net.minecraft.entity.ai.goal.FollowMobGoal;
-import net.minecraft.entity.ai.goal.LookAtGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.RandomWalkingGoal;
+import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.SoundEvent;
@@ -19,9 +16,11 @@ import toma400.cobr.entities.properties.Resistances;
 
 import java.util.ArrayList;
 
-public class TertenMercenary extends CreatureEntity {
+public class TertenCaravanMercenary extends CreatureEntity {
 
-    public TertenMercenary(EntityType<? extends CreatureEntity> entity, World world) {
+    public static final String ID = "terten_caravan_mercenary";
+
+    public TertenCaravanMercenary(EntityType<? extends CreatureEntity> entity, World world) {
         super(entity, world);
     }
 
@@ -36,7 +35,7 @@ public class TertenMercenary extends CreatureEntity {
                 .add(Attributes.ARMOR_TOUGHNESS, 0)
                 .add(Attributes.KNOCKBACK_RESISTANCE, 0)
 
-                .add(Attributes.MOVEMENT_SPEED, 3.0)
+                .add(Attributes.MOVEMENT_SPEED, 0.3) // prev: 3.0, skeleton ref: 0.25D
                 .add(Attributes.FOLLOW_RANGE, 64)
 
                 .add(Attributes.ATTACK_DAMAGE, 4)
@@ -57,8 +56,7 @@ public class TertenMercenary extends CreatureEntity {
     //  BEHAVIOURS
     //----------------------------------------------------------
     protected void registerGoals() {
-        //this.targetSelector.addGoal(1, new HurtByTargetGoal(this).setAlertOthers(this.getClass())); // set "setAlertOthers" to count all tertens nearby, and mage
-
+        this.goalSelector.addGoal(1, new HurtByTargetGoal(this).setAlertOthers(this.getClass())); // set "setAlertOthers" to count all tertens nearby, and mage
         this.goalSelector.addGoal(2, new FollowMobGoal(this, 1.0D, 3.0F, 64.0F));
         this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 1.0D));
         this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
@@ -80,7 +78,7 @@ public class TertenMercenary extends CreatureEntity {
     //----------------------------------------------------------
     public static ArrayList<?> mobs_helping() {
         ArrayList<RegistryObject<?>> helping_mobs = new ArrayList<>();
-        helping_mobs.add(CobrEntities.TERTEN_MERCENARY);
+        helping_mobs.add(CobrEntities.TERTEN_CARAVAN_MERCENARY);
         return helping_mobs;
     }
     public static ArrayList<?> mobs_attacked() {

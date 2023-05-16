@@ -4,20 +4,20 @@ import net.minecraft.block.*;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.TieredItem;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.fml.RegistryObject;
 import toma400.cobr.Cobr;
 import toma400.cobr.core.CobrBlocks;
 import toma400.cobr.core.CobrItems;
-import toma400.cobr.elements.blocks.templated.FlammableBlocks;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 
 public class ItemsGen extends ItemModelProvider {
 
@@ -38,11 +38,14 @@ public class ItemsGen extends ItemModelProvider {
         for (RegistryObject<Item> item : items) {
             if (!(item.get() instanceof BlockItem)) { // delegates all possible blockItems to another builder
                 String name = item.getId().getPath();
+                if (item.get() instanceof SpawnEggItem) {
+                    name = "spawn_egg";
+                }
                 ModelFile modelType = getExistingFile(mcLoc("item/generated"));
                 if (item.get() instanceof TieredItem) {
                     modelType = getExistingFile(mcLoc("item/handheld"));
                 }
-                this.getBuilder(name).parent(modelType).texture("layer0", ITEM_FOLDER + "/" + name);
+                this.getBuilder(item.getId().getPath()).parent(modelType).texture("layer0", ITEM_FOLDER + "/" + name);
             }
         }
     }

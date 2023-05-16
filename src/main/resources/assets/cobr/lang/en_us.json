@@ -87,9 +87,13 @@
   "block.cobr.rainforest_islands_traveller_stone": "Rainforest Islands Traveller Stone",
   "block.cobr.evergreen_depths_traveller_stone": "Evergreen Depths Traveller Stone",
 
+  "item.cobr.terten_caravan_mercenary_spawn_egg": "Terten Caravan Mercenary Spawn Egg",
+  "entity.cobr.terten_caravan_mercenary": "Terten Caravan Mercenary",
+
   "tooltip.cobr.disbandment_scroll": "Serves as a way to disband the warrior from its leader",
 
   "event.cobr.disbandment_owner_info": "Disbandment scroll assigned by player with UUID: %s",
 
-  "itemGroup.cobr_tab": "Civilisations of Baedoor"
+  "itemGroup.cobr_tab":        "Civilisations of Baedoor",
+  "itemGroup.cobr_entity_tab": "Civilisations of Baedoor: Mobs"
 }
