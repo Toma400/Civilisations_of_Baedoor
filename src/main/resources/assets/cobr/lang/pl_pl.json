@@ -87,9 +87,13 @@
   "block.cobr.rainforest_islands_traveller_stone": "Deszczowy Kamień Podróżniczy",
   "block.cobr.evergreen_depths_traveller_stone": "Zielonogłębny Kamień Podróżniczy",
 
+  "item.cobr.terten_caravan_mercenary_spawn_egg": "Jajo przyzywające terteńskiego najemnika karawany",
+  "entity.cobr.terten_caravan_mercenary": "Terteński najemnik karawany",
+
   "tooltip.cobr.disbandment_scroll": "Służy do odwoływania wojowników z ich służby wobec właściciela",
 
   "event.cobr.disbandment_owner_info": "Zwój odwołania przypisany do gracza o UUID: %s",
 
-  "itemGroup.cobr_tab": "Civilisations of Baedoor"
+  "itemGroup.cobr_tab":        "Civilisations of Baedoor",
+  "itemGroup.cobr_entity_tab": "Civilisations of Baedoor: Moby"
 }
