@@ -87,9 +87,13 @@
   "block.cobr.rainforest_islands_traveller_stone": "Piedra viajera de las islas tropicales",
   "block.cobr.evergreen_depths_traveller_stone": "Piedra viajera de hojas perenne",
 
+  "item.cobr.terten_caravan_mercenary_spawn_egg": "Huevo de Aparición de Caravana de Terten Mercenarios",
+  "entity.cobr.terten_caravan_mercenary": "Caravana de Terten Mercenarios",
+
   "tooltip.cobr.disbandment_scroll": "Sirve para disolver al guerrero de su líder.",
 
   "event.cobr.disbandment_owner_info": "Pergamino de disolución asignado por el jugador con el UUID: %s",
 
-  "itemGroup.cobr_tab": "Civilizaciones de Baedoor"
+  "itemGroup.cobr_tab": "Civilizaciones de Baedoor",
+  "itemGroup.cobr_entity_tab": "Civilisations of Baedoor: Mobs"
 }
