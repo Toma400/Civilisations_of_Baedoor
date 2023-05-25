@@ -87,9 +87,13 @@
   "block.cobr.rainforest_islands_traveller_stone": "حجر المسافر لجزيرة الغابة المطيرة",
   "block.cobr.evergreen_depths_traveller_stone": "حجر المسافر لاعماق ايفيردريم",
 
+  "item.cobr.terten_caravan_mercenary_spawn_egg": "بيضة ظهور مرتزقة كارافان تيرتن ",
+  "entity.cobr.terten_caravan_mercenary":         "مرتزقة كارافان تيرتن",
+
   "tooltip.cobr.disbandment_scroll": "بمثابة وسيلة لتفكيك المحارب من زعيمه",
 
   "event.cobr.disbandment_owner_info": "مخطوطة التحرير المعين من قبل لاعب مع UUID: %s",
 
-  "itemGroup.cobr_tab": "حضارات بايدور"
+  "itemGroup.cobr_tab": "حضارات بايدور",
+  "itemGroup.cobr_entity_tab": "حضارات بادور: الكائنات"
 }

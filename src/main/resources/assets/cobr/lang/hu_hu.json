@@ -87,9 +87,13 @@
   "block.cobr.rainforest_islands_traveller_stone": "Esőerdő Sziget Utazókő",
   "block.cobr.evergreen_depths_traveller_stone": "Örökzöld Mélység Utazókő",
 
+  "item.cobr.terten_caravan_mercenary_spawn_egg":  "Szekeres Terten Kereskedő Idéző Tojás",
+  "entity.cobr.terten_caravan_mercenary":          "Szekeres Terten Kereskedő",
+
   "tooltip.cobr.disbandment_scroll": "Segítségül szolgál a harcosok feloszlatásra a vezetőjétől",
 
   "event.cobr.disbandment_owner_info": "Az UUID-vel rendelkező játkosok által hozzárendelt feloszlatási tekercs: %s",
 
-  "itemGroup.cobr_tab": "Baedoor Civiláziója"
+  "itemGroup.cobr_tab":        "Baedoor Civiláziója",
+  "itemGroup.cobr_entity_tab": "Baedoor Civilizációi: Élőlények"
 }

@@ -87,9 +87,13 @@
   "block.cobr.rainforest_islands_traveller_stone": "Pierre du Voyageur des Tropiques",
   "block.cobr.evergreen_depths_traveller_stone": "Pierre du Voyageur des Luxuriantes",
 
+  "item.cobr.terten_caravan_mercenary_spawn_egg": "Oeuf d'Apparition de Mercenaire Caravanier Terten",
+  "entity.cobr.terten_caravan_mercenary":         "Mercenaire Caravanier Terten",
+
   "tooltip.cobr.disbandment_scroll": "Peut être utilisé pour résilier le contrat de guerriers",
 
   "event.cobr.disbandment_owner_info": "Parchemin de Désengagement assigné au joueur dont l'UUID est: %s",
 
-  "itemGroup.cobr_tab": "Civilisations of Baedoor"
+  "itemGroup.cobr_tab": "Civilisations of Baedoor",
+  "itemGroup.cobr_entity_tab": "Civilisations of Baedoor: Créatures"
 }

@@ -87,9 +87,13 @@
   "block.cobr.rainforest_islands_traveller_stone": "Pietra Del Viaggiatore Per Le Isole Foresta Pluviale",
   "block.cobr.evergreen_depths_traveller_stone": "Pietra Del Viaggiatore Per Le Profondità di SempreVerde",
 
+  "item.cobr.terten_caravan_mercenary_spawn_egg": "Uovo Generatore di Mercenario della Carovana di Terten",
+  "entity.cobr.terten_caravan_mercenary":         "Mercenario della Carovana di Terten",
+
   "tooltip.cobr.disbandment_scroll": "I servi sono un modo per sciogliere il guerriero dal suo capo",
 
   "event.cobr.disbandment_owner_info": "Pergamena Dello Smantellamento assegnata a un giocatore con UUID: %s",
 
-  "itemGroup.cobr_tab": "Civiltà Di Baedoor"
+  "itemGroup.cobr_tab": "Civiltà Di Baedoor",
+  "itemGroup.cobr_entity_tab": "Civilisations of Baedoor: Mob"
 }
