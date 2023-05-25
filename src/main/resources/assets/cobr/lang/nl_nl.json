@@ -87,9 +87,13 @@
   "block.cobr.rainforest_islands_traveller_stone": "Regenwoud Eilanden Reizigers Steen",
   "block.cobr.evergreen_depths_traveller_stone": "Groenblijvende Dieptes Reizigers Steen",
 
+  "item.cobr.terten_caravan_mercenary_spawn_egg": "Terten Caravan Huurling Spawn Ei",
+  "entity.cobr.terten_caravan_mercenary":         "Terten Caravan Huurling",
+
   "tooltip.cobr.disbandment_scroll": "Dient als een manier om de krijger van zijn leider te ontbinden",
 
   "event.cobr.disbandment_owner_info": "Ontbinding scroll toegewezen door speler met UUID: %s",
 
-  "itemGroup.cobr_tab": "Civilisations of Baedoor"
+  "itemGroup.cobr_tab":        "Civilisations of Baedoor",
+  "itemGroup.cobr_entity_tab": "Civilisations of Baedoor: Mob"
 }

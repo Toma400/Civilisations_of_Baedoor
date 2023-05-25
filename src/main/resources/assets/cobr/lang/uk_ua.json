@@ -87,9 +87,13 @@
   "block.cobr.rainforest_islands_traveller_stone": "Мандрівничий камінь укріплених островів",
   "block.cobr.evergreen_depths_traveller_stone": "Мандрівничий камінь вічнозелених глибин",
 
+  "item.cobr.terten_caravan_mercenary_spawn_egg": "Яйце виклику найманця з каравану Тертен",
+  "entity.cobr.terten_caravan_mercenary":         "Найманець з каравану Тертен",
+
   "tooltip.cobr.disbandment_scroll": "Є способом розформування воїна від його лідера",
 
   "event.cobr.disbandment_owner_info": "Скруток розформування, призначений гравцем з UUID: %s",
 
-  "itemGroup.cobr_tab": "Цивілізація Баедуру"
+  "itemGroup.cobr_tab":        "Цивілізація Баедуру",
+  "itemGroup.cobr_entity_tab": "Цивілізації Баедуру: моби"
 }
