@@ -87,9 +87,13 @@
   "block.cobr.rainforest_islands_traveller_stone": "Batu Pengembara Pulau Hutan Hujan",
   "block.cobr.evergreen_depths_traveller_stone": "Batu Pengembara Kedalaman Malar Hijau",
 
+  "item.cobr.terten_caravan_mercenary_spawn_egg": "Terten Caravan Mercenary Spawn Egg",
+  "entity.cobr.terten_caravan_mercenary": "Terten Caravan Mercenary",
+
   "tooltip.cobr.disbandment_scroll": "Berfungsi sebagai cara untuk membubarkan pahlawan daripada ketuanya",
 
   "event.cobr.disbandment_owner_info": "Tatal pembubaran yang diberikan oleh pemain dengan UUID: ",
 
-  "itemGroup.cobr_tab": "Civilisations of Baedoor"
+  "itemGroup.cobr_tab": "Civilisations of Baedoor",
+  "itemGroup.cobr_entity_tab": "Civilisations of Baedoor: Mobs"
 }
