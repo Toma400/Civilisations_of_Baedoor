@@ -87,9 +87,13 @@
   "block.cobr.rainforest_islands_traveller_stone": "Камень путешественника Дождевых Тропических Островов",
   "block.cobr.evergreen_depths_traveller_stone": "Камень путешественника Вечнозеленых Глубин",
 
+  "item.cobr.terten_caravan_mercenary_spawn_egg": "Terten Caravan Mercenary Spawn Egg",
+  "entity.cobr.terten_caravan_mercenary": "Terten Caravan Mercenary",
+
   "tooltip.cobr.disbandment_scroll": "Служит способом роспуска воина от его лидера",
 
   "event.cobr.disbandment_owner_info": "Свиток роспуска, назначенный игроком с UUID: %s",
 
-  "itemGroup.cobr_tab": "Цивилизации Баэдора"
+  "itemGroup.cobr_tab": "Цивилизации Баэдора",
+  "itemGroup.cobr_entity_tab": "Civilisations of Baedoor: Mobs"
 }

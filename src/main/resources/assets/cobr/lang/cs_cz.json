@@ -87,9 +87,13 @@
   "block.cobr.rainforest_islands_traveller_stone": "Deštivý Kámen Cesty",
   "block.cobr.evergreen_depths_traveller_stone": "Zelenohlubinový Kámen Cest",
 
+  "item.cobr.terten_caravan_mercenary_spawn_egg": "Spawnovací Vejce Tertenové Žoldnéřovy Karavany",
+  "entity.cobr.terten_caravan_mercenary":         "Tertenova Žoldnéřova Karavana",
+
   "tooltip.cobr.disbandment_scroll": "Slouží k odvolání válečníků z jejich služby majiteli",
 
   "event.cobr.disbandment_owner_info": "Svitek Odvolání přiřazený hráči s UUID: %s",
 
-  "itemGroup.cobr_tab": "Bedurečkové Civilizace"
+  "itemGroup.cobr_tab": "Bedurečkové Civilizace",
+  "itemGroup.cobr_entity_tab": "Bedurečkové Civilizace: Mobové"
 }

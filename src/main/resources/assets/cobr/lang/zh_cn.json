@@ -87,9 +87,13 @@
   "block.cobr.rainforest_islands_traveller_stone": "雨林岛旅人石",
   "block.cobr.evergreen_depths_traveller_stone": "绿深处旅人石",
 
+  "item.cobr.terten_caravan_mercenary_spawn_egg": "Terten Caravan Mercenary Spawn Egg",
+  "entity.cobr.terten_caravan_mercenary": "Terten Caravan Mercenary",
+
   "tooltip.cobr.disbandment_scroll": "作为将战士从其领导者那里解散的一种方式",
 
   "event.cobr.disbandment_owner_info": "解散卷轴由玩家分配的UUID: ",
 
-  "itemGroup.cobr_tab": "Civilisations of Baedoor"
+  "itemGroup.cobr_tab": "Civilisations of Baedoor",
+  "itemGroup.cobr_entity_tab": "Civilisations of Baedoor: Mobs"
 }
